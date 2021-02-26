@@ -1,0 +1,82 @@
+import android.text.TextUtils;
+
+  public static String encode(String source) {
+		if(TextUtils.isEmpty(source)) return "";
+		char[] datas = source.toCharArray();
+		StringBuilder sb = new StringBuilder();
+		for(char c : datas) {
+			sb.append("\\u");
+            /*
+			if(c < 256) {
+				if(c < 64) {
+					sb.append("000");
+				} else if(c < 128) {
+					sb.append("00");
+				} else if(c < 192) {
+					sb.append("0");
+				}
+			}
+            */
+            if(c <= 128) {
+              sb.append("00");
+              }
+			sb.append(Integer.toHexString(c));
+		}
+		return sb.toString();
+	}
+
+	public static String decode(String unicode) {
+		if(TextUtils.isEmpty(unicode)) return "";
+		char[] datas = unicode.toCharArray();
+		int len = datas.length;
+		char c;
+		StringBuilder sb = new StringBuilder();
+		for(int index = 0;index < len;) {
+			c = datas[index++];
+			if(c == '\\') { //以\开头
+				c = datas[index++];
+				if(c == 'u') { //下一个字符为u，开始转换
+					int value = 0;
+					for(int j = 0; j < 4; j++) {             //循环接下来的字符
+						c = datas[index++];  //获取下一个字符
+						if(c <= '9' && c >= '0') {          //若是0-9
+							value = (value << 4) + c - '0';        //获取上一个字符进位后的10进制码  + 当前字符的ASCLL码
+						} else if(c <= 'F' && c >= 'A') {    //
+							value = (value << 4) + c - 'A' + 10;   //16进制码转换为10进制需要+10+偏移量
+						} else if(c <= 'f' && c >= 'a') {
+							value = (value << 4) + c - 'a' + 10;   //16进制码转换为10进制需要+10+偏移量
+						} else {
+							throw new IllegalArgumentException("It's not unicode coding , need like (\\u7e41\\u4e86\\u70b9) ");
+						}
+					}
+					sb.append((char)value);
+				} else {
+					if(c == 't')
+						c = '\t';
+					else if(c == 'r')
+						c = '\r';
+					else if(c == 'n')
+						c = '\n';
+					else if(c == 'f')
+						c = '\f';
+					sb.append(c);
+				}
+			} else {
+				sb.append(c);
+			}
+		}
+		return sb.toString();
+    }
+  
+//编解码代码来自网络
+//残页QQ1582270018
+
+//编码
+//ug(2,"text",text)
+//call(unicode,"mjava","unicode.encode",text)
+//us(2,"text",unicode)
+
+//解码
+//ug(2,"text",text)
+//call(source,"mjava","unicode.decode",text)
+//us(2,"text",source)

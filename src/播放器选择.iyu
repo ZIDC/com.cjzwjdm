@@ -1,0 +1,126 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=200dp
+orientation=vertical
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=180dp
+app_CardcornerRadius=15dp
+layout_marginBottom=-10dp
+</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=25dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="CardView">
+<ppt>width=45dp
+height=5dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffededed
+layout_marginTop=10dp</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=left|center
+layout_marginTop=7dp
+
+</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=默认播放方式选择
+layout_marginLeft=10dp
+textSize=13sp
+textColor=#ff006dad</ppt>
+<event></event>
+</View>
+<View id="8" did="3" type="LinearLayout">
+<ppt>width=-1
+height=0.6dp
+orientation=vertical
+//BackgroundColor=#ffdadada
+layout_marginLeft=20dp
+layout_marginRight=20dp</ppt>
+<event></event>
+</View>
+<View id="9" did="3" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=horizontal
+layout_marginTop=6dp</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=left|center
+layout_marginRight=-20dp</ppt>
+<event></event>
+</View>
+<View id="12" did="10" type="TextView">
+<ppt>width=-2
+height=-2
+text=当前选择:默认播放(系统)
+textSize=14sp
+textColor=#ff020202
+layout_marginLeft=16dp</ppt>
+<event></event>
+</View>
+<View id="11" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=right|center
+layout_marginLeft=-15dp</ppt>
+<event></event>
+</View>
+<View id="13" did="11" type="SwitchCompat">
+<ppt>width=-2
+height=-2
+layout_marginRight=35dp
+thumbTint=#ff229fff</ppt>
+<event><eventItme type="oncheckedchanged">
+
+
+ug(ss.id13,"checked",xz)
+f(xz == "true")
+{
+  ufnsui()
+  {
+       fw("%Android/data/com.cjzwjdm/files/播放器.html", "播放开播放")
+         us(ss.id12,"text","当前选择:默认播放(自制内核)")
+  }
+}
+else
+{
+  ufnsui()
+  {
+        fw("%Android/data/com.cjzwjdm/files/播放器.html", "播放关播放")
+      us(ss.id12,"text","当前选择:浏览器播放(X5腾讯)") 
+  }
+}</eventItme></event>
+</View>
+<UIEventset></UIEventset>

@@ -1,0 +1,90 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=200dp
+orientation=vertical
+gravity=bottom|center</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=180dp
+layout_marginBottom=-10dp
+app_CardcornerRadius=15dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=30dp
+orientation=vertical
+gravity=top|center</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="CardView">
+<ppt>width=45dp
+height=5dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffededed
+layout_marginTop=10dp</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=top|center</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="LinearLayout">
+<ppt>width=-1
+height=26dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="11" did="8" type="CardView">
+<ppt>width=-2
+height=25dp
+app_CardcornerRadius=3dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#FFF6F6F6</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="10" did="12" type="TextView">
+<ppt>width=-1
+height=-2
+text=加载中。。。
+textSize=13sp
+textColor=#ff050505
+singleLine=true
+layout_marginLeft=5dp
+layout_marginRight=5dp</ppt>
+<event><eventItme type="clicki">java(null,ss.载体,"android.app.Dialog.dismiss")</eventItme></event>
+</View>
+<View id="7" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="9" did="7" type="GifView">
+<ppt>width=-1
+height=-1
+src=@lod.gif</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

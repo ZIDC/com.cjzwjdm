@@ -1,0 +1,31 @@
+
+function tp(pro,image,id)
+import "android.graphics.Bitmap.*";
+import "android.graphics.BitmapFactory";
+
+
+local dex = i:loadjar("myBlur")
+local myBlur = i:cls(dex, "xian.UI.Blur")
+local mb = luajava.new(myBlur)
+
+--未模糊处理的图片
+local bmp = BitmapFactory:decodeFile(image)
+
+--模糊处理后的图片
+local blubmp = mb:blurBitmap(activity, bmp, pro)
+
+i:us(id,"src",blubmp)
+end
+
+
+
+--解析uri为绝对路径
+function getRealPath(uri)
+import "android.provider.MediaStore$Images$Media"
+local proj = i:sl(Media.DATA,":")
+local cursor = activity:managedQuery(uri,proj,nil,nil,nil)
+local column_index = cursor:getColumnIndexOrThrow(Media.DATA)
+cursor:moveToFirst()
+
+return cursor:getString(column_index)
+end

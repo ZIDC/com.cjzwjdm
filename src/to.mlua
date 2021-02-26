@@ -1,0 +1,5 @@
+:function tois(o)
+  
+ local pro = tonumber(o)
+ return toi(pro)
+  end
