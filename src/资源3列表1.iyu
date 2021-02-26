@@ -1,0 +1,144 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=76dp
+height=35dp
+app_CardcornerRadius=5dp
+app_CardElevation=5dp</ppt>
+<event><eventItme type="clicki">
+
+ulag(st_vW,4,sss.标题)
+ulag(st_vW,5,sss.视频)
+ug(8,"text",视频名)
+ss(视频名+" "+sss.标题,sss.视频标题)
+
+/.
+
+f(sss.视频 ? "http")
+{
+uigo("playvideo.iyu")  
+}
+else
+{
+ 
+fn 模糊.背景模糊()
+us(背景模糊.1,"visibility",0)
+dha(dh, false, true)
+dh(dh, "duration", 500)
+us(背景模糊.1, "dh", dh)
+
+//两个按钮
+utw(null,"抱歉","资源不正常，请尝试第二资源！,也有可能是我代码输错了(狗头)", "去你妈的", true, v)
+{
+  ufnsui()
+  {
+
+    dha(dh, true, false)
+    dh(dh, "duration", 500)
+    us(背景模糊.1, "dh", dh)
+    dhon(dh)
+    {
+    us(背景模糊.1,"visibility",8)
+    }
+    endutw()
+}
+}
+  
+   
+}
+
+
+
+./
+
+
+
+
+fr("%Android/data/com.cjzwjdm/files/播放器.html",播放)
+sj(播放,"播放","播放",播放输出)
+
+f(播放输出 == "关")
+{
+  ufnsui()
+  {
+
+uigo("浏览器.iyu")
+   }
+  }
+else
+{
+  ufnsui()
+  {
+
+
+
+f(sss.视频 ? "http")
+{
+uigo("playvideo.iyu")  
+}
+else
+{
+ 
+fn 模糊.背景模糊()
+us(背景模糊.1,"visibility",0)
+dha(dh, false, true)
+dh(dh, "duration", 500)
+us(背景模糊.1, "dh", dh)
+
+//两个按钮
+utw(null,"抱歉","资源不正常，请尝试第二资源！,也有可能是我代码输错了(狗头)", "去你妈的", true, v)
+{
+  ufnsui()
+  {
+
+    dha(dh, true, false)
+    dh(dh, "duration", 500)
+    us(背景模糊.1, "dh", dh)
+    dhon(dh)
+    {
+    us(背景模糊.1,"visibility",8)
+    }
+    endutw()
+}
+}
+  
+   
+}
+
+
+
+   }    
+    
+    
+  }
+}
+}
+
+</eventItme></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本4</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本5
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

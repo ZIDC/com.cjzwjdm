@@ -1,0 +1,221 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=500dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+layout_marginTop=10dp
+app_CardElevation=5dp
+layout_marginBottom=20dp
+layout_marginLeft=10dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+layout_marginTop=15dp
+gravity=right|center
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="CardView">
+<ppt>width=63dp
+height=30dp
+layout_marginRight=25dp
+app_CardElevation=0dp
+app_CardcornerRadius=4dp</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#fffcf8ff
+BackgroundRipple=#ffbcbcbc</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=追番列表
+textSize=13sp
+textColor=#ff7a00db</ppt>
+<event></event>
+</View>
+<View id="8" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="11" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=top|center
+visibility=gone
+layout_marginBottom=40dp</ppt>
+<event></event>
+</View>
+<View id="20" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=top|center
+visibility=gone
+layout_marginTop=25dp</ppt>
+<event></event>
+</View>
+<View id="9" did="20" type="ImageView">
+<ppt>width=40dp
+height=40dp
+src=@a876ed62e1b.png</ppt>
+<event></event>
+</View>
+<View id="12" did="20" type="CardView">
+<ppt>width=-2
+height=25dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#FFF9FDFF
+layout_marginTop=15dp</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#fff7f7f7</ppt>
+<event></event>
+</View>
+<View id="10" did="13" type="TextView">
+<ppt>width=-2
+height=-2
+text=还没有呢！
+textSize=13sp
+textColor=#ff00090c
+layout_marginLeft=5dp
+layout_marginRight=5dp</ppt>
+<event></event>
+</View>
+<View id="17" did="11" type="CardView">
+<ppt>width=90dp
+height=30dp
+app_CardElevation=0dp
+app_CardcornerRadius=4dp
+visibility=gone
+layout_marginTop=20dp</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#FFF0FCF3
+BackgroundRipple=#ffbcbcbc</ppt>
+<event><eventItme type="clicki">uigo("登录.iyu")</eventItme></event>
+</View>
+<View id="19" did="18" type="TextView">
+<ppt>width=-2
+height=-2
+text=登录
+textSize=13sp
+textColor=#FF00CC36</ppt>
+<event></event>
+</View>
+<View id="14" did="8" type="RecyclerView">
+<ppt>width=-1
+height=-1
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="15" did="2" type="LinearLayout">
+<ppt>width=-1
+height=25dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="CardView">
+<ppt>width=45dp
+height=5dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffededed</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loadingComplete">
+
+
+
+
+
+/.
+
+fn 底部弹窗.弹窗("追番.iyu")
+
+
+
+gvs(ss.弹窗,追番列表.11,ss.id11)
+gvs(ss.弹窗,追番列表.14,ss.id14)
+
+
+
+
+t()
+{
+
+s wz= "%Android/data/com.cjzwjdm/cpk"
+fl(wz, sh)
+for(qq;sh)
+{
+ss(wz+"/"+qq,ne)
+fr(ne,pp)
+sj(pp,"{","}",bt)
+sj(pp,"【","】",tiem)
+sj(pp,"&gt;图片&lt;","&gt;图片&lt;",jpg)
+sj(pp,"&gt;网址&lt;","&gt;网址&lt;",urll)
+ula(v,12=jpg,14=bt,20=tiem,21=urll)
+}
+ufnsui()
+{
+uls(ss.id14,v,"追番列表.iyu",-1,"-2")
+
+f(bt ? null)
+{
+us(ss.id11,"visibility",0)
+us(14,"visibility",8)
+
+}
+else
+{
+us(ss.id14,"visibility",0)
+us(ss.id11,"visibility",8)
+}
+
+
+
+
+}
+}
+}
+
+
+
+</eventItme></UIEventset>

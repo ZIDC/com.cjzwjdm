@@ -1,0 +1,90 @@
+
+fn 更新()
+          
+ t()
+ {
+ hs("http://dm.cjzwjys.top/dm.so",jcgx)
+ fr("@dm.so",jh)  
+ sj(jh,"【","】",bb)
+ sj(jcgx,"【","】",bbk)
+ sj(jcgx,"《","》",nr)
+ sj(jcgx,"^O^",null,ls)
+ ss(nr+"\n\n"+ls,nnr)
+ f(bbk &gt; bb)
+ {
+ufnsui()
+{
+  utw(null,"项目有更新",nnr,"正式版", false, v)
+  {
+   endutw()
+   hws("http://dm.cjzwjys.top")
+  }
+  }
+}
+else
+{
+  ufnsui()
+  {
+  tw("无更新")
+
+  }
+}
+}
+          
+          
+          
+
+  
+//项目更新
+end fn
+
+
+
+
+
+
+fn 更新1()
+ fn 底部弹窗.加载弹窗("加载.iyu")
+gvs(ss.弹窗,加载.10,ss.id10)
+us(ss.id10,"text","开始检查更新")         
+ t()
+ {
+ hs("http://dm.cjzwjys.top/dm.so",jcgx)
+ fr("@dm.so",jh)  
+ sj(jh,"【","】",bb)
+ sj(jcgx,"【","】",bbk)
+ sj(jcgx,"《","》",nr)
+ sj(jcgx,"^O^",null,ls)
+ ss(nr+"\n\n"+ls,nnr)
+ f(bbk &gt; bb)
+ {
+ufnsui()
+{
+  utw(null,"项目有更新",nnr,"正式版", false, v)
+  {
+     java(null,ss.载体,"android.app.Dialog.dismiss")
+   hws("http://dm.cjzwjys.top")
+  }
+  }
+}
+else
+{
+  ufnsui()
+  {
+  tw("无更新")
+    java(null,ss.载体,"android.app.Dialog.dismiss")
+   utw(null,"来嘛","白洁动漫官网","GO", false, v)
+   {
+  endutw()
+  hws("http://dm.cjzwjys.top")
+  }
+  }
+}
+}
+          
+          
+          
+
+  
+//项目更新
+end fn

@@ -1,0 +1,98 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center
+layout_margin=7dp</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+layout_margin=5
+app_CardBackgroundColor=#ECEFF1</ppt>
+<event><eventItme type="clicki">
+
+//ulag(st_vW,4,ss.标题)
+ulag(st_vW,5,ss.url最大)
+
+us(资源3.2,"visibility",8)
+us(资源3.3,"visibility",0)
+us(资源3.4,"visibility",0)
+us(资源3.4,"text","解析中")
+t()
+{
+  hs(ss.url最大,jkl)
+  sj(jkl,"&lt;h3&gt;播放类型：&lt;span class=\"suf\"&gt;zuidam3u8&lt;/span&gt;&lt;/h3&gt;"," &lt;input type=\"checkbox\"",a)
+  sj(a," &lt;li&gt;","&lt;/ul&gt; ",jk)
+  sl(jk,"&lt;li&gt;",l)
+  for(z;l)
+  {
+   sj(z,"checked=\"\" /&gt;","$",bt)
+   sj(z,"value=\"","\"",lianjie)
+  ula(listk,4=bt,5=lianjie) 
+  } 
+  ufnsui()
+  {
+    uls(资源3.2,listk,"资源3列表1.iyu",-1,-2) 
+    gvs(资源3.2,对象)
+    cls("android.support.v7.widget.RecyclerView",列表类)
+    cls("android.support.v7.widget.StaggeredGridLayoutManager",布局管理类)
+    javanew(布局,布局管理类,"int",3,"int",1)
+    javax(null,对象,列表类,"setLayoutManager","android.support.v7.widget.RecyclerView$LayoutManager",布局) 
+    us(资源3.2,"visibility",0)
+    us(资源3.3,"visibility",8)
+    us(资源3.4,"visibility",8)
+    us(资源3.4,"text","解析完成")
+}
+}
+
+
+
+/.
+sj(ss.hq,"&lt;h3&gt;播放类型：&lt;span class=\"suf\"&gt;zuidall&lt;/span&gt;&lt;/h3&gt;"," &lt;input type=\"checkbox\"",a)
+sj(a," &lt;li&gt;","&lt;/ul&gt; ",jk)
+sl(jk,"&lt;li&gt;",list)
+for(nr;list)
+{
+sj(nr,"checked=\"\" /&gt;","$",bt)
+sj(nr,"value=\"","\"",lianjie)</eventItme></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundRipple=#ffe8e8e8</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本4
+layout_margin=5dp
+textColor=#607D8B</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本5
+visibility=gone
+textColor=#607D8B</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+/.
+gvs(st_vW,资源3列表.3,ge)
+
+s a = 0
+s b = 5
+s c = "#ff00acff|#ff49ffae"
+s d = "#333333"
+s e = "bltr"
+ngde(a, b, c, d, e, f)
+us(ge,"background",f)</eventItme></UIEventset>

@@ -1,0 +1,336 @@
+
+
+
+fn 模糊()
+
+
+s 路径=ss.图片下载位置
+s 半径="6"
+s 模糊度 ="7"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(图片,"src",img)
+endutw()
+
+end fn
+
+
+fn 模糊顶部(影视详细)
+
+
+s 路径=ss.位置
+s 半径="7"
+s 模糊度 ="7"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+ufnsui()
+{
+
+//最后输出img，可以设置src或者bg
+us(影视详细,"src",img)
+}
+
+end fn
+
+
+
+
+
+fn 背景模糊(id)
+
+
+
+
+fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+sj(补偿,"补偿","补偿",补偿输出)
+sj(补偿,"参数","参数",参数输出)
+f(补偿输出 == "关")
+{
+
+  
+s a = "pxw"
+swh(a, ss.width)
+
+s a = "pxhh"
+swh(a, ss.height)
+
+s a = "pxztl"
+//获取屏幕状态栏高度的px像素
+swh(a, 状态栏)
+
+//s(状态栏+状态栏,jhk)
+
+//s(heightt+状态栏,ss.height)
+
+   
+
+}
+else
+{
+
+    
+
+s a = "pxw"
+swh(a, ss.width)
+
+s a = "pxhh"
+swh(a, heightt)
+
+s a = "pxztl"
+//获取屏幕状态栏高度的px像素
+swh(a, 状态栏)
+
+
+//s(状态栏+参数输出,jh)
+
+s(heightt+参数输出,ss.height)  
+    
+    
+
+}
+
+//s id="1"
+//9控件id
+/.
+s a = "pxw"
+swh(a, width)
+
+s a = "pxhh"
+swh(a, heightt)
+
+s a = "pxztl"
+//获取屏幕状态栏高度的px像素
+swh(a, 状态栏)
+
+s(状态栏+状态栏+25,jh)
+
+s(heightt+状态栏,height)
+
+./
+s path="/storage/emulated/0/ims.png"
+
+gvs(id,d)
+loadjar("bitmaps.dex",js)
+
+cls(js,"com.iee.os.bitmap",im)
+cls(js,"com.iee.os.prss",ime)
+javanew(x,im)
+javanew(l,ime)
+
+javax(k,x,im,"getViewBitmap","android.view.View",d,"int",ss.width,"int",ss.height)
+javax(ks,l,ime,"saveBitmap","android.graphics.Bitmap",k,"String",path)
+
+
+f(ks!="null")
+{
+  ss("已保存到:"+path,in)
+ sran(100000, 1000000, a)
+ss("%Android/data/com.cjzwjdm/files/dli/"+a+".so",列表点击背景模糊)
+  ft("%/storage/emulated/0/ims.png",列表点击背景模糊, c)
+  
+//  tw(c) 
+
+s 路径=列表点击背景模糊
+s 半径="6"
+s 模糊度 ="6"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(背景模糊.2,"src",img)
+
+
+}
+else
+{
+//  tw("保存失败")
+}
+
+
+
+
+
+end fn
+
+
+
+
+fn 播放背景模糊()
+
+
+
+
+
+s id="37"
+//9控件id
+
+s a = "pxw"
+swh(a, width)
+
+s a = "pxhh"
+swh(a, heightt)
+
+s a = "pxztl"
+//获取屏幕状态栏高度的px像素
+swh(a, 状态栏)
+
+s(状态栏+25,jh)
+
+s(heightt+jh,height)
+
+
+s path="/storage/emulated/0/ims.png"
+
+gvs(id,d)
+loadjar("bitmaps.dex",js)
+
+cls(js,"com.iee.os.bitmap",im)
+cls(js,"com.iee.os.prss",ime)
+javanew(x,im)
+javanew(l,ime)
+
+javax(k,x,im,"getViewBitmap","android.view.View",d,"int",width,"int",height)
+javax(ks,l,ime,"saveBitmap","android.graphics.Bitmap",k,"String",path)
+
+
+f(ks!="null")
+{
+  ss("已保存到:"+path,in)
+ sran(100000, 1000000, a)
+ss("%Android/data/com.cjzwjdm/files/dli/"+a+".so",列表点击背景模糊)
+  ft("%/storage/emulated/0/ims.png",列表点击背景模糊, c)
+  
+//  tw(c) 
+
+s 路径=列表点击背景模糊
+s 半径="6"
+s 模糊度 ="6"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(背景模糊.2,"src",img)
+
+
+}
+else
+{
+//  tw("保存失败")
+}
+
+
+
+
+
+end fn

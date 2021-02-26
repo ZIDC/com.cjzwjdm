@@ -1,0 +1,1179 @@
+<View id="52" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+background=black</ppt>
+<event></event>
+</View>
+<View id="37" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+gravity=center
+background=black</ppt>
+<event></event>
+</View>
+<View id="49" did="37" type="CardView">
+<ppt>width=-2
+height=-2
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="50" did="49" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="2" did="50" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=#ffffff</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="RelativeLayout">
+<ppt>width=-1
+height=200dp
+.layout_margin=10dp
+background=#000000
+</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="VideoView">
+<ppt>width=-1
+height=-1
+ut_centerInParent=true</ppt>
+<event></event>
+</View>
+<View id="20" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event><eventItme type="clicki">//us(27,"visibility","visible")
+
+</eventItme></event>
+</View>
+<View id="30" did="20" type="LinearLayout">
+<ppt>width=0
+height=-1
+orientation=vertical
+layout_weight=1</ppt>
+<event><eventItme type="touchmonitor">s SS="android.provider.Settings$System"
+s CR="android.content.ContentResolver"
+s Ww="android.view.Window"
+s WMLP="android.view.WindowManager$LayoutParams"
+s WM="android.view.WindowManager"
+s Ay="android.app.Activity"
+f(st_eA==0)
+{
+sss oldey=st_eY
+sss oldex=st_eX
+ss tch=null
+bfvss(4,"cn",ss.ncn)
+ss tdld=true
+ss ttx=null
+ss tty=null
+}
+else f(st_eA!=2&&st_eA!=0)
+{
+sss tdjd=null
+ss tdld=null
+f(ss.tch!=true)
+{
+//双击与单击↓
+s+(1,ss.dck)
+f(ss.dck==1)
+{
+t()
+{
+stop(250)
+s-(1,ss.dck)
+f(ss.dck&lt;1)
+{
+//-1
+ufnsui()
+{
+f(ss.jdbar!=true)
+{
+us(27,"visibility","visible")
+ss jdbar=true
+}
+else
+{
+us(27,"visibility","gone")
+ss jdbar=null
+}
+}
+//-1
+}
+else
+{
+ss dck=0
+ufnsui()
+{
+f(ss.stp==true)
+{
+bfvss(4,"st")
+ss stp=null
+us(8,"src","@a28.png")
+
+fn 播放检测.检测()
+
+}
+else
+{
+bfvss(4,"pe")
+ss stp=true
+us(8,"src","@a29.png")
+
+fn 播放检测.检测()
+
+}
+}
+}
+}
+}
+//双击与单机↑
+}
+else
+{
+f(ss.tty==true)
+{
+ss ilight=ss.slight
+us(36,"visibility","gone")
+ss tch=null
+}
+f(ss.ttx==true)
+{
+bfvss(4,"ip",ip)
+fn 播放检测.检测()
+f(ip==false)
+{
+f(ss.stp==true)
+{
+bfvss(4,"st")
+ss stp=null
+us(8,"src","@a28.png")
+fn 播放检测.检测()
+}
+}
+bfvss(4,"seekto",ss.ecnn)
+us(14,"layout_marginleft",ss.ejdd)
+us(16,"width",ss.ejdd)
+sss tdjd=null
+us(18,"visibility","gone")
+ss tch=null
+
+fn 播放检测.检测()
+
+}
+
+}
+}
+s(sss.oldey+20,nny)
+s(sss.oldey-20,njy)
+s(sss.oldex+20,nnx)
+s(sss.oldex-20,njx)
+//左右滑动
+f(st_eX&gt;nnx||njx&gt;st_eX)
+{
+f(ss.tdld==true)
+{
+f(ss.tch!=true)
+{
+ss ttx=true
+ss tch=true
+us(18,"visibility","visible")
+}
+f(ss.ttx==true)
+{
+gvs(10,10id)
+java(asw,10id,"android.view.View.getWidth")
+gvs(20,11id)
+java(asw2,11id,"android.view.View.getWidth")
+s(st_eX-sss.oldex,exx)
+bfvss(4,"dn",dn)
+s(exx/asw2*1000,tjd)
+s(dn/1000*tjd,cnn)
+s(ss.ncn+cnn,cnn)
+fn 播放检测.检测()
+f(cnn&lt;=0)
+{
+s cnn=0
+}
+f(cnn&gt;=dn)
+{
+s cnn=dn
+}
+s(cnn/dn*1000,tjd)
+s(asw/1000*tjd,jdd)
+ss ejdd=jdd
+fn mk.totime(cnn)
+ss ecnn=cnn
+us(19,"text",sss.stime)
+us(14,"layout_marginleft",jdd)
+us(16,"width",jdd)
+}
+}
+}
+//上下滑动
+f(st_eY&gt;nny||njy&gt;st_eY)
+{
+f(ss.tdld==true)
+{
+f(ss.tch!=true)
+{
+ss tty=true
+ss tch=true
+us(39,"src","@ic_brightness_2.png")
+us(36,"visibility","visible")
+}
+f(ss.tty==true)
+{
+
+gvs(30,10id)
+java(ash,10id,"android.view.View.getHeight")
+s(st_eY-sss.oldey,eyy)
+s(eyy/ash*255,tjd)
+//call(light,"mjava","m.getlight",activity)
+gvs(40,40id)
+java(asw,40id,"android.view.View.getWidth")
+gvs(41,41id)
+java(asw2,41id,"android.view.View.getWidth")
+s(asw2/asw*255,light)
+s(ss.ilight-tjd,nlight)
+f(nlight&lt;=0)
+{
+s nlight=0
+}
+f(nlight&gt;=255)
+{
+s nlight=255
+}
+s(nlight,ss.slight)
+s(ss.slight/255*1000,jd)
+s(asw/1000*jd,lfw)
+us(41,"width",lfw)
+javax(window,activity,Ay,"getWindow")
+javax(params,window,Ww,"getAttributes")
+sn(ss.slight/255,alight)
+ss(alight,aslight)
+javass(null,params,WMLP,"screenBrightness",aslight)
+//javass(c, a, c1, "b", "123456")
+javax(null,window,Ww,"setAttributes",WMLP,params)
+}
+}
+}
+</eventItme><eventItme type="clicki">//</eventItme></event>
+</View>
+<View id="31" did="20" type="LinearLayout">
+<ppt>width=0
+height=-1
+orientation=vertical
+layout_weight=2</ppt>
+<event><eventItme type="touchmonitor">
+
+f(st_eA==0)
+{
+sss oldex=st_eX
+bfvss(4,"cn",ss.ncn)
+sss tdjd=true
+}
+else f(st_eA!=2&&st_eA!=0)
+{
+
+f(ss.tch!=true)
+{
+s+(1,ss.dck)
+f(ss.dck==1)
+{
+t()
+{
+stop(250)
+s-(1,ss.dck)
+f(ss.dck&lt;1)
+{
+//-1
+ufnsui()
+{
+f(ss.jdbar!=true)
+{
+us(27,"visibility","visible")
+ss jdbar=true
+}
+else
+{
+us(27,"visibility","gone")
+ss jdbar=null
+}
+}
+//-1
+}
+else
+{
+ss dck=0
+ufnsui()
+{
+f(ss.stp==true)
+{
+bfvss(4,"st")
+ss stp=null
+us(8,"src","@a28.png")
+
+fn 播放检测.检测()
+
+}
+else
+{
+bfvss(4,"pe")
+
+fn 播放检测.检测()
+
+ss stp=true
+us(8,"src","@a29.png")
+}
+}
+}
+}
+}
+
+}
+else
+{
+bfvss(4,"ip",ip)
+
+
+fn 播放检测.检测()
+
+f(ip==false)
+{
+f(ss.stp==true)
+{
+bfvss(4,"st")
+ss stp=null
+us(8,"src","@a28.png")
+
+fn 播放检测.检测()
+
+}
+}
+bfvss(4,"seekto",ss.ecnn)
+us(14,"layout_marginleft",ss.ejdd)
+us(16,"width",ss.ejdd)
+sss tdjd=null
+us(18,"visibility","gone")
+ss tch=null
+}
+}
+s(sss.oldex+20,nnx)
+s(sss.oldex-20,njx)
+f(st_eX&gt;nnx||njx&gt;st_eX)
+{
+f(sss.tdjd==true)
+{
+f(ss.tch!=true)
+{
+ss tch=true
+us(18,"visibility","visible")
+}
+gvs(10,10id)
+java(asw,10id,"android.view.View.getWidth")
+gvs(20,11id)
+java(asw2,11id,"android.view.View.getWidth")
+s(st_eX-sss.oldex,exx)
+bfvss(4,"dn",dn)
+s(exx/asw2*1000,tjd)
+s(dn/1000*tjd,cnn)
+s(ss.ncn+cnn,cnn)
+f(cnn&lt;=0)
+{
+s cnn=0
+}
+f(cnn&gt;=dn)
+{
+s cnn=dn
+}
+s(cnn/dn*1000,tjd)
+s(asw/1000*tjd,jdd)
+ss ejdd=jdd
+fn mk.totime(cnn)
+ss ecnn=cnn
+us(19,"text",sss.stime)
+us(14,"layout_marginleft",jdd)
+us(16,"width",jdd)
+}
+}</eventItme><eventItme type="clicki">//</eventItme></event>
+</View>
+<View id="32" did="20" type="LinearLayout">
+<ppt>width=0
+height=-1
+orientation=vertical
+layout_weight=1</ppt>
+<event><eventItme type="touchmonitor">s AM="android.media.AudioManager"
+s Ct="android.content.Context"
+javags(sv,null,Ct,"AUDIO_SERVICE")
+javags(sm,null,AM,"STREAM_MUSIC")
+javags(fp,null,AM,"FLAG_PLAY_SOUND")
+f(st_eA==0)
+{
+sss oldey=st_eY
+sss oldex=st_rX
+bfvss(4,"cn",ss.ncn)
+ss tdyl=true
+ss tch=null
+ss ttx=null
+ss tty=null
+javax(am,activity,Ct,"getSystemService","String",sv)
+javax(ss.omax,am,AM,"getStreamMaxVolume","int",sm)
+javax(ss.osyl,am,AM,"getStreamVolume","int",sm)
+}
+else f(st_eA!=2&&st_eA!=0)
+{
+sss tdjd=null
+ss tdyl=null
+f(ss.tch!=true)
+{
+//双击与单击↓
+s+(1,ss.dck)
+f(ss.dck==1)
+{
+t()
+{
+stop(250)
+s-(1,ss.dck)
+f(ss.dck&lt;1)
+{
+//-1
+ufnsui()
+{
+f(ss.jdbar!=true)
+{
+us(27,"visibility","visible")
+ss jdbar=true
+}
+else
+{
+us(27,"visibility","gone")
+ss jdbar=null
+}
+}
+//-1
+}
+else
+{
+ss dck=0
+ufnsui()
+{
+f(ss.stp==true)
+{
+bfvss(4,"st")
+ss stp=null
+us(8,"src","@a28.png")
+
+fn 播放检测.检测()
+
+}
+else
+{
+bfvss(4,"pe")
+ss stp=true
+us(8,"src","@a29.png")
+
+fn 播放检测.检测()
+
+}
+}
+}
+}
+}
+//双击与单机↑
+}
+else
+{
+f(ss.tty==true)
+{
+ss ilight=ss.slight
+us(42,"visibility","gone")
+ss tch=null
+}
+f(ss.ttx==true)
+{
+bfvss(4,"ip",ip)
+
+fn 播放检测.检测()
+
+f(ip==false)
+{
+f(ss.stp==true)
+{
+bfvss(4,"st")
+ss stp=null
+us(8,"src","@a28.png")
+
+
+fn 播放检测.检测()
+
+}
+}
+bfvss(4,"seekto",ss.ecnn)
+us(14,"layout_marginleft",ss.ejdd)
+us(16,"width",ss.ejdd)
+sss tdjd=null
+us(18,"visibility","gone")
+ss tch=null
+
+fn 播放检测.检测()
+
+}
+
+}
+}
+s(sss.oldey+20,nny)
+s(sss.oldey-20,njy)
+s(sss.oldex+20,nnx)
+s(sss.oldex-20,njx)
+f(st_rX&gt;nnx||njx&gt;st_rX)
+{
+f(ss.tdyl==true)
+{
+f(ss.tch!=true)
+{
+ss tch=true
+ss ttx=true
+us(18,"visibility","visible")
+}
+f(ss.ttx==true)
+{
+gvs(10,10id)
+java(asw,10id,"android.view.View.getWidth")
+gvs(20,11id)
+java(asw2,11id,"android.view.View.getWidth")
+s(st_rX-sss.oldex,exx)
+bfvss(4,"dn",dn)
+s(exx/asw2*1000,tjd)
+s(dn/1000*tjd,cnn)
+s(ss.ncn+cnn,cnn)
+
+f(cnn&lt;=0)
+{
+s cnn=0
+}
+f(cnn&gt;=dn)
+{
+s cnn=dn
+}
+s(cnn/dn*1000,tjd)
+s(asw/1000*tjd,jdd)
+ss ejdd=jdd
+fn mk.totime(cnn)
+ss ecnn=cnn
+us(19,"text",sss.stime)
+us(14,"layout_marginleft",jdd)
+us(16,"width",jdd)
+}
+}
+}
+f(st_eY&gt;nny||njy&gt;st_eY)
+{
+f(ss.tdyl==true)
+{
+f(ss.tch!=true)
+{
+ss tch=true
+ss tty=true
+us(42,"visibility","visible")
+}
+f(ss.tty==true)
+{
+gvs(32,10id)
+java(ash,10id,"android.view.View.getHeight")
+s(st_eY-sss.oldey,eyy)
+s(eyy/ash*ss.omax,tjd)
+//call(light,"mjava","m.getlight",activity)
+gvs(45,40id)
+java(asw,40id,"android.view.View.getWidth")
+gvs(46,41id)
+java(asw2,41id,"android.view.View.getWidth")
+s(asw2/asw*ss.omax,light)
+s(ss.osyl-tjd,nlight)
+f(nlight&lt;=0)
+{
+s nlight=0
+}
+f(nlight&gt;=ss.omax)
+{
+s nlight=ss.omax
+}
+s(nlight,ss.slight)
+s(ss.slight/ss.omax*1000,jd)
+s(asw/1000*jd,lfw)
+
+us(46,"width",lfw)
+javax(am,activity,Ct,"getSystemService","String",sv)
+javax(null,am,AM,"setStreamVolume","int",sm,"int",ss.slight,"int",fp)
+
+}
+}
+}
+</eventItme><eventItme type="clicki">//
+</eventItme></event>
+</View>
+<View id="27" did="3" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="21" did="27" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=horizontal
+background=#667d7d7d
+ut_alignParentTop=true
+gravity=center_vertical</ppt>
+<event><eventItme type="clicki">//</eventItme></event>
+</View>
+<View id="28" did="21" type="LinearLayout">
+<ppt>width=40dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event><eventItme type="clicki">f(ss.hp==true)
+{
+zdp(200,kh)
+ushsp(false)
+us(24,"src","@an5.png")
+us(3,"height",kh)
+uycl(false)
+ss hp=null
+}
+else
+{
+end()
+}
+</eventItme></event>
+</View>
+<View id="29" did="28" type="ImageView">
+<ppt>width=10dp
+height=10dp
+src=@8f007bce301.png</ppt>
+<event></event>
+</View>
+<View id="22" did="21" type="LinearLayout">
+<ppt>width=0
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="25" did="22" type="TextView">
+<ppt>width=-1
+height=-2
+text=标题
+textColor=#ffffff
+textSize=10dp
+textStyle=bold
+layout_marginLeft=10dp
+layout_marginRight=5dp
+singleLine=true
+ellipsize=marquee
+focusable=true
+focusableInTouchMode=true</ppt>
+<event><eventItme type="touchmonitor">//</eventItme><eventItme type="clicki">//</eventItme></event>
+</View>
+<View id="23" did="21" type="LinearLayout">
+<ppt>width=40dp
+height=40dp
+orientation=vertical
+gravity=center</ppt>
+<event><eventItme type="clicki">f(ss.hp!=true)
+{
+swh("pxw",kh)
+swh("pxztl",ztlh)
+ushsp(true)
+uycl(true)
+us(24,"src","@an7.png")
+us(3,"height","-1")
+ss hp=true
+us(52,"visibility",8)
+}
+else
+{
+zdp(200,kh)
+swh("pxw",pxh)
+s(kh/1920*pxh,ah)
+ushsp(false)
+us(24,"src","@an5.png")
+us(3,"height",ah)
+ss hp=null
+us(52,"visibility",0)
+uycl(false)
+}</eventItme></event>
+</View>
+<View id="24" did="23" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@an5.png</ppt>
+<event></event>
+</View>
+<View id="5" did="27" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=horizontal
+ut_alignParentBottom=true
+background=#667d7d7d
+gravity=center_vertical</ppt>
+<event><eventItme type="clicki">//</eventItme></event>
+</View>
+<View id="9" did="5" type="LinearLayout">
+<ppt>width=40dp
+height=40dp
+orientation=vertical
+gravity=center</ppt>
+<event><eventItme type="clicki">f(ss.stp==true)
+{
+bfvss(4,"st")
+ss stp=null
+us(8,"src","@a28.png")
+}
+else
+{
+bfvss(4,"pe")
+ss stp=true
+us(8,"src","@a29.png")
+}</eventItme></event>
+</View>
+<View id="8" did="9" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@a28.png</ppt>
+<event></event>
+</View>
+<View id="11" did="5" type="RelativeLayout">
+<ppt>width=0
+height=-1
+layout_weight=1
+layout_margin=5dp
+layout_marginTop=10dp
+layout_marginBottom=10dp</ppt>
+<event><eventItme type="touchmonitor">f(st_eA==0)
+{
+us(18,"visibility","visible")
+us(14,"width","8dp")
+us(14,"height","8dp")
+sss tdjd=true
+}
+else f(st_eA!=2&&st_eA!=0)
+{
+us(18,"visibility","gone")
+us(14,"width","5dp")
+us(14,"height","5dp")
+bfvss(4,"ip",ip)
+f(ip==false)
+{
+bfvss(4,"st")
+ss stp=null
+us(8,"src","@a28.png")
+}
+us(14,"layout_marginleft",ss.ejdd)
+us(16,"width",ss.ejdd)
+bfvss(4,"seekto",ss.ecnn)
+fn 播放检测.检测()
+sss tdjd=null
+}
+f(sss.tdjd==true)
+{
+gvs(10,10id)
+java(asw,10id,"android.view.View.getWidth")
+gvs(11,11id)
+java(asw2,11id,"android.view.View.getWidth")
+s exx=st_eX
+f(exx&lt;=0)
+{
+s exx=0
+}
+f(exx&gt;=asw2)
+{
+s exx=asw2
+}
+bfvss(4,"dn",dn)
+s(exx/asw2*1000,tjd)
+s(asw/1000*tjd,jdd)
+s(dn/1000*tjd,cnn)
+fn mk.totime(cnn)
+ss ecnn=cnn
+ss ejdd=jdd
+us(19,"text",sss.stime)
+us(14,"layout_marginleft",jdd)
+us(16,"width",jdd)
+}</eventItme><eventItme type="clicki">//</eventItme></event>
+</View>
+<View id="10" did="11" type="RelativeLayout">
+<ppt>width=-1
+height=2dp
+background=#99888888
+ut_centerVertical=true
+layout_margin=2.5dp</ppt>
+<event></event>
+</View>
+<View id="16" did="10" type="TextView">
+<ppt>width=0dp
+height=-1
+text=
+background=#6600ff</ppt>
+<event></event>
+</View>
+<View id="14" did="11" type="TextView">
+<ppt>width=5dp
+height=5dp
+text=
+background=#ffffff
+ut_centerVertical=true
+layout_marginLeft=0dp</ppt>
+<event></event>
+</View>
+<View id="12" did="5" type="TextView">
+<ppt>width=-2
+height=-2
+text=00:00:00
+textColor=#eeeeee
+textSize=8dp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="48" did="5" type="TextView">
+<ppt>width=-2
+height=-2
+text=/
+textColor=#eeeeee
+textSize=8dp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="13" did="5" type="TextView">
+<ppt>width=-2
+height=-2
+text=00:00:00
+textColor=#eeeeee
+textSize=8dp
+textStyle=bold
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="17" did="3" type="LinearLayout">
+<ppt>width=90dp
+height=80dp
+orientation=vertical
+ut_centerInParent=true
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=horizontal
+gravity=center
+background=#66000000
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="19" did="18" type="TextView">
+<ppt>width=-2
+height=-2
+text=00:10:00
+textColor=#ffffff
+textSize=14dp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=#000000
+gravity=center
+visibility=gone
+</ppt>
+<event><eventItme type="clicki">//
+us(6,"background","through")</eventItme></event>
+</View>
+<View id="7" did="6" type="ImageView">
+<ppt>width=80dp
+height=80dp
+src=@amu.png</ppt>
+<event><eventItme type="clicki">us(6,"visibility","gone")
+bfvss(4,"st")
+</eventItme></event>
+</View>
+<View id="53" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="54" did="53" type="ProgressBar">
+<ppt>width=30dp
+height=30dp
+style=16842874</ppt>
+<event></event>
+</View>
+<View id="55" did="53" type="CardView">
+<ppt>width=55dp
+height=27dp
+layout_marginTop=5dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#4dffbedc</ppt>
+<event></event>
+</View>
+<View id="56" did="55" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="57" did="56" type="TextView">
+<ppt>width=-1
+height=-1
+text=加载中
+textSize=10sp
+gravity=center
+textColor=#ffe4007b
+</ppt>
+<event></event>
+</View>
+<View id="47" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=提示：\n双击视频暂停\n上下滑动屏幕左边调节亮度\n上下滑动屏幕右边调节音量\n左右滑动视频调节进度
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="36" did="50" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="38" did="36" type="LinearLayout">
+<ppt>width=140dp
+height=90dp
+orientation=vertical
+layout_marginLeft=50dp
+layout_marginRight=50dp
+background=#66000000
+gravity=center</ppt>
+<event><eventItme type="clicki">//</eventItme></event>
+</View>
+<View id="39" did="38" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@ic_brightness_2.png
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="40" did="38" type="LinearLayout">
+<ppt>width=-1
+height=1.5dp
+orientation=vertical
+layout_marginLeft=10dp
+layout_marginRight=10dp
+layout_marginTop=10dp
+background=#eeeeee</ppt>
+<event></event>
+</View>
+<View id="41" did="40" type="TextView">
+<ppt>width=0dp
+height=-1
+text=
+background=#00aaee</ppt>
+<event></event>
+</View>
+<View id="42" did="50" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="43" did="42" type="LinearLayout">
+<ppt>width=140dp
+height=90dp
+orientation=vertical
+layout_marginLeft=50dp
+layout_marginRight=50dp
+background=#66000000
+gravity=center</ppt>
+<event><eventItme type="clicki">//</eventItme></event>
+</View>
+<View id="44" did="43" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@ic_volume_2.png
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="45" did="43" type="LinearLayout">
+<ppt>width=-1
+height=1.5dp
+orientation=vertical
+layout_marginLeft=10dp
+layout_marginRight=10dp
+layout_marginTop=10dp
+background=#eeeeee</ppt>
+<event></event>
+</View>
+<View id="46" did="45" type="TextView">
+<ppt>width=0dp
+height=-1
+text=
+background=#00aaee</ppt>
+<event></event>
+</View>
+<View id="51" did="37" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+ss(c+"dp",dp)
+us(52,"height",dp)
+java(cs,activity,"android.app.Activity.getWindow") 
+java(cs2,cs,"android.view.Window.getDecorView") 
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192") 
+//设置状态栏透明(沉浸式) 
+java(null,cs,"android.view.Window.addFlags","int","67108864") 
+//仅支持Android6.0以上，其他无效果。 
+
+addv(49,"播放提示弹窗.iyu")
+
+
+
+sss videourl=sss.视频
+//视频路径也可以是视频直链↑
+sss title=sss.视频标题
+//视频标题↑
+sss imgurl="http:/0.jpg"
+
+//封面图片的直链(可以不填)↑
+call(img,"mjava","la.loadimage",sss.imgurl)
+swh("pxw",pxw)
+swh("pxhh",pxh)
+zdp(200,dip)
+s(dip/1920*pxh,ah)
+us(3,"height",ah)
+us(6,"visibility","visible")
+t()
+{
+call(img,"mjava","la.loadimage",sss.imgurl)
+ufnsui()
+{
+  us(6,"background",img)
+}
+}
+bfvs(4,sss.videourl)
+ngde(360,"#ffffff",rb)
+us(25,"text",sss.title)
+us(14,"background",rb)
+ss jdbar=true
+ushsp(false)
+//防止屏幕旋转
+ss dck=0
+
+</eventItme><eventItme type="sensor">bfvss(4,"ip",ip)
+bfvss(4,"dn",dn)
+bfvss(4,"cn",cn)
+/.
+f(dn==cn)
+{
+syso(0)
+us(6,"background","#00ffffff")
+us(6,"visibility","visible")
+}
+./
+f(ip==true)
+{
+bfvss(4,"dn",dn)
+bfvss(4,"cn",cn)
+fn mk.totime(dn)
+s dnn=sss.stime
+fn mk.totime(cn)
+s cnn=sss.stime
+us(12,"text",cnn)
+us(13,"text",dnn)
+gvs(10,10id)
+java(asw,10id,"android.view.View.getWidth")
+s(dn/1000,dns)
+s(cn/1000,cns)
+s(cns/dns*1000,jd)
+s(asw/1000*jd,jdd)
+f(sss.tdjd!=true)
+{
+us(14,"layout_marginleft",jdd)
+us(16,"width",jdd)
+}
+}
+</eventItme><eventItme type="upkey">f(st_kC==4)
+{
+f(ss.hp==true)
+{
+zdp(200,kh)
+ushsp(false)
+us(24,"src","@an5.png")
+us(3,"height",kh)
+uycl(false)
+ss hp=null
+}
+else
+{
+ss("图片"+sss.图片地址+"图片"+"影视名"+sss.影视名+"影视名"+"级数"+sss.标题+"级数"+"视频链接"+sss.视频+"视频链接",历史记录)
+ss("Android/data/com.cjzwjdm/ls/"+sss.影视名+".so",历史文件)
+fw(历史文件,历史记录)
+
+end()
+}
+}</eventItme><eventItme type="loadingComplete">call(ss.ilight,"mjava","m.getlight",activity)
+gvs(40,40id)
+java(asw,40id,"android.view.View.getWidth")
+s(ss.ilight/255*1000,jd)
+s(asw/1000*jd,lfw)
+us(41,"width",lfw)
+
+
+     fn 播放检测.检测()</eventItme><eventItme type="restart">
+
+
+t()
+{
+  ss(""+sss.秒,sss.mmm)
+  ufnsui()
+  {
+  
+us(播放提示弹窗.1,"visibility",0)
+us(播放提示弹窗.14,"text",sss.mmm)
+}
+
+}</eventItme><eventItme type="stop">
+
+ug(12,"text",sss.秒)
+
+
+bfvss(4,"cn",ss.ncn)</eventItme></UIEventset>

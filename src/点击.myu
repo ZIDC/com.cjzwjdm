@@ -1,0 +1,510 @@
+
+
+fn 首页列表点击()
+
+
+
+us(14,"text","关闭")
+us(列表点击.1,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(列表点击.1, "dh", dh)
+
+ 
+us(列表点击.4,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(列表点击.4, "dh", dh)
+
+dhas(dh, 列表点击.4, "scaleX",0.7,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.4, "scaleY",0.7,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.4, "translationY", -55,0)     
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+
+
+us(列表点击.7,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 550)
+us(列表点击.7, "dh", dh)
+
+dhas(dh, 列表点击.7, "scaleX",0.7,1.0)
+dh(dh, "duration", 850)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.7, "scaleY",0.7,1.0)
+dh(dh, "duration", 850)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.7, "translationY", -55,0)
+       
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+
+us(列表点击.10,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 580)
+us(列表点击.10, "dh", dh)
+
+dhas(dh, 列表点击.10, "scaleX",0.7,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.10, "scaleY",0.7,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.10, "translationY", -55,0)
+       
+dh(dh, "duration", 750)
+dh(dh, "start")
+
+
+
+us(列表点击.17,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration",600)
+us(列表点击.17, "dh", dh)
+
+dhas(dh, 列表点击.17, "scaleX",0.7,1.0)
+dh(dh, "duration", 850)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.17, "scaleY",0.7,1.0)
+dh(dh, "duration", 850)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.17, "translationY", -55,0)
+       
+dh(dh, "duration", 850)
+dh(dh, "start")
+
+
+us(列表点击.13,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration",660)
+us(列表点击.13, "dh", dh)
+
+dhas(dh, 列表点击.13, "scaleX",0.7,1.0)
+dh(dh, "duration", 900)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.13, "scaleY",0.7,1.0)
+dh(dh, "duration", 900)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.13, "translationY", -55,0)    
+dh(dh, "duration", 950)
+dh(dh, "start")
+
+
+
+
+end fn
+
+
+fn 列表点击关闭()
+
+
+
+
+          
+us(14,"text","正常")
+dhas(dh, 列表点击.4, "scaleX",1.0,0.7)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.4, "scaleY",1.0,0.7)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dha(dh, true,false)
+dh(dh, "duration", 650)
+us(列表点击.4, "dh", dh)
+dhon(dh)
+{
+//当结束动画时
+us(列表点击.4,"visibility",8)  
+}
+
+
+
+
+
+
+
+dhas(dh, 列表点击.7, "scaleX",1.0,0.7)
+dh(dh, "duration", 350)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.7, "scaleY",1.0,0.7)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dha(dh, true,false)
+dh(dh, "duration", 400)
+us(列表点击.7, "dh", dh)
+dhon(dh)
+{
+us(列表点击.7,"visibility",8)               
+
+}
+
+
+dhas(dh, 列表点击.10, "scaleX",1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.10, "scaleY",1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")
+                  
+dha(dh, true,false)
+dh(dh, "duration", 400)
+us(列表点击.10, "dh", dh)
+dhon(dh)
+{
+us(列表点击.10,"visibility",8)   
+}
+
+
+           
+
+ 
+dhas(dh, 列表点击.17, "scaleX",1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")
+        
+dhas(dh, 列表点击.17, "scaleY",1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dha(dh, true,false)
+dh(dh, "duration",400)
+us(列表点击.17, "dh", dh)
+dhon(dh)
+{
+us(列表点击.17,"visibility",8)   
+}    
+
+
+            
+
+dhas(dh, 列表点击.13, "scaleX",1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")       
+dhas(dh, 列表点击.13, "scaleY",1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")
+dhon(dh)
+{
+
+dha(dh, true,false)
+dh(dh, "duration",400)
+us(列表点击.13, "dh", dh)
+dhon(dh)
+{
+us(列表点击.13,"visibility",8) 
+}
+
+}
+
+
+t()
+{
+stop(550)
+ufnsui()
+{
+
+dha(dh, true,false)
+dh(dh, "duration",300)
+us(列表点击.1, "dh", dh)
+dhon(dh)
+{
+us(列表点击.1,"visibility",8)   
+
+}  
+}
+}
+
+
+
+
+
+end fn
+
+
+
+fn 详细点击()
+
+
+
+
+us(详细.1,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(1, "dh", dh)
+
+ 
+us(详细.4,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(详细.4, "dh", dh)
+
+dhas(dh, 详细.4, "scaleX",0.7,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 详细.4, "scaleY",0.7,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 详细.4, "translationY", -55,0)     
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+
+
+us(详细.11,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(详细.11, "dh", dh)
+
+dhas(dh, 详细.11, "scaleX",0.7,1.0)
+dh(dh, "duration", 770)
+dh(dh, "start")
+        
+dhas(dh, 详细.11, "scaleY",0.7,1.0)
+dh(dh, "duration", 770)
+dh(dh, "start")
+        
+dhas(dh, 详细.11, "translationY", -55,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+
+
+us(详细.15,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 550)
+us(详细.15, "dh", dh)
+
+dhas(dh, 详细.15, "scaleX",0.7,1.0)
+dh(dh, "duration", 850)
+dh(dh, "start")
+        
+dhas(dh, 详细.15, "scaleY",0.7,1.0)
+dh(dh, "duration", 850)
+dh(dh, "start")
+        
+dhas(dh, 详细.15, "translationY", -55,0)      
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+
+us(详细.19,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 580)
+us(详细.19, "dh", dh)
+
+dhas(dh, 详细.19, "scaleX",0.7,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+        
+dhas(dh, 详细.19, "scaleY",0.7,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+        
+dhas(dh, 详细.19, "translationY", -55,0)      
+dh(dh, "duration", 750)
+dh(dh, "start")
+
+
+
+us(详细.20,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration",600)
+us(详细.20, "dh", dh)
+
+dhas(dh, 详细.20, "scaleX",0.7,1.0)
+dh(dh, "duration", 850)
+dh(dh, "start")
+        
+dhas(dh, 详细.20, "scaleY",0.7,1.0)
+dh(dh, "duration", 850)
+dh(dh, "start")
+        
+dhas(dh, 详细.20, "translationY", -55,0)       
+dh(dh, "duration", 850)
+dh(dh, "start")
+
+
+us(详细.29,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration",660)
+us(详细.29, "dh", dh)
+
+dhas(dh, 详细.29, "scaleX",0.7,1.0)
+dh(dh, "duration", 900)
+dh(dh, "start")
+        
+dhas(dh, 详细.29, "scaleY",0.7,1.0)
+dh(dh, "duration", 900)
+dh(dh, "start")
+        
+dhas(dh, 详细.29, "translationY", -55,0)    
+dh(dh, "duration", 950)
+dh(dh, "start")
+
+
+
+end fn
+
+
+
+fn 详细关闭()
+
+
+
+dhas(dh, 详细.4, "scaleX",1.0,0.7)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 详细.4, "scaleY",1.0,0.7)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dha(dh, true,false)
+dh(dh, "duration", 650)
+us(详细.4, "dh", dh)
+dhon(dh)
+{
+//当结束动画时
+us(详细.4,"visibility",8)  
+}
+
+
+
+
+
+
+
+dhas(dh, 详细.11, "scaleX",1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")
+        
+dhas(dh, 详细.11, "scaleY",1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dha(dh, true,false)
+dh(dh, "duration", 300)
+us(详细.11, "dh", dh)
+dhon(dh)
+{
+us(详细.11,"visibility",8)               
+
+}
+
+
+dhas(dh, 详细.15, "scaleX",1.0,0.7)
+dh(dh, "duration", 320)
+dh(dh, "start")
+        
+dhas(dh, 详细.15, "scaleY",1.0,0.7)
+dh(dh, "duration", 320)
+dh(dh, "start")
+                  
+dha(dh, true,false)
+dh(dh, "duration", 320)
+us(详细.15, "dh", dh)
+dhon(dh)
+{
+us(详细.15,"visibility",8)   
+}
+
+
+           
+
+ 
+dhas(dh, 详细.19, "scaleX",1.0,0.7)
+dh(dh, "duration", 330)
+dh(dh, "start")
+        
+dhas(dh, 详细.19, "scaleY",1.0,0.7)
+dh(dh, "duration", 330)
+dh(dh, "start")
+
+dha(dh, true,false)
+dh(dh, "duration",330)
+us(详细.19, "dh", dh)
+dhon(dh)
+{
+us(详细.19,"visibility",8)   
+}    
+
+
+dhas(dh, 详细.29, "scaleX",1.0,0.7)
+dh(dh, "duration", 340)
+dh(dh, "start")
+        
+dhas(dh, 详细.29, "scaleY",1.0,0.7)
+dh(dh, "duration", 340)
+dh(dh, "start")
+
+dha(dh, true,false)
+dh(dh, "duration",340)
+us(详细.29, "dh", dh)
+dhon(dh)
+{
+us(详细.29,"visibility",8)   
+}             
+
+dhas(dh, 详细.20, "scaleX",1.0,0.7)
+dh(dh, "duration", 350)
+dh(dh, "start")       
+dhas(dh, 详细.20, "scaleY",1.0,0.7)
+dh(dh, "duration", 350)
+dh(dh, "start")
+dhon(dh)
+{
+
+dha(dh, true,false)
+dh(dh, "duration",350)
+us(详细.20, "dh", dh)
+dhon(dh)
+{
+us(详细.20,"visibility",8) 
+}
+
+}
+
+
+t()
+{
+stop(550)
+ufnsui()
+{
+
+dha(dh, true,false)
+dh(dh, "duration",500)
+us(详细.1, "dh", dh)
+dhon(dh)
+{
+us(详细.1,"visibility",8)   
+
+}  
+}
+}
+
+end fn
+
+
+

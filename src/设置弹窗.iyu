@@ -1,0 +1,616 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+//visibility=gone</ppt>
+<event><eventItme type="clicki">.</eventItme></event>
+</View>
+<View id="3" did="1" type="ImageView">
+<ppt>width=-1
+height=-1
+src=17301</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="CardView">
+<ppt>width=350dp
+height=-2
+app_CardcornerRadius=5dp
+app_CardElevation=5dp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="21" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="6" did="21" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=left|center
+layout_marginLeft=15dp
+layout_marginTop=15dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="ImageView">
+<ppt>width=35dp
+height=35dp
+src=@IMG_20210120_194349.png</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=模糊补偿
+layout_marginLeft=10dp
+textColor=#ff060606
+textSize=14sp</ppt>
+<event></event>
+</View>
+<View id="38" did="6" type="EditText">
+<ppt>width=130dp
+height=35dp
+text=
+hint=这里可设置参数(默认26dp)
+textSize=10sp
+textColor=#ff080808
+background=@
+layout_marginLeft=20dp
+singleLine=true</ppt>
+<event><eventItme type="aftertextchanged">
+
+fw("%Android/data/com.cjzwjdm/files/模糊补偿.html", "补偿开补偿")
+
+ug(设置弹窗.38,"text",参数输出)
+
+
+    
+    ss("补偿开补偿"+"参数"+参数输出+"参数",参数输出完)
+    fw("%Android/data/com.cjzwjdm/files/模糊补偿.html", 参数输出完)
+ ss("当前数值(默认26): "+参数输出完,叔叔)
+us(设置弹窗.38,"hint",叔叔) 
+//us(设置弹窗.38,"text",叔叔)    
+gvs(1,view)
+cls("android.support.design.widget.Snackbar",类)
+javax(snk,null,类,"make","android.view.View",view,"java.lang.CharSequence","设置完成！","int",300)
+cls("android.view.View$OnClickListener", 事件类)
+javacb(事件, 事件类)
+{
+  tw("该示例来自http://iapp.xcenadmin.top/,原创作者未知，转载请注明！")
+}
+//javax(null,snk,类,"setAction","java.lang.CharSequence","确定",事件类,事件)
+javax(get,snk,"android.support.design.widget.BaseTransientBottomBar","getView")
+//设置背景
+ngde(0,16,"#ffffb400","#ff31b8ff",bj)
+us(get,"background",bj)
+//设置高度
+us(get,"height","-2")
+//设置外边距
+us(get,"layout_margin","12dp")
+//显示
+java(null, snk, "android.support.design.widget.BaseTransientBottomBar.show")
+
+    
+    
+
+    
+
+
+</eventItme></event>
+</View>
+<View id="9" did="21" type="LinearLayout">
+<ppt>width=-1
+height=70dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="CardView">
+<ppt>width=-1
+height=-1
+layout_marginLeft=25dp
+layout_marginRight=25dp
+layout_marginTop=10dp
+layout_marginBottom=15dp
+app_CardBackgroundColor=#fff2f2f2
+app_CardcornerRadius=10dp
+app_CardElevation=0dp</ppt>
+<event></event>
+</View>
+<View id="14" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="CardView">
+<ppt>width=150dp
+height=-1
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ff05b9ff
+layout_marginLeft=5dp
+layout_marginRight=5dp
+layout_marginTop=5dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="16" did="11" type="LinearLayout">
+<ppt>width=150dp
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event></event>
+</View>
+<View id="12" did="16" type="TextView">
+<ppt>width=-1
+height=-1
+text=开
+gravity=center
+textStyle=bold
+textColor=#ffe1e1e1
+textSize=15sp
+</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+us(设置弹窗.18,"visibility",0)
+dhas(dh,设置弹窗.15, "translationX", 385,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhon(dh)
+{
+us(设置弹窗.18,"visibility",8)
+
+us(设置弹窗.13,"visibility",0)
+us(设置弹窗.20,"visibility",8)
+
+us(设置弹窗.19,"visibility",0)
+us(设置弹窗.12,"visibility",8)
+us(设置弹窗.38,"visibility",0) 
+
+fw("%Android/data/com.cjzwjdm/files/模糊补偿.html", "补偿开补偿")
+fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+sj(补偿,"参数","参数",参数输出)
+us(设置参数.38,"text",参数输出)
+
+}</eventItme></event>
+</View>
+<View id="19" did="16" type="TextView">
+<ppt>width=-1
+height=-1
+text=已开
+gravity=center
+textStyle=bold
+textColor=#ffe1e1e1
+textSize=15sp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="17" did="11" type="LinearLayout">
+<ppt>width=150dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="13" did="17" type="TextView">
+<ppt>width=-1
+height=-1
+text=关
+gravity=center
+textStyle=bold
+textColor=#ffe1e1e1
+textSize=15sp</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+
+
+us(设置弹窗.18,"visibility",0)
+dhas(dh,设置弹窗.15, "translationX", 0,385)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhon(dh)
+{
+us(设置弹窗.18,"visibility",8)
+
+us(设置弹窗.13,"visibility",8)
+us(设置弹窗.20,"visibility",0)
+
+us(设置弹窗.19,"visibility",8)
+us(设置弹窗.12,"visibility",0)
+   fw("%Android/data/com.cjzwjdm/files/模糊补偿.html", "补偿关补偿")
+   us(设置弹窗.38,"visibility",8) 
+}
+
+</eventItme></event>
+</View>
+<View id="20" did="17" type="TextView">
+<ppt>width=-1
+height=-1
+text=已关
+gravity=center
+textStyle=bold
+textColor=#ffe1e1e1
+textSize=15sp</ppt>
+<event></event>
+</View>
+<View id="18" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+visibility=gone</ppt>
+<event><eventItme type="clicki">.</eventItme></event>
+</View>
+<View id="22" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="23" did="22" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=left|center
+layout_marginLeft=15dp
+layout_marginTop=15dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="24" did="23" type="ImageView">
+<ppt>width=45dp
+height=45dp
+src=@IMG_20210121_220704.png</ppt>
+<event></event>
+</View>
+<View id="25" did="23" type="TextView">
+<ppt>width=-2
+height=-2
+text=播放选项
+layout_marginLeft=10dp
+textColor=#ff060606
+textSize=14sp</ppt>
+<event></event>
+</View>
+<View id="26" did="22" type="LinearLayout">
+<ppt>width=-1
+height=70dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="27" did="26" type="CardView">
+<ppt>width=-1
+height=-1
+layout_marginLeft=25dp
+layout_marginRight=25dp
+layout_marginTop=10dp
+layout_marginBottom=15dp
+app_CardBackgroundColor=#fff2f2f2
+app_CardcornerRadius=10dp
+app_CardElevation=0dp</ppt>
+<event></event>
+</View>
+<View id="28" did="27" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="CardView">
+<ppt>width=150dp
+height=-1
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ff05b9ff
+layout_marginLeft=5dp
+layout_marginRight=5dp
+layout_marginTop=5dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="30" did="27" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="31" did="30" type="LinearLayout">
+<ppt>width=150dp
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event></event>
+</View>
+<View id="32" did="31" type="TextView">
+<ppt>width=-1
+height=-1
+text=Player-1.1
+gravity=center
+textStyle=bold
+textColor=#ffe1e1e1
+textSize=15sp
+</ppt>
+<event></event>
+</View>
+<View id="33" did="31" type="TextView">
+<ppt>width=-1
+height=-1
+text=Player(Open)
+gravity=center
+textStyle=bold
+textColor=#ffe1e1e1
+textSize=15sp
+//visibility=gone</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+
+
+us(设置弹窗.37,"visibility",0)
+dhas(dh,设置弹窗.29, "translationX", 385,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhon(dh)
+{
+us(设置弹窗.37,"visibility",8)
+
+us(设置弹窗.32,"visibility",0)
+us(设置弹窗.36,"visibility",8)
+
+us(设置弹窗.35,"visibility",0)
+us(设置弹窗.33,"visibility",8)
+
+   fw("%Android/data/com.cjzwjdm/files/播放器.html", "播放开播放")
+
+}</eventItme></event>
+</View>
+<View id="34" did="30" type="LinearLayout">
+<ppt>width=150dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="35" did="34" type="TextView">
+<ppt>width=-1
+height=-1
+text=浏览器
+gravity=center
+textStyle=bold
+textColor=#ffe1e1e1
+textSize=15sp</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+
+
+us(设置弹窗.37,"visibility",0)
+dhas(dh,设置弹窗.29, "translationX", 0,385)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhon(dh)
+{
+us(设置弹窗.37,"visibility",8)
+
+us(设置弹窗.32,"visibility",8)
+us(设置弹窗.36,"visibility",0)
+
+us(设置弹窗.35,"visibility",8)
+us(设置弹窗.33,"visibility",0)
+   fw("%Android/data/com.cjzwjdm/files/播放器.html", "播放关播放")
+}
+
+</eventItme></event>
+</View>
+<View id="36" did="34" type="TextView">
+<ppt>width=-1
+height=-1
+text=浏览器启用
+gravity=center
+textStyle=bold
+textColor=#ffe1e1e1
+textSize=15sp</ppt>
+<event></event>
+</View>
+<View id="37" did="27" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+visibility=gone</ppt>
+<event><eventItme type="clicki">.</eventItme></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+fe("%Android/data/com.cjzwjdm/files/模糊补偿.html",uy)
+f(uy == true)
+{
+  
+}
+else
+{
+  ufnsui()
+  {
+    fw("%Android/data/com.cjzwjdm/files/模糊补偿.html", "补偿关补偿")
+    end()
+    tw("文件配置完成")
+  }
+}
+
+
+
+
+fe("%Android/data/com.cjzwjdm/files/播放器.html",uy)
+f(uy == true)
+{
+  
+}
+else
+{
+  ufnsui()
+  {
+    fw("%Android/data/com.cjzwjdm/files/播放器.html", "播放开播放")
+    end()
+    tw("文件配置完成")
+  }
+}
+
+
+
+
+
+
+
+t()
+{
+
+
+fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+sj(补偿,"补偿","补偿",补偿输出)
+
+f(补偿输出 == "关")
+{
+  ufnsui()
+  {
+    
+   us(设置弹窗.18,"visibility",0)
+   dhas(dh,设置弹窗.15, "translationX", 0,385)
+   dh(dh, "duration", 600)
+   dh(dh, "start")
+   dhon(dh)
+   {
+    us(设置弹窗.18,"visibility",8)
+
+    us(设置弹窗.13,"visibility",8)
+    us(设置弹窗.20,"visibility",0)
+
+    us(设置弹窗.19,"visibility",8)
+    us(设置弹窗.12,"visibility",0)
+
+   }
+  }
+}
+else
+{
+  ufnsui()
+  {
+    
+    
+   us(设置弹窗.18,"visibility",0)
+   dhas(dh,设置弹窗.15, "translationX", 385,0)
+   dh(dh, "duration", 600)
+   dh(dh, "start")
+   dhon(dh)
+   {
+    us(设置弹窗.18,"visibility",8)
+
+    us(设置弹窗.13,"visibility",0)
+    us(设置弹窗.20,"visibility",8)
+
+    us(设置弹窗.19,"visibility",0)
+    us(设置弹窗.12,"visibility",8)
+
+   }    
+    
+    
+  }
+}
+}
+
+
+
+
+
+
+
+
+fr("%Android/data/com.cjzwjdm/files/播放器.html",播放)
+sj(播放,"播放","播放",播放输出)
+
+f(播放输出 == "关")
+{
+  ufnsui()
+  {
+    
+us(设置弹窗.37,"visibility",0)
+dhas(dh,设置弹窗.29, "translationX", 0,385)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhon(dh)
+{
+us(设置弹窗.37,"visibility",8)
+
+us(设置弹窗.32,"visibility",8)
+us(设置弹窗.36,"visibility",0)
+
+us(设置弹窗.35,"visibility",8)
+us(设置弹窗.33,"visibility",0)
+}
+
+
+   }
+  }
+}
+else
+{
+  ufnsui()
+  {
+    
+
+us(设置弹窗.37,"visibility",0)
+dhas(dh,设置弹窗.29, "translationX", 385,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhon(dh)
+{
+us(设置弹窗.37,"visibility",8)
+
+us(设置弹窗.32,"visibility",0)
+us(设置弹窗.36,"visibility",8)
+
+us(设置弹窗.35,"visibility",0)
+us(设置弹窗.33,"visibility",8)
+
+}
+
+   }    
+    
+    
+  }
+}
+}</eventItme></UIEventset>

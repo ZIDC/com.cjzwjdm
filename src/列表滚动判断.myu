@@ -1,0 +1,66 @@
+
+
+fn 列表滚动()
+
+  f(st_fM==0)
+  {
+  ss top="true"
+  }
+  else
+  {
+    ss top
+  }
+  //判断是否已获取过滑动之前的值
+  f(ss.zt==null)
+  {
+  //未获取过
+  ss a1=st_fM
+  ss zt="true"
+  }
+  else
+  {
+  //设置状态为未获取过
+  ss zt
+  //获取再次滑动的值
+  ss a2=st_fM
+  //判断第一和第二次是否相等
+  f(ss.a1==ss.a2)
+  {
+    //相等不执行下面事件
+    endcode
+  }
+  f(ss.a2&gt;ss.a1)
+  {
+    //列表向下滚动执行的事件
+    f(ss.zt2==null)
+  {
+    syso(ss.zt2)
+    ss zt2="true"
+    ss zt3
+    dhas(dh,19, "translationY", 0,-10,-50,-280)
+    us(19,"visibility",8)
+    dh(dh, "duration",200)
+    dh(dh, "start")
+    //隐藏悬浮按钮动画
+    }
+  }
+ else
+ {
+   //列表向上滚动执行的事件
+   f(ss.zt3==null)
+   {
+     ss zt3="true"
+     ss zt2
+     //背景出现动画
+     dhas(dh, 19, "translationY",-280,-100,0)
+     dh(dh, "duration",200)
+     dh(dh, "start")
+     us(19,"visibility",0)
+     //悬浮按钮显示
+    }
+  }
+  }
+ 
+ 
+
+end fn

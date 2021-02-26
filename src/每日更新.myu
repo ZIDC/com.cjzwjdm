@@ -1,0 +1,337 @@
+
+
+
+fn 星期1()
+
+
+
+//星期一
+
+t()
+{
+us(星期1.2,"visibility",8)
+us(星期1.3,"visibility",0)
+  fr("%Android/data/com.cjzwjdm/files/星期一.html",xq1)  
+   f(xq1 == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  {                       
+  sj(xq1,"&lt;li",null,o)
+  sl(o,"&lt;li",zxf)
+  for(星期1;zxf)
+  {
+    sj(星期1,"&lt;a href=\"","html\"",ur)
+    ss(sss.网址+ur+"html",url)
+    sj(星期1,"class=\"am-list-item-hd \"&gt;","&lt;/a&gt;",动漫名)
+    sj(星期1,"class=\"am-list-date\"&gt;","&lt;/span&gt;",集数)
+  ula(ed,7=集数,9=动漫名,10=url) 
+  } 
+  ufnsui()
+  {
+    uls(星期1.2,ed,"星期1列表.iyu",-1,-2)
+us(星期1.2,"visibility",0)
+us(星期1.3,"visibility",8)
+fn 每日更新.星期2()
+}
+}
+}
+
+//星期一
+
+
+
+
+
+end fn
+
+
+
+
+
+
+
+fn 星期2()
+
+
+//星期二
+t()
+{
+us(星期2.2,"visibility",8)
+us(星期2.3,"visibility",0)
+  fr("%Android/data/com.cjzwjdm/files/星期二.html",xq2)
+
+   f(xq2 == null)
+  {
+    ufnsui()
+    {
+    
+//us(最近更新.5,"visibility",0)
+}
+  }
+  else
+  { 
+  sj(xq2,"&lt;li",null,o)
+  sl(o,"&lt;li",zxf)
+  for(星期2;zxf)
+  {
+    sj(星期2,"&lt;a href=\"","html\"",ur)
+    ss(sss.网址+ur+"html",url)
+    sj(星期2,"class=\"am-list-item-hd \"&gt;","&lt;/a&gt;",动漫名)
+    sj(星期2,"class=\"am-list-date\"&gt;","&lt;/span&gt;",集数)
+  ula(l,7=集数,9=动漫名,10=url) 
+  } 
+  ufnsui()
+  {
+    uls(星期2.2,l,"星期2列表.iyu",-1,-2)
+us(星期2.2,"visibility",0)
+us(星期2.3,"visibility",8)
+fn 每日更新.星期3()
+
+}
+}
+}
+
+//星期二
+
+
+
+
+end fn
+
+
+
+
+
+fn 星期3()
+
+//星期三
+t()
+{
+us(星期3.2,"visibility",8)
+us(星期3.3,"visibility",0)
+  fr("%Android/data/com.cjzwjdm/files/星期三.html",xq3)
+   f(xq3 == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  { 
+  sj(xq3,"&lt;li",null,o)
+  sl(o,"&lt;li",zxf)
+  for(星期3;zxf)
+  {
+    sj(星期3,"&lt;a href=\"","html\"",ur)
+    ss(sss.网址+ur+"html",url)
+    sj(星期3,"class=\"am-list-item-hd \"&gt;","&lt;/a&gt;",动漫名)
+    sj(星期3,"class=\"am-list-date\"&gt;","&lt;/span&gt;",集数)
+  ula(l,7=集数,9=动漫名,10=url) 
+  } 
+  ufnsui()
+  {
+    uls(星期3.2,l,"星期3列表.iyu",-1,-2)
+us(星期3.2,"visibility",0)
+us(星期3.3,"visibility",8)
+
+fn 每日更新.星期4()
+}
+}
+}
+
+//星期三
+
+
+
+end fn
+
+
+
+
+
+fn 星期4()
+
+//星期四
+t()
+{
+us(星期4.2,"visibility",8)
+us(星期4.3,"visibility",0)
+  fr("%Android/data/com.cjzwjdm/files/星期四.html",xq4)
+   f(xq4 == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  { 
+  sj(xq4,"&lt;li",null,o)
+  sl(o,"&lt;li",zxf)
+  for(星期4;zxf)
+  {
+    sj(星期4,"&lt;a href=\"","html\"",ur)
+    ss(sss.网址+ur+"html",url)
+    sj(星期4,"class=\"am-list-item-hd \"&gt;","&lt;/a&gt;",动漫名)
+    sj(星期4,"class=\"am-list-date\"&gt;","&lt;/span&gt;",集数)
+  ula(l,7=集数,9=动漫名,10=url) 
+  } 
+  ufnsui()
+  {
+    uls(星期4.2,l,"星期4列表.iyu",-1,-2)
+us(星期4.2,"visibility",0)
+us(星期4.3,"visibility",8)
+fn 每日更新.星期5()
+}
+}
+}
+
+//星期四
+
+
+
+
+
+end fn
+
+
+
+
+fn 星期5()
+
+
+
+//星期五
+t()
+{
+us(星期5.2,"visibility",8)
+us(星期5.3,"visibility",0)
+  fr("%Android/data/com.cjzwjdm/files/星期五.html",xq5)
+   f(xq5 == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  {
+  sj(xq5,"&lt;li",null,o)
+  sl(o,"&lt;li",zxf)
+  for(星期5;zxf)
+  {
+    sj(星期5,"&lt;a href=\"","html\"",ur)
+    ss(sss.网址+ur+"html",url)
+    sj(星期5,"class=\"am-list-item-hd \"&gt;","&lt;/a&gt;",动漫名)
+    sj(星期5,"class=\"am-list-date\"&gt;","&lt;/span&gt;",集数)
+  ula(l,7=集数,9=动漫名,10=url) 
+  } 
+  ufnsui()
+  {
+    uls(星期5.2,l,"星期5列表.iyu",-1,-2)
+us(星期5.2,"visibility",0)
+us(星期5.3,"visibility",8)
+fn 每日更新.星期6()
+}
+}
+}
+
+//星期五
+
+
+end fn
+
+
+
+
+
+fn 星期6()
+
+
+//星期六
+t()
+{
+us(星期6.2,"visibility",8)
+us(星期6.3,"visibility",0)
+  fr("%Android/data/com.cjzwjdm/files/星期六.html",xq6)
+   f(xq6 == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  { 
+
+  sj(xq6,"&lt;li",null,o)
+  sl(o,"&lt;li",zxf)
+  for(星期6;zxf)
+  {
+    sj(星期6,"&lt;a href=\"","html\"",ur)
+    ss(sss.网址+ur+"html",url)
+    sj(星期6,"class=\"am-list-item-hd \"&gt;","&lt;/a&gt;",动漫名)
+    sj(星期6,"class=\"am-list-date\"&gt;","&lt;/span&gt;",集数)
+  ula(l,7=集数,9=动漫名,10=url) 
+  } 
+  ufnsui()
+  {
+    uls(星期6.2,l,"星期6列表.iyu",-1,-2)
+us(星期6.2,"visibility",0)
+us(星期6.3,"visibility",8)
+
+}
+}
+}
+
+//星期六
+
+
+end fn
+
+
+
+
+
+
+fn 星期7()
+
+
+
+
+
+
+
+
+
+
+//星期日
+t()
+{
+us(星期.2,"visibility",8)
+us(星期.3,"visibility",0)
+  fr("%Android/data/com.cjzwjdm/files/星期日.html",xq7)
+   f(xqt == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  { 
+  sj(xq7,"&lt;li",null,o)
+  sl(o,"&lt;li",zxf)
+  for(星期7;zxf)
+  {
+    sj(星期7,"&lt;a href=\"","html\"",ur)
+    ss(sss.网址+ur+"html",url)
+    sj(星期7,"class=\"am-list-item-hd \"&gt;","&lt;/a&gt;",动漫名)
+    sj(星期7,"class=\"am-list-date\"&gt;","&lt;/span&gt;",集数)
+  ula(lurl,7=集数,9=动漫名,10=url) 
+  } 
+  ufnsui()
+  {
+    uls(星期.2,lurl,"星期列表.iyu",-1,-2)
+us(星期.2,"visibility",0)
+us(星期.3,"visibility",8)
+}
+}
+}
+
+//星期日
+
+
+
+
+
+
+end fn

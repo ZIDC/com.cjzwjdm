@@ -1,0 +1,292 @@
+
+
+fn 日本动漫()
+
+
+us(日本动漫.2,"visibility",8)
+us(日本动漫.3,"visibility",0)
+us(日本动漫.4,"visibility",0)
+us(日本动漫.4,"text","努力加载中")
+
+
+
+
+
+
+
+//日本动漫
+t()
+{
+  hs(sss.网址,null,"gb2312",b)
+//  fr("%动漫缓存.html", b)
+  sj(b,"&lt;h2&gt;&lt;a href=\"/list/2.html\"&gt;日本动漫&lt;/a&gt;&lt;/h2&gt;"," &lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx," &lt;li&gt;",null,zxd)
+  sl(zxd," &lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(日本动漫.2,list_zxgx,"日本动漫列表.iyu",-1,-2) 
+        fn 首页加载.国产动漫()
+
+us(日本动漫.2,"visibility",0)
+us(日本动漫.3,"visibility",8)
+us(日本动漫.4,"visibility",8)
+us(日本动漫.4,"text","努力加载中")
+
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(日本动漫.2, "dh", dh)
+
+dhas(dh, 日本动漫.2, "scaleX",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 日本动漫.2, "scaleY",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 日本动漫.2, "translationY",-200,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+
+}
+}
+//日本动漫
+
+end fn
+
+
+
+
+fn 国产动漫()
+
+
+us(国产动漫.2,"visibility",8)
+us(国产动漫.3,"visibility",0)
+us(国产动漫.4,"visibility",0)
+us(国产动漫.4,"text","努力加载中")
+
+
+
+
+fn 底部弹窗.加载弹窗("加载.iyu")
+gvs(ss.弹窗,加载.10,ss.id10)
+us(ss.id10,"text","加载其余部分")
+
+
+//国产动漫
+t()
+{
+  hs(sss.网址,null,"gb2312",b)
+//  fr("%动漫缓存.html", b)
+  sj(b,"&lt;h2&gt;&lt;a href=\"/list/3.html\"&gt;国产动漫&lt;/a&gt;&lt;/h2&gt;"," &lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx," &lt;li&gt;",null,zxd)
+  sl(zxd," &lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(国产动漫.2,list_zxgx,"国产动漫列表.iyu",-1,-2) 
+        fn 首页加载.美国动漫() 
+
+us(国产动漫.2,"visibility",0)
+us(国产动漫.3,"visibility",8)
+us(国产动漫.4,"visibility",8)
+us(国产动漫.4,"text","努力加载中")
+
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(国产动漫.2, "dh", dh)
+
+dhas(dh, 国产动漫.2, "scaleX",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 国产动漫.2, "scaleY",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 国产动漫.2, "translationY",-200,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+
+}
+}
+//国产动漫
+
+
+end fn
+
+
+
+fn 美国动漫()
+
+
+us(美国动漫.2,"visibility",8)
+us(美国动漫.3,"visibility",0)
+us(美国动漫.4,"visibility",0)
+us(美国动漫.4,"text","努力加载中")
+
+
+
+
+
+//美国动漫
+t()
+{
+  hs(sss.网址,null,"gb2312",b)
+//  fr("%动漫缓存.html", b)
+  sj(b,"&lt;h2&gt;&lt;a href=\"/list/4.html\"&gt;美国动漫&lt;/a&gt;&lt;/h2&gt;"," &lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx," &lt;li&gt;",null,zxd)
+  sl(zxd," &lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(美国动漫.2,list_zxgx,"美国动漫列表.iyu",-1,-2) 
+        fn 首页加载.动漫电影() 
+
+us(美国动漫.2,"visibility",0)
+us(美国动漫.3,"visibility",8)
+us(美国动漫.4,"visibility",8)
+us(美国动漫.4,"text","努力加载中")
+
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(美国动漫.2, "dh", dh)
+
+dhas(dh, 美国动漫.2, "scaleX",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 美国动漫.2, "scaleY",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 美国动漫.2, "translationY",-200,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+
+}
+}
+//美国动漫
+
+
+
+end fn
+
+
+
+
+
+fn 动漫电影()
+
+
+us(动漫电影.2,"visibility",8)
+us(动漫电影.3,"visibility",0)
+us(动漫电影.4,"visibility",0)
+us(动漫电影.4,"text","努力加载中")
+
+
+
+
+
+
+//动漫电影
+t()
+{
+  hs(sss.网址,null,"gb2312",b)
+//  fr("%动漫缓存.html", b)
+  sj(b,"&lt;h2&gt;&lt;a href=\"/list/1.html\"&gt;动漫电影&lt;/a&gt;&lt;/h2&gt;","&lt;div class=\"side r\"&gt;",zx)
+  sj(zx," &lt;li&gt;",null,zxd)
+  sl(zxd," &lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(动漫电影.2,list_zxgx,"动漫电影列表.iyu",-1,-2) 
+
+us(动漫电影.2,"visibility",0)
+us(动漫电影.3,"visibility",8)
+us(动漫电影.4,"visibility",8)
+us(动漫电影.4,"text","努力加载中")
+
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(动漫电影.2, "dh", dh)
+
+dhas(dh, 动漫电影.2, "scaleX",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 动漫电影.2, "scaleY",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 动漫电影.2, "translationY",-200,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+java(null,ss.载体,"android.app.Dialog.dismiss")
+
+ fn 项目更新.更新()
+
+
+   
+}
+}
+//动漫电影
+
+end fn

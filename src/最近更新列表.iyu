@@ -1,0 +1,437 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="9" did="1" type="CardView">
+<ppt>width=-1
+height=-1
+layout_margin=15dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardBackgroundColor=#fffdfdfd
+app_CardcornerRadius=7dp
+app_CardElevation=5dp</ppt>
+<event><eventItme type="touchmonitor">
+
+
+/.
+
+
+gvs(st_vW,最近更新列表.9,ss.按钮)
+
+
+
+
+
+s a=st_eA
+
+f(a == "0")
+{
+
+
+dhas(dh,ss.按钮, "scaleY", 1.0,0.9)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh,ss.按钮, "scaleX", 1.0,0.9)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+
+dhas(dh, ss.按钮, "translationY", 0,35)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+
+
+
+}
+else f(a == "1")
+{
+
+
+
+dhas(dh,ss.按钮, "scaleY", 0.9,1.0)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh,ss.按钮, "scaleX", 0.9,1.0)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh, ss.按钮, "translationY", 35,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+//us(ss.按钮,"app_CardElevation","0dp")
+
+}
+else f(a == "2")
+{
+
+
+}
+else f(a == "3")
+{
+
+
+dhas(dh,ss.按钮, "scaleY", 0.9,1.0)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh,ss.按钮, "scaleX", 0.9,1.0)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh, ss.按钮, "translationY", 35,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+//us(ss.按钮,"app_CardElevation","0dp")
+
+}
+
+</eventItme><eventItme type="clicki">
+
+
+
+
+fn 底部弹窗.加载弹窗("加载.iyu")
+gvs(ss.弹窗,加载.10,ss.id10)
+us(ss.id10,"text","加载中")
+
+/.utw(null, "", "加载弹窗.iyu", "", true, ss.run)
+  {
+  }
+gvs(ss.run,6,Id6)
+us(Id6, "text","加载中。。。")
+./
+
+
+ulag(st_vW,15,ss.链接地址)
+ulag(st_vW,16,sss.图片地址)
+us(列表点击.20,"src",sss.图片地址)
+
+t()
+{
+   hs(ss.链接地址,null,"gb2312",b)
+   f(b==null)
+   {
+     ufnsui()
+     {
+       java(null,ss.载体,"android.app.Dialog.dismiss")
+       endcode
+       tw("加载失败")
+     }
+   }
+   else
+   {
+     ufnsui()
+     {
+     sj(b,"class=\"names\"&gt;","&lt;/span&gt;",sss.影视名)         
+     sj(b,"&lt;div class=\"alex\"&gt;","&lt;/div&gt;",影视参数) 
+     sj(b,"&lt;div class=\"info\"&gt;","&lt;/div&gt;",影视介绍) 
+     sr(影视介绍,"。","。&lt;br&gt;", 介绍)
+     ss("(html)"+影视参数+介绍,sss.输出文本)
+     us(列表点击.17,"text",sss.输出文本)
+     us(列表点击.10,"text",sss.影视名)
+
+     
+     fn 背景.列表点击()
+     fn 点击.首页列表点击()
+//     endutw()
+  java(null,ss.载体,"android.app.Dialog.dismiss")
+     }
+   }
+
+   
+}</eventItme></event>
+</View>
+<View id="10" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+BackgroundRipple=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="2" did="10" type="CardView">
+<ppt>width=100dp
+height=150dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+//app_CardBackgroundColor=#ffd8d8d8
+app_CardcornerRadius=4dp
+app_CardElevation=0dp
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="ImageView">
+<ppt>width=-1
+height=-1
+src=7979
+BackgroundColor=#00ffffff</ppt>
+<event></event>
+</View>
+<View id="4" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="6" did="4" type="LinearLayout">
+<ppt>width=-1
+height=75dp
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-1
+height=-2
+text=鬼灭之刃之无线列车偏
+textColor=#ff0b0b0b
+textStyle=bold
+textSize=14sp
+singleLine=true
+ellipsize=end
+layout_marginLeft=15dp
+layout_marginRight=4dp</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="TextView">
+<ppt>width=-1
+height=-1
+text=级数
+textColor=#ff0b0b0b
+textSize=11sp
+singleLine=true
+ellipsize=end
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="11" did="4" type="LinearLayout">
+<ppt>width=-1
+height=75dp
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="CardView">
+<ppt>width=100dp
+height=35dp
+layout_marginTop=15dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffeef9ff
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+//BackgroundColor=#ffcf9b00
+BackgroundRipple=#ffb9b9b9</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+
+//href='/player/209-0-0.html'
+
+
+/.utw(null, "", "加载弹窗.iyu", "", true, ss.run)
+  {
+  }
+gvs(ss.run,6,Id6)
+us(Id6, "text","第一次解析 。。。")
+fn 模糊.背景模糊("1")
+us(背景模糊.1,"visibility",0)
+dha(dh, false, true)
+dh(dh, "duration", 500)
+us(背景模糊.1, "dh", dh)
+./
+fn 底部弹窗.加载弹窗("加载.iyu")
+gvs(ss.弹窗,加载.10,ss.id10)
+us(ss.id10,"text","第一次解析")
+
+ulag(st_vW,15,ss.链接地址)
+ulag(st_vW,16,sss.图片地址)
+
+us(列表点击.20,"src",sss.图片地址)
+t()
+{
+   hs(ss.链接地址,null,"gb2312",b)
+//   syso(b)
+   f(b==null)
+   {
+     ufnsui()
+     {
+       
+
+/.       dha(dh, true, false)
+       dh(dh, "duration", 500)
+       us(背景模糊.1, "dh", dh)
+       dhon(dh)
+       {
+        us(背景模糊.1,"visibility",8)
+       }
+       endutw()
+./         
+       java(null,ss.载体,"android.app.Dialog.dismiss") 
+       gvs(1,view)
+       cls("android.support.design.widget.Snackbar",类)
+       javax(snk,null,类,"make","android.view.View",view,"java.lang.CharSequence","第一次解析失败！","int",1500)
+       cls("android.view.View$OnClickListener", 事件类)
+       javacb(事件, 事件类)
+       {
+       tw("该示例来自http://iapp.xcenadmin.top/,原创作者未知，转载请注明！")
+       }
+       //javax(null,snk,类,"setAction","java.lang.CharSequence","确定",事件类,事件)
+       javax(get,snk,"android.support.design.widget.BaseTransientBottomBar","getView")
+       //设置背景
+       ngde(0,16,"#ffffb400","#ff31b8ff",bj)
+       us(get,"background",bj)
+       //设置高度
+       us(get,"height","-2")
+       //设置外边距
+       us(get,"layout_margin","12dp")
+       //显示
+       java(null, snk, "android.support.design.widget.BaseTransientBottomBar.show")       
+     }
+   }
+   else
+   {
+     ufnsui()
+     {
+     sj(b,"class=\"names\"&gt;","&lt;/span&gt;",sss.影视名)         
+     sj(b,"&lt;div class=\"alex\"&gt;","&lt;/div&gt;",sss.影视参数) 
+     sj(b,"&lt;div class=\"info\"&gt;","&lt;/div&gt;",sss.影视介绍) 
+     sj(b,"href='","'",选集连接)
+     sj(b,"&lt;img src=\"","\"",sss.视频图片) 
+     sj(b,"&lt;img src=\"","\"",sss.图片地址)  
+     ss(sss.网址+选集连接,sss.选集连接)
+     sr(sss.影视介绍,"。","。&lt;br&gt;", sss.介绍)
+     ss("(html)"+sss.影视参数+sss.介绍,sss.输出文本)
+//     fn 背景.列表点击()
+//     fn 点击.首页列表点击()
+
+/.       dha(dh, true, false)
+       dh(dh, "duration", 500)
+       us(背景模糊.1, "dh", dh)
+       dhon(dh)
+       {
+        us(背景模糊.1,"visibility",8)
+       }
+       endutw()
+./
+  java(null,ss.载体,"android.app.Dialog.dismiss")     
+       gvs(1,view)
+       cls("android.support.design.widget.Snackbar",类)
+       javax(snk,null,类,"make","android.view.View",view,"java.lang.CharSequence","第一次解析完成！","int",1500)
+       cls("android.view.View$OnClickListener", 事件类)
+       javacb(事件, 事件类)
+       {
+       tw("该示例来自http://iapp.xcenadmin.top/,原创作者未知，转载请注明！")
+       }
+       //javax(null,snk,类,"setAction","java.lang.CharSequence","确定",事件类,事件)
+       javax(get,snk,"android.support.design.widget.BaseTransientBottomBar","getView")
+       //设置背景
+       ngde(0,16,"#ffffb400","#ff31b8ff",bj)
+       us(get,"background",bj)
+       //设置高度
+       us(get,"height","-2")
+       //设置外边距
+       us(get,"layout_margin","12dp")
+       //显示
+       java(null, snk, "android.support.design.widget.BaseTransientBottomBar.show")
+       uigo("影视详细.iyu")
+     }
+   }
+
+   
+}</eventItme></event>
+</View>
+<View id="14" did="13" type="TextView">
+<ppt>width=-2
+height=-2
+text=立即观看
+textColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="15" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本15
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="16" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本16
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+
+
+
+/.
+gvs(st_vW,最近更新列表.13,get)
+
+
+
+s a = 0
+s b = 5
+s c = "#ff00acff|#ff49ffae"
+s d = "#333333"
+s e = "bltr"
+ngde(a, b, c, d, e, f)
+us(get,"background",f)
+
+
+</eventItme><eventItme type="loadingComplete">/.
+
+dhas(dh, 12, "scaleX", 0.0,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+
+dhas(dh, 12, "scaleY", 0.0,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+
+
+dhas(dh, 12, "translationX", 230,-30)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+t()
+{
+  stop("810")
+  ufnsui()
+  {
+    dhas(dh, 12, "translationX",-30,0)
+dh(dh, "duration", 910)
+dh(dh, "start")
+  }
+}
+
+</eventItme></UIEventset>

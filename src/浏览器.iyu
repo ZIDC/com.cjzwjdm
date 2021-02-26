@@ -1,0 +1,299 @@
+<View id="2" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+BackgroundColor=#ffffffff
+//elevation=0.3dp</ppt>
+<event></event>
+</View>
+<View id="8" did="2" type="ImageView">
+<ppt>width=-1
+height=-1
+src=7946
+scaleType=centercrop</ppt>
+<event></event>
+</View>
+<View id="1" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+BackgroundColor=#4dffffff
+//elevation=0.3dp</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=horizontal
+BackgroundColor=#4dffffff
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="ImageView">
+<ppt>width=26dp
+height=26dp
+src=@f422aeebd27.png
+layout_marginLeft=17dp
+layout_marginRight=15dp
+background=selectableitemborderless
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+ss("图片"+sss.图片地址+"图片"+"影视名"+sss.影视名+"影视名"+"级数"+sss.标题+"级数"+"视频链接"+sss.视频+"视频链接",历史记录)
+ss("Android/data/com.cjzwjdm/ls/"+sss.影视名+".so",历史文件)
+fw(历史文件,历史记录)
+
+end()</eventItme></event>
+</View>
+<View id="6" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本6
+textSize=13sp
+textColor=#ff050505</ppt>
+<event></event>
+</View>
+<View id="9" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="7" did="9" type="WebView">
+<ppt>width=-1
+height=200dp
+//visibility=gone</ppt>
+<event><eventItme type="onreceivederror">
+
+
+
+
+
+us(12,"text","开始加载")
+ug(7,"title",k)
+
+f(k ? " ")
+{
+  us(12,"text","加载失败")
+us(7,"visibility",8)
+us(10,"visibility",0)  
+}
+else
+{
+ us(7,"visibility",0)
+us(10,"visibility",8) 
+}</eventItme><eventItme type="onpagestarted">
+
+
+
+
+
+us(12,"text","开始加载")
+ug(7,"title",k)
+
+f(k ? " ")
+{
+  us(12,"text","加载失败")
+us(7,"visibility",8)
+us(10,"visibility",0)  
+}
+else
+{
+ us(7,"visibility",0)
+us(10,"visibility",8) 
+}</eventItme><eventItme type="onpagefinished">
+
+
+
+
+
+us(12,"text","开始加载")
+ug(7,"title",k)
+
+f(k ? " ")
+{
+  us(12,"text","加载失败")
+us(7,"visibility",8)
+us(10,"visibility",0)  
+}
+else
+{
+ us(7,"visibility",0)
+us(10,"visibility",8) 
+}</eventItme></event>
+</View>
+<View id="10" did="9" type="CardView">
+<ppt>width=56dp
+height=27dp
+app_CardElevation=0dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#4dF6F6F6
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中
+textSize=13sp
+textColor=#ff101010</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+ss(c+"dp",dp)
+us(3,"height",dp)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+//设置状态栏透明(沉浸式)
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+//仅支持Android6.0以上，其他无效果。
+
+
+/.f(sss.X5Browser == true)
+{
+syso("X5浏览器组件加载成功 现在可以启动浏览器了")
+}
+./
+//可以使用线程异步监听等待X5加载完毕，再跳转到浏览器界面
+
+
+
+t()
+{
+  s a = 0
+  w(sss.X5Browser == null)
+  {
+    s+(1, a)
+    f(a &gt;= 30)
+    {
+      sss X5Browser = false
+    }
+    stop(500)
+  }
+  f(sss.X5Browser == true)
+  {
+    //判断加载成功后，跳转到浏览器界面
+    //uigo("浏览器界面.iyu")
+
+    ufnsui()
+    {
+//     tw("内核初始化成功，请重新进入本界面")
+    }
+  }
+}
+
+
+
+
+
+
+
+
+us(7,"url",sss.视频)
+us(6,"text",sss.视频标题)
+us(7,"title",sss.视频标题)
+
+
+t()
+{
+
+
+    ss("%.Android/data/com.cjzwjdm/files/"+sss.图片地址,图片下载位置)
+    hd(sss.图片地址,图片下载位置,true,ok)
+
+
+f(ok == "-1")
+{
+  ufnsui()
+  {
+
+
+}
+}
+else
+{
+  ufnsui()
+  {
+
+s 路径=图片下载位置
+s 半径="2"
+s 模糊度 ="3"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(8,"src",img)
+
+  }
+}
+
+}
+</eventItme><eventItme type="downkey">
+
+
+
+s a=st_kC
+f(a==25)
+{
+}
+else f(a==24)
+{
+}
+else f(a==4)
+{
+//返回按钮事件
+
+ss("图片"+sss.图片地址+"图片"+"影视名"+sss.影视名+"影视名"+"级数"+sss.标题+"级数"+"视频链接"+sss.视频+"视频链接",历史记录)
+ss("Android/data/com.cjzwjdm/ls/"+sss.影视名+".so",历史文件)
+fw(历史文件,历史记录)
+
+end()
+
+}</eventItme></UIEventset>

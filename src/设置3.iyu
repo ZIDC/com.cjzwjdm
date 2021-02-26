@@ -1,0 +1,2630 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+//BackgroundColor=#FFF0EFF4
+background=white</ppt>
+<event></event>
+</View>
+<View id="33" did="1" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@22-35-05-005.jpg
+scaleType=centercrop
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=80dp
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="55" did="5" type="CardView">
+<ppt>width=46dp
+height=27dp
+app_CardElevation=5dp
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="56" did="55" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event><eventItme type="clicki">
+
+end()</eventItme></event>
+</View>
+<View id="54" did="56" type="ImageView">
+<ppt>width=30dp
+height=30dp
+src=@27fba0feeae.png</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="TextView">
+<ppt>width=-2
+height=-2
+text=设置
+gravity=center
+textColor=#ff080808
+textSize=17sp
+layout_marginLeft=15dp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="7" did="4" type="ScrollView">
+<ppt>width=-1
+height=-2</ppt>
+<event><eventItme type="touchmonitor">/.
+
+
+
+
+
+
+
+//转载以及引用代码请注明出处
+//syso(st_eA)
+f(st_eA==0)
+
+{
+  ss y1=st_eY
+  syso(ss.y1)
+}
+f(st_eA==2)
+{
+  ss y2=st_eY
+}
+else f(st_eA==1)
+{
+  f(ss.y1&gt;ss.y2)
+  {
+    s(ss.y1-ss.y2,hdjl)
+    f(hdjl&gt;100)
+    {
+      //这是向下滚动执行的事件
+      
+      
+      syso("下")   
+      f(ss.zt2==null)
+      {
+        //这里是设置只执行一次的事件
+        //隐藏标题栏动画
+        
+        ss xzt="true"
+        ss zt2="true"
+        ss zt3
+
+        us(9,"visibility",8)
+        
+        
+        
+      }
+    
+    
+    }  
+  }
+  else
+  {
+    s(ss.y2-ss.y1,hdjl)
+    f(hdjl&gt;100)
+    {
+      //这里是向上滚动执行的事件
+
+        
+     syso("上")
+      f(ss.xzt==null)
+      {
+        endcode
+      }
+      f(ss.zt3==null)
+      {
+        //这里是设置只执行一次的事件
+        //显示标题栏动画
+        
+        ss zt3="true"
+        ss zt2
+        
+
+        us(9,"visibility",0)
+        
+        
+      }
+      }
+    }
+  
+        
+  }
+}
+</eventItme></event>
+</View>
+<View id="8" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="TextView">
+<ppt>width=-1
+height=-2
+text=设置
+gravity=left|center
+textStyle=bold
+textColor=#ff080808
+textSize=33sp
+layout_marginLeft=15dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="34" did="8" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardElevation=0dp
+app_CardcornerRadius=5dp
+app_CardBackgroundColor=#ffffffff
+layout_marginLeft=20dp
+layout_marginRight=20dp
+layout_marginTop=10dp
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="35" did="34" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="11" did="35" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=horizontal
+//layout_marginTop=6dp
+background=selectableitem
+clickable=true
+BackgroundRipple=#ffe6e6e6
+//layout_margintop=64dp
+//layout_marginleft=5dp</ppt>
+<event><eventItme type="touchmonitor">/.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s a=st_eA
+//syso(st_eA)
+f(a == "0")
+{
+
+
+
+
+dhas(dh, 11, "scaleX", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 11, "scaleY", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+uzd(sss.zdq, 26)
+us(11,"elevation","2dp")
+
+
+dhas(dh, 33, "scaleX", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 12, "translationX", 0, 60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 14, "translationX", 0, -60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+}
+else f(a == "1")
+{
+
+
+
+dhas(dh, 11, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 11, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(11,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+
+dhas(dh, 12, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 14, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+}
+else f(a == "2")
+{
+
+
+  dhas(dh, 11, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 11, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(11,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+  
+  
+
+
+dhas(dh, 12, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 14, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+  
+}
+else f(a == "3")
+{
+
+
+dhas(dh, 11, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 11, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(11,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 12, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 14, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+}
+
+</eventItme><eventItme type="clicki">
+
+fn 底部弹窗.弹窗("模糊补偿.iyu")
+
+
+
+gvs(ss.弹窗,模糊补偿.18,ss.id18)
+gvs(ss.弹窗,模糊补偿.6,ss.id6)
+gvs(ss.弹窗,模糊补偿.13,ss.id13)
+gvs(ss.弹窗,模糊补偿.10,ss.id10)
+//6是更改按钮  18是开关 13是编辑框  10是整个布局
+
+
+
+
+t()
+{
+
+
+fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+sj(补偿,"补偿","补偿",补偿输出)
+sj(补偿,"参数","参数",参数输出)
+f(补偿输出 == "关")
+{
+  ufnsui()
+  {
+    
+    us(ss.id18,"checked","false")
+    us(ss.id6,"visibility",8) 
+    us(ss.id18,"visibility",0) 
+    us(ss.id10,"visibility",8) 
+    
+   }
+  }
+else
+{
+  ufnsui()
+  {
+    
+    
+    us(ss.id18,"checked","true")
+    us(ss.id6,"visibility",0) 
+    us(ss.id18,"visibility",8) 
+    us(ss.id10,"visibility",0) 
+    
+  ss("当前参数:"+参数输出,零时参数)
+  us(ss.id13,"hint",零时参数)
+    
+  }
+}
+}
+
+
+
+
+
+
+/.
+
+
+fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+sj(补偿,"补偿","补偿",补偿输出)
+sj(补偿,"参数","参数",参数输出)
+ss("当前数值(默认100以上) :"+参数输出,叔叔)
+us(设置弹窗.38,"hint",叔叔) 
+f(补偿输出 == "关")
+{
+
+  
+s a = "pxw"
+swh(a, ss.width)
+
+s a = "pxhh"
+swh(a, ss.height)
+
+s a = "pxztl"
+//获取屏幕状态栏高度的px像素
+swh(a, 状态栏)
+
+//s(状态栏+状态栏,jhk)
+
+//s(heightt+状态栏,ss.height)
+
+   
+
+}
+else
+{
+
+
+
+s a = "pxw"
+swh(a, ss.width)
+
+s a = "pxhh"
+swh(a, heightt)
+
+s a = "pxztl"
+//获取屏幕状态栏高度的px像素
+swh(a, 状态栏)
+
+
+//s(状态栏+参数输出,jh)
+
+s(heightt+参数输出,ss.height)  
+
+    
+ 
+}
+
+
+s path="/storage/emulated/0/ims.png"
+
+gvs(1,d)
+loadjar("bitmaps.dex",js)
+
+cls(js,"com.iee.os.bitmap",im)
+cls(js,"com.iee.os.prss",ime)
+javanew(x,im)
+javanew(l,ime)
+
+javax(k,x,im,"getViewBitmap","android.view.View",d,"int",ss.width,"int",ss.height)
+javax(ks,l,ime,"saveBitmap","android.graphics.Bitmap",k,"String",path)
+
+
+f(ks!="null")
+{
+  ss("已保存到:"+path,in)
+ sran(100000, 1000000, a)
+ss("%Android/data/com.cjzwjdm/files/dli/"+a+".so",列表点击背景模糊)
+  ft("%/storage/emulated/0/ims.png",列表点击背景模糊, c)
+  
+s 路径=列表点击背景模糊
+s 半径="6"
+s 模糊度 ="6"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(设置弹窗.3,"src",img)
+
+
+}
+else
+{
+//  tw("保存失败")
+}
+
+
+
+
+us(设置弹窗.22,"visibility",8)
+
+
+</eventItme></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="36" did="12" type="CardView">
+<ppt>width=25dp
+height=25dp
+app_CardElevation=5dp
+app_CardcornerRadius=5dp
+layout_marginLeft=15dp
+app_CardElevation=5dp</ppt>
+<event></event>
+</View>
+<View id="37" did="36" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="16" did="37" type="ImageView">
+<ppt>width=23dp
+height=23dp
+src=@IMG_20210120_194349.png</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=背景模糊补偿
+//textStyle=bold
+textSize=13sp
+textColor=#ff090909
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="14" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=right|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="SwitchCompat">
+<ppt>width=-2
+height=-2
+layout_marginRight=10dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="57" did="35" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=horizontal
+layout_marginTop=5dp
+layout_marginBottom=5dp
+background=selectableitem
+clickable=true
+BackgroundRipple=#ffe6e6e6</ppt>
+<event><eventItme type="touchmonitor">/.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s a=st_eA
+//syso(st_eA)
+f(a == "0")
+{
+
+
+
+
+dhas(dh, 24, "scaleX", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+uzd(sss.zdq, 26)
+us(24,"elevation","2dp")
+
+
+dhas(dh, 33, "scaleX", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 25, "translationX", 0,60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 0,-60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+}
+else f(a == "1")
+{
+
+
+
+dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+
+dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+}
+else f(a == "2")
+{
+
+
+  dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+  
+ dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start") 
+  
+}
+else f(a == "3")
+{
+
+
+dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+}
+
+</eventItme><eventItme type="clicki">
+
+
+
+
+
+
+us(66,"text","开")
+us(设置弹窗.1,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(设置弹窗.1, "dh", dh)
+
+ 
+us(设置弹窗.4,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(设置弹窗.4, "dh", dh)
+
+dhas(dh, 设置弹窗.4, "scaleX",0.7,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 设置弹窗.4, "scaleY",0.7,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 设置弹窗.4, "translationY", -55,0)     
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+
+
+us(设置弹窗.22,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 550)
+us(设置弹窗.22, "dh", dh)
+
+dhas(dh, 设置弹窗.22, "scaleX",0.7,1.0)
+dh(dh, "duration", 850)
+dh(dh, "start")
+        
+dhas(dh, 设置弹窗.22, "scaleY",0.7,1.0)
+dh(dh, "duration", 850)
+dh(dh, "start")
+        
+dhas(dh, 设置弹窗.22, "translationY", -55,0)       
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+
+
+
+
+
+//us(弹窗设置.1,"visibility",0)
+
+
+//us(弹窗设置.22,"visibility",8)
+
+
+
+
+fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+sj(补偿,"补偿","补偿",补偿输出)
+sj(补偿,"参数","参数",参数输出)
+ss("当前数值(默认100以上) :"+参数输出,叔叔)
+us(设置弹窗.38,"hint",叔叔) 
+f(补偿输出 == "关")
+{
+
+  
+s a = "pxw"
+swh(a, ss.width)
+
+s a = "pxhh"
+swh(a, ss.height)
+
+s a = "pxztl"
+//获取屏幕状态栏高度的px像素
+swh(a, 状态栏)
+
+//s(状态栏+状态栏,jhk)
+
+//s(heightt+状态栏,ss.height)
+
+   
+
+}
+else
+{
+
+
+
+s a = "pxw"
+swh(a, ss.width)
+
+s a = "pxhh"
+swh(a, heightt)
+
+s a = "pxztl"
+//获取屏幕状态栏高度的px像素
+swh(a, 状态栏)
+
+
+//s(状态栏+参数输出,jh)
+
+s(heightt+参数输出,ss.height)  
+    
+    
+
+}
+
+s path="/storage/emulated/0/ims.png"
+
+gvs(1,d)
+loadjar("bitmaps.dex",js)
+
+cls(js,"com.iee.os.bitmap",im)
+cls(js,"com.iee.os.prss",ime)
+javanew(x,im)
+javanew(l,ime)
+
+javax(k,x,im,"getViewBitmap","android.view.View",d,"int",ss.width,"int",ss.height)
+javax(ks,l,ime,"saveBitmap","android.graphics.Bitmap",k,"String",path)
+
+
+f(ks!="null")
+{
+  ss("已保存到:"+path,in)
+ sran(100000, 1000000, a)
+ss("%Android/data/com.cjzwj.top/files/dli/"+a+".so",列表点击背景模糊)
+  ft("%ims.png",列表点击背景模糊, c)
+//  tw(c) 
+
+s 路径=列表点击背景模糊
+s 半径="6"
+s 模糊度 ="6"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(设置弹窗.3,"src",img)
+
+
+}
+else
+{
+//  tw("保存失败")
+}
+
+
+us(设置弹窗.21,"visibility",8)
+</eventItme></event>
+</View>
+<View id="58" did="57" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="59" did="58" type="CardView">
+<ppt>width=25dp
+height=25dp
+app_CardElevation=5dp
+app_CardcornerRadius=5dp
+layout_marginLeft=15dp
+app_CardElevation=5dp</ppt>
+<event></event>
+</View>
+<View id="60" did="59" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="61" did="60" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@IMG_20210121_220704.png</ppt>
+<event></event>
+</View>
+<View id="62" did="58" type="TextView">
+<ppt>width=-2
+height=-2
+text=播放选项
+textSize=13sp
+textColor=#ff090909
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="63" did="57" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=right|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="64" did="63" type="TextView">
+<ppt>width=-2
+height=-2
+text=检查中
+layout_marginRight=25dp
+textSize=10sp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="65" did="63" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@2f8f48fb7b1.png
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="24" did="35" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=horizontal
+layout_marginTop=5dp
+layout_marginBottom=5dp
+background=selectableitem
+clickable=true
+BackgroundRipple=#ffe6e6e6</ppt>
+<event><eventItme type="touchmonitor">/.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s a=st_eA
+//syso(st_eA)
+f(a == "0")
+{
+
+
+
+
+dhas(dh, 24, "scaleX", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+uzd(sss.zdq, 26)
+us(24,"elevation","2dp")
+
+
+dhas(dh, 33, "scaleX", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 25, "translationX", 0,60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 0,-60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+}
+else f(a == "1")
+{
+
+
+
+dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+
+dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+}
+else f(a == "2")
+{
+
+
+  dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+  
+ dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start") 
+  
+}
+else f(a == "3")
+{
+
+
+dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+}
+
+</eventItme><eventItme type="clicki">
+ fn 项目更新.更新()
+ 
+ 
+   utw(null,"来嘛","白洁动漫官网","GO", false, v)
+   {
+  endutw()
+  hws("http://dm.cjzwjys.top")
+  }</eventItme></event>
+</View>
+<View id="25" did="24" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="40" did="25" type="CardView">
+<ppt>width=25dp
+height=25dp
+app_CardElevation=5dp
+app_CardcornerRadius=5dp
+layout_marginLeft=15dp
+app_CardElevation=5dp</ppt>
+<event></event>
+</View>
+<View id="41" did="40" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="26" did="41" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@IMG_20210120_195704.png</ppt>
+<event></event>
+</View>
+<View id="27" did="25" type="TextView">
+<ppt>width=-2
+height=-2
+text=检查更新
+textSize=13sp
+textColor=#ff090909
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="28" did="24" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=right|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="31" did="28" type="TextView">
+<ppt>width=-2
+height=-2
+text=
+layout_marginRight=25dp
+textSize=10sp
+</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@2f8f48fb7b1.png
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="67" did="35" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=horizontal
+layout_marginTop=5dp
+layout_marginBottom=5dp
+background=selectableitem
+clickable=true
+BackgroundRipple=#ffe6e6e6</ppt>
+<event><eventItme type="touchmonitor">/.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s a=st_eA
+//syso(st_eA)
+f(a == "0")
+{
+
+
+
+
+dhas(dh, 24, "scaleX", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+uzd(sss.zdq, 26)
+us(24,"elevation","2dp")
+
+
+dhas(dh, 33, "scaleX", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 25, "translationX", 0,60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 0,-60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+}
+else f(a == "1")
+{
+
+
+
+dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+
+dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+}
+else f(a == "2")
+{
+
+
+  dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+  
+ dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start") 
+  
+}
+else f(a == "3")
+{
+
+
+dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+}
+
+</eventItme><eventItme type="clicki">
+
+fr("@dm.so",j)
+sj(j,"^O^",null,jh)
+utw(null,"历史",jh, "关闭", true, v)
+{
+
+ endutw() 
+  }</eventItme></event>
+</View>
+<View id="68" did="67" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="69" did="68" type="CardView">
+<ppt>width=25dp
+height=25dp
+app_CardElevation=5dp
+app_CardcornerRadius=5dp
+layout_marginLeft=15dp
+app_CardElevation=5dp</ppt>
+<event></event>
+</View>
+<View id="70" did="69" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="71" did="70" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@1b29775f995.png</ppt>
+<event></event>
+</View>
+<View id="72" did="68" type="TextView">
+<ppt>width=-2
+height=-2
+text=历史版本记录
+textSize=13sp
+textColor=#ff090909
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="73" did="67" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=right|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="74" did="73" type="TextView">
+<ppt>width=-2
+height=-2
+text=
+layout_marginRight=25dp
+textSize=10sp
+</ppt>
+<event></event>
+</View>
+<View id="75" did="73" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@2f8f48fb7b1.png
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="76" did="35" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=horizontal
+layout_marginTop=5dp
+layout_marginBottom=5dp
+background=selectableitem
+clickable=true
+BackgroundRipple=#ffe6e6e6</ppt>
+<event><eventItme type="touchmonitor">/.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s a=st_eA
+//syso(st_eA)
+f(a == "0")
+{
+
+
+
+
+dhas(dh, 24, "scaleX", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+uzd(sss.zdq, 26)
+us(24,"elevation","2dp")
+
+
+dhas(dh, 33, "scaleX", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 25, "translationX", 0,60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 0,-60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+}
+else f(a == "1")
+{
+
+
+
+dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+
+dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+}
+else f(a == "2")
+{
+
+
+  dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+  
+ dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start") 
+  
+}
+else f(a == "3")
+{
+
+
+dhas(dh, 24, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 24, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(24,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 25, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 28, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+}
+
+</eventItme><eventItme type="clicki">
+
+
+
+
+
+
+
+
+
+
+utw(null,"免责声明","本App提供的资源均系收集于各大视频网站，本App是采集了《樱花动漫-专注动漫的门户网址》\n《风车动漫-专注动漫的门户网址》详细网址,请点击前往按钮。\n本App并不提供影片资源存储，也不参与录制、上传\n若本站收录的节目无意侵犯了贵司版权，请给网页底部邮箱地址来信，我们会及时处理和回复，谢谢!\n\n资源全部来源于风车动漫和樱花动漫，请自行进入这些网站联系该网站的运营删除侵犯了贵公司版权的相关节目\n请在24小时内删除本软件，本软件仅供学习交流！", "前往", "取消", true, v)
+{
+ufnsui()
+{
+
+    
+    us(背景模糊.1,"visibility",8)
+    hws("http://www.imomoe.jp")
+    
+    endutw()
+}
+}
+else
+{
+
+    endutw()
+    
+}</eventItme></event>
+</View>
+<View id="77" did="76" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="78" did="77" type="CardView">
+<ppt>width=25dp
+height=25dp
+app_CardElevation=5dp
+app_CardcornerRadius=5dp
+layout_marginLeft=15dp
+app_CardElevation=5dp</ppt>
+<event></event>
+</View>
+<View id="79" did="78" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="80" did="79" type="ImageView">
+<ppt>width=30dp
+height=25dp
+src=@b8c4ba6ce05.png</ppt>
+<event></event>
+</View>
+<View id="81" did="77" type="TextView">
+<ppt>width=-2
+height=-2
+text=免责声明
+textSize=13sp
+textColor=#ff090909
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="82" did="76" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=right|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="83" did="82" type="TextView">
+<ppt>width=-2
+height=-2
+text=
+layout_marginRight=25dp
+textSize=10sp
+</ppt>
+<event></event>
+</View>
+<View id="84" did="82" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@2f8f48fb7b1.png
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="17" did="35" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=horizontal
+layout_marginTop=5dp
+background=selectableitem
+clickable=true
+BackgroundRipple=#ffe6e6e6</ppt>
+<event><eventItme type="touchmonitor">/.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s a=st_eA
+//syso(st_eA)
+f(a == "0")
+{
+
+
+
+
+dhas(dh, 17, "scaleX", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 17, "scaleY", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+uzd(sss.zdq, 26)
+us(17,"elevation","2dp")
+
+
+dhas(dh, 33, "scaleX", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.3,1.5)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 18, "translationX", 0,60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 21, "translationX", 0,-60)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+}
+else f(a == "1")
+{
+
+
+
+dhas(dh, 17, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 17, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(17,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+
+dhas(dh, 18, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 21, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+}
+else f(a == "2")
+{
+
+
+  dhas(dh, 17, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 17, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(17,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+  
+ dhas(dh, 18, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 21, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start") 
+  
+}
+else f(a == "3")
+{
+
+
+dhas(dh, 17, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 17, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(17,"elevation","0dp")
+
+
+dhas(dh, 33, "scaleX", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 33, "scaleY", 1.5,1.3)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+dhas(dh, 18, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 21, "translationX", 60,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+}
+
+</eventItme><eventItme type="clicki">.</eventItme></event>
+</View>
+<View id="18" did="17" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="38" did="18" type="CardView">
+<ppt>width=25dp
+height=25dp
+app_CardElevation=5dp
+app_CardcornerRadius=5dp
+layout_marginLeft=15dp
+app_CardElevation=5dp</ppt>
+<event></event>
+</View>
+<View id="39" did="38" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="19" did="39" type="ImageView">
+<ppt>width=35dp
+height=35dp
+src=@IMG_20210120_201236.png</ppt>
+<event></event>
+</View>
+<View id="20" did="18" type="TextView">
+<ppt>width=-2
+height=-2
+text=清除数据文件缓存
+textSize=13sp
+//textStyle=bold
+textColor=#ff090909
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="21" did="17" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=right|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="30" did="21" type="TextView">
+<ppt>width=-2
+height=-2
+text=计算中
+layout_marginRight=25dp
+textSize=10sp
+</ppt>
+<event></event>
+</View>
+<View id="23" did="21" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@2f8f48fb7b1.png
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="87" did="35" type="LinearLayout">
+<ppt>width=-1
+height=145dp
+orientation=horizontal
+layout_marginTop=5dp
+</ppt>
+<event></event>
+</View>
+<View id="96" did="87" type="CardView">
+<ppt>width=-1
+height=-1
+layout_marginTop=35dp
+layout_marginBottom=35dp
+layout_marginRight=30dp
+layout_marginLeft=30dp
+app_CardcornerRadius=7dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff3f3f3</ppt>
+<event></event>
+</View>
+<View id="88" did="96" type="LinearLayout">
+<ppt>width=-1
+height=-1
+gravity=left|center
+background=selectableitem
+clickable=true
+BackgroundRipple=#ffe6e6e6</ppt>
+<event><eventItme type="touchmonitor">
+
+
+
+
+
+s a=st_eA
+f(a == "0")
+{
+
+
+
+
+
+dhas(dh, 96, "scaleX", 1.0,1.2)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 96, "scaleY", 1.0,1.2)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+
+
+}
+else f(a == "1")
+{
+
+
+
+dhas(dh, 96, "scaleX", 1.2,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 96, "scaleY", 1.2,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+dhon(dh)
+{
+uigo("反馈.iyu")
+}
+
+
+
+
+
+}
+else f(a == "2")
+{
+
+
+
+endcode
+
+
+  
+}
+else f(a == "3")
+{
+
+
+dhas(dh, 96, "scaleX", 1.2,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, 96, "scaleY", 1.2,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+
+
+
+}
+
+</eventItme></event>
+</View>
+<View id="89" did="88" type="CardView">
+<ppt>width=25dp
+height=25dp
+app_CardElevation=5dp
+app_CardcornerRadius=5dp
+layout_marginLeft=15dp
+app_CardElevation=5dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="90" did="89" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="91" did="90" type="ImageView">
+<ppt>width=35dp
+height=35dp
+src=@IMG_20210120_201236.png</ppt>
+<event></event>
+</View>
+<View id="92" did="88" type="TextView">
+<ppt>width=-2
+height=-2
+text=问题/Bug 反馈
+textSize=15sp
+//textStyle=bold
+textColor=#ff090909
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="42" did="8" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardElevation=0dp
+app_CardcornerRadius=6dp
+app_CardBackgroundColor=#fff6f6f6
+layout_marginLeft=20dp
+layout_marginRight=20dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="32" did="42" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="43" did="32" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=horizontal
+layout_marginTop=5dp
+layout_marginBottom=5dp
+gravity=left|center</ppt>
+<event><eventItme type="clicki">
+
+uigo("关于.iyu")</eventItme><eventItme type="press">sss st=st_vW</eventItme><eventItme type="pressmenu">/.
+
+
+
+
+title:操作
+case 收藏:
+
+ufnsui()
+{
+
+tw("收藏")
+
+}
+
+
+break</eventItme></event>
+</View>
+<View id="44" did="43" type="CardView">
+<ppt>width=30dp
+height=30dp
+app_CardElevation=5dp
+app_CardcornerRadius=5dp
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="45" did="44" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="46" did="45" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@73b4b21712d.png</ppt>
+<event></event>
+</View>
+<View id="47" did="43" type="TextView">
+<ppt>width=-2
+height=-2
+text=关于
+//textStyle=bold
+textSize=13sp
+textColor=#ff090909
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="49" did="32" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=horizontal
+layout_marginBottom=5dp
+gravity=left|center</ppt>
+<event><eventItme type="clicki">uigo("更多详细.iyu")</eventItme></event>
+</View>
+<View id="50" did="49" type="CardView">
+<ppt>width=30dp
+height=30dp
+app_CardElevation=5dp
+app_CardcornerRadius=5dp
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="51" did="50" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="52" did="51" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@9e66a0726ab.png</ppt>
+<event></event>
+</View>
+<View id="53" did="49" type="TextView">
+<ppt>width=-2
+height=-2
+text=更多详细
+//textStyle=bold
+textSize=13sp
+textColor=#ff090909
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="48" did="42" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="85" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center</ppt>
+<event></event>
+</View>
+<View id="86" did="85" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中
+textSize=10sp
+textColor=#ff6e6e6e
+layout_marginBottom=10dp
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="66" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本66
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+
+
+/.
+us(55,"visibility",0)
+dhas(dh, 55, "scaleY", 0.0,1.0)
+dh(dh, "duration", 1300)
+dh(dh, "start")
+
+dhas(dh, 55, "scaleX", 0.0,1.0)
+dh(dh, "duration", 1300)
+dh(dh, "start")
+
+
+us(6,"visibility",0)
+dhas(dh, 6, "translationX", -85,25)
+dh(dh, "duration", 1200)
+dh(dh, "start")
+
+./
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+ss(c+"dp",dp)
+us(3,"height",dp)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+//设置状态栏透明(沉浸式)
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+
+
+
+addv(1,"设置弹窗.iyu")
+addv(1,"背景模糊.iyu")
+
+
+t()
+{
+  stop(1310)
+  ufnsui()
+  {
+    //要操作的文件夹
+fdir("%Android/data/com.cjzwjdm/files/dli/",path)
+//获取文件夹的文件大小以及文件数量
+fn 获取大小.dirfilesize(path)
+//字节长度转kb
+s2(ss.size/1024,kb)
+s2(kb/1024,mb)
+//ss("文件数:"+ss.nfile+"\n"+kb+"Kb , "+mb+"Mb",大小)
+ss("文件数:"+ss.nfile+"\n"+mb+"Mb",大小)
+us(30,"text",大小)
+
+f(大小 ? "0.00Kb , 0.00Mb")
+{
+us(30,"text","无缓存")
+}
+else
+{
+us(30,"text",大小)
+}
+
+
+
+  }
+} 
+
+
+
+
+
+
+t()
+{
+  hs("http://dm.cjzwjys.top/版权.txt",k)
+  sj(k,null,"(",动漫版权)
+  ufnsui()
+  {
+  us(86,"text",动漫版权)
+  }
+}
+</eventItme><eventItme type="loadingComplete">
+
+
+
+
+fe("%Android/data/com.cjzwjdm/files/模糊补偿.html",uy)
+f(uy == true)
+{
+  
+}
+else
+{
+  ufnsui()
+  {
+    fw("%Android/data/com.cjzwjdm/files/模糊补偿.html", "补偿关补偿参数100参数")
+    end()
+    tw("文件配置完成")
+  }
+}
+
+
+fe("%Android/data/com.cjzwjdm/files/播放器.html",uy)
+f(uy == true)
+{
+  
+}
+else
+{
+  ufnsui()
+  {
+    fw("%Android/data/com.cjzwjdm/files/播放器.html", "播放开播放")
+    end()
+    tw("播放器配置完成")
+  }
+}
+
+
+
+
+
+
+t()
+{
+
+
+fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+sj(补偿,"补偿","补偿",补偿输出)
+sj(补偿,"参数","参数",参数输出)
+f(补偿输出 == "关")
+{
+  ufnsui()
+  {
+    
+   us(设置弹窗.18,"visibility",0)
+   dhas(dh,设置弹窗.15, "translationX", 0,385)
+   dh(dh, "duration", 600)
+   dh(dh, "start")
+   dhon(dh)
+   {
+    us(设置弹窗.18,"visibility",8)
+    us(设置弹窗.38,"visibility",8) 
+    us(设置弹窗.13,"visibility",8)
+    us(设置弹窗.20,"visibility",0)
+
+    us(设置弹窗.19,"visibility",8)
+    us(设置弹窗.12,"visibility",0)
+
+   }
+  }
+else
+{
+  ufnsui()
+  {
+    
+    
+   us(设置弹窗.38,"visibility",0) 
+   us(设置弹窗.38,"text",参数输出)
+   us(设置弹窗.18,"visibility",0)
+   dhas(dh,设置弹窗.15, "translationX", 385,0)
+   dh(dh, "duration", 600)
+   dh(dh, "start")
+   dhon(dh)
+   {
+    us(设置弹窗.18,"visibility",8)
+    us(设置弹窗.38,"visibility",0) 
+    us(设置弹窗.13,"visibility",0)
+    us(设置弹窗.20,"visibility",8)
+    
+    us(设置弹窗.19,"visibility",0)
+    us(设置弹窗.12,"visibility",8)
+
+   }    
+    
+    
+  }
+}
+}
+
+
+
+
+
+fr("%Android/data/com.cjzwjdm/files/播放器.html",播放)
+sj(播放,"播放","播放",播放输出)
+f(播放输出 == "关")
+{
+  ufnsui()
+  {
+    
+us(设置弹窗.37,"visibility",0)
+dhas(dh,设置弹窗.29, "translationX", 0,385)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhon(dh)
+{
+us(设置弹窗.37,"visibility",8)
+
+us(设置弹窗.32,"visibility",8)
+us(设置弹窗.36,"visibility",0)
+
+us(设置弹窗.35,"visibility",8)
+us(设置弹窗.33,"visibility",0)
+}
+
+
+   
+  }
+}
+else
+{
+  ufnsui()
+  {
+    
+
+us(设置弹窗.37,"visibility",0)
+dhas(dh,设置弹窗.29, "translationX", 385,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhon(dh)
+{
+us(设置弹窗.37,"visibility",8)
+
+us(设置弹窗.32,"visibility",0)
+us(设置弹窗.36,"visibility",8)
+
+us(设置弹窗.35,"visibility",0)
+us(设置弹窗.33,"visibility",8)
+
+}
+
+   }    
+    
+    
+  }
+}
+}
+
+
+
+
+
+</eventItme><eventItme type="downkey">
+
+
+
+
+
+
+
+
+ug(66,"text",jj)
+
+
+s a=st_kC
+f(a==25)
+{
+}
+else f(a==24)
+{
+}
+else f(a==4)
+{
+//返回按钮事件
+us(66,"text","动画执行中")
+f(jj == "开")
+{
+  ufnsui()
+  {
+    
+
+
+            
+
+dhas(dh, 设置弹窗.4, "scaleX",1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")       
+dhas(dh, 设置弹窗.4, "scaleY",1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")
+dhon(dh)
+{
+
+dha(dh, true,false)
+dh(dh, "duration",400)
+us(设置弹窗.4, "dh", dh)
+dhon(dh)
+{
+us(设置弹窗.4,"visibility",8) 
+}
+
+}
+
+
+t()
+{
+stop(550)
+ufnsui()
+{
+
+dha(dh, true,false)
+dh(dh, "duration",300)
+us(设置弹窗.1, "dh", dh)
+dhon(dh)
+{
+us(设置弹窗.1,"visibility",8)   
+us(设置弹窗.21,"visibility",8)
+us(设置弹窗.22,"visibility",8)
+us(设置弹窗.4,"visibility",8)
+us(66,"text",关")
+}  
+}
+}    
+  }
+}
+else
+{
+  ufnsui()
+  {
+    
+f(jj == "动画执行中")
+{
+  ufnsui()
+  {
+
+  }
+}
+else
+{
+  ufnsui()
+  {
+    end()
+  }
+}   
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+  
+</eventItme></UIEventset>

@@ -1,0 +1,46 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="RecyclerView">
+<ppt>width=-1
+height=-1
+visibility=gone</ppt>
+<event><eventItme type="pressmenu">
+
+
+
+
+
+
+title:操作
+case 收藏:
+
+ufnsui()
+{
+
+tw("收藏")
+
+}
+
+
+break</eventItme></event>
+</View>
+<View id="3" did="1" type="ProgressBar">
+<ppt>width=30dp
+height=30dp
+style=16842874
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本4
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

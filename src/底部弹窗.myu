@@ -1,0 +1,174 @@
+
+
+//底部圆角弹窗
+fn 弹窗(view)
+fn 模糊.背景模糊("1")
+us(背景模糊.1,"visibility",0)
+dha(dh, false, true)
+dh(dh, "duration", 600)
+us(背景模糊.1, "dh", dh)
+
+javanew(ss.载体,"android.support.design.widget.BottomSheetDialog","Context",activity)
+//实例化底部弹窗类
+
+nvw(-1,null,"线性布局","width=-1\nheight=-1\norientation=vertical\nbackgroundcolor=0",ss.弹窗)
+addv(ss.弹窗,view)
+//加载载体界面
+
+java(null,ss.载体,"android.app.Dialog.setContentView","android.view.View",ss.弹窗)
+//设置显示的内容
+
+java(null,ss.载体,"android.app.Dialog.setCancelable","boolean",true)
+//是否可以自动关闭，比如按返回键会不会关闭
+
+java(null,ss.载体,"android.app.Dialog.setCanceledOnTouchOutside","boolean",true)
+//点击弹窗外面是否可以关闭
+
+java(delegate,ss.载体,"android.support.v7.app.AppCompatDialog.getDelegate")
+javags(id,null,"android.support.design.R$id","design_bottom_sheet")
+java(弹窗根控件,delegate,"android.support.v7.app.AppCompatDelegate.findViewById","int",id)
+us(弹窗根控件,"backgroundcolor",0)
+//去掉默认的白色背景
+
+java(null,ss.载体,"android.app.Dialog.setOnDismissListener",".android.content.DialogInterface$OnDismissListener",null) 
+{
+//  tw("弹窗被关闭")
+       dha(dh, true, false)
+       dh(dh, "duration", 610)
+       us(背景模糊.1, "dh", dh)
+       dhon(dh)
+       {
+        us(背景模糊.1,"visibility",8)
+       }
+
+} 
+//弹窗被关闭时回调
+
+java(null,ss.载体,"android.app.Dialog.show")
+//显示弹窗
+
+javags(behavior,ss.载体,"android.support.design.widget.BottomSheetDialog","mBehavior")
+//反射取得behavior对象
+//java(null,behavior,"android.support.design.widget.BottomSheetBehavior.setState","int",3)
+//设置状态
+
+
+end fn
+
+
+
+
+
+//底部圆角弹窗
+fn 加载弹窗(view)
+fn 模糊.背景模糊("1")
+us(背景模糊.1,"visibility",0)
+dha(dh, false, true)
+dh(dh, "duration", 600)
+us(背景模糊.1, "dh", dh)
+
+javanew(ss.载体,"android.support.design.widget.BottomSheetDialog","Context",activity)
+//实例化底部弹窗类
+
+nvw(-1,null,"线性布局","width=-1\nheight=-1\norientation=vertical\nbackgroundcolor=0",ss.弹窗)
+addv(ss.弹窗,view)
+//加载载体界面
+
+java(null,ss.载体,"android.app.Dialog.setContentView","android.view.View",ss.弹窗)
+//设置显示的内容
+
+java(null,ss.载体,"android.app.Dialog.setCancelable","boolean",false)
+//是否可以自动关闭，比如按返回键会不会关闭
+
+java(null,ss.载体,"android.app.Dialog.setCanceledOnTouchOutside","boolean",false)
+//点击弹窗外面是否可以关闭
+
+java(delegate,ss.载体,"android.support.v7.app.AppCompatDialog.getDelegate")
+javags(id,null,"android.support.design.R$id","design_bottom_sheet")
+java(弹窗根控件,delegate,"android.support.v7.app.AppCompatDelegate.findViewById","int",id)
+us(弹窗根控件,"backgroundcolor",0)
+//去掉默认的白色背景
+
+java(null,ss.载体,"android.app.Dialog.setOnDismissListener",".android.content.DialogInterface$OnDismissListener",null) 
+{
+//  tw("弹窗被关闭")
+       dha(dh, true, false)
+       dh(dh, "duration", 610)
+       us(背景模糊.1, "dh", dh)
+       dhon(dh)
+       {
+        us(背景模糊.1,"visibility",8)
+       }
+
+} 
+//弹窗被关闭时回调
+
+java(null,ss.载体,"android.app.Dialog.show")
+//显示弹窗
+
+javags(behavior,ss.载体,"android.support.design.widget.BottomSheetDialog","mBehavior")
+//反射取得behavior对象
+//java(null,behavior,"android.support.design.widget.BottomSheetBehavior.setState","int",3)
+//设置状态
+
+
+end fn
+
+
+
+
+
+//底部圆角弹窗
+fn 追番(view)
+fn 模糊.背景模糊("1")
+us(背景模糊.1,"visibility",0)
+dha(dh, false, true)
+dh(dh, "duration", 600)
+us(背景模糊.1, "dh", dh)
+
+javanew(ss.载体,"android.support.design.widget.BottomSheetDialog","Context",activity)
+//实例化底部弹窗类
+
+nvw(-1,null,"线性布局","width=-1\nheight=-1\norientation=vertical\nbackgroundcolor=0",ss.弹窗)
+addv(ss.弹窗,view)
+//加载载体界面
+
+java(null,ss.载体,"android.app.Dialog.setContentView","android.view.View",ss.弹窗)
+//设置显示的内容
+
+java(null,ss.载体,"android.app.Dialog.setCancelable","boolean",false)
+//是否可以自动关闭，比如按返回键会不会关闭
+
+java(null,ss.载体,"android.app.Dialog.setCanceledOnTouchOutside","boolean",true)
+//点击弹窗外面是否可以关闭
+
+java(delegate,ss.载体,"android.support.v7.app.AppCompatDialog.getDelegate")
+javags(id,null,"android.support.design.R$id","design_bottom_sheet")
+java(弹窗根控件,delegate,"android.support.v7.app.AppCompatDelegate.findViewById","int",id)
+us(弹窗根控件,"backgroundcolor",0)
+//去掉默认的白色背景
+
+java(null,ss.载体,"android.app.Dialog.setOnDismissListener",".android.content.DialogInterface$OnDismissListener",null) 
+{
+//  tw("弹窗被关闭")
+       dha(dh, true, false)
+       dh(dh, "duration", 610)
+       us(背景模糊.1, "dh", dh)
+       dhon(dh)
+       {
+        us(背景模糊.1,"visibility",8)
+       }
+
+} 
+//弹窗被关闭时回调
+
+java(null,ss.载体,"android.app.Dialog.show")
+//显示弹窗
+
+javags(behavior,ss.载体,"android.support.design.widget.BottomSheetDialog","mBehavior")
+//反射取得behavior对象
+//java(null,behavior,"android.support.design.widget.BottomSheetBehavior.setState","int",3)
+//设置状态
+
+
+end fn

@@ -1,0 +1,15 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="ImageView">
+<ppt>width=-1
+height=-1
+src=9779
+//scaleType=fitxy</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

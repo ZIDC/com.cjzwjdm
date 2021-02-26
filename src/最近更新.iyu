@@ -1,0 +1,241 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="8" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="2" did="8" type="RecyclerView">
+<ppt>width=-1
+height=-1
+overScrollMode=never
+scrollbars=none
+visibility=gone</ppt>
+<event><eventItme type="onscrolled">
+
+  f(st_fM==0)
+  {
+  ss top="true"
+  }
+  else
+  {
+    ss top
+  }
+  //判断是否已获取过滑动之前的值
+  f(ss.zt==null)
+  {
+  //未获取过
+  ss a1=st_fM
+  ss zt="true"
+  }
+  else
+  {
+  //设置状态为未获取过
+  ss zt
+  //获取再次滑动的值
+  ss a2=st_fM
+  //判断第一和第二次是否相等
+  f(ss.a1==ss.a2)
+  {
+    //相等不执行下面事件
+    endcode
+  }
+  f(ss.a2&gt;ss.a1)
+  {
+    //列表向下滚动执行的事件
+    f(ss.zt2==null)
+  {
+    syso(ss.zt2)
+    ss zt2="true"
+    ss zt3
+
+dhas(dh, 53, "scaleY", 1.0,0.3)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh, 53, "scaleX", 1.0,0.3)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh, 53, "translationY",0,60)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+us(53,"app_CardElevation","5dp")
+dha(dh, true, false)
+dh(dh, "duration", 800)
+us(55, "dh", dh)
+dhon(dh)
+{
+us(55,"visibility",8)
+}
+
+
+
+    //隐藏悬浮按钮动画
+    }
+  }
+ else
+ {
+   //列表向上滚动执行的事件
+   f(ss.zt3==null)
+   {
+     ss zt3="true"
+     ss zt2
+     //背景出现动画
+us(55,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 800)
+us(55, "dh", dh)
+
+dhas(dh, 53, "scaleY", 0.3,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+us(53,"app_CardElevation","0dp")
+ 
+dhas(dh, 53, "scaleX", 0.3,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start") 
+
+dhas(dh, 53, "translationY",60,0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+dhon(dh)
+{
+us(53,"app_CardElevation","5dp")
+}
+
+
+     //悬浮按钮显示
+
+     
+    }
+  }
+  }</eventItme></event>
+</View>
+<View id="3" did="8" type="ProgressBar">
+<ppt>width=30dp
+height=30dp
+style=16842874</ppt>
+<event></event>
+</View>
+<View id="4" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="5" did="8" type="CardView">
+<ppt>width=75dp
+height=30dp
+app_CardcornerRadius=15dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#FFF9FDFF
+layout_marginTop=15dp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundRipple=#ff7d7d7d</ppt>
+<event><eventItme type="clicki">
+
+ug(最近更新.4,"text",kss.搜索不到)
+f(ss.搜索不到 == "努力加载中")
+{
+}
+else
+{
+
+
+
+us(最近更新.5,"visibility",0)
+us(最近更新.2,"visibility",8)
+us(最近更新.3,"visibility",0)
+us(最近更新.4,"visibility",0)
+us(最近更新.4,"text","努力加载中")
+
+
+//最新更新
+t()
+{
+  hs(sss.网址,null,"gb2312",b)  
+   f(b == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  { 
+
+  sj(b,"&lt;h2&gt;最新更新&lt;/h2&gt;"," &lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx," &lt;li&gt;",null,zxd)
+  sl(zxd," &lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(最近更新.2,list_zxgx,"最近更新列表.iyu",-1,-2)
+
+
+ fn 首页加载.日本动漫()  
+us(最近更新.2,"visibility",0)
+us(最近更新.3,"visibility",8)
+us(最近更新.4,"visibility",8)
+us(最近更新.5,"visibility",8)
+us(最近更新.4,"text","")
+
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(最近更新.2, "dh", dh)
+
+dhas(dh, 最近更新.2, "scaleX",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "scaleY",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "translationY",-200,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+
+}
+}
+}
+}</eventItme></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=重新加载
+textColor=#FF2CB3FF
+textSize=12sp</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

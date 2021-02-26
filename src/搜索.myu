@@ -1,0 +1,400 @@
+
+
+
+
+fn 樱花动漫()
+
+
+ula(ss.list, null)
+
+
+us(搜索.12,"visibility",8)
+us(搜索.15,"visibility",0)
+ug(搜索.9,"text",ssc)
+
+
+fn 底部弹窗.加载弹窗("加载.iyu")
+gvs(ss.弹窗,加载.10,ss.id10)
+us(ss.id10,"text","动态解析....")
+
+
+slg(ssc, b)
+f(b &lt; 2)
+{
+  ufnsui()
+  {
+       gvs(1,view)
+       cls("android.support.design.widget.Snackbar",类)
+       javax(snk,null,类,"make","android.view.View",view,"java.lang.CharSequence","最少两个字符！","int",1300)
+       cls("android.view.View$OnClickListener", 事件类)
+       javacb(事件, 事件类)
+       {
+       tw("该示例来自http://iapp.xcenadmin.top/,原创作者未知，转载请注明！")
+       }
+       //javax(null,snk,类,"setAction","java.lang.CharSequence","确定",事件类,事件)
+       javax(get,snk,"android.support.design.widget.BaseTransientBottomBar","getView")
+       //设置背景
+       ngde(0,16,"#ff00acff|#ff49ffae","#333333", "bltr", bj)
+       us(get,"background",bj)
+       //设置高度
+       us(get,"height","-2")
+       //设置外边距
+       us(get,"layout_margin","12dp")
+       //显示
+       java(null, snk, "android.support.design.widget.BaseTransientBottomBar.show") 
+       java(null,ss.载体,"android.app.Dialog.dismiss") 
+  }
+}
+else
+{
+  ufnsui()
+  {
+
+    
+    
+us(ss.id10,"text","第一次解析")    
+ss("searchword="+ssc,ss.seach)
+ss(sss.网址+"/search.asp",ss.搜索url)
+ss("http://www.zuidazy4.com/index.php?m=vod-search&wd="+ssc,ss.搜索最大)
+
+gvs(1,view)
+cls("android.support.design.widget.Snackbar",类)
+javax(snk,null,类,"make","android.view.View",view,"java.lang.CharSequence","第一次解析","int",1500)
+cls("android.view.View$OnClickListener", 事件类)
+javacb(事件, 事件类)
+{
+  tw("该示例来自http://iapp.xcenadmin.top/,原创作者未知，转载请注明！")
+}
+       //javax(null,snk,类,"setAction","java.lang.CharSequence","确定",事件类,事件)
+javax(get,snk,"android.support.design.widget.BaseTransientBottomBar","getView")
+       //设置背景
+//       ngde(0,16,"","",bj)
+ngde(0,16,"#ff00acff|#ff49ffae","#333333", "bltr", bj)
+us(get,"background",bj)
+       //设置高度
+us(get,"height","-2")
+   //设置外边距
+us(get,"layout_margin","12dp")
+       //显示   
+
+
+us(搜索.12,"visibility",8)
+us(搜索.15,"visibility",0) 
+t()
+{
+    hs(ss.搜索url,ss.seach,"gb2312",ss.搜索post数据)
+    f(ss.搜索post数据 == null)
+    {
+      ufnsui()
+      {
+      
+       //返回值为空
+       gvs(1,view)
+       cls("android.support.design.widget.Snackbar",类)
+       javax(snk,null,类,"make","android.view.View",view,"java.lang.CharSequence","动态解析空","int",2000)
+       cls("android.view.View$OnClickListener", 事件类)
+       javacb(事件, 事件类)
+       {
+       tw("该示例来自http://iapp.xcenadmin.top/,原创作者未知，转载请注明！")
+       }
+       //javax(null,snk,类,"setAction","java.lang.CharSequence","确定",事件类,事件)
+       javax(get,snk,"android.support.design.widget.BaseTransientBottomBar","getView")
+       //设置背景
+       ngde(0,16,"#ff00acff|#ff49ffae","#333333", "bltr", bj)
+       us(get,"background",bj)
+       //设置高度
+       us(get,"height","-2")
+       //设置外边距
+       us(get,"layout_margin","12dp")
+       //显示
+       java(null, snk, "android.support.design.widget.BaseTransientBottomBar.show")  
+       us(搜索.12,"visibility",8)
+       us(搜索.15,"visibility",8) 
+       java(null,ss.载体,"android.app.Dialog.dismiss")
+       
+       }   
+       }
+       //反值为空-否则
+       else
+       {
+         
+
+       
+    sj(ss.搜索post数据,"&lt;div class=\"pics\"&gt;","&lt;div class=\"sido r\"&gt;",截取)
+    sj(截取," &lt;li&gt;",null,zxd)
+    sl(zxd," &lt;li&gt;",zxf)
+    for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;span&gt;","&lt;/span&gt;",bt)  
+    sj(zxdm,"&lt;/p&gt;","&lt;/p&gt;",js)
+    ss("(html)"+bt+"\n"+js,内容)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+    //   syso(图片下载位置)   
+  ula(ss.list,7=title,5=img,8=内容,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+   uls(搜索.12,ss.list,"搜索列表.iyu",-1,-2)  
+   
+fn 搜索.最大()
+//us(Id6, "text"," 编码恢复中... ")
+us(ss.id10,"text","编码恢复中....")
+
+}
+
+//反值正常
+}
+}
+
+
+
+
+
+}
+}
+end fn
+
+
+
+
+fn 风车动漫()
+
+
+ula(ss.list, null)
+
+
+us(搜索.12,"visibility",8)
+us(搜索.15,"visibility",0)
+ug(搜索.9,"text",ssc)
+
+
+slg(ssc, b)
+f(b &lt; 2)
+{
+  ufnsui()
+  {
+       gvs(1,view)
+       cls("android.support.design.widget.Snackbar",类)
+       javax(snk,null,类,"make","android.view.View",view,"java.lang.CharSequence","最少两个字符！","int",1300)
+       cls("android.view.View$OnClickListener", 事件类)
+       javacb(事件, 事件类)
+       {
+       tw("该示例来自http://iapp.xcenadmin.top/,原创作者未知，转载请注明！")
+       }
+       //javax(null,snk,类,"setAction","java.lang.CharSequence","确定",事件类,事件)
+       javax(get,snk,"android.support.design.widget.BaseTransientBottomBar","getView")
+       //设置背景
+       ngde(0,16,"#ff00acff|#ff49ffae","#333333", "bltr", bj)
+       us(get,"background",bj)
+       //设置高度
+       us(get,"height","-2")
+       //设置外边距
+       us(get,"layout_margin","12dp")
+       //显示
+       java(null, snk, "android.support.design.widget.BaseTransientBottomBar.show")  
+  }
+}
+else
+{
+  ufnsui()
+  {
+
+    
+    
+    
+    
+
+ss("searchword="+ssc,ss.seach)
+ss(sss.网址1+"/search.asp",ss.搜索url)
+ss("http://www.zuidazy4.com/index.php?m=vod-search&wd="+ssc,ss.搜索最大)
+utw(null, "", "加载弹窗.iyu", "", true, ss.run)
+{
+}
+gvs(ss.run,6,Id6)
+us(Id6, "text","  动态解析.... ")
+fn 模糊.背景模糊("搜索.1")
+us(背景模糊.1,"visibility",0)
+dha(dh, false, true)
+dh(dh, "duration", 500)
+us(背景模糊.1, "dh", dh)
+
+gvs(1,view)
+cls("android.support.design.widget.Snackbar",类)
+javax(snk,null,类,"make","android.view.View",view,"java.lang.CharSequence","第一次解析","int",1500)
+cls("android.view.View$OnClickListener", 事件类)
+javacb(事件, 事件类)
+{
+  tw("该示例来自http://iapp.xcenadmin.top/,原创作者未知，转载请注明！")
+}
+       //javax(null,snk,类,"setAction","java.lang.CharSequence","确定",事件类,事件)
+javax(get,snk,"android.support.design.widget.BaseTransientBottomBar","getView")
+       //设置背景
+//       ngde(0,16,"","",bj)
+ngde(0,16,"#ff00acff|#ff49ffae","#333333", "bltr", bj)
+us(get,"background",bj)
+       //设置高度
+us(get,"height","-2")
+   //设置外边距
+us(get,"layout_margin","12dp")
+       //显示
+java(null, snk, "android.support.design.widget.BaseTransientBottomBar.show")       
+
+
+us(搜索.12,"visibility",8)
+us(搜索.15,"visibility",0) 
+t()
+{
+  
+    hs(ss.搜索url,ss.seach,"gb2312",ss.搜索post数据)
+    f(ss.搜索post数据 == null)
+    {
+      ufnsui()
+      {
+      
+       //返回值为空
+       gvs(1,view)
+       cls("android.support.design.widget.Snackbar",类)
+       javax(snk,null,类,"make","android.view.View",view,"java.lang.CharSequence","动态解析空","int",2000)
+       cls("android.view.View$OnClickListener", 事件类)
+       javacb(事件, 事件类)
+       {
+       tw("该示例来自http://iapp.xcenadmin.top/,原创作者未知，转载请注明！")
+       }
+       //javax(null,snk,类,"setAction","java.lang.CharSequence","确定",事件类,事件)
+       javax(get,snk,"android.support.design.widget.BaseTransientBottomBar","getView")
+       //设置背景
+       ngde(0,16,"#ff00acff|#ff49ffae","#333333", "bltr", bj)
+       us(get,"background",bj)
+       //设置高度
+       us(get,"height","-2")
+       //设置外边距
+       us(get,"layout_margin","12dp")
+       //显示
+       java(null, snk, "android.support.design.widget.BaseTransientBottomBar.show")  
+       us(搜索.12,"visibility",8)
+       us(搜索.15,"visibility",8) 
+       java(null,ss.载体,"android.app.Dialog.dismiss")
+       }   
+       }
+       //反值为空-否则
+       else
+       {
+         
+
+       
+    sj(ss.搜索post数据,"&lt;div class=\"pics\"&gt;","&lt;div class=\"sido r\"&gt;",截取)
+    sj(截取,"&lt;li&gt;",null,zxd)
+    sl(zxd,"&lt;li&gt;",zxf)
+    for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"",url)
+    sj(zxdm,"&lt;img src=\"","\"",imgg)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;span&gt;","&lt;/span&gt;",bt)  
+    sj(zxdm,"&lt;span&gt;","&lt;/p&gt;",js)
+    ss("(html)"+bt+"\n"+js,内容)
+    ss(sss.网址1+url,dmurl)
+    sr(imgg,"http://img8.dm190.com/","", img)
+  ula(ss.list,7=title,5=img,8=内容,15=dmurl,16=) 
+  } 
+  ufnsui()
+  {
+   uls(搜索.12,ss.list,"搜索列表1.iyu",-1,-2)  
+   
+fn 搜索.最大()
+us(Id6, "text"," 编码恢复中... ")
+
+}
+
+//反值正常
+}
+}
+
+
+
+
+
+}
+}
+
+end fn
+
+
+
+
+
+fn 最大()
+
+t()
+{
+    hs(ss.搜索最大,ss.最大)
+    f(ss.最大 == null)
+    {
+       //返回值为空
+       gvs(1,view)
+       cls("android.support.design.widget.Snackbar",类)
+       javax(snk,null,类,"make","android.view.View",view,"java.lang.CharSequence","动态解析空","int",2000)
+       cls("android.view.View$OnClickListener", 事件类)
+       javacb(事件, 事件类)
+       {
+       tw("该示例来自http://iapp.xcenadmin.top/,原创作者未知，转载请注明！")
+       }
+       //javax(null,snk,类,"setAction","java.lang.CharSequence","确定",事件类,事件)
+       javax(get,snk,"android.support.design.widget.BaseTransientBottomBar","getView")
+       //设置背景
+       ngde(0,16,"#ff00acff|#ff49ffae","#333333", "bltr", bj)
+       us(get,"background",bj)
+       //设置高度
+       us(get,"height","-2")
+       //设置外边距
+       us(get,"layout_margin","12dp")
+       //显示
+       java(null, snk, "android.support.design.widget.BaseTransientBottomBar.show")  
+       us(搜索.12,"visibility",8)
+       us(搜索.15,"visibility",8) 
+
+       
+       java(null,ss.载体,"android.app.Dialog.dismiss")
+    }
+    else
+    {
+      ufnsui()
+      {
+    sj(ss.最大,"的结果共","上一页",最大搜索)
+    sj(最大搜索,"&lt;/ul&gt;","&lt;ul style=\"display:block;clear:both;\"&gt;",最大搜索输出)
+    s a = "%Android/data/com.cjzwjdm/files/最大的.html"
+    s b = 最大搜索输出
+    fw(a, b)
+    
+     java(null,ss.载体,"android.app.Dialog.dismiss")       
+        
+          
+   us(搜索.12,"visibility",0)
+   us(搜索.15,"visibility",8) 
+
+   dha(dh, false, true)
+   dh(dh, "duration", 300)
+   us(搜索.12, "dh", dh)
+
+   dhas(dh, 搜索.12, "scaleX",0.8,1.0)
+   dh(dh, "duration", 600)
+   dh(dh, "start")
+        
+   dhas(dh, 搜索.12, "scaleY",0.8,1.0)
+   dh(dh, "duration", 600)
+   dh(dh, "start")
+        
+   dhas(dh, 搜索.12, "translationY",350,0)     
+   dh(dh, "duration", 700)
+   dh(dh, "start")
+    
+    
+      }
+    }
+
+}

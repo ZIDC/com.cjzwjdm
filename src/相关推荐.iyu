@@ -1,0 +1,60 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=74.5dp
+height=110dp
+app_CardBackgroundColor=#ffd8d8d8
+app_CardcornerRadius=4.5dp
+app_CardElevation=2dp
+layout_margin=6dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="ImageView">
+<ppt>width=-1
+height=-1
+src=7979</ppt>
+<event></event>
+</View>
+<View id="5" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="TextView">
+<ppt>width=-1
+height=-2
+text=文本6
+gravity=center
+textSize=10sp
+textColor=#ffffffff
+singleLine=true
+ellipsize=end
+layout_marginLeft=3dp
+layout_marginRight=3dp
+layout_marginBottom=5dp
+shadowcolor=#ff111111
+shadowradius=3.0
+shadowdx=2.5
+shadowdy=1.5</ppt>
+<event></event>
+</View>
+<View id="7" did="5" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本7
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

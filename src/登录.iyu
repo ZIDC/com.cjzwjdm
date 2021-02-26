@@ -1,0 +1,337 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=80dp
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="CardView">
+<ppt>width=46dp
+height=25dp
+app_CardElevation=5dp
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event><eventItme type="clicki">
+
+
+end()</eventItme></event>
+</View>
+<View id="7" did="6" type="ImageView">
+<ppt>width=30dp
+height=20dp
+src=@ea3deb55067.png</ppt>
+<event></event>
+</View>
+<View id="8" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=登录
+gravity=center
+textColor=#ff080808
+textSize=17sp
+//layout_marginLeft=15dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="9" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="LinearLayout">
+<ppt>width=-1
+height=200dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="CardView">
+<ppt>width=-1
+height=45dp
+app_CardElevation=0dp
+app_CardcornerRadius=7dp
+layout_marginLeft=45dp
+layout_marginRight=45dp
+app_CardBackgroundColor=#fff6f6f6
+layout_marginBottom=25dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="14" did="12" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@0ea6dbdf2cc.png
+layout_marginLeft=10dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="EditText">
+<ppt>width=-1
+height=35dp
+text=
+background=@
+layout_marginRight=5dp
+textColorHint=#ff7c7c7c
+hint=Account Number
+textSize=12sp
+singleLine=true
+textColor=#ff010101</ppt>
+<event></event>
+</View>
+<View id="15" did="10" type="CardView">
+<ppt>width=-1
+height=45dp
+app_CardElevation=0dp
+app_CardcornerRadius=7dp
+layout_marginLeft=45dp
+layout_marginRight=45dp
+app_CardBackgroundColor=#fff6f6f6</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@999fd6e320e.png
+layout_marginLeft=10dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="18" did="16" type="EditText">
+<ppt>width=-1
+height=35dp
+text=
+background=@
+layout_marginRight=5dp
+textColorHint=#ff7c7c7c
+hint=Password
+textSize=12sp
+singleLine=true
+textColor=#ff010101
+inputType=textpassword</ppt>
+<event><eventItme type="ontextchanged">
+
+ug(18,"text",kj)
+
+f(kj == "")
+{
+ufnsui()
+{
+us(17,"src","@999fd6e320e.png")
+
+
+}
+}
+else
+{
+  ufnsui()
+  {
+    us(17,"src","@7f807931a8e.png")
+
+  }
+}</eventItme></event>
+</View>
+<View id="20" did="9" type="CardView">
+<ppt>width=-1
+height=45dp
+layout_marginLeft=55dp
+layout_marginRight=55dp
+app_CardcornerRadius=6dp
+layout_marginTop=6dp
+layout_marginBottom=6dp
+//app_CardBackgroundColor=#ff4e60ff</ppt>
+<event></event>
+</View>
+<View id="25" did="20" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#ff4e60ff</ppt>
+<event><eventItme type="clicki">.</eventItme></event>
+</View>
+<View id="26" did="25" type="TextView">
+<ppt>width=-2
+height=-2
+text=Log in
+textColor=#ffffffff
+textSize=14sp
+</ppt>
+<event></event>
+</View>
+<View id="21" did="20" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#ff4e60ff</ppt>
+<event><eventItme type="clicki">
+
+
+
+fn 底部弹窗.加载弹窗("加载.iyu")
+gvs(ss.弹窗,加载.10,ss.id10)
+us(ss.id10,"text","bf")
+us(ss.id10,"text","登录中...")
+
+
+
+
+ug(13,"text",zh)
+ug(18,"text",mm)
+us(21,"visibility",8)
+us(25,"visibility",0)
+f(mm == "")
+{
+  ufnsui()
+  {
+   us(21,"visibility",0)
+   us(25,"visibility",8) 
+   }
+}
+else
+{
+  ufnsui()
+  {
+    t()
+    {
+      ss(sss.追番+"/api.php?act=login&user="+zh+"&pass="+mm,dl)
+      hs(dl,dll)
+      f(dll ? "登陆成功")
+      {
+        ufnsui()
+        {
+          ss("["+zh+"]"+"("+mm+")",dlxr)
+          us(21,"visibility",0)
+          us(25,"visibility",8)
+          fw("%Android/data/com.cjzwjdm/cpk/用户账号.cpk", dlxr)
+          java(null,ss.载体,"android.app.Dialog.dismiss")       
+          end()
+        }
+      }
+      else
+      {
+        ufnsui()
+        {
+          us(21,"visibility",0)
+          us(25,"visibility",8)
+          java(null,ss.载体,"android.app.Dialog.dismiss")          
+//             fn MyUi.正常("登录失败")  
+             tw("登录失败了")
+        }
+      }
+    }
+  }
+}
+
+
+
+</eventItme></event>
+</View>
+<View id="22" did="21" type="TextView">
+<ppt>width=-2
+height=-2
+text=授权 Login
+textColor=#ffffffff
+textSize=14sp
+</ppt>
+<event></event>
+</View>
+<View id="23" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=center
+layout_marginTop=7dp</ppt>
+<event></event>
+</View>
+<View id="24" did="23" type="TextView">
+<ppt>width=-2
+height=-2
+text=还没账号?？
+textSize=10sp
+textColor=#ff626262</ppt>
+<event><eventItme type="clicki">
+
+uigo("注册.iyu")
+end()</eventItme></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+us(5,"visibility",0)
+dhas(dh, 5, "scaleY", 0.0,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh, 5, "scaleX", 0.0,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+
+
+us(8,"visibility",0)
+dhas(dh, 8, "translationX", -85,25)
+dh(dh, "duration",800)
+dh(dh, "start")
+dhas(dh, 8, "scaleY", 0.0,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 8, "scaleX", 0.0,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+ss(c+"dp",dp)
+us(3,"height",dp)
+java(cs,activity,"android.app.Activity.getWindow") 
+java(cs2,cs,"android.view.Window.getDecorView") 
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192") 
+//设置状态栏透明(沉浸式) 
+java(null,cs,"android.view.Window.addFlags","int","67108864") 
+//仅支持Android6.0以上，其他无效果。 
+
+
+</eventItme></UIEventset>

@@ -1,0 +1,40 @@
+fn 设置代码(控件,方法名,代码)
+java(类,控件,"Object.getClass")
+java(类名,类,"java.lang.Class.getName")
+f(类名*?"String" || 类名*?"Integer")
+{
+  gvs(控件,控件)
+}
+java(tag,控件,"android.view.View.getTag")
+sgsz(tag,2,原代码)
+ss("&lt;eventItme type=""+方法名+""&gt;\n",头部)
+s 尾部="\n&lt;/eventItme&gt;\n"
+f(原代码?头部){
+  sj(原代码,头部,尾部,旧代码)
+  ss(头部+旧代码+尾部,旧代码)
+  ss(头部+代码+尾部,代码)
+  sr(原代码,旧代码,代码,代码)
+}else{
+  ss(原代码+头部+代码+尾部,代码)
+  ssj(控件,方法名)
+  {
+  }
+}
+sssz(tag,2,代码)
+java(null,控件,"android.view.View.setTag","Object",tag)
+end fn
+
+
+fn 点击控件(控件)
+java(类,控件,"Object.getClass")
+java(类名,类,"java.lang.Class.getName")
+f(类名*?"String" || 类名*?"Integer")
+{
+  gvs(控件,控件)
+}
+java(null,控件,"android.view.View.performClick")
+end fn
+
+fn 格式化代码()
+//2.0版本添加
+end fn
