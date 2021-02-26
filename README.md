@@ -20,9 +20,15 @@
 
 > 软件已经开源，开源项目请自行在本界面下下载 - 编译版本下载在下方
 
-[com.cjzwjdm](https://.cjzwjys.top)
+[com.cjzwjdm](https://dm.cjzwjys.top)
 
 ## 界面预览
 
 > 请注意: 请自行在线项目/编译版本浏览
 > 
+## 目录介绍
+> res -资源库
+> src -代码库
+> apk -dex解析库
+> src==>iyu(部分名用的简体中文命名)主要布局以及基础代码，myu代码库，mjava、mlua
+
