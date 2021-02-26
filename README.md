@@ -1,5 +1,6 @@
 <h1 align="center">
   <br>
+    <img src="https://cjzwj.gitee.io/zidctg/%E5%BA%94%E7%94%A8%E6%89%98%E7%AE%A1%E8%A3%A4/%E5%B0%8F%E8%B5%B5/png/icondm.png" width="150"/>
   <br>
 白洁动漫
   <br>
@@ -10,6 +11,7 @@
 </p>
 
 主要开发者: [@ZIDC](https://github.com/ZIDC)
+<br>
 界面设计: [@ZIDC](https://github.com/ZIDC)
 
 **本软件仅供学习交流使用  请勿用于其他用途**
