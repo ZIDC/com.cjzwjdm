@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<title>白洁动漫</title>
+<icon>icon.png</icon>
+<packageName>com.cjzwjdm</packageName>
+<versionName>1.6</versionName>
+<versionint>16</versionint>
+<sdk>15</sdk>
+<yuv>3</yuv>
+<remark></remark>
+<Permissions>android.permission.READ_EXTERNAL_STORAGE
+android.permission.REQUEST_INSTALL_PACKAGES
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.INTERNET
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.VIBRATE</Permissions>
+<createTime>2021-01-08 23:16:08</createTime>
+<upTime>2021-01-08 23:16:08</upTime>
