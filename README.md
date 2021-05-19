@@ -21,7 +21,7 @@
 
 > 软件已经开源，开源项目请自行在本界面下下载 - 编译版本下载在下方
 
-[com.cjzwjdm](https://dm.cjzwjys.top)
+[com.cjzwjdm](https://zidc.github.io/bjdm)
 
 ## 界面预览
 
