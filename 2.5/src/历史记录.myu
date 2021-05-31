@@ -1,0 +1,212 @@
+
+fn 记录()
+
+//修改控件事件
+    
+ ssj(ss.id17, "clicki")
+{
+ufnsui()
+{
+//
+
+
+
+    ug(ss.id14,"text",影视名)
+    ug(ss.id15,"text",级数)
+    sj(级数,"上次看到:",null,sss.标题)
+    ug(ss.id19,"text",sss.视频)
+    
+ss(影视名+" "+sss.标题,sss.视频标题)
+ 
+
+
+fr("%Android/data/com.cjzwjdm/files/播放器.html",播放)
+sj(播放,"播放","播放",播放输出)
+
+f(播放输出 == "关")
+{
+  ufnsui()
+  {
+
+uigo("浏览器.iyu")
+   }
+  }
+else
+{
+  ufnsui()
+  {
+
+
+
+f(sss.视频 ? "http")
+{
+uigo("playvideo.iyu")  
+
+}
+else
+{
+ 
+fn 模糊.背景模糊()
+us(背景模糊.1,"visibility",0)
+dha(dh, false, true)
+dh(dh, "duration", 500)
+us(背景模糊.1, "dh", dh)
+
+//两个按钮
+utw(null,"抱歉","资源不正常，请尝试第二资源！,也有可能是我代码输错了(狗头)", "去你妈的", true, v)
+{
+  ufnsui()
+  {
+
+    dha(dh, true, false)
+    dh(dh, "duration", 500)
+    us(背景模糊.1, "dh", dh)
+    dhon(dh)
+    {
+    us(背景模糊.1,"visibility",8)
+    }
+    endutw()
+}
+}
+  
+   
+}
+
+
+
+   }    
+    
+    
+  }
+}
+}    
+    
+       
+
+//
+}
+}
+
+//修改控件事件    
+end fn
+
+
+
+
+
+
+fn 观看历史()
+
+
+t()
+{
+  stop("1200")
+ufnsui()
+{
+
+
+
+
+ss("%Android/data/com.cjzwjdm/ls/"+sss.影视名+".so",历史文件)
+fr(历史文件,哈哈)
+
+sj(哈哈,"图片","图片",ss.图片)
+sj(哈哈,"影视名","影视名",ss.影视名)
+sj(哈哈,"级数","级数",ss.级数1)
+ss("上次看到:"+ss.级数1,ss.级数)
+sj(哈哈,"视频链接","视频链接",ss.视频链接)
+fe(历史文件,b)
+f(b == "true")
+{
+  ufnsui()
+  {
+
+
+
+
+
+
+us(34,"visibility",8)
+us(71,"visibility",0)
+
+javanew(ss.载体,"android.support.design.widget.BottomSheetDialog","Context",activity)
+//实例化底部弹窗类
+
+nvw(-1,null,"线性布局","width=-1\nheight=-1\norientation=vertical\nbackgroundcolor=0",ss.弹窗)
+addv(ss.弹窗,"历史记录.iyu")
+//加载载体界面
+
+java(null,ss.载体,"android.app.Dialog.setContentView","android.view.View",ss.弹窗)
+//设置显示的内容
+
+java(null,ss.载体,"android.app.Dialog.setCancelable","boolean",true)
+//是否可以自动关闭，比如按返回键会不会关闭
+
+java(null,ss.载体,"android.app.Dialog.setCanceledOnTouchOutside","boolean",true)
+//点击弹窗外面是否可以关闭
+
+java(delegate,ss.载体,"android.support.v7.app.AppCompatDialog.getDelegate")
+javags(id,null,"android.support.design.R$id","design_bottom_sheet")
+java(弹窗根控件,delegate,"android.support.v7.app.AppCompatDelegate.findViewById","int",id)
+us(弹窗根控件,"backgroundcolor",0)
+//去掉默认的白色背景
+
+java(null,ss.载体,"android.app.Dialog.setOnDismissListener",".android.content.DialogInterface$OnDismissListener",null) 
+{
+//  tw("弹窗被关闭")
+
+us(71,"visibility",8)
+us(34,"visibility",0)
+} 
+//弹窗被关闭时回调
+
+java(null,ss.载体,"android.app.Dialog.show")
+//显示弹窗
+
+javags(behavior,ss.载体,"android.support.design.widget.BottomSheetDialog","mBehavior")
+//反射取得behavior对象
+//java(null,behavior,"android.support.design.widget.BottomSheetBehavior.setState","int",3)
+//设置状态
+  
+gvs(ss.弹窗,历史记录.12,ss.id12)
+gvs(ss.弹窗,历史记录.14,ss.id14)
+gvs(ss.弹窗,历史记录.15,ss.id15)
+gvs(ss.弹窗,历史记录.17,ss.id17)
+gvs(ss.弹窗,历史记录.19,ss.id19)
+gvs(ss.弹窗,历史记录.5,ss.id5)
+gvs(ss.弹窗,历史记录.20,ss.id20)
+    us(ss.id12,"src",ss.图片)
+    us(ss.id14,"text",ss.影视名)
+    us(ss.id15,"text",ss.级数)
+    us(ss.id19,"text",ss.视频链接)
+    us(ss.id5,"visibility",0)
+    us(ss.id20,"visibility",8)
+
+ fn 历史记录.记录() 
+
+    
+
+    
+  }
+}
+}
+else
+{
+  ufnsui()
+  {
+
+
+
+}
+
+
+}
+}
+}
+
+
+
+
+
+
+end fn

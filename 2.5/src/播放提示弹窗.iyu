@@ -1,0 +1,125 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#338f8f8f
+visibility=gone</ppt>
+<event><eventItme type="clicki">
+
+us(播放提示弹窗.1,"visibility",8)</eventItme></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=170dp
+app_CardcornerRadius=9dp
+app_CardElevation=10dp
+layout_marginLeft=40dp
+layout_marginRight=40dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=啊~
+layout_marginLeft=15dp
+textSize=16sp
+textColor=#ff151515</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=80dp
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="11" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=上次看到
+layout_marginLeft=25dp</ppt>
+<event></event>
+</View>
+<View id="12" did="6" type="CardView">
+<ppt>width=-2
+height=35dp
+layout_marginLeft=20dp
+app_CardcornerRadius=4dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff6f6f6</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="TextView">
+<ppt>width=-1
+height=-1
+text=00
+gravity=center
+textSize=10sp
+layout_marginLeft=10dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="7" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="CardView">
+<ppt>width=55dp
+height=30dp
+layout_marginRight=15dp
+app_CardcornerRadius=4dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fffff7fb</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clipChildren=true</ppt>
+<event><eventItme type="clicki">
+
+
+
+us(播放提示弹窗.1,"visibility",8)
+
+    bfvss(4,"seekto",ss.ecnn)
+    bfvss(4, "st")
+        endutw()</eventItme></event>
+</View>
+<View id="10" did="9" type="TextView">
+<ppt>width=-1
+height=-1
+text=手动定位
+textSize=10sp
+gravity=center
+textColor=#ffe4007b
+</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

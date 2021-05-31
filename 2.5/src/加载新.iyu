@@ -1,0 +1,46 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center
+BackgroundColor=#0d0b0b0b
+visibility=gone</ppt>
+<event><eventItme type="clicki">.</eventItme></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-2
+height=36.5dp
+layout_marginLeft=20dp
+layout_marginRight=20dp
+layout_marginBottom=60dp
+app_CardcornerRadius=8dp
+app_CardElevation=0dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center</ppt>
+<event><eventItme type="clicki">fn 新加载.结束("强制结束")</eventItme></event>
+</View>
+<View id="4" did="3" type="ProgressBar">
+<ppt>width=20dp
+height=20dp
+style=16842874
+layout_marginLeft=20dp
+layout_marginRight=20dp</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中...
+textStyle=bold
+textSize=10sp
+textColor=#ff010101
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

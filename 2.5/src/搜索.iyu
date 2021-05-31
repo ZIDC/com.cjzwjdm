@@ -1,0 +1,900 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+visibility=gone
+</ppt>
+<event><eventItme type="clicki">
+//
+
+ula(ss.list, null)
+</eventItme></event>
+</View>
+<View id="2" did="1" type="ImageView">
+<ppt>width=-1
+height=-1
+src=7949
+//scaleType=fitxy
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="57" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#b3ffffff
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=top|center</ppt>
+<event></event>
+</View>
+<View id="43" did="3" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="34" did="43" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_marginTop=100dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="12" did="34" type="RecyclerView">
+<ppt>width=-1
+height=-1
+overScrollMode=never
+scrollbars=none
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="54" did="34" type="CardView">
+<ppt>width=-2
+height=27dp
+app_CardElevation=0dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#4dF6F6F6
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="55" did="54" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="15" did="55" type="ProgressBar">
+<ppt>width=15dp
+height=15dp
+style=16842874
+//visibility=gone
+layout_marginLeft=8dp
+layout_marginRight=5dp</ppt>
+<event></event>
+</View>
+<View id="56" did="55" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中...
+textSize=12sp
+textColor=#ff050505
+layout_marginRight=8dp</ppt>
+<event></event>
+</View>
+<View id="41" did="43" type="LinearLayout">
+<ppt>width=-1
+height=160dp
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="44" did="41" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="42" did="44" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="45" did="42" type="LinearLayout">
+<ppt>width=-1
+height=100dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="46" did="42" type="LinearLayout">
+<ppt>width=-1
+height=55dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="47" did="44" type="LinearLayout">
+<ppt>width=-1
+height=160dp
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="5" did="43" type="LinearLayout">
+<ppt>width=-1
+height=165.5dp
+orientation=horizontal
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="19" did="5" type="CardView">
+<ppt>width=40dp
+height=40dp
+app_CardcornerRadius=25dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#00ffffff
+layout_marginLeft=20dp
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="20" did="19" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+
+t()
+{
+stop("400")
+ufnsui()
+{
+dhas(dh, 搜索.19, "translationX", 0,-120)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 搜索.6, "translationX", 0,120)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+}
+}
+
+
+
+
+us(31,"text","不可执行")
+dhas(dh, 搜索.5, "scaleX",1.0,0.8)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 搜索.5, "scaleY",1.0,0.8)
+dh(dh, "duration", 500)
+dh(dh, "start")
+dhon(dh)
+{
+
+dha(dh, true,false)
+dh(dh, "duration", 500)
+us(搜索.34, "dh", dh)
+
+dha(dh, true,false)
+dh(dh, "duration", 500)
+us(搜索.41, "dh", dh)
+
+dha(dh, true,false)
+dh(dh, "duration", 630)
+us(搜索.2, "dh", dh) 
+
+dha(dh, true,false)
+dh(dh, "duration", 500)
+us(搜索.5, "dh", dh)
+dhon(dh)
+{
+
+us(搜索.1,"visibility",8)
+us(搜索.34,"visibility",8)
+us(搜索.12,"visibility",8)
+us(搜索.15,"visibility",8)
+us(搜索.41,"visibility",8)
+us(搜索.6,"visibility","invisible")  
+us(搜索.7,"visibility","invisible")  
+us(搜索.38,"visibility","invisible")  
+ula(ss.list, null)
+us(搜索.9,"text","")
+}
+}
+
+
+
+
+dha(dh, true,false)
+dh(dh, "duration", 600)
+us(搜索.4, "dh", dh)
+dhon(dh)
+{
+us(搜索.4,"visibility",8)
+}
+
+
+t()
+{
+stop("100")
+ufnsui()
+{
+
+dhas(dh,20, "scaleY", 0.5,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh,20, "scaleX", 0.5,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+}
+}
+
+
+dha(dh, false,true)
+dh(dh, "duration", 900)
+us(46, "dh", dh) 
+dhas(dh,46, "scaleY", 0.8,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh,46, "scaleX", 0.8,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+
+        
+dhas(dh, 搜索.5, "translationY",0,80)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+             
+dhas(dh, 搜索.34, "scaleX",1.0,0.8)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 搜索.34, "scaleY",1.0,0.8)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 搜索.34, "translationY",0,350)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+
+dhas(dh, 搜索.12, "scaleX",1.0,0.6)
+dh(dh, "duration", 400)
+dh(dh, "start")
+        
+dhas(dh, 搜索.12, "scaleY",1.0,0.6)
+dh(dh, "duration", 400)
+dh(dh, "start")
+        
+dhas(dh, 搜索.12, "translationY",0,350)     
+dh(dh, "duration", 550)
+dh(dh, "start")
+dhon(dh)
+{
+us(30,"text","开启")
+}
+
+
+
+t()
+{
+stop("390")
+ufnsui()
+{
+dhas(dh, 搜索.12, "scaleX",0.6,0.9)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 搜索.12, "scaleY",0.6,0.9)
+dh(dh, "duration", 600)
+dh(dh, "start")
+}
+}</eventItme></event>
+</View>
+<View id="8" did="20" type="ImageView">
+<ppt>width=30dp
+height=30dp
+src=@27fba0feeae.png
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="21" did="20" type="TextView">
+<ppt>width=-2
+height=-2
+text=返回
+textStyle=bold
+textSize=10sp
+textColor=#ff0b0b0b
+layout_marginRight=5dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="CardView">
+<ppt>width=-1
+height=40dp
+app_CardcornerRadius=5dp
+app_CardBackgroundColor=#ffffffff
+app_CardElevation=5dp
+layout_marginRight=25dp
+layout_marginLeft=15dp
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="48" did="6" type="ImageView">
+<ppt>width=-1
+height=-1
+src=4949
+scaleType=centercrop
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="38" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=right|center
+visibility=invisible
+BackgroundRipple=#ff6b6b6b
+</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+
+dhas(dh,搜索.2, "scaleY", 1.0,1.3)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,搜索.2, "scaleX",1.0,1.3)
+dh(dh, "duration", 300)
+dh(dh, "start")
+ula(ss.list, null)
+f(ss.jk == "0")
+{
+ufnsui()
+{
+us(搜索.53,"visibility",0)
+fn 搜索.樱花动漫()
+}
+}
+else
+{
+ufnsui()
+{
+us(搜索.53,"visibility",0)
+t()
+{
+stop("480")
+ufnsui()
+{
+fn 搜索.樱花动漫()
+}
+}
+ug(搜索.12,"visibility",l)
+f(l == "8")
+{
+}
+else
+{
+
+dhas(dh, 搜索.12, "scaleX",1.0,0.6)
+dh(dh, "duration", 300)
+dh(dh, "start")
+        
+dhas(dh, 搜索.12, "scaleY",1.0,0.6)
+dh(dh, "duration", 300)
+dh(dh, "start")
+        
+dhas(dh, 搜索.12, "translationY",0,350)     
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+
+t()
+{
+stop("410")
+ufnsui()
+{
+dhas(dh, 搜索.12, "scaleX",0.6,0.9)
+dh(dh, "duration", 400)
+dh(dh, "start")
+        
+dhas(dh, 搜索.12, "scaleY",0.6,0.9)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+dha(dh, true, false)
+dh(dh, "duration", 450)
+us(搜索.12, "dh", dh)
+
+}
+}
+
+}
+
+
+
+
+
+
+}
+}
+
+
+
+
+
+
+//fn 搜索.风车动漫()
+
+</eventItme></event>
+</View>
+<View id="39" did="38" type="CardView">
+<ppt>width=45dp
+height=25dp
+app_CardcornerRadius=6dp
+app_CardBackgroundColor=#ffeef9ff
+app_CardElevation=-5dp
+layout_marginRight=6dp</ppt>
+<event></event>
+</View>
+<View id="40" did="39" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="37" did="40" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@b9e32118d00.png
+//layout_marginLeft=5dp</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+//paddingLeft=10dp
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="9" did="7" type="EditText">
+<ppt>width=-1
+height=40dp
+text=
+hint=输入内容
+gravity=left|center
+layout_marginRight=0.5dp
+textSize=12sp
+background=@
+singleLine=true
+textCursorDrawable=#ff00ccff
+imeOptions=actiondone
+layout_marginRight=45dp
+layout_marginTop=3dp
+textColor=#ff007cc4
+layout_marginLeft=20dp
+textColorHint=#ffee005a</ppt>
+<event></event>
+</View>
+<View id="53" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+visibility=gone</ppt>
+<event><eventItme type="clicki">.</eventItme></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+
+/.
+
+
+t()
+{
+stop("300")
+ufnsui()
+{
+
+dhas(dh,20, "scaleY", 0.5,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh,20, "scaleX", 0.5,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+}
+}
+
+
+dha(dh, false,true)
+dh(dh, "duration", 900)
+us(46, "dh", dh) 
+dhas(dh,46, "scaleY", 0.8,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh,46, "scaleX", 0.8,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+
+
+us(31,"text","不可执行")
+dhas(dh, 6, "translationX", 0,-20)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh,6, "scaleY", 1.0,1.2)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh,6, "scaleX", 1.0,1.2)
+dh(dh, "duration", 600)
+dh(dh, "start")   
+t()
+{
+  stop("550")
+  ufnsui()
+  {
+dha(dh, true,false)
+dh(dh, "duration", 500)
+us(6, "dh", dh)
+dhon(dh)
+{
+us(6,"visibility","invisible")
+}
+  
+  }
+}
+
+
+
+dhas(dh, 7, "scaleX",1.0,0.7)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 7, "scaleY",1.0,0.7)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 7, "translationY", -35,0)     
+dh(dh, "duration", 550)
+dh(dh, "start")
+
+t()
+{
+stop("500")
+ufnsui()
+{
+dha(dh, true,false)
+dh(dh, "duration", 500)
+us(7, "dh", dh)
+dhon(dh)
+{
+us(7,"visibility","invisible")
+}
+}
+}
+
+
+
+t()
+{
+  stop("100")
+  ufnsui()
+  {
+
+dhas(dh, 19, "translationX", 0,-20)
+dh(dh, "duration", 500)
+dh(dh, "start")
+ 
+dhas(dh,19, "scaleY", 1.0,1.5)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh,19, "scaleX", 1.0,1.5)
+dh(dh, "duration", 550)
+dh(dh, "start") 
+
+
+t()
+{
+  stop("600")
+  ufnsui()
+  {
+dha(dh, true,false)
+dh(dh, "duration", 500)
+us(19, "dh", dh)
+dhon(dh)
+{
+us(19,"visibility","invisible")
+}
+  
+  }
+}
+   
+  }
+}
+
+
+t()
+{
+stop("300")
+ufnsui()
+{
+
+dhas(dh, 5, "translationY", 0,-100)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhas(dh,6, "scaleY", 1.0,0.9)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+dhas(dh,6, "scaleX", 1.0,0.9)
+dh(dh, "duration", 800)
+dh(dh, "start")  
+}
+}
+
+
+dha(dh, true,false)
+dh(dh, "duration", 1200)
+us(2, "dh", dh) 
+dhon(dh)
+{
+us(1,"visibility",8)
+us(34,"visibility",8)
+us(12,"visibility",8)
+us(54,"visibility",8)
+us(41,"visibility",8)
+us(2,"visibility",8)
+us(38,"visibility","invisible")  
+ula(ss.list, null)
+us(9,"text","")
+}
+
+
+
+
+
+
+
+
+dha(dh, true,false)
+dh(dh, "duration", 530)
+us(41, "dh", dh)
+dhas(dh, 34, "scaleX",1.0,0.8)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 34, "scaleY",1.0,0.8)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 34, "translationY",0,350)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+
+dhas(dh, 12, "scaleX",1.0,0.6)
+dh(dh, "duration", 400)
+dh(dh, "start")
+        
+dhas(dh, 12, "scaleY",1.0,0.6)
+dh(dh, "duration", 400)
+dh(dh, "start")
+        
+dhas(dh, 12, "translationY",0,350)     
+dh(dh, "duration", 550)
+dh(dh, "start")
+dhon(dh)
+{
+us(30,"text","开启")
+}
+t()
+{
+stop("390")
+ufnsui()
+{
+dhas(dh, 12, "scaleX",0.6,0.9)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 12, "scaleY",0.6,0.9)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+t()
+{
+stop("300")
+ufnsui()
+{
+
+dha(dh, true,false)
+dh(dh, "duration", 600)
+us(12, "dh", dh) 
+dhon(dh)
+{
+us(12,"visibility",8)
+
+}
+}
+}
+
+}
+}
+
+
+
+
+/.
+
+
+t()
+{
+stop("100")
+ufnsui()
+{
+
+dhas(dh,20, "scaleY", 0.5,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh,20, "scaleX", 0.5,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+}
+}
+
+
+dha(dh, false,true)
+dh(dh, "duration", 900)
+us(46, "dh", dh) 
+dhas(dh,46, "scaleY", 0.8,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh,46, "scaleX", 0.8,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+
+
+
+
+
+t()
+{
+stop("400")
+ufnsui()
+{
+dhas(dh, 搜索.19, "translationX", 0,-90)
+dh(dh, "duration", 430)
+dh(dh, "start")
+
+dhas(dh, 搜索.6, "translationX", 0,90)
+dh(dh, "duration", 450)
+dh(dh, "start")
+}
+}
+}
+
+
+
+
+us(31,"text","不可执行")
+dhas(dh, 搜索.5, "scaleX",1.0,0.6)
+dh(dh, "duration", 460)
+dh(dh, "start")
+        
+dhas(dh, 搜索.5, "scaleY",1.0,0.6)
+dh(dh, "duration", 460)
+dh(dh, "start")
+
+dhon(dh)
+{
+dha(dh, true,false)
+dh(dh, "duration", 500)
+us(搜索.34, "dh", dh)
+
+dha(dh, true,false)
+dh(dh, "duration", 500)
+us(搜索.41, "dh", dh)
+
+dha(dh, true,false)
+dh(dh, "duration", 450)
+us(搜索.5, "dh", dh)
+
+dha(dh, true,false)
+dh(dh, "duration", 630)
+us(搜索.2, "dh", dh) 
+
+dhon(dh)
+{
+
+us(搜索.1,"visibility",8)
+us(搜索.34,"visibility",8)
+us(搜索.12,"visibility",8)
+us(搜索.54,"visibility",8)
+us(搜索.41,"visibility",8)
+us(搜索.6,"visibility","invisible")  
+us(搜索.7,"visibility","invisible")  
+us(搜索.38,"visibility","invisible")  
+ula(ss.list, null)
+us(搜索.9,"text","")
+}
+}
+
+
+
+
+
+
+dhas(dh, 搜索.5, "translationY",0,80)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+        
+             
+dhas(dh, 搜索.34, "scaleX",1.0,0.8)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 搜索.34, "scaleY",1.0,0.8)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 搜索.34, "translationY",0,350)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+
+dhas(dh, 搜索.12, "scaleX",1.0,0.6)
+dh(dh, "duration", 400)
+dh(dh, "start")
+        
+dhas(dh, 搜索.12, "scaleY",1.0,0.6)
+dh(dh, "duration", 400)
+dh(dh, "start")
+        
+dhas(dh, 搜索.12, "translationY",0,350)     
+dh(dh, "duration", 550)
+dh(dh, "start")
+dhon(dh)
+{
+us(30,"text","开启")
+}
+t()
+{
+stop("390")
+ufnsui()
+{
+dhas(dh, 搜索.12, "scaleX",0.6,0.9)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 搜索.12, "scaleY",0.6,0.9)
+dh(dh, "duration", 600)
+dh(dh, "start")
+}
+}
+
+</eventItme></UIEventset>

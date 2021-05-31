@@ -1,0 +1,469 @@
+<View id="12" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=550dp</ppt>
+<event></event>
+</View>
+<View id="19" did="12" type="LinearLayout">
+<ppt>width=-1
+height=10dp
+BackgroundColor=#ffffffff
+orientation=vertical
+ut_alignBottom=18</ppt>
+<event></event>
+</View>
+<View id="18" did="12" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardBackgroundColor=#ffffffff
+app_CardcornerRadius=10dp
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="1" did="18" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=56dp
+orientation=horizontal
+gravity=center_vertical
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=50dp
+height=-1
+padding=15dp
+src=@clear462.png
+BackgroundRipple=#ffffffff</ppt>
+<event><eventItme type="clicki">java(null,ss.tc2,"android.app.Dialog.dismiss")
+</eventItme></event>
+</View>
+<View id="4" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=评论(0)
+textSize=17sp
+textColor=#424242</ppt>
+<event></event>
+</View>
+<View id="5" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=right|center_vertical</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="ImageView">
+<ppt>width=56dp
+height=-1
+src=@format line spacing799.png
+padding=16dp
+backgroundripple=#e3e3e3e3</ppt>
+<event></event>
+</View>
+<View id="7" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+layout_marginBottom=-5dp</ppt>
+<event></event>
+</View>
+<View id="15" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="ProgressBar">
+<ppt>width=45dp
+height=45dp
+style=16842871</ppt>
+<event></event>
+</View>
+<View id="17" did="15" type="TextView">
+<ppt>width=-2
+height=-2
+text=正在接收信号٩(˃̶͈̀௰˂̶͈́)و...
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="20" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event></event>
+</View>
+<View id="21" did="20" type="ImageView">
+<ppt>width=200dp
+height=180dp
+src=@tip_no_comment.png</ppt>
+<event></event>
+</View>
+<View id="22" did="20" type="TextView">
+<ppt>width=-2
+height=-2
+text=快来抢沙发⊙﹏⊙
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="23" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="25" did="23" type="NestedScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="24" did="25" type="RecyclerView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="8" did="1" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=vertical
+gravity=center_vertical
+layout_marginTop=5dp
+elevation=5dp
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="11" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="13" did="11" type="TextView">
+<ppt>width=-1
+height=-1
+text=别拦我，我要评论！
+textSize=13sp
+textColor=#9E9E9E
+layout_weight=1
+gravity=center_vertical
+singleLine=true
+ellipsize=end
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">gvs(ss.弹窗,comment.26,id26)
+gvs(ss.弹窗,comment.36,id36)
+gvs(ss.弹窗,comment.18,id18)
+us(id26,"visibility","visible")
+//使编辑框弹出输入法
+
+us(id36,"focusable",true)
+us(id36,"focusable",true)
+java(imm,activity,"android.app.Activity.getSystemService","String","input_method")
+java(null,imm,"android.view.inputmethod.InputMethodManager.showSoftInput","android.view.View",id36,"int",1)
+</eventItme></event>
+</View>
+<View id="26" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom
+backgroundcolor=#25000000
+visibility=gone</ppt>
+<event><eventItme type="clicki">gvs(ss.弹窗,comment.26,id26)
+us(id26,"visibility","gone")</eventItme></event>
+</View>
+<View id="27" did="26" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+BackgroundColor=#ffffffff</ppt>
+<event><eventItme type="clicki">.</eventItme></event>
+</View>
+<View id="30" did="27" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=center_vertical
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="31" did="30" type="ImageView">
+<ppt>width=56dp
+height=-1
+padding=15dp
+src=2819
+BackgroundRipple=#ffd7d7d7</ppt>
+<event><eventItme type="clicki">gvs(ss.载体,comment.26,id26)
+us(id26,"visibility","gone")</eventItme></event>
+</View>
+<View id="32" did="30" type="TextView">
+<ppt>width=-1
+height=-1
+text=
+textSize=15sp
+textColor=#9E9E9E
+layout_weight=1
+gravity=center_vertical
+singleLine=true
+ellipsize=end</ppt>
+<event></event>
+</View>
+<View id="42" did="30" type="CardView">
+<ppt>width=60dp
+height=30dp
+layout_marginTop=15dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffeef9ff
+layout_marginBottom=10dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="43" did="42" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event><eventItme type="clicki">
+
+
+
+ 
+gvs(ss.弹窗,comment.26,id26)
+gvs(ss.弹窗,comment.36,id36)
+gvs(ss.弹窗,comment.24,id24)
+gvs(ss.弹窗,comment.15,id15)
+gvs(ss.弹窗,comment.20,id20)
+gvs(ss.弹窗,comment.23,id23)
+gvs(ss.弹窗,comment.4,id4)
+ug(id36,"text",jh)
+ug(8,"text",影视账号)
+
+sr(jh,"【","",jj)
+ sr(jj,"】","",评论)
+fr("%Android/data/com.cjzwjdm/cpk/用户账号.cpk",yhm)
+sj(yhm,"[","]",用户名)
+ss("【"+用户名+"】"+评论,用户评论输出)
+
+
+utw(null, "", "加载弹窗.iyu", "", true, ss.run)
+  {
+  }
+gvs(ss.run,6,Id6)
+us(Id6, "text","发表评论中...")
+
+
+
+
+
+
+f(评论 == "")
+{
+  ufnsui()
+  {
+    tw("评论不得为空")
+    endutw()
+  }
+}
+else
+{
+ufnsui()
+{
+
+
+
+
+
+
+
+
+
+
+t()
+{
+  ss(sss.追番+"/api.php?act=fk&user="+影视账号+"&msg="+用户评论输出,nrwc)
+  hs(nrwc,post)
+  f(post ? "反馈成功")
+  {
+    ufnsui()
+    {
+      endutw()
+      us(id26,"visibility",8) 
+//     fn MyUi.正常("发布成功")
+      us(id36,"hint","发条友善的评论ヽ（・＿・；)ノ")
+                t()
+                {  
+                  fr("%Android/data/com.cjzwjdm/cpk/用户账号.cpk",yhm)
+                  sj(yhm,"[","]",本地用户) 
+                  ss(本地用户+"】",本地用户名)                
+                  ss(sss.追番+"/api.php?act=fklist&user="+影视账号,post)
+                  hs(post,k)
+                  sj(k,"{\"date\":\"",null,kk)
+                  sl(kk,"{\"date\":\"",list)
+                  for(nr;list)
+                  { 
+                    sj(nr,null,"\",\"",时间)
+                    sj(nr,"data\":\"","\",\"",资源名)
+                    sj(资源名,"【","】",yhmsc)
+                    sj(资源名,本地用户名,null,nr)
+                    ss("用户名:"+yhmsc,用户)
+                    ss("时间:"+时间,时间输出)
+                    ula(v,7=用户,8=时间输出,10=nr)
+                  }
+                  ufnsui()
+                  {
+                    uls(id24,v,"影视评论列表.iyu",-1,"-2")
+                    ug(id24,"count",jk)
+                    ss("评论("+jk+")",评论数)
+                    us(id4,"text",评论数)
+                    us(67,"text",jk)
+                    f(资源名 ? "null")
+                    {
+                      ufnsui()
+                      {
+                       //15 加载   20列表为空  23列表
+                       us(id15,"visibility",8)
+                       us(id20,"visibility",0)
+                       us(id23,"visibility",8)
+                       ug(id24,"count",jk)
+                       ss("评论("+jk+")",评论数)
+                       us(id4,"text","评论数(0)")
+                       us(67,"text","0")
+                      }
+                    }
+                    else
+                   {
+                     ufnsui()
+                    {
+                      //15 加载   20列表为空  23列表
+                      us(id15,"visibility",8)
+                      us(id20,"visibility",8)
+                      us(id23,"visibility",0)
+                      ug(id24,"count",jk)
+                      ss("评论("+jk+")",评论数)
+                      us(id4,"text",评论数)
+                      us(67,"text",jk)
+                    }
+                   }
+                  }
+                  }
+
+
+
+
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+//      us(ss.14,"visibility",8)
+//      us(ss.9,"visibility",0)
+//      us(ss.资源回复内容,"text","")
+    f(post ? "请不要多次提交")
+    {
+    ufnsui()
+    {
+      tw("请勿重复提交")
+//     fn MyUi.正常("请勿重复发布！")
+endutw()
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      
+//     fn MyUi.正常("发布失败")
+endutw()
+tw("发布失败")
+    }
+  }
+  
+  
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+}
+
+}</eventItme></event>
+</View>
+<View id="33" did="43" type="TextView">
+<ppt>width=60dp
+height=-1
+gravity=center
+text=发送
+textColor=#ff008aff
+background=through</ppt>
+<event></event>
+</View>
+<View id="34" did="27" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+BackgroundColor=#ffffffff
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="41" did="34" type="NestedScrollView">
+<ppt>width=-1
+height=-2
+layout_marginLeft=10dp
+layout_marginRight=10dp
+layout_marginBottom=5dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="36" did="34" type="EditText">
+<ppt>width=-1
+height=-2
+layout_marginLeft=15dp
+layout_marginRight=15dp
+text=
+hint=发条友善的评论ヽ（・＿・；)ノ
+textSize=14.5sp
+BackgroundColor=0
+layout_marginBottom=10dp</ppt>
+<event><eventItme type="aftertextchanged">
+
+  us(id13,"text","别拦我，我要评论！")
+
+/.
+
+//写入草稿记录
+fw("$comment_cg.txt",st_sS)
+
+gvs(ss.弹窗,comment.13,id13)
+gvs(ss.弹窗,comment.36,id36)
+f(st_sS=="")
+{
+  us(id13,"textcolor","#9E9E9E")
+  us(id13,"text","发条友善的评论ヽ（・＿・；)ノ")
+}else
+{
+  us(id13,"text",st_sS)
+  us(id13,"textcolor","#424242")
+}</eventItme></event>
+</View>
+<UIEventset><eventItme type="loading">//15 加载   20列表为空  23列表</eventItme></UIEventset>

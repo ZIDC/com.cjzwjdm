@@ -1,0 +1,179 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="15" did="1" type="CardView">
+<ppt>width=-1
+height=-2
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardElevation=0dp
+app_CardcornerRadius=6dp
+
+</ppt>
+<event></event>
+</View>
+<View id="2" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+//layout_margin=10dp
+background=selectableitem
+clickable=true
+</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=left|center
+layout_marginTop=10dp
+layout_marginLeft=10dp
+layout_marginRight=10dp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=40dp
+height=-1
+orientation=vertical
+gravity=center
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="ImageView">
+<ppt>width=30dp
+height=30dp
+src=@58b08eb90be.png</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=200dp
+height=-1
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-1
+height=25dp
+text=作者
+textStyle=bold
+textSize=13sp
+singleLine=true
+textColor=#ff7000e5
+gravity=left|bottom
+layout_marginTop=3dp</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="TextView">
+<ppt>width=-1
+height=25dp
+text=时间
+gravity=left|center
+textSize=10sp</ppt>
+<event></event>
+</View>
+<View id="9" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+layout_marginTop=3dp
+layout_marginBottom=10dp
+layout_marginLeft=10dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="TextView">
+<ppt>width=-1
+height=-2
+text=评论内容
+textSize=14sp
+textColor=#ff585858
+ellipsize=end
+maxLines=4</ppt>
+<event></event>
+</View>
+<View id="12" did="2" type="CardView">
+<ppt>width=-1
+height=-2
+layout_marginTop=10dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginBottom=10dp
+app_CardcornerRadius=7dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffeaeaea
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="TextView">
+<ppt>width=-2
+height=-2
+text=
+textSize=13.5sp
+textColor=#ff070707
+layout_margin=7dp</ppt>
+<event></event>
+</View>
+<View id="11" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=公告网址
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+t()
+{
+hs("http://www.cjzwj.top")
+}
+
+
+
+//浅#424242
+//深#303030
+//颜色1 
+//颜色文字7 8 10
+
+
+gvs(st_vW,系统公告列表.1,ys2)
+gvs(st_vW,系统公告列表.7,ys3)
+gvs(st_vW,系统公告列表.10,ys5)
+
+
+/.
+//浅#424242
+//深#303030
+
+fr("%Android/data/com.ZIDCTG/MOD/ssms.DLL",b)
+sj(b,"ssms","ssms",pd)
+f(pd=="开")
+{
+
+us(ys2,"background","#303030")
+us(ys3,"textcolor","#ff006c79")
+us(ys5,"textcolor","#ff686868")
+//开
+}
+else
+{
+
+us(ys2,"background","#ffffffff")
+us(ys3,"textcolor","#ff1b1b1b")
+us(ys5,"textcolor","#ff060606")
+
+//关
+}</eventItme></UIEventset>

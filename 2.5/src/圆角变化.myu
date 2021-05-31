@@ -1,0 +1,175 @@
+
+
+
+
+
+
+
+
+
+
+fn 搜索框圆角()
+
+us(搜索.6,"app_CardElevation","0dp")
+us(搜索.6,"app_cardcornerradius","0dp")
+t()
+{
+  stop("200")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","0.1dp")   
+
+  }
+}
+
+
+t()
+{
+  stop("400")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","0.5dp")    
+    us(搜索.6,"app_CardElevation","0.1dp")    
+  }
+}
+
+
+
+t()
+{
+  stop("600")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","1dp")  
+    us(搜索.6,"app_CardElevation","0.5dp")      
+  }
+}
+
+
+
+t()
+{
+  stop("800")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","1.5dp") 
+    us(搜索.6,"app_CardElevation","1dp")       
+  }
+}
+
+
+
+t()
+{
+  stop("1000")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","2dp")  
+    us(搜索.6,"app_CardElevation","1.5dp")      
+  }
+}
+
+
+
+
+t()
+{
+  stop("1200")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","2.5dp")  
+    us(搜索.6,"app_CardElevation","2dp")      
+  }
+}
+
+
+
+
+t()
+{
+  stop("1400")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","3dp") 
+    us(搜索.6,"app_CardElevation","2.5dp")       
+  }
+}
+
+
+
+t()
+{
+  stop("1600")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","3.5dp") 
+    us(搜索.6,"app_CardElevation","3dp")       
+  }
+}
+
+
+
+
+t()
+{
+  stop("1800")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","4dp")  
+    us(搜索.6,"app_CardElevation","3.5dp")      
+  }
+}
+
+
+
+t()
+{
+  stop("2000")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","4.5dp")   
+    us(搜索.6,"app_CardElevation","4dp")     
+  }
+}
+
+
+
+t()
+{
+  stop("2200")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","5dp")    
+  }
+}
+
+
+
+
+t()
+{
+  stop("2400")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","5.5dp")    
+    us(搜索.6,"app_CardElevation","4.5dp")          
+  }
+}
+
+
+
+
+t()
+{
+  stop("2600")
+  ufnsui()
+  {
+    us(搜索.6,"app_cardcornerradius","6dp")    
+    us(搜索.6,"app_CardElevation","5dp")          
+  }
+}
+
+
+
+
+end fn

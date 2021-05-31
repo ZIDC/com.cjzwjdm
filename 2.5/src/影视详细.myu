@@ -1,0 +1,154 @@
+
+
+fn 影视详细公告()
+
+
+
+
+ 
+ //远程代码
+t()
+{
+
+
+
+hs("http://dm.cjzwjys.top/影视详细.txt",sz)
+
+f(sz == null)
+{
+ufnsui()
+{
+
+}
+}
+else
+{
+ufnsui()
+{
+
+s a = sz
+s b = "&lt;br&gt;"
+s c = "\n"
+sr(a, b, c, d)
+fn 运行器.设置代码(18,"clicki",d)
+fn 运行器.点击控件(18)
+
+}
+}
+}
+//远程代码
+
+
+
+end fn
+
+
+
+
+fn 动画()
+
+
+
+
+us(9,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 650)
+us(9, "dh", dh) 
+
+dhas(dh, 9, "scaleY", 1.3,1.0)
+dh(dh, "duration", 650)
+dh(dh, "start") 
+                
+dhas(dh, 9, "scaleX", 1.3,1.0)
+dh(dh, "duration", 650)
+dh(dh, "start") 
+
+
+us(4,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(4, "dh", dh) 
+
+dhas(dh, 4, "scaleY", 1.2,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start") 
+                
+dhas(dh, 4, "scaleX", 1.2,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start") 
+
+t()
+{
+stop("250")
+ufnsui()
+{
+
+us(27,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(27, "dh", dh) 
+
+dhas(dh, 27, "scaleY", 1.2,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start") 
+                
+dhas(dh, 27, "scaleX", 1.2,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start") 
+
+
+}
+}
+
+
+
+t()
+{
+stop("450")
+ufnsui()
+{
+
+us(36,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(36, "dh", dh) 
+
+dhas(dh, 36, "scaleY", 1.2,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start") 
+                
+dhas(dh, 36, "scaleX", 1.2,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start") 
+
+
+}
+}
+
+
+
+
+t()
+{
+stop("550")
+ufnsui()
+{
+
+us(85,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(85, "dh", dh) 
+
+dhas(dh, 85, "scaleY", 1.2,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start") 
+                
+dhas(dh, 85, "scaleX", 1.2,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start") 
+
+
+}
+}
+
+end fn

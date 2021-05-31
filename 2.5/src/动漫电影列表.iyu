@@ -1,0 +1,327 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="9" did="1" type="CardView">
+<ppt>width=-1
+height=190dp
+layout_margin=15dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardcornerRadius=17dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fffefefe</ppt>
+<event><eventItme type="touchmonitor">
+
+
+
+gvs(st_vW,动漫电影列表.9,ss.按钮)
+
+
+
+s a=st_eA
+
+f(a == "0")
+{
+
+
+dhas(dh,ss.按钮, "scaleY", 1.0,0.9)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh,ss.按钮, "scaleX", 1.0,0.9)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+
+dhas(dh, ss.按钮, "translationY", 0,35)
+dh(dh, "duration", 300)
+dh(dh, "start")
+us(ss.按钮,"app_CardElevation","5dp")
+
+
+
+
+}
+else f(a == "1")
+{
+
+
+
+dhas(dh,ss.按钮, "scaleY", 0.9,1.0)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh,ss.按钮, "scaleX", 0.9,1.0)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh, ss.按钮, "translationY", 35,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+us(ss.按钮,"app_CardElevation","0dp")
+
+}
+else f(a == "2")
+{
+
+dhas(dh,ss.按钮, "scaleY", 0.9,1.0)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh,ss.按钮, "scaleX", 0.9,1.0)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh, ss.按钮, "translationY", 35,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+us(ss.按钮,"app_CardElevation","0dp")
+
+
+}
+else f(a == "3")
+{
+
+
+dhas(dh,ss.按钮, "scaleY", 0.9,1.0)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh,ss.按钮, "scaleX", 0.9,1.0)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh, ss.按钮, "translationY", 35,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+us(ss.按钮,"app_CardElevation","0dp")
+
+}
+
+</eventItme><eventItme type="clicki">
+
+
+
+
+
+
+//fn 底部弹窗.加载弹窗("加载.iyu")
+//gvs(ss.弹窗,加载.10,ss.id10)
+//us(ss.id10,"text","第一次解析")
+fn 新加载.开始("开始解析..")
+ulag(st_vW,15,ss.链接地址)
+ulag(st_vW,16,sss.图片地址)
+ulag(st_vW,16,sss.视频图片)
+us(列表点击.20,"src",sss.图片地址)
+t()
+{
+   hs(ss.链接地址,null,"gb2312",b)
+   f(b==null)
+   {
+     ufnsui()
+     {
+      fn 新加载.结束("解析失败..")  
+
+     }
+   }
+   else
+   {
+     ufnsui()
+     {
+     sj(b,"class=\"names\"&gt;","&lt;/span&gt;",sss.影视名)         
+     sj(b,"&lt;div class=\"alex\"&gt;","&lt;/div&gt;",sss.影视参数) 
+     sj(b,"&lt;div class=\"info\"&gt;","&lt;/div&gt;",sss.影视介绍) 
+     sj(b,"href='","'",选集连接)
+//     sj(b,"&lt;img src=\"","\"",sss.视频图片) 
+//     sj(b,"&lt;img src=\"","\"",sss.图片地址)  
+     ss(sss.网址+选集连接,sss.选集连接)
+     sr(sss.影视介绍,"。","。&lt;br&gt;", sss.介绍)
+     ss("(html)"+sss.影视参数+sss.介绍,sss.输出文本) 
+     fn 新加载.结束("解析完成..")   
+       //显示
+       t()
+       {
+       stop("300")
+       ufnsui()
+       {
+       uigo("影视详细.iyu")
+       }
+       }
+     }
+   }
+
+   
+}</eventItme></event>
+</View>
+<View id="17" did="9" type="ImageView">
+<ppt>width=-1
+height=-1
+src=173015
+scaleType=centercrop
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="18" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#80ffffff
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+BackgroundRipple=#ffbcbcbc</ppt>
+<event></event>
+</View>
+<View id="2" did="10" type="CardView">
+<ppt>width=100dp
+//100
+height=150dp
+//150
+layout_marginTop=10dp
+layout_marginBottom=10dp
+//app_CardBackgroundColor=#ffd8d8d8
+app_CardcornerRadius=7dp
+app_CardElevation=8dp
+layout_marginLeft=30dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="ImageView">
+<ppt>width=-1
+height=-1
+src=7979
+BackgroundColor=#00ffffff
+scaleType=centerinside
+</ppt>
+<event></event>
+</View>
+<View id="4" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_marginTop=10dp
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="6" did="4" type="LinearLayout">
+<ppt>width=-1
+height=75dp
+orientation=vertical
+gravity=left|center
+layout_marginTop=3dp</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-1
+height=-2
+text=鬼灭之刃之无线列车偏
+textColor=#ff0b0b0b
+textStyle=bold
+textSize=14sp
+singleLine=true
+ellipsize=end
+layout_marginLeft=15dp
+layout_marginRight=4dp</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="TextView">
+<ppt>width=-1
+height=-1
+text=级数
+textColor=#ff0076cf
+textSize=11sp
+singleLine=true
+ellipsize=end
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=3dp</ppt>
+<event></event>
+</View>
+<View id="11" did="4" type="LinearLayout">
+<ppt>width=-1
+height=75dp
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="CardView">
+<ppt>width=100dp
+height=35dp
+layout_marginTop=15dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff7f7f7
+layout_marginBottom=10dp
+layout_marginRight=25dp</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+//BackgroundColor=#ffcf9b00
+</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="TextView">
+<ppt>width=-2
+height=-2
+text=立即观看
+textColor=#ff010101</ppt>
+<event></event>
+</View>
+<View id="15" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本15
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="16" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本16
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="19" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本19
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+
+gvs(st_vW,动漫电影列表.16, b)
+gvs(st_vW,动漫电影列表.2, c)
+ug(b,"text",j)
+f(j ? "imomoe")
+{
+ us(c,"width","100dp")
+ us(c,"height","138.5dp")
+}
+else
+{
+ us(c,"width","100dp")
+ us(c,"height","150dp")
+}</eventItme></UIEventset>

@@ -1,0 +1,168 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#99151515
+visibility=gone</ppt>
+<event><eventItme type="clicki">us(弹窗.1,"visibility",8)</eventItme></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=9dp
+app_CardElevation=10dp
+layout_marginLeft=50dp
+layout_marginRight=50dp</ppt>
+<event></event>
+</View>
+<View id="19" did="2" type="ImageView">
+<ppt>width=-1
+height=-1
+src=173015
+scaleType=centercrop</ppt>
+<event></event>
+</View>
+<View id="20" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=#e6ffffff</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical
+gravity=left|center
+layout_marginTop=7dp
+layout_marginLeft=7dp</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=啊~
+layout_marginLeft=20dp
+textSize=17sp
+textColor=#ff151515</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="15" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=5dp
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="ScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="11" did="17" type="TextView">
+<ppt>width=-1
+height=-1
+text=加载
+layout_marginLeft=5dp
+textColor=#ff646464
+textSize=13sp
+autoLink=none</ppt>
+<event></event>
+</View>
+<View id="18" did="6" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=horizontal
+gravity=right|center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="12" did="18" type="CardView">
+<ppt>width=-2
+height=25dp
+app_CardcornerRadius=4dp
+layout_marginRight=15dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff6f6f6</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="TextView">
+<ppt>width=-1
+height=-1
+text=加载中
+gravity=center
+textSize=10sp
+layout_marginLeft=10dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="7" did="3" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=vertical
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="CardView">
+<ppt>width=55dp
+height=30dp
+layout_marginRight=15dp
+app_CardcornerRadius=4dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff6f6f6
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clipChildren=true</ppt>
+<event><eventItme type="clicki">
+
+
+
+us(弹窗.1,"visibility",8)
+     java(null,ss.载体,"android.app.Dialog.dismiss")</eventItme></event>
+</View>
+<View id="10" did="9" type="TextView">
+<ppt>width=-1
+height=-1
+text=关闭
+textSize=10sp
+gravity=center
+textColor=#ffe4007b
+</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>
