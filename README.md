@@ -25,12 +25,10 @@
 
 ## 编译工具
 
-> 请自行下载变异工具
+> 请自行下载编译工具 密码:6666
 
 
-[Project compilation tools](https://zidc.github.io/bjdm/Projectcompilationtools/sign.apk)
-
-
+[Project compilation tools](https://wwa.lanzoui.com/b04nhpxud)
 ## 界面预览
 
 > 请注意: 请自行在线项目/编译版本浏览
