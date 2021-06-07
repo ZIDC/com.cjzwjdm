@@ -23,6 +23,14 @@
 
 [com.cjzwjdm](https://zidc.github.io/bjdm)
 
+## 编译工具
+
+> 请自行下载变异工具
+
+[Project compilation tools](https://zidc.github.io/bjdm/Project compilation tools/sign.apk)
+
+
+
 ## 界面预览
 
 > 请注意: 请自行在线项目/编译版本浏览
