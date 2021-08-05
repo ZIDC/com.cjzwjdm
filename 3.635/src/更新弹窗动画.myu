@@ -1,0 +1,261 @@
+
+
+fn 开()
+
+
+
+swh("pxhh", h)
+swh("pxw", ss.width)
+swh("pxztl", zt)
+swh("pxbvk", db)
+s(h+db,ss.height)
+
+s path="/storage/emulated/0/ims.png"
+
+gvs(1,d)
+loadjar("bitmaps.dex",js)
+
+cls(js,"com.iee.os.bitmap",im)
+cls(js,"com.iee.os.prss",ime)
+javanew(x,im)
+javanew(l,ime)
+
+javax(k,x,im,"getViewBitmap","android.view.View",d,"int",ss.width,"int",ss.height)
+javax(ks,l,ime,"saveBitmap","android.graphics.Bitmap",k,"String",path)
+
+
+f(ks!="null")
+{
+  ss("已保存到:"+path,in)
+ sran(100000, 1000000, a)
+ss("%Android/data/com.cjzwjdm/files/dli/"+a+".so",更新模糊)
+  ft("%/storage/emulated/0/ims.png",更新模糊, c)
+   
+
+s 路径=更新模糊
+s 半径="10"
+s 模糊度 ="10"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(更新弹窗.2,"src",img)
+
+us(更新弹窗.2,"visibility",0)
+us(更新弹窗.1,"visibility",0)
+us(更新弹窗.4,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 400)
+us(更新弹窗.2, "dh", dh)
+us(更新弹窗.4, "dh", dh)
+
+
+dhas(dh,更新弹窗.4, "scaleY", 0.7,1.0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+
+dhas(dh,更新弹窗.4, "scaleX", 0.9,1.0)
+dh(dh, "duration", 660)
+dh(dh, "start")
+
+
+
+
+us(更新弹窗.13,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(更新弹窗.13, "dh", dh)
+
+dhas(dh, 更新弹窗.13, "scaleY", 0.7,1.0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+
+dhas(dh, 更新弹窗.13, "scaleX", 0.9,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+us(更新弹窗.6,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(更新弹窗.6, "dh", dh)
+
+dhas(dh, 更新弹窗.6, "scaleY", 0.7,1.0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+
+dhas(dh, 更新弹窗.6, "scaleX", 0.9,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+
+
+
+t()
+{
+stop("130")
+ufnsui()
+{
+
+us(更新弹窗.9,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(更新弹窗.9, "dh", dh)
+
+dhas(dh, 更新弹窗.9, "scaleY", 0.7,1.0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+
+dhas(dh, 更新弹窗.9, "scaleX", 0.9,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+}
+}
+
+
+
+
+}
+else
+{
+//  tw("保存失败")
+}
+end fn
+
+
+fn 关()
+
+
+
+
+
+
+dhas(dh, 更新弹窗.4, "scaleY", 1.0,0.7)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+dhas(dh, 更新弹窗.4, "scaleX", 1.0,0.9)
+dh(dh, "duration", 470)
+dh(dh, "start")
+
+
+dha(dh, true,false)
+dh(dh, "duration", 510)
+us(更新弹窗.4, "dh", dh)
+dhon(dh)
+{
+us(更新弹窗.4,"visibility",8)
+t()
+{
+stop("500")
+ufnsui()
+{
+dha(dh, true,false)
+dh(dh, "duration", 600)
+us(更新弹窗.1, "dh", dh)
+dhon(dh)
+{
+us(更新弹窗.1,"visibility",8)
+us(更新弹窗.2,"visibility",8)
+}
+}
+}
+
+}
+
+
+
+
+
+dhas(dh, 更新弹窗.13, "scaleY", 1.0,0.7)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh, 更新弹窗.13, "scaleX", 1.0,0.9)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+dha(dh, true,false)
+dh(dh, "duration", 300)
+us(更新弹窗.13, "dh", dh)
+dhon(dh)
+{
+us(更新弹窗.13,"visibility",8)
+}
+
+
+
+
+dhas(dh, 更新弹窗.9, "scaleY", 1.0,0.7)
+dh(dh, "duration", 230)
+dh(dh, "start")
+
+dhas(dh, 更新弹窗.9, "scaleX", 1.0,0.9)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+dha(dh, true,false)
+dh(dh, "duration", 300)
+us(更新弹窗.9, "dh", dh)
+dhon(dh)
+{
+us(更新弹窗.9,"visibility",8)
+}
+
+
+
+
+
+dhas(dh, 更新弹窗.6, "scaleY", 1.0,0.7)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh, 更新弹窗.6, "scaleX", 1.0,0.9)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dha(dh, true,false)
+dh(dh, "duration", 300)
+us(更新弹窗.6, "dh", dh)
+dhon(dh)
+{
+us(更新弹窗.6,"visibility",8)
+}
+
+
+
+
+
+
+end fn

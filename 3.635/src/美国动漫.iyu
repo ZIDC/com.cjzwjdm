@@ -1,0 +1,961 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="8" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center|top</ppt>
+<event></event>
+</View>
+<View id="2" did="8" type="RecyclerView">
+<ppt>width=-1
+height=-1
+overScrollMode=never
+scrollbars=none
+visibility=gone</ppt>
+<event><eventItme type="onscrolled">
+
+  f(st_fM==0)
+  {
+  ss top="true"
+  }
+  else
+  {
+    ss top
+  }
+  //判断是否已获取过滑动之前的值
+  f(ss.zt==null)
+  {
+  //未获取过
+  ss a1=st_fM
+  ss zt="true"
+  }
+  else
+  {
+  //设置状态为未获取过
+  ss zt
+  //获取再次滑动的值
+  ss a2=st_fM
+  //判断第一和第二次是否相等
+  f(ss.a1==ss.a2)
+  {
+    //相等不执行下面事件
+    endcode
+  }
+  f(ss.a2&gt;ss.a1)
+  {
+    //列表向下滚动执行的事件
+    f(ss.zt2==null)
+  {
+//    syso(ss.zt2)
+    ss zt2="true"
+    ss zt3
+
+dhas(dh, 53, "scaleY", 1.0,0.3)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh, 53, "scaleX", 1.0,0.3)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh, 53, "translationY",0,60)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+us(53,"app_CardElevation","5dp")
+dha(dh, true, false)
+dh(dh, "duration", 800)
+us(55, "dh", dh)
+dhon(dh)
+{
+us(55,"visibility",8)
+}
+
+
+
+    //隐藏悬浮按钮动画
+    }
+  }
+ else
+ {
+   //列表向上滚动执行的事件
+   f(ss.zt3==null)
+   {
+     ss zt3="true"
+     ss zt2
+     //背景出现动画
+us(55,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 800)
+us(55, "dh", dh)
+
+dhas(dh, 53, "scaleY", 0.3,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+us(53,"app_CardElevation","0dp")
+ 
+dhas(dh, 53, "scaleX", 0.3,1.0)
+dh(dh, "duration", 1000)
+dh(dh, "start") 
+
+dhas(dh, 53, "translationY",60,0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+dhon(dh)
+{
+us(53,"app_CardElevation","5dp")
+}
+
+
+     //悬浮按钮显示
+
+     
+    }
+  }
+  }</eventItme></event>
+</View>
+<View id="16" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=top</ppt>
+<event></event>
+</View>
+<View id="5" did="16" type="CardView">
+<ppt>width=-1
+height=160dp
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+layout_margin=15dp</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+BackgroundRipple=#ff7d7d7d
+BackgroundColor=#ffffffff
+</ppt>
+<event><eventItme type="clicki">/.
+
+ug(最近更新.4,"text",kss.搜索不到)
+f(ss.搜索不到 == "努力加载中")
+{
+}
+else
+{
+
+
+
+us(最近更新.5,"visibility",0)
+us(最近更新.2,"visibility",8)
+us(最近更新.3,"visibility",0)
+us(最近更新.4,"visibility",0)
+us(最近更新.4,"text","努力加载中")
+
+
+//最新更新
+t()
+{
+  hs(sss.网址,null,"gb2312",b)  
+   f(b == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  { 
+
+  sj(b,"&lt;h2&gt;最新更新&lt;/h2&gt;"," &lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx," &lt;li&gt;",null,zxd)
+  sl(zxd," &lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(最近更新.2,list_zxgx,"最近更新列表.iyu",-1,-2)
+
+
+// fn 首页加载.日本动漫()  
+us(最近更新.2,"visibility",0)
+us(最近更新.3,"visibility",8)
+us(最近更新.4,"visibility",8)
+us(最近更新.5,"visibility",8)
+us(最近更新.4,"text","")
+
+/.dha(dh, false,true)
+dh(dh, "duration", 600)
+us(最近更新.2, "dh", dh)
+
+dhas(dh, 最近更新.2, "scaleX",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "scaleY",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "translationY",-200,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+./
+}
+}
+}
+}</eventItme></event>
+</View>
+<View id="9" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="11" did="9" type="CardView">
+<ppt>width=80dp
+height=120dp
+layout_marginLeft=25dp
+app_CardcornerRadius=8dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp</ppt>
+<event></event>
+</View>
+<View id="10" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+layout_marginLeft=-50dp</ppt>
+<event></event>
+</View>
+<View id="12" did="10" type="CardView">
+<ppt>width=150dp
+height=15dp
+layout_marginTop=27dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=3dp</ppt>
+<event></event>
+</View>
+<View id="13" did="10" type="CardView">
+<ppt>width=100dp
+height=10dp
+layout_marginTop=10dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=3dp</ppt>
+<event></event>
+</View>
+<View id="14" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="CardView">
+<ppt>width=110dp
+height=35dp
+layout_marginTop=20dp
+app_CardcornerRadius=5dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=20dp
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="CardView">
+<ppt>width=-1
+height=160dp
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+layout_margin=15dp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+BackgroundRipple=#ff7d7d7d
+BackgroundColor=#ffffffff
+</ppt>
+<event><eventItme type="clicki">/.
+
+ug(最近更新.4,"text",kss.搜索不到)
+f(ss.搜索不到 == "努力加载中")
+{
+}
+else
+{
+
+
+
+us(最近更新.5,"visibility",0)
+us(最近更新.2,"visibility",8)
+us(最近更新.3,"visibility",0)
+us(最近更新.4,"visibility",0)
+us(最近更新.4,"text","努力加载中")
+
+
+//最新更新
+t()
+{
+  hs(sss.网址,null,"gb2312",b)  
+   f(b == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  { 
+
+  sj(b,"&lt;h2&gt;最新更新&lt;/h2&gt;"," &lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx," &lt;li&gt;",null,zxd)
+  sl(zxd," &lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(最近更新.2,list_zxgx,"最近更新列表.iyu",-1,-2)
+
+
+// fn 首页加载.日本动漫()  
+us(最近更新.2,"visibility",0)
+us(最近更新.3,"visibility",8)
+us(最近更新.4,"visibility",8)
+us(最近更新.5,"visibility",8)
+us(最近更新.4,"text","")
+
+/.dha(dh, false,true)
+dh(dh, "duration", 600)
+us(最近更新.2, "dh", dh)
+
+dhas(dh, 最近更新.2, "scaleX",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "scaleY",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "translationY",-200,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+./
+}
+}
+}
+}</eventItme></event>
+</View>
+<View id="19" did="18" type="TextView">
+<ppt>width=-2
+height=-2
+text=重新加载
+textColor=#FF2CB3FF
+textSize=12sp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="20" did="18" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="21" did="20" type="CardView">
+<ppt>width=80dp
+height=120dp
+layout_marginLeft=25dp
+app_CardcornerRadius=8dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp</ppt>
+<event></event>
+</View>
+<View id="22" did="18" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+layout_marginLeft=-50dp</ppt>
+<event></event>
+</View>
+<View id="23" did="22" type="CardView">
+<ppt>width=150dp
+height=15dp
+layout_marginTop=27dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=3dp</ppt>
+<event></event>
+</View>
+<View id="24" did="22" type="CardView">
+<ppt>width=100dp
+height=10dp
+layout_marginTop=10dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=3dp</ppt>
+<event></event>
+</View>
+<View id="25" did="22" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="26" did="25" type="CardView">
+<ppt>width=110dp
+height=35dp
+layout_marginTop=20dp
+app_CardcornerRadius=5dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=20dp
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="27" did="16" type="CardView">
+<ppt>width=-1
+height=160dp
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+layout_margin=15dp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="28" did="27" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+BackgroundRipple=#ff7d7d7d
+BackgroundColor=#ffffffff
+</ppt>
+<event><eventItme type="clicki">/.
+
+ug(最近更新.4,"text",kss.搜索不到)
+f(ss.搜索不到 == "努力加载中")
+{
+}
+else
+{
+
+
+
+us(最近更新.5,"visibility",0)
+us(最近更新.2,"visibility",8)
+us(最近更新.3,"visibility",0)
+us(最近更新.4,"visibility",0)
+us(最近更新.4,"text","努力加载中")
+
+
+//最新更新
+t()
+{
+  hs(sss.网址,null,"gb2312",b)  
+   f(b == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  { 
+
+  sj(b,"&lt;h2&gt;最新更新&lt;/h2&gt;"," &lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx," &lt;li&gt;",null,zxd)
+  sl(zxd," &lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(最近更新.2,list_zxgx,"最近更新列表.iyu",-1,-2)
+
+
+// fn 首页加载.日本动漫()  
+us(最近更新.2,"visibility",0)
+us(最近更新.3,"visibility",8)
+us(最近更新.4,"visibility",8)
+us(最近更新.5,"visibility",8)
+us(最近更新.4,"text","")
+
+/.dha(dh, false,true)
+dh(dh, "duration", 600)
+us(最近更新.2, "dh", dh)
+
+dhas(dh, 最近更新.2, "scaleX",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "scaleY",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "translationY",-200,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+./
+}
+}
+}
+}</eventItme></event>
+</View>
+<View id="29" did="28" type="TextView">
+<ppt>width=-2
+height=-2
+text=重新加载
+textColor=#FF2CB3FF
+textSize=12sp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="30" did="28" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="31" did="30" type="CardView">
+<ppt>width=80dp
+height=120dp
+layout_marginLeft=25dp
+app_CardcornerRadius=8dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp</ppt>
+<event></event>
+</View>
+<View id="32" did="28" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+layout_marginLeft=-50dp</ppt>
+<event></event>
+</View>
+<View id="33" did="32" type="CardView">
+<ppt>width=150dp
+height=15dp
+layout_marginTop=27dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=3dp</ppt>
+<event></event>
+</View>
+<View id="34" did="32" type="CardView">
+<ppt>width=100dp
+height=10dp
+layout_marginTop=10dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=3dp</ppt>
+<event></event>
+</View>
+<View id="35" did="32" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="36" did="35" type="CardView">
+<ppt>width=110dp
+height=35dp
+layout_marginTop=20dp
+app_CardcornerRadius=5dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=20dp
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="37" did="16" type="CardView">
+<ppt>width=-1
+height=160dp
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+layout_margin=15dp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="38" did="37" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+BackgroundRipple=#ff7d7d7d
+BackgroundColor=#ffffffff
+</ppt>
+<event><eventItme type="clicki">/.
+
+ug(最近更新.4,"text",kss.搜索不到)
+f(ss.搜索不到 == "努力加载中")
+{
+}
+else
+{
+
+
+
+us(最近更新.5,"visibility",0)
+us(最近更新.2,"visibility",8)
+us(最近更新.3,"visibility",0)
+us(最近更新.4,"visibility",0)
+us(最近更新.4,"text","努力加载中")
+
+
+//最新更新
+t()
+{
+  hs(sss.网址,null,"gb2312",b)  
+   f(b == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  { 
+
+  sj(b,"&lt;h2&gt;最新更新&lt;/h2&gt;"," &lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx," &lt;li&gt;",null,zxd)
+  sl(zxd," &lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(最近更新.2,list_zxgx,"最近更新列表.iyu",-1,-2)
+
+
+// fn 首页加载.日本动漫()  
+us(最近更新.2,"visibility",0)
+us(最近更新.3,"visibility",8)
+us(最近更新.4,"visibility",8)
+us(最近更新.5,"visibility",8)
+us(最近更新.4,"text","")
+
+/.dha(dh, false,true)
+dh(dh, "duration", 600)
+us(最近更新.2, "dh", dh)
+
+dhas(dh, 最近更新.2, "scaleX",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "scaleY",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "translationY",-200,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+./
+}
+}
+}
+}</eventItme></event>
+</View>
+<View id="39" did="38" type="TextView">
+<ppt>width=-2
+height=-2
+text=重新加载
+textColor=#FF2CB3FF
+textSize=12sp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="40" did="38" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="41" did="40" type="CardView">
+<ppt>width=80dp
+height=120dp
+layout_marginLeft=25dp
+app_CardcornerRadius=8dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp</ppt>
+<event></event>
+</View>
+<View id="42" did="38" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+layout_marginLeft=-50dp</ppt>
+<event></event>
+</View>
+<View id="43" did="42" type="CardView">
+<ppt>width=150dp
+height=15dp
+layout_marginTop=27dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=3dp</ppt>
+<event></event>
+</View>
+<View id="44" did="42" type="CardView">
+<ppt>width=100dp
+height=10dp
+layout_marginTop=10dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=3dp</ppt>
+<event></event>
+</View>
+<View id="45" did="42" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="46" did="45" type="CardView">
+<ppt>width=110dp
+height=35dp
+layout_marginTop=20dp
+app_CardcornerRadius=5dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=20dp
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="47" did="16" type="CardView">
+<ppt>width=-1
+height=160dp
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+layout_margin=15dp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="48" did="47" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+BackgroundRipple=#ff7d7d7d
+BackgroundColor=#ffffffff
+</ppt>
+<event><eventItme type="clicki">/.
+
+ug(最近更新.4,"text",kss.搜索不到)
+f(ss.搜索不到 == "努力加载中")
+{
+}
+else
+{
+
+
+
+us(最近更新.5,"visibility",0)
+us(最近更新.2,"visibility",8)
+us(最近更新.3,"visibility",0)
+us(最近更新.4,"visibility",0)
+us(最近更新.4,"text","努力加载中")
+
+
+//最新更新
+t()
+{
+  hs(sss.网址,null,"gb2312",b)  
+   f(b == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  { 
+
+  sj(b,"&lt;h2&gt;最新更新&lt;/h2&gt;"," &lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx," &lt;li&gt;",null,zxd)
+  sl(zxd," &lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(最近更新.2,list_zxgx,"最近更新列表.iyu",-1,-2)
+
+
+// fn 首页加载.日本动漫()  
+us(最近更新.2,"visibility",0)
+us(最近更新.3,"visibility",8)
+us(最近更新.4,"visibility",8)
+us(最近更新.5,"visibility",8)
+us(最近更新.4,"text","")
+
+/.dha(dh, false,true)
+dh(dh, "duration", 600)
+us(最近更新.2, "dh", dh)
+
+dhas(dh, 最近更新.2, "scaleX",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "scaleY",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "translationY",-200,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+./
+}
+}
+}
+}</eventItme></event>
+</View>
+<View id="49" did="48" type="TextView">
+<ppt>width=-2
+height=-2
+text=重新加载
+textColor=#FF2CB3FF
+textSize=12sp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="50" did="48" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="51" did="50" type="CardView">
+<ppt>width=80dp
+height=120dp
+layout_marginLeft=25dp
+app_CardcornerRadius=8dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp</ppt>
+<event></event>
+</View>
+<View id="52" did="48" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+layout_marginLeft=-50dp</ppt>
+<event></event>
+</View>
+<View id="53" did="52" type="CardView">
+<ppt>width=150dp
+height=15dp
+layout_marginTop=27dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=3dp</ppt>
+<event></event>
+</View>
+<View id="54" did="52" type="CardView">
+<ppt>width=100dp
+height=10dp
+layout_marginTop=10dp
+app_CardcornerRadius=2dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=3dp</ppt>
+<event></event>
+</View>
+<View id="55" did="52" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="56" did="55" type="CardView">
+<ppt>width=110dp
+height=35dp
+layout_marginTop=20dp
+app_CardcornerRadius=5dp
+app_CardBackgroundColor=#ffe3e3e3
+app_CardElevation=0dp
+layout_marginLeft=20dp
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

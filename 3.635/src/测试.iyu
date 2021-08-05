@@ -1,0 +1,130 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=@-21230b99d659cdcd.jpg</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=300dp
+height=250dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ccffffff
+//app_CardcornerRadius=</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event><eventItme type="clicki">
+gvs(2,控件)
+//1是控件id
+ug(2,"width",width)
+ug(2,"height",height)
+
+//这里我动态获取控件高度，你们可以自己填进去
+
+javags(config,null,"android.graphics.Bitmap$Config","ARGB_8888")
+//可选值ARGB_8888，ARGB_4444，RGB_565，ALPHA_8
+//ARGB_8888画质最好
+
+java(图片,null,"android.graphics.Bitmap.createBitmap","int",width,"int",height,"android.graphics.Bitmap$Config",config)
+f(图片 == null){
+//  tw("似乎出现问题了")
+  //比如内存溢出，宽高为0等
+  endcode
+  }
+javanew(画板,"android.graphics.Canvas","android.graphics.Bitmap",图片)
+
+java(null,控件,"android.view.View.draw","android.graphics.Canvas",画板)
+
+bfs(图片, 70, "%/storage/emulated/0/ims.png")
+ss("%Android/data/com.cjzwjdm/files/dli/dk.so",地址)
+  ft("%/storage/emulated/0/ims.png",地址, 模糊地址)
+ syso(地址)
+//us(5,"src",图片)
+
+
+s 路径=地址
+s 半径="6"
+s 模糊度 ="7"
+
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(5,"src",img)
+</eventItme></event>
+</View>
+<View id="4" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=</ppt>
+<event></event>
+</View>
+<View id="5" did="2" type="ImageView">
+<ppt>width=-1
+height=-1
+src=17301</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">gvs(1,view)
+cls("android.support.design.widget.Snackbar",类)
+//文本传入和时间
+javax(snk,null,类,"make","android.view.View",view,"java.lang.CharSequence","Snkbar，后面number单位是毫秒","int",3000)
+cls("android.view.View$OnClickListener", 事件类)
+javacb(事件, 事件类)
+{
+  //按钮事件
+  s qun=740788898
+  ss("mqqapi://card/show_pslcard?src_type=internal&version=1&uin="+qun+"&card_type=group&source=qrcode",joinqq)
+  sit(a,"action", "android.intent.action.VIEW")
+  sit(a,"data",joinqq)
+  uit(a, "chooser", "选择QQ")
+}
+
+//按钮的文字
+javax(null,snk,类,"setAction","java.lang.CharSequence","确定",事件类,事件)
+//按钮的颜色
+java(颜色,null,"android.graphics.Color.parseColor","String","#00ffff")
+javax(null,snk,类,"setActionTextColor","int",颜色)
+javax(get,snk,"android.support.design.widget.BaseTransientBottomBar","getView")
+//us(get,"backgroundcolor","#ff3f51b5")
+//us(get,"background","@chbar.jpg")
+//可以设置图片背景
+us(get,"height","300dp")
+//可以设置高度
+java(null, snk, "android.support.design.widget.BaseTransientBottomBar.show")
+javags(id,null,"android.support.design.R$id","snackbar_text")
+java(文本,get,"android.view.View.findViewById","int",id)
+us(文本,"textcolor","#0000ff")
+//文本颜色</eventItme></UIEventset>

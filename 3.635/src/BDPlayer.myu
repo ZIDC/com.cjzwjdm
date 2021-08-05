@@ -1,0 +1,235 @@
+/.
+百度播放器SDK V2.2.4
+Demo V1.0.0
+官方文档：https://cloud.baidu.com/doc/MCT/Android-Player-SDK-2.0.html#.E7.AE.80.E4.BB.8B
+作者：残页 QQ1582270018
+开源协议：Apache License 2.0
+如有疑问或发现问题请联系我
+
+已知问题：调试运行两次会闪退，Demo里很难解决，在部署到自己的应用时，请完全按照我的注释写，并打包运行
+
+BDCloudVideoView组件使用协议 Apache License 2.0
+GitHub地址：根本没找到
+作者：Zhang Rui &lt;bbcallen@gmail.com&gt;
+
+请勿擅自删除此版权声明，否则将被视为违反著作权法 可追究刑事责任
+./
+
+fn init()
+  f(sss.loader == null) {
+    //只有没有加载的时候才加载Dex
+    //如果重复加载，可能造成应用闪退
+    fn Util.loadDex("@bdplayer_2.2.4.dex")
+    cls(sss.loader,"com.baidu.cloud.videoplayer.widget.BDCloudVideoView",sss.player_class)
+    
+    javax(version,null,sss.player_class,"getDemoVersion")
+    f(version != "1.0.0_2.2.4") {
+      //SDK版本错误
+      tw("SDK版本错误……正在重新加载")
+      fn Util.clearCache("bdplayer_2.2.4.dex")
+      fn Util.loadDex("@bdplayer_2.2.4.dex")
+      cls(sss.loader,"com.baidu.cloud.videoplayer.widget.BDCloudVideoView",sss.player_class)
+      }
+    javax(null,null,sss.player_class,"setAK","String","")
+    //这里的AK就是Access Key
+    //因为我也没有AK，所以留空
+    //如果你们申请了AK，可以填进去
+    }
+  end fn
+
+fn newPlayer()
+  javanew(sss.player,sss.player_class,"Context",activity)
+  javax(null,sss.player,sss.player_class,"setLogEnabled","boolean",true)
+  //打开Log输出 如果发布应用务必设置成false，否则某些应用市场不予通过
+  javax(null,sss.player,sss.player_class,"setDecodeMode","int",0)
+  //在支持硬解码的设备上优先使用硬解码
+  //设置为1即为软解码
+  
+  javax(null,sss.player,sss.player_class,"setVideoScalingMode","int",1)
+  //设置视频填充方式
+  /.
+  可选值：
+  1 填充，保持视频内容的宽高比。视频与屏幕宽高不一致时，会留有黑边
+  2 裁剪，保持视频内容的宽高比。视频与屏幕宽高不一致时，会裁剪部分视频内容
+  3 铺满，不保证视频内容宽高比。视频显示与屏幕宽高相等
+  ./
+  
+  javax(null,sss.player,sss.player_class,"showCacheInfo","boolean",true)
+  //打开「加载中」的提示
+  //如果不需要，设置false即可
+  
+  javax(null,sss.player,sss.player_class,"setLooping","boolean",false)
+  //不循环播放
+  
+  javax(null,sss.player,sss.player_class,"setBufferTimeInMs","int",1000)
+  //设置加载时，缓存多长时间的数据才结束（单位毫秒）
+  //如果想要「直播秒开」，这个值可以设置稍小
+  
+  /.
+  javax(null,sss.player,sss.player_class,"setBufferSizeInBytes","int",8192)
+  //设置加载时，缓存多大的数据才结束（单位字节）
+  //如果想要「直播秒开」，这个值可以设置较小
+  //与上面那个，任选一个
+  ./
+  
+  fn BDPlayer.setCallbacks()
+  end fn
+
+fn setCallbacks() 
+  cls(sss.loader,"com.canyie.bdcloud.videoplayer.PlayListener",listenerManagerClass)
+  //其实我想把类名取成PlayListenerManager的，最后还是懒得改
+  
+  cls(sss.loader,"com.canyie.bdcloud.videoplayer.PlayListener$OnErrorListener",errorCallbackClass)
+  javacb(errorCallback,errorCallbackClass) {
+    //发生错误时 回调此方法
+    sgsz(st_aS,0,resultHolder)
+    //javacb不能返回值，我只好这样弄……
+    sgsz(st_aS,2,framework_err)
+    //系统框架层错误码
+    sgsz(st_aS,3,impl_err)
+    //实现层错误码
+    
+    java(resultHolderClass,resultHolder,"java.lang.Object.getClass")
+    javass(null,resultHolder,resultHolderClass,"result",true)
+    //返回true 表示有错误发生，返回false表示正常，依然会走视频播放完成回调
+    ss("播放出错，框架层错误码：" + framework_err + "，实现层错误码：" + impl_err + ,errmsg)
+    
+    utw(null,"播放出错",errmsg,"退出","帮助",true,v) {
+      end()
+      }
+      else
+      {
+        end()
+        uigo("帮助.iyu")
+      }
+    /.
+    错误码说明：
+    -1004 I/O过程中发生错误
+    10000 断网？
+    -1007 视频源畸形，该视频不符合有关标准或文件的编码规范
+    200 视频流及其容器不适用于连续播放视频的指标（例如：MOOV原子）不在文件的开始.
+    100 远程网络服务器出错
+    -110 超时
+    1 未知错误
+    -101 / -1010 播放器正尝试播放不支持的视频源
+    -38 当前播放器处在无法执行某操作的状态，比如没有设置视频源就尝试开始播放。
+    -2147483648 底层系统发生了严重未知错误，比如因为播放了使用当前系统不支持的编码的视频
+    ./
+    }
+  javax(null,null,listenerManagerClass,"setOnErrorListener",sss.player_class,sss.player,errorCallbackClass,errorCallback)
+  //设置错误回调
+  
+  cls(sss.loader,"com.canyie.bdcloud.videoplayer.PlayListener$OnBufferingUpdateListener",bufferingCallbackClass)
+  javacb(bufferingCallback,bufferingCallbackClass) {
+    //缓冲进度变化时回调此方法
+    sgsz(st_aS,1,percent)
+    ss("缓冲进度：" + percent + "%",msg)
+    us(20,"text",msg)
+//    syso(msg)
+    }
+  javax(null,null,listenerManagerClass,"setOnBufferingUpdateListener",sss.player_class,sss.player,bufferingCallbackClass,bufferingCallback)
+  
+  cls(sss.loader,"com.canyie.bdcloud.videoplayer.PlayListener$OnPreparedListener",preparedCallbackClass)
+  javacb(preparedCallback,preparedCallbackClass) {
+    //准备完成时回调此方法
+    syso("准备完成")
+    }
+  javax(null,null,listenerManagerClass,"setOnPreparedListener",sss.player_class,sss.player,preparedCallbackClass,preparedCallback)
+  
+  cls(sss.loader,"com.canyie.bdcloud.videoplayer.PlayListener$OnCompletionListener",complectionCallbackClass)
+  javacb(complectionCallback,complectionCallbackClass) {
+    //播放完成时回调此方法
+    //注意，有时候放直播时主播断流也可能走这个方法
+    syso("播放完成")
+    }
+  javax(null,null,listenerManagerClass,"setOnCompletionListener",sss.player_class,sss.player,complectionCallbackClass,complectionCallback)
+  
+  cls(sss.loader,"com.canyie.bdcloud.videoplayer.PlayListener$OnPlayerStateChangedListener",playerStateChangedCallbackClass)
+  javacb(playerStateChangedCallback,playerStateChangedCallbackClass) {
+    //播放器状态改变时时回调此方法
+    sgsz(st_aS,0,status)
+    /.
+    状态值：
+    -1 错误
+    0 未初始化
+    1 正在初始化
+    2 已初始化，但未播放
+    3 播放中
+    4 暂停
+    5 播放完成
+    ./
+    ss("播放器状态改变：" + status, msg)
+//    syso(msg)
+    }
+  javax(null,null,listenerManagerClass,"setOnPlayerStateChangedListener",sss.player_class,sss.player,playerStateChangedCallbackClass,playerStateChangedCallback)
+  end fn
+
+//设置视频路径/地址
+fn setVideoSource(source)
+  javax(null,sss.player,sss.player_class,"setVideoPath","String",source)
+  end fn
+
+//开始/继续视频播放
+fn start() 
+  javax(null,sss.player,sss.player_class,"start")
+  javax(null,sss.player,sss.player_class,"enterForeground")
+  end fn
+
+//暂停视频播放
+fn pause()
+  javax(null,sss.player,sss.player_class,"pause")
+  javax(null,sss.player,sss.player_class,"enterBackground")
+  end fn
+
+//重置播放器渲染状态 需要播放下一个视频务必调用
+fn reset()
+  javax(null,sss.player,sss.player_class,"reSetRender")
+  end fn
+
+//停止视频播放
+fn stop()
+  javax(null,sss.player,sss.player_class,"stopPlayback")
+  javax(null,sss.player,sss.player_class,"enterBackground")
+  end fn
+
+//销毁播放器
+fn release()
+  fn BDPlayer.stop()
+  javax(null,sss.player,sss.player_class,"release")
+  sss player = null
+  end fn
+
+//获取当前播放进度 单位毫秒
+//返回值存在sss.mCurrentPosition里
+fn getCurrentPosition()
+  javax(sss.mCurrentPosition,sss.player,sss.player_class,"getCurrentPosition")
+  end fn
+
+//获得视频总时长 单位毫秒
+//返回值存在sss.mDuration里
+fn getDuration()
+  javax(sss.mDuration,sss.player,sss.player_class,"getDuration")
+  end fn
+
+//指定播放器当前播放位置 单位毫秒
+fn seekTo(msec)
+  javax(null,sss.player,sss.player_class,"seekTo","int",msec)
+  end fn
+
+//获得当前是否在播放视频
+//返回值sss.isPlaying
+fn isPlaying()
+  javax(sss.isPlaying,sss.player,sss.player_class,"isPlaying")
+  end fn
+
+//设置左右声道的音量
+fn setVolume(left,right)
+  javax(null,sss.player,sss.player_class,"setVolume","float",left,"float",right)
+  end fn
+
+//对当前视频内容截图，仅支持TextureView
+//Android 4.1以下不可用，返回null
+//返回值 sss.bitmap
+fn getBitmap()
+  javax(sss.bitmap,sss.player,sss.player_class,"getBitmap")
+  end fn

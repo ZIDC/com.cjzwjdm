@@ -1,0 +1,59 @@
+import android.graphics.drawable.BitmapDrawable;
+import android.widget.ImageView;
+import android.renderscript.Allocation;
+import android.renderscript.Element;
+import android.renderscript.ScriptIntrinsicBlur;
+import android.renderscript.RenderScript;
+import android.graphics.Bitmap;
+
+
+/*
+
+调用方法
+gvs(控件id,cc)
+call(a, "mjava", "SuperBlur.imageViewBlur", cc)
+
+使目标ImageView(图片控件)模糊
+img  传入图片控件对象
+*/
+public void imageViewBlur(ImageView img)
+{
+  img.setDrawingCacheEnabled(true);
+  Bitmap bmp = Bitmap.createBitmap(img.getDrawingCache());
+  img.setDrawingCacheEnabled(false);
+  img.setImageBitmap(scriptBlur(bmp,5,12));
+  syso(scriptBlur(bmp,5,20));
+}
+
+
+/*
+使用RenderScript进行模糊处理
+bitmap 需要模糊的图片
+radius 模糊半径
+scale  缩放倍数
+返回：模糊后的图片
+*/
+public Bitmap scriptBlur(Bitmap bitmap, int radius, int scale)
+{
+  //直接复用传入的bitmap，回收还给用户处理
+  bitmap = Bitmap.createScaledBitmap(bitmap, bitmap.getWidth()/scale, bitmap.getHeight()/scale,false);
+  
+  long startTime = System.currentTimeMillis();
+  
+  RenderScript rs = RenderScript.create(activity);
+  ScriptIntrinsicBlur sb = ScriptIntrinsicBlur.create(rs, Element.U8_4(rs));
+  Allocation inp = Allocation.createFromBitmap(rs, bitmap);
+  Allocation otp = Allocation.createTyped(rs, inp.getType());
+  
+  sb.setRadius(radius);
+  sb.setInput(inp);
+  sb.forEach(otp);
+  otp.copyTo(bitmap);
+
+  long endTime = System.currentTimeMillis();
+  long useTime = (endTime - startTime);
+  //syso("处理用时："+useTime+"ms");
+  rs.destroy();
+  sb.destroy();
+  return bitmap;
+}

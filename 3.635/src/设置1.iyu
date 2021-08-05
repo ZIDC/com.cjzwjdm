@@ -1,0 +1,525 @@
+<View id="24" did="0" type="RelativeLayout">
+<ppt>width=-2
+height=-2</ppt>
+<event></event>
+</View>
+<View id="17" did="24" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="1" did="17" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="23" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@back.png
+layout_marginTop=20dp
+layout_marginLeft=20dp</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="3" did="1" type="ImageView">
+<ppt>width=210dp
+height=70dp
+src=@JQ.png
+layout_marginLeft=17dp
+layout_marginTop=50dp</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=1.0
+textSize=18sp
+layout_marginLeft=50dp
+textColor=#FF666666
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="5" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=我是小赵! 一个人的项目，用心维护ᐕ)⁾⁾
+textSize=15sp
+layout_marginLeft=50dp
+textColor=#FF666666
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="6" did="1" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=center_vertical
+layout_marginTop=70dp</ppt>
+<event></event>
+</View>
+<View id="32" did="6" type="CardView">
+<ppt>width=-2
+height=30dp
+app_CardcornerRadius=3dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fffaf1ff
+layout_marginLeft=45dp</ppt>
+<event></event>
+</View>
+<View id="33" did="32" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+fn 底部弹窗.弹窗("模糊补偿.iyu")
+
+
+gvs(ss.弹窗,模糊补偿.18,ss.id18)
+gvs(ss.弹窗,模糊补偿.6,ss.id6)
+gvs(ss.弹窗,模糊补偿.13,ss.id13)
+gvs(ss.弹窗,模糊补偿.10,ss.id10)
+//6是更改按钮  18是开关 13是编辑框  10是整个布局
+
+
+
+t()
+{
+
+
+fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+sj(补偿,"补偿","补偿",补偿输出)
+sj(补偿,"参数","参数",参数输出)
+f(补偿输出 == "关")
+{
+  ufnsui()
+  {
+    
+    us(ss.id18,"checked","false")
+    us(ss.id6,"visibility",8) 
+    us(ss.id18,"visibility",0) 
+    us(ss.id10,"visibility",8) 
+    
+   }
+  }
+else
+{
+  ufnsui()
+  {
+    
+    
+    us(ss.id18,"checked","true")
+    us(ss.id6,"visibility",0) 
+    us(ss.id18,"visibility",8) 
+    us(ss.id10,"visibility",0) 
+    
+  ss("当前参数:"+参数输出,零时参数)
+  us(ss.id13,"hint",零时参数)
+    
+  }
+}
+}</eventItme></event>
+</View>
+<View id="7" did="33" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@ic_volume_2.png
+layout_marginLeft=5dp</ppt>
+<event></event>
+</View>
+<View id="8" did="33" type="TextView">
+<ppt>width=-2
+height=50dp
+text=背景模糊补偿
+textColor=#ff9900e8
+textSize=13sp
+textStyle=bold
+layout_marginRight=5dp
+layout_marginLeft=5dp
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="26" did="6" type="CardView">
+<ppt>width=60dp
+height=30dp
+app_CardcornerRadius=3dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#FFF6F6F6
+layout_marginLeft=25dp</ppt>
+<event></event>
+</View>
+<View id="27" did="26" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+fn 底部弹窗.弹窗("播放器选择.iyu")
+
+gvs(ss.弹窗,播放器选择.13,ss.id13)
+gvs(ss.弹窗,播放器选择.12,ss.id12)
+
+
+
+fr("%Android/data/com.cjzwjdm/files/播放器.html",播放)
+sj(播放,"播放","播放",播放输出)
+f(播放输出 == "开")
+{
+  ufnsui()
+  {
+ 
+  us(ss.id13,"checked","true")  
+  us(ss.id12,"text","当前选择:默认播放(自制内核)")
+}
+}
+else
+{
+  ufnsui()
+  {
+    
+  us(ss.id13,"checked","false") 
+  us(ss.id12,"text","当前选择:浏览器播放(X5腾讯)") 
+}
+}
+</eventItme></event>
+</View>
+<View id="25" did="27" type="TextView">
+<ppt>width=-2
+height=-2
+text=播放形式
+textSize=11sp
+textColor=#ff000000
+layout_marginLeft=3dp
+layout_marginRight=3dp</ppt>
+<event></event>
+</View>
+<View id="20" did="1" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=center_vertical
+</ppt>
+<event><eventItme type="clicki">
+
+
+ fn 项目更新.更新1()
+ 
+ 
+</eventItme></event>
+</View>
+<View id="21" did="20" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@million_refresh.png
+layout_marginLeft=50dp</ppt>
+<event></event>
+</View>
+<View id="22" did="20" type="TextView">
+<ppt>width=-2
+height=-2
+text=检查更新
+textColor=#ff000000
+textSize=15sp
+textStyle=bold
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="28" did="20" type="CardView">
+<ppt>width=-2
+height=25dp
+app_CardcornerRadius=3dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fffff8f8
+layout_marginLeft=25dp
+</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event></event>
+</View>
+<View id="30" did="29" type="TextView">
+<ppt>width=-2
+height=-2
+text=缓存加载中
+textSize=8sp
+textColor=#ffd46900
+layout_marginLeft=5dp
+layout_marginRight=5dp</ppt>
+<event></event>
+</View>
+<View id="9" did="1" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=center_vertical
+</ppt>
+<event><eventItme type="clicki">
+
+uigo("反馈.iyu")</eventItme></event>
+</View>
+<View id="10" did="9" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@sms failed477.png
+layout_marginLeft=50dp</ppt>
+<event></event>
+</View>
+<View id="11" did="9" type="TextView">
+<ppt>width=-2
+height=-2
+text=问题反馈
+textColor=#ff000000
+textSize=15sp
+textStyle=bold
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="12" did="1" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=center_vertical
+</ppt>
+<event><eventItme type="clicki">
+
+fn 底部弹窗.弹窗("历史更新.iyu")
+
+gvs(ss.弹窗,历史更新.6,ss.id6)
+
+
+
+
+fr("@dm.so",j)
+sj(j,"^O^",null,jh)
+
+
+t()
+{
+  stop("1300")
+  ufnsui()
+  {
+    us(ss.id6,"text",jh)
+  }
+}</eventItme></event>
+</View>
+<View id="13" did="12" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@query builder738.png
+layout_marginLeft=50dp</ppt>
+<event></event>
+</View>
+<View id="14" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=历史更新
+textColor=#ff000000
+textSize=15sp
+textStyle=bold
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="15" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@setting_about_bottom_logo.png
+scaleType=centercrop
+ut_alignParentBottom=true
+layout_marginTop=100dp</ppt>
+<event></event>
+</View>
+<View id="18" did="15" type="TextView">
+<ppt>width=-2
+height=-2
+text=免责 申明
+ut_alignParentRight=true
+ut_alignParentBottom=true
+layout_marginRight=20dp
+layout_marginBottom=20dp
+textColor=#ffffffff
+textSize=13sp</ppt>
+<event><eventItme type="clicki">
+
+
+
+utw(null,"免责声明","本App提供的资源均系收集于各大视频网站，本App是采集了《樱花动漫-专注动漫的门户网址》\n《风车动漫-专注动漫的门户网址》详细网址,请点击前往按钮。\n本App并不提供影片资源存储，也不参与录制、上传\n若本站收录的节目无意侵犯了贵司版权，请给网页底部邮箱地址来信，我们会及时处理和回复，谢谢!\n\n资源全部来源于风车动漫和樱花动漫，请自行进入这些网站联系该网站的运营删除侵犯了贵公司版权的相关节目\n请在24小时内删除本软件，本软件仅供学习交流！", "前往", "取消", true, v)
+{
+ufnsui()
+{
+
+    
+    us(背景模糊.1,"visibility",8)
+    hws("http://www.imomoe.jp")
+    
+    endutw()
+}
+}
+else
+{
+
+    endutw()
+    
+}</eventItme></event>
+</View>
+<View id="19" did="15" type="TextView">
+<ppt>width=-2
+height=-2
+text=dm.cjzwjys.top
+textColor=#ffffffff
+textSize=13sp
+ut_toLeftOf=18
+ut_alignTop=18
+layout_marginRight=8dp</ppt>
+<event></event>
+</View>
+<View id="31" did="15" type="TextView">
+<ppt>width=-2
+height=-2
+text=开源地址
+textColor=#ffff7f97
+textSize=13sp
+ut_toLeftOf=18
+ut_alignTop=18
+layout_marginRight=105dp</ppt>
+<event><eventItme type="clicki">
+
+hws("https://github.com/ZIDC/com.cjzwjdm")</eventItme></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+ss(c+"dp",dp)
+us(23,"height",dp)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+//设置状态栏透明(沉浸式)
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+//仅支持Android6.0以上，其他无效果。
+
+
+javax(pm,activity,"android.content.ContextWrapper","getPackageManager")
+javax(pknm,activity,"android.content.ContextWrapper","getPackageName")
+//本应用包名
+
+javax(ver,pm,"android.content.pm.PackageManager","getPackageInfo","String",pknm,"int",0)
+javags(ss.banb,ver,"android.content.pm.PackageInfo.versionName")
+//本包名的版本
+
+javax(icon,pm,"android.content.pm.PackageManager","getApplicationInfo","String",pknm,"int",0)
+javax(图标,icon,"android.content.pm.PackageItemInfo","loadIcon","android.content.pm.PackageManager",pm)
+//本应用图标
+
+javags(pkg,ver,"android.content.pm.PackageInfo.applicationInfo")
+javax(应用名称,pkg,"android.content.pm.PackageItemInfo","loadLabel","android.content.pm.PackageManager",pm)
+//本应用名
+
+us(4,"text",ss.banb)
+addv(24,"背景模糊.iyu")
+addv(24,"弹窗1.iyu")
+
+
+
+t()
+{
+  ufnsui()
+  {
+    //要操作的文件夹
+fdir("%Android/data/com.cjzwjdm/files/dli/",path)
+//获取文件夹的文件大小以及文件数量
+fn 获取大小.dirfilesize(path)
+//字节长度转kb
+s2(ss.size/1024,kb)
+s2(kb/1024,mb)
+//ss("文件数:"+ss.nfile+"\n"+kb+"Kb , "+mb+"Mb",大小)
+ss("文件数:"+ss.nfile+" 大小: "+mb+"Mb",大小)
+us(30,"text",大小)
+
+f(大小 ? "0.00Kb , 0.00Mb")
+{
+us(30,"text","无缓存")
+}
+else
+{
+us(30,"text",大小)
+}
+
+
+
+  }
+} 
+
+
+</eventItme><eventItme type="loadingComplete">
+
+
+
+fe("%Android/data/com.cjzwjdm/files/模糊补偿.html",uy)
+f(uy == true)
+{
+  
+}
+else
+{
+  ufnsui()
+  {
+    fw("%Android/data/com.cjzwjdm/files/模糊补偿.html", "补偿关补偿参数100参数")
+    end()
+    tw("文件配置完成")
+  }
+}
+
+
+fe("%Android/data/com.cjzwjdm/files/播放器.html",uy)
+f(uy == true)
+{
+  
+}
+else
+{
+  ufnsui()
+  {
+    fw("%Android/data/com.cjzwjdm/files/播放器.html", "播放开播放")
+    end()
+    tw("播放器配置完成")
+  }
+}
+
+
+</eventItme></UIEventset>

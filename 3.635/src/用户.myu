@@ -1,0 +1,168 @@
+
+
+fn 用户协议()
+
+
+
+
+
+
+t()
+{
+  stop("800")
+  ufnsui()
+  {
+
+    
+    
+    
+
+
+swh("pxhh", h)
+swh("pxw", ss.width)
+swh("pxztl", zt)
+swh("pxbvk", db)
+s(h+db,ss.height)
+
+s path="/storage/emulated/0/ims.png"
+
+gvs(1,d)
+loadjar("bitmaps.dex",js)
+
+cls(js,"com.iee.os.bitmap",im)
+cls(js,"com.iee.os.prss",ime)
+javanew(x,im)
+javanew(l,ime)
+
+javax(k,x,im,"getViewBitmap","android.view.View",d,"int",ss.width,"int",ss.height)
+javax(ks,l,ime,"saveBitmap","android.graphics.Bitmap",k,"String",path)
+
+
+f(ks!="null")
+{
+  ss("已保存到:"+path,in)
+ sran(100000, 1000000, a)
+ss("%Android/data/com.cjzwjdm/files/dli/"+a+".so",更新模糊)
+  ft("%/storage/emulated/0/ims.png",更新模糊, c)
+   
+
+s 路径=更新模糊
+s 半径="10"
+s 模糊度 ="10"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(用户协议.3,"src",img)
+us(弹窗.19,"src",img)
+us(用户协议.3,"visibility",0)
+
+t()
+{
+  stop("650")
+  ufnsui()
+  {
+
+
+
+//动画检测
+fr("%Android/data/com.cjzwjdm/files/dh.html",动画)
+sj(动画,"ok","ok",输出)
+f(输出 == "关")
+{
+  ufnsui()
+  {
+//动画关    
+us(用户协议.1,"visibility",0)
+//动画关    
+   }
+  }
+else
+{
+  ufnsui()
+  {
+//动画开    
+
+us(用户协议.1,"visibility",0)
+
+dha(dh, false,true)
+dh(dh, "duration", 400)
+us(用户协议.2, "dh", dh)
+
+dhas(dh, 用户协议.2, "scaleY", 0.8,1.0)
+dh(dh, "duration", 450)
+dh(dh, "start")
+
+dhas(dh, 用户协议.2, "scaleX", 0.8,1.0)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+dhas(dh, 用户协议.5, "translationY", -50,0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh, 用户协议.7, "translationY", -70,0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh, 用户协议.18, "translationY", -80,0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+
+//动画开    
+  }
+}
+}
+//动画检测
+    
+
+  }
+}
+
+
+
+}    
+    
+    
+    
+    
+    
+        
+  }
+}
+
+
+
+
+
+
+
+end fn

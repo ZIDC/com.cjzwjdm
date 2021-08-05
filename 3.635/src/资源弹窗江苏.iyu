@@ -1,0 +1,105 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event><eventItme type="clicki">us(资源弹窗江苏.1,"visibility",8)</eventItme></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=11dp
+app_CardElevation=6dp
+layout_marginLeft=50dp
+layout_marginRight=50dp</ppt>
+<event><eventItme type="clicki">.</eventItme></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=-1
+height=-1
+src=1730156
+scaleType=centercrop</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#59ffffff</ppt>
+<event></event>
+</View>
+<View id="5" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+gravity=center
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=提示
+textSize=14sp
+textColor=#ff101010
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="8" did="5" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="10" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=因为江苏防火墙的限制，第三资源可能无资源，可以尝试更换网络。
+textSize=14sp
+textColor=#ff5b5b5b
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="9" did="5" type="LinearLayout">
+<ppt>width=-1
+height=46dp
+orientation=horizontal
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="11" did="9" type="CardView">
+<ppt>width=70dp
+height=30dp
+app_CardBackgroundColor=#fffbfbfb
+app_CardElevation=0dp
+layout_marginRight=8dp
+app_CardcornerRadius=5dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+us(资源弹窗江苏.1,"visibility",8)</eventItme></event>
+</View>
+<View id="13" did="12" type="TextView">
+<ppt>width=-1
+height=-1
+text=关闭
+textColor=#ff000000
+gravity=center</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

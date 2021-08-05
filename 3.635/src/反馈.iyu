@@ -1,0 +1,305 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+//BackgroundColor=#FFF0EFF4
+background=white</ppt>
+<event></event>
+</View>
+<View id="33" did="1" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@22-35-05-005.jpg
+scaleType=centercrop
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=80dp
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="55" did="5" type="CardView">
+<ppt>width=46dp
+height=27dp
+app_CardElevation=5dp
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="56" did="55" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event><eventItme type="clicki">
+
+end()</eventItme></event>
+</View>
+<View id="54" did="56" type="ImageView">
+<ppt>width=30dp
+height=30dp
+src=@27fba0feeae.png</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="TextView">
+<ppt>width=-2
+height=-2
+text=Bug以及问题反馈
+gravity=center
+textColor=#ff080808
+textSize=17sp
+layout_marginLeft=15dp
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="67" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center
+</ppt>
+<event></event>
+</View>
+<View id="68" did="67" type="CardView">
+<ppt>width=-1
+height=55dp
+app_CardcornerRadius=5dp
+app_CardBackgroundColor=#fff6f6f6
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=50dp
+layout_marginBottom=15dp
+app_CardElevation=0dp</ppt>
+<event></event>
+</View>
+<View id="69" did="68" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="70" did="69" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=你的QQ
+textColorHint=#ff6d6d6d
+textSize=12sp
+background=@
+singleLine=true
+layout_marginLeft=10dp
+layout_marginRight=10dp
+layout_marginTop=5dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="71" did="67" type="CardView">
+<ppt>width=-1
+height=155dp
+app_CardcornerRadius=5dp
+app_CardBackgroundColor=#fff6f6f6
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=50dp
+layout_marginBottom=15dp
+app_CardElevation=0dp</ppt>
+<event></event>
+</View>
+<View id="72" did="71" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="73" did="72" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=反馈内容
+textColorHint=#ff6d6d6d
+textSize=12sp
+background=@
+layout_marginLeft=10dp
+layout_marginRight=10dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+gravity=top|left</ppt>
+<event></event>
+</View>
+<View id="74" did="67" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="75" did="74" type="CardView">
+<ppt>width=120dp
+height=40dp
+app_CardcornerRadius=4dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fffff7fd</ppt>
+<event></event>
+</View>
+<View id="76" did="75" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event><eventItme type="clicki">
+
+
+
+ug(70,"text",btk)
+ss("反馈人邮箱: "+btk,bt)
+ug(73,"text",nn)
+sr(nn,"\n","&lt;br&gt;",nr)
+
+
+s a="http://www.cjzwjys.top/yx/api.php?shouxin=2912105449@qq.com"
+ss(a+"&zhuti="+bt+"&neirong="+nr,nl)
+
+/.
+utw(null, "", "加载弹窗.iyu", "", true, ss.run)
+  {
+  }
+gvs(ss.run,6,Id6)
+us(Id6, "text","咻～发送中")
+./
+fn 底部弹窗.加载弹窗("加载.iyu")
+gvs(ss.弹窗,加载.10,ss.id10)
+us(ss.id10,"text","咻～发送中")
+
+
+t()
+{
+hs(nl, b)
+f(b =="发信成功！！！")
+{
+  ufnsui()
+  {
+  java(null,ss.载体,"android.app.Dialog.dismiss")
+  tw("感谢反馈,and我已收到")
+  }
+}
+else
+{
+  ufnsui()
+  {
+    tw("反馈失败")
+    java(null,ss.载体,"android.app.Dialog.dismiss")
+  }
+}
+
+
+
+
+
+}
+</eventItme></event>
+</View>
+<View id="77" did="76" type="TextView">
+<ppt>width=-2
+height=-2
+text=开始反馈
+textSize=13sp
+textColor=#ffff1acf</ppt>
+<event></event>
+</View>
+<View id="78" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center</ppt>
+<event></event>
+</View>
+<View id="79" did="78" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中
+textSize=7sp
+textColor=#ff6e6e6e
+layout_marginBottom=10dp
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="66" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本66
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+
+
+us(55,"visibility",0)
+dhas(dh, 55, "scaleY", 0.0,1.0)
+dh(dh, "duration", 1300)
+dh(dh, "start")
+
+dhas(dh, 55, "scaleX", 0.0,1.0)
+dh(dh, "duration", 1300)
+dh(dh, "start")
+
+
+us(6,"visibility",0)
+dhas(dh, 6, "translationX", -85,25)
+dh(dh, "duration", 1200)
+dh(dh, "start")
+
+
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+ss(c+"dp",dp)
+us(3,"height",dp)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+//设置状态栏透明(沉浸式)
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+
+
+
+</eventItme><eventItme type="loadingComplete">
+
+
+
+t()
+{
+  hs("https://zidc.github.io/bjdm/版权.txt",k)
+  sj(k,null,"(",动漫版权)
+  sj(k,"(",")",技术)
+  ss(动漫版权+"\n"+技术+"- 技术支持",输出)
+  ufnsui()
+  {
+  us(79,"text",输出)
+  syso(输出)
+  }
+}</eventItme></UIEventset>

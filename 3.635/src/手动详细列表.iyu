@@ -1,0 +1,82 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=76dp
+height=36dp
+app_CardcornerRadius=3dp
+app_CardElevation=0dp
+app_CardmaxElevation=5dp
+app_CardBackgroundColor=#80f7f7f7
+layout_marginTop=5dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundRipple=#ff9d9d9d</ppt>
+<event><eventItme type="clicki">ulag(st_vW,4,sss.标题)
+ulag(st_vW,5,sss.video)
+
+
+hws(sss.video)
+
+
+
+
+
+/.
+ug(ss.手动标题,"text",视频名)
+ss(视频名+" "+sss.标题,sss.视频标题)
+
+
+
+
+strim(sss.video,sss.video)
+f(sss.video ?* "$" || sss.video ?* "%") {
+  fdir(sss.video,sss.video)
+  }
+f(sss.video ?* "@") {
+  tw("错误：不支持播放@位置的视频，请使用 fc 复制视频到sd卡或私有目录再播放！")
+  endcode
+  }
+uigo("play.iyu")
+
+
+/.
+
+strim(sss.video,sss.video)
+f(sss.video ?* "$" || sss.video ?* "%") {
+  fdir(sss.video,sss.video)
+  }
+f(sss.video ?* "@") {
+  tw("错误：不支持播放@位置的视频，请使用 fc 复制视频到sd卡或私有目录再播放！")
+  endcode
+  }
+uigo("play.iyu")</eventItme></event>
+</View>
+<View id="4" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本4
+textColor=#ff050505
+padding=5dp
+singleLine=true
+ellipsize=end</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本5
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

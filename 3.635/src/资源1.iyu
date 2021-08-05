@@ -1,0 +1,104 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=top|center</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="RecyclerView">
+<ppt>width=-1
+height=-1
+visibility=gone
+overScrollMode=never
+scrollbars=none</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=120dp
+orientation=vertical
+gravity=center
+//visibility=gone
+layout_marginTop=30dp</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="CardView">
+<ppt>width=100dp
+height=120dp
+app_CardcornerRadius=12dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff7f7f7</ppt>
+<event></event>
+</View>
+<View id="7" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="3" did="7" type="ProgressBar">
+<ppt>width=40dp
+height=40dp
+style=16842874
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="6" did="7" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中
+gravity=center
+textColor=#ff080808
+textSize=13sp
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">/.strim(sss.video,sss.video)
+f(sss.video ?* "$" || sss.video ?* "%") {
+  fdir(sss.video,sss.video)
+  }
+f(sss.video ?* "@") {
+  tw("错误：不支持播放@位置的视频，请使用 fc 复制视频到sd卡或私有目录再播放！")
+  endcode
+  }
+uigo("play.iyu")
+}
+}
+
+/.
+
+us(资源1.6,"text","无资源")
+dhas(dh, 资源1.3, "scaleX", 1.0,0.3)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 资源1.3, "scaleY", 1.0,0.2)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+dhas(dh, 资源1.3, "translationY", 0,-60)
+dh(dh, "duration", 720)
+dh(dh, "start")
+
+dha(dh, true, false)
+dh(dh, "duration", 600)
+us(资源1.3, "dh", dh)
+dhon(dh)
+{
+us(资源1.3,"visibility","invisible")
+}
+
+dhas(dh, 资源1.6, "scaleX", 1.0,1.5)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh, 资源1.6, "scaleY", 1.0,1.5)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+
+dhas(dh, 资源1.6, "translationY", 0,-65)
+dh(dh, "duration", 600)
+dh(dh, "start")</eventItme></UIEventset>

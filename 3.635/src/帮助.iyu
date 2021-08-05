@@ -1,0 +1,515 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="39" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|right
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="38" did="39" type="CardView">
+<ppt>width=-2
+height=35dp
+layout_marginRight=15dp
+layout_marginBottom=15dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fffdfdfd
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="40" did="38" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_margin=15dp</ppt>
+<event></event>
+</View>
+<View id="41" did="40" type="TextView">
+<ppt>width=-2
+height=-2
+text=copyright 2021 白洁动漫 All Rights Reserved
+textSize=10sp
+textColor=#ff989898
+layout_margin=8dp</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+elevation=0dp
+BackgroundColor=#ffffffff
+//layout_marginBottom=30dp</ppt>
+<event></event>
+</View>
+<View id="3" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="9" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+layout_marginTop=25dp
+layout_marginBottom=15dp</ppt>
+<event></event>
+</View>
+<View id="7" did="9" type="CardView">
+<ppt>width=30dp
+height=30dp
+app_CardElevation=0dp
+app_CardcornerRadius=25dp
+layout_marginLeft=20dp
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitemborderless</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="5" did="8" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@back.png
+</ppt>
+<event></event>
+</View>
+<View id="6" did="9" type="TextView">
+<ppt>width=-2
+height=-2
+text=帮助
+layout_marginLeft=10dp
+textSize=13sp
+textColor=#ff0d0d0d
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="43" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="45" did="43" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="10" did="45" type="LinearLayout">
+<ppt>width=-1
+height=120dp
+orientation=vertical
+gravity=center
+layout_marginTop=30dp
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="CardView">
+<ppt>width=-1
+height=85dp
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+layout_marginLeft=20dp
+layout_marginRight=20dp
+app_CardBackgroundColor=#fffbfbfb</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center
+background=selectableitem</ppt>
+<event><eventItme type="clicki">
+utw(null,"错误提示","-1004 I/O过程中发生错误\n-10000 断网？\n-1007 视频源畸形，该视频不符合有关标准或文件的编码规范\n-200 视频流及其容器不适用于连续播放视频的指标（例如：MOOV原子）不在文件的开始.\n-100 远程网络服务器出错\n-110 超时\n-1 未知错误\n-101 / -1010 播放器正尝试播放不支持的视频源\n-38 当前播放器处在无法执行某操作的状态，比如没有设置视频源就尝试开始播放。\n-2147483648 底层系统发生了严重未知错误，比如因为播放了使用当前系统不支持的编码的视频", "了解", false, v)
+{
+}
+
+
+
+
+</eventItme></event>
+</View>
+<View id="13" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=播放问题
+layout_marginLeft=16dp
+textSize=14sp
+textColor=#ff070707
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="14" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=播放出现的错误提示
+layout_marginLeft=16dp
+textSize=11sp
+textColor=#ff9e9e9e</ppt>
+<event></event>
+</View>
+<View id="26" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=left|center
+layout_marginTop=5dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="25" did="26" type="TextView">
+<ppt>width=-2
+height=-2
+text=开源地址
+layout_marginLeft=16dp
+textSize=11sp
+textColor=#ff00a8ff
+background=selectableitem</ppt>
+<event><eventItme type="clicki">
+
+hws("https://github.com/ZIDC/com.cjzwjdm")</eventItme></event>
+</View>
+<View id="27" did="26" type="TextView">
+<ppt>width=-2
+height=-2
+text=历史更新
+layout_marginLeft=10dp
+textSize=11sp
+textColor=#ff00a8ff
+background=selectableitem</ppt>
+<event><eventItme type="clicki">fn 底部弹窗.弹窗("历史更新.iyu")
+
+gvs(ss.弹窗,历史更新.6,ss.id6)
+
+
+
+
+fr("@dm.so",j)
+sj(j,"^O^",null,jh)
+
+
+t()
+{
+  stop("1300")
+  ufnsui()
+  {
+    us(ss.id6,"text",jh)
+  }
+}</eventItme></event>
+</View>
+<View id="28" did="26" type="TextView">
+<ppt>width=-2
+height=-2
+text=软件官网
+layout_marginLeft=10dp
+textSize=11sp
+textColor=#ff00a8ff
+background=selectableitem</ppt>
+<event><eventItme type="clicki">
+hws("https://zidc.github.io/bjdm")</eventItme></event>
+</View>
+<View id="42" did="26" type="TextView">
+<ppt>width=-2
+height=-2
+text=缓存加载中
+layout_marginLeft=10dp
+textSize=8sp
+textColor=#ffb8b8b8
+background=selectableitem</ppt>
+<event></event>
+</View>
+<View id="15" did="45" type="LinearLayout">
+<ppt>width=-1
+height=120dp
+orientation=vertical
+gravity=center
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="CardView">
+<ppt>width=-1
+height=85dp
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+layout_marginLeft=20dp
+layout_marginRight=20dp
+app_CardBackgroundColor=#fffbfbfb</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center
+background=selectableitem</ppt>
+<event><eventItme type="clicki">utw(null,"更新地址","以下两个地址\n密码;6666","地址","直接下载地址", false, v)
+{
+hws("https://zidc.github.io/bjdm")
+}
+else
+{
+hws("https://www.lanzoui.com/b04n5j3yj")
+}
+</eventItme></event>
+</View>
+<View id="18" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=更新地址
+layout_marginLeft=16dp
+textSize=14sp
+textColor=#ff070707
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="19" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=保持软件的日常维护
+layout_marginLeft=16dp
+textSize=11sp
+textColor=#ff9e9e9e</ppt>
+<event></event>
+</View>
+<View id="20" did="45" type="LinearLayout">
+<ppt>width=-1
+height=120dp
+orientation=vertical
+gravity=center
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="21" did="20" type="CardView">
+<ppt>width=-1
+height=85dp
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+layout_marginLeft=20dp
+layout_marginRight=20dp
+app_CardBackgroundColor=#fffbfbfb</ppt>
+<event></event>
+</View>
+<View id="22" did="21" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center
+background=selectableitem</ppt>
+<event><eventItme type="clicki">uigo("反馈.iyu")</eventItme></event>
+</View>
+<View id="23" did="22" type="TextView">
+<ppt>width=-2
+height=-2
+text=问题反馈
+layout_marginLeft=16dp
+textSize=14sp
+textColor=#ff070707
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="24" did="22" type="TextView">
+<ppt>width=-2
+height=-2
+text=有什么问题，找我
+layout_marginLeft=16dp
+textSize=11sp
+textColor=#ff9e9e9e</ppt>
+<event></event>
+</View>
+<View id="47" did="45" type="LinearLayout">
+<ppt>width=-1
+height=120dp
+orientation=vertical
+gravity=center
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="48" did="47" type="CardView">
+<ppt>width=-1
+height=85dp
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+layout_marginLeft=20dp
+layout_marginRight=20dp
+app_CardBackgroundColor=#fffbfbfb</ppt>
+<event></event>
+</View>
+<View id="49" did="48" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center
+background=selectableitem</ppt>
+<event><eventItme type="clicki">//【调用支付宝支付】
+s url="https://qr.alipay.com/fkx15533zincou2dfgid9cf?t=1624282251289"
+//以上链接改为你的支付宝二维码链接
+
+s pay="alipayqr://platformapi/startapp?saId=10000007&clientVersion=3.7.0.0718&qrcode="
+ss(pay+url,pay)
+sit(a,"action", "android.intent.action.VIEW")
+sit(a,"data",pay)
+uit(a, "chooser", "支付宝捐赠")
+tw("感谢你的赞助！请备注你的名称！")
+.以上代码可放在 载入事件或单机触屏事件 随自己变化。
+</eventItme></event>
+</View>
+<View id="50" did="49" type="TextView">
+<ppt>width=-2
+height=-2
+text=捐赠
+layout_marginLeft=16dp
+textSize=14sp
+textColor=#ff070707
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="51" did="49" type="TextView">
+<ppt>width=-2
+height=-2
+text=捐赠开发者资金，帮助更好的开发！(金额随意)
+layout_marginLeft=16dp
+textSize=11sp
+textColor=#ff9e9e9e</ppt>
+<event></event>
+</View>
+<View id="46" did="45" type="LinearLayout">
+<ppt>width=-1
+height=150dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+ss(c+"dp",dp)
+us(3,"height",dp)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+//设置状态栏透明(沉浸式)
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+//仅支持Android6.0以上，其他无效果。
+
+
+loadjar("armeabi-v7a/classes.dex",class)
+cls(class,"com.Mus.ReboundScrollView",mB)
+gvs(2,a)
+gvs(43,b)
+javanew(mBs,mB,"Context",activity)
+urvw(43)
+nvw(mBs,2)
+nvw(b,mBs)
+us(mBs,"overScrollMode","never")
+
+us(6,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(6, "dh", dh) 
+
+dhas(dh, 6, "scaleY",1.2,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start") 
+               
+dhas(dh, 6, "scaleX", 1.2,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+us(7,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 630)
+us(7, "dh", dh) 
+
+dhas(dh, 7, "scaleY", 1.2,1.0)
+dh(dh, "duration", 1300)
+dh(dh, "start") 
+                
+dhas(dh, 7, "scaleX", 1.2,1.0)
+dh(dh, "duration", 1300)
+dh(dh, "start")
+dhon(dh)
+{
+us(4,"elevation","0.6dp")
+}
+
+
+
+
+
+t()
+{
+stop("500")
+ufnsui()
+{
+
+us(10,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(10, "dh", dh) 
+
+dhas(dh, 10, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 10, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+
+
+}
+}
+
+
+
+t()
+{
+stop("650")
+ufnsui()
+{
+
+us(15,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(15, "dh", dh) 
+
+dhas(dh, 15, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 15, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+
+
+}
+}
+
+
+
+
+
+</eventItme></UIEventset>

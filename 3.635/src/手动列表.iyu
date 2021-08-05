@@ -1,0 +1,570 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center
+</ppt>
+<event></event>
+</View>
+<View id="5" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+layout_marginTop=0.8dp
+layout_marginBottom=0.8dp</ppt>
+<event></event>
+</View>
+<View id="4" did="5" type="CardView">
+<ppt>width=-1
+height=100dp
+layout_marginTop=30dp
+layout_marginBottom=23dp
+app_CardcornerRadius=11dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffe3e3e3
+layout_marginLeft=30dp
+layout_marginRight=30dp</ppt>
+<event><eventItme type="touchmonitor">
+
+
+
+gvs(st_vW,手动列表.4,ss.手动4)
+gvs(st_vW,手动列表.9,ss.手动9)
+gvs(st_vW,手动列表.13,ss.手动13)
+gvs(st_vW,手动列表.8,ss.手动8)
+s a=st_eA
+
+f(a == "0")
+{
+
+
+dhas(dh,ss.手动4, "scaleY", 1.0,1.1)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动4, "scaleX", 1.0,1.1)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,  ss.手动4, "translationY", 0,-50)
+dh(dh, "duration", 550)
+dh(dh, "start")
+ 
+dhas(dh,ss.手动9, "scaleY", 1.0,1.1)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动9, "scaleX", 1.0,1.1)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+dhas(dh,ss.手动13, "scaleY", 1.0,1.1)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动13, "scaleX", 1.0,1.1)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,  ss.手动13, "translationY", 0,-50)
+dh(dh, "duration", 250)
+dh(dh, "start")
+
+
+dhas(dh,ss.手动8, "scaleY", 1.0,1.1)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动8, "scaleX", 1.0,1.1)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,  ss.手动8, "translationY", 0,-50)
+dh(dh, "duration", 250)
+dh(dh, "start")
+
+
+}
+else f(a == "1")
+{
+
+dhas(dh,ss.手动4, "scaleY", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动4, "scaleX", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,  ss.手动4, "translationY", -50,0)
+dh(dh, "duration", 550)
+dh(dh, "start")
+ 
+dhas(dh,ss.手动9, "scaleY",1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动9, "scaleX", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+dhas(dh,ss.手动13, "scaleY", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动13, "scaleX", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,  ss.手动13, "translationY",-50,0)
+dh(dh, "duration", 250)
+dh(dh, "start")
+
+
+dhas(dh,ss.手动8, "scaleY", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动8, "scaleX", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,  ss.手动8, "translationY", -50,0)
+dh(dh, "duration", 250)
+dh(dh, "start")
+
+
+}
+else f(a == "2")
+{
+
+
+
+
+}
+else f(a == "3")
+{
+
+dhas(dh,ss.手动4, "scaleY", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动4, "scaleX", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,  ss.手动4, "translationY", -50,0)
+dh(dh, "duration", 550)
+dh(dh, "start")
+ 
+dhas(dh,ss.手动9, "scaleY",1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动9, "scaleX", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+dhas(dh,ss.手动13, "scaleY", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动13, "scaleX", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,  ss.手动13, "translationY",-50,0)
+dh(dh, "duration", 250)
+dh(dh, "start")
+
+
+dhas(dh,ss.手动8, "scaleY", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,ss.手动8, "scaleX", 1.1,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,  ss.手动8, "translationY", -50,0)
+dh(dh, "duration", 250)
+dh(dh, "start")
+
+
+}
+
+</eventItme><eventItme type="clicki">ulag(st_vW,23,ss.手动详细链接)
+
+
+
+
+
+
+cls("android.content.DialogInterface$OnCancelListener", sss.返回类)
+javacb(sss.返回事件, sss.返回类)
+{
+// tw("关闭")
+}
+//创建一个ProgressDialog
+javanew(sss.对象,"android.app.ProgressDialog", "Context", activity)
+//取得类
+cls("android.app.ProgressDialog", sss.类)
+//显示，参数：当前的上下文环境，标题，内容，是否不明确(true和false都行)，点击外面是否关闭弹窗,，返回事件
+//标题和返回事件可写null。倒数第二个参数如果写false则点击外部关不掉弹窗，只能使用下面的关闭方法，并且返回事件将无效
+javax(sss.对象, sss.对象, sss.类, "show", "Context", activity, "CharSequence", "提示", "CharSequence", "加载中..", "boolean", false, "boolean", false, "android.content.DialogInterface$OnCancelListener", sss.返回事件)
+
+
+
+
+
+
+
+t()
+{
+hs(ss.手动详细链接,k)
+f(k == "null")
+{
+java(null, sss.对象, "android.app.Dialog.cancel")
+endutw()
+}
+else
+{
+ufnsui()
+{
+
+
+sj(k,"##","##",mc)
+sj(k,"++图片++","++图片++",jpg)
+sj(k,"++介绍++","++介绍++",nr)
+sj(k,"++选集++",null,xj)
+  sj(xj,"[",null,zxd)
+  sl(zxd,"[",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,null,"]",mz)
+    syso(mz)
+    sj(zxdm,"(",")",lj)
+  ula(list_sd,5=lj,4=mz) 
+  } 
+  ufnsui()
+  {
+  uls(手动详细.20,list_sd,"手动详细列表.iyu",-1,-2) 
+    gvs(手动详细.20,对象)
+    cls("android.support.v7.widget.RecyclerView",列表类)
+    cls("android.support.v7.widget.StaggeredGridLayoutManager",布局管理类)
+    javanew(布局,布局管理类,"int",3,"int",1)
+    javax(null,对象,列表类,"setLayoutManager","android.support.v7.widget.RecyclerView$LayoutManager",布局)  
+    java(null, sss.对象, "android.app.Dialog.cancel")     
+    us(手动详细.4,"text",mc)
+    us(手动详细.12,"src",jpg)    
+    us(手动详细.15,"text",nr)    
+    
+
+    t()
+    {
+    ss("%Android/data/com.cjzwjdm/files/"+jpg,ss.位置)      
+    hd(jpg,ss.位置,true,ok)
+    f(ok == "-1")
+    {
+//      us(80,"visibility",8)
+    }
+    else
+    {
+      ufnsui()
+      {
+s 路径=ss.位置
+s 半径="8"
+s 模糊度 ="9"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+us(手动详细.21,"src",img)                                             
+    }
+    }
+    }     
+    
+    
+//开启动画
+    
+    
+us(手动详细.1,"visibility",0)
+
+
+us(手动详细.23,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(手动详细.23, "dh", dh) 
+
+dhas(dh, 手动详细.23, "translationY", -100,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 手动详细.23, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 手动详细.23, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+
+
+
+t()
+{
+stop("80")
+ufnsui()
+{
+
+dhas(dh, 手动详细.3, "translationY", -100,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+us(手动详细.3,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(手动详细.3, "dh", dh) 
+
+dhas(dh, 手动详细.3, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 手动详细.3, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+
+
+}
+}
+
+t()
+{
+stop("150")
+ufnsui()
+{
+dhas(dh, 手动详细.7, "translationY", -100,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+us(手动详细.7,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(手动详细.7, "dh", dh) 
+
+dhas(dh,手动详细.7, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 手动详细.7, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+
+}
+}
+
+
+t()
+{
+stop("230")
+ufnsui()
+{
+
+dhas(dh, 手动详细.17, "translationY", -100,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+us(手动详细.17,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(手动详细.17, "dh", dh) 
+
+dhas(dh, 手动详细.17, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 手动详细.17, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+}
+}   
+    
+    
+    
+    
+    
+//开启动画
+    
+        
+        
+} 
+}   
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+</eventItme></event>
+</View>
+<View id="24" did="4" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@dbxbxnxn1.png
+scaleType=centercrop
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="25" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+BackgroundColor=#ccffffff</ppt>
+<event></event>
+</View>
+<View id="6" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+layout_weight=1
+layout_marginRight=-50dp</ppt>
+<event></event>
+</View>
+<View id="9" did="7" type="LinearLayout">
+<ppt>width=80dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="CardView">
+<ppt>width=50dp
+height=75dp
+app_CardElevation=4dp
+app_CardcornerRadius=8dp
+layout_marginLeft=5dp</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="ImageView">
+<ppt>width=-1
+height=-1
+src=173015
+scaleType=centercrop
+</ppt>
+<event></event>
+</View>
+<View id="13" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|top</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="TextView">
+<ppt>width=-1
+height=35dp
+text=加载中对你的男的女的那些年你擦擦你妈
+gravity=left|center
+textColor=#ff010101
+textSize=15sp
+layout_marginBottom=8dp
+singleLine=true
+layout_marginLeft=15dp
+ellipsize=end
+layout_marginTop=15.5dp
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">ulag(st_vW,14,k)
+
+utw(null,"", k,"", false, v)
+{
+endutw()
+}
+
+</eventItme></event>
+</View>
+<View id="8" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=right|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="16" did="8" type="CardView">
+<ppt>width=60dp
+height=30dp
+layout_marginRight=35dp
+app_CardElevation=0.3dp
+app_CardcornerRadius=4dp</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#fff6f6f6
+//BackgroundRipple=#ffbcbcbc</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=播放
+textSize=13sp
+textColor=#ff0d0d0d</ppt>
+<event></event>
+</View>
+<View id="23" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本21
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

@@ -1,0 +1,112 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+//background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=0dp
+layout_marginTop=0dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#00ffffff</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_marginBottom=15dp</ppt>
+<event></event>
+</View>
+<View id="8" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="14" did="8" type="RecyclerView">
+<ppt>width=-1
+height=-1
+overScrollMode=never
+scrollbars=none</ppt>
+<event></event>
+</View>
+<View id="15" did="2" type="LinearLayout">
+<ppt>width=-1
+height=25dp
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="CardView">
+<ppt>width=45dp
+height=5dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffededed</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loadingComplete">
+
+
+
+
+
+/.
+
+fn 底部弹窗.弹窗("追番.iyu")
+
+
+
+gvs(ss.弹窗,追番列表.11,ss.id11)
+gvs(ss.弹窗,追番列表.14,ss.id14)
+
+
+
+
+t()
+{
+
+s wz= "%Android/data/com.cjzwjdm/cpk"
+fl(wz, sh)
+for(qq;sh)
+{
+ss(wz+"/"+qq,ne)
+fr(ne,pp)
+sj(pp,"{","}",bt)
+sj(pp,"【","】",tiem)
+sj(pp,"&gt;图片&lt;","&gt;图片&lt;",jpg)
+sj(pp,"&gt;网址&lt;","&gt;网址&lt;",urll)
+ula(v,12=jpg,14=bt,20=tiem,21=urll)
+}
+ufnsui()
+{
+uls(ss.id14,v,"追番列表.iyu",-1,"-2")
+
+f(bt ? null)
+{
+us(ss.id11,"visibility",0)
+us(14,"visibility",8)
+
+}
+else
+{
+us(ss.id14,"visibility",0)
+us(ss.id11,"visibility",8)
+}
+
+
+
+
+}
+}
+}
+
+
+
+</eventItme></UIEventset>

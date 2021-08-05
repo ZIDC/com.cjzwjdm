@@ -1,0 +1,179 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="5" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="4" did="5" type="CardView">
+<ppt>width=-1
+height=110dp
+layout_margin=15dp
+layout_marginTop=20dp
+layout_marginBottom=13dp
+app_CardcornerRadius=17dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffcdcdcd</ppt>
+<event></event>
+</View>
+<View id="6" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+BackgroundColor=#bffafafa
+BackgroundRipple=#ffc6c6c6</ppt>
+<event><eventItme type="clicki">ulag(st_vW,20,sss.输出文本)
+ulag(st_vW,19,sss.图片地址)
+ulag(st_vW,14,sss.影视名)
+
+
+fn 搜索代码.追番搜索()
+
+</eventItme></event>
+</View>
+<View id="7" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+layout_weight=1
+layout_marginRight=-50dp</ppt>
+<event></event>
+</View>
+<View id="9" did="7" type="LinearLayout">
+<ppt>width=80dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="CardView">
+<ppt>width=50dp
+height=75dp
+app_CardElevation=0dp
+app_CardcornerRadius=6dp
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="ImageView">
+<ppt>width=-1
+height=-1
+src=173015
+scaleType=centercrop
+</ppt>
+<event></event>
+</View>
+<View id="13" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|top</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="TextView">
+<ppt>width=-1
+height=35dp
+text=加载中
+gravity=left|center
+textColor=#ff010101
+textSize=15sp
+layout_marginBottom=8dp
+singleLine=true
+layout_marginLeft=15dp
+ellipsize=end
+layout_marginRight=-30dp
+layout_marginTop=15.5dp</ppt>
+<event></event>
+</View>
+<View id="15" did="13" type="TextView">
+<ppt>width=-1
+height=-2
+text=加载中
+textSize=12sp
+layout_marginBottom=12dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=right|center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="16" did="8" type="CardView">
+<ppt>width=60dp
+height=30dp
+layout_marginRight=35dp
+app_CardElevation=0dp
+app_CardcornerRadius=4dp</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#fff6f6f6
+//BackgroundRipple=#ffbcbcbc</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=播放
+textSize=13sp
+textColor=#ff0d0d0d</ppt>
+<event></event>
+</View>
+<View id="19" did="5" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本19
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="20" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本20
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="21" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本21
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="22" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本21
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="23" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本21
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

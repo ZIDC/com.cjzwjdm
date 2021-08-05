@@ -1,0 +1,2036 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="74" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center</ppt>
+<event></event>
+</View>
+<View id="75" did="74" type="LinearLayout">
+<ppt>width=-1
+height=55dp
+orientation=horizontal
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="76" did="75" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@github.png
+layout_marginRight=15dp
+layout_marginBottom=1dp</ppt>
+<event><eventItme type="clicki">
+hws("https://github.com/ZIDC/com.cjzwjdm")</eventItme></event>
+</View>
+<View id="77" did="75" type="ImageView">
+<ppt>width=21dp
+height=21dp
+src=@gitee-fill-round.png
+layout_marginLeft=15dp</ppt>
+<event><eventItme type="clicki">
+hws("https://gitee.com/cjzwj/com.cjzwjdm?_from=gitee_search")</eventItme></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=330dp
+orientation=vertical
+background=white
+elevation=0.5dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="12" did="3" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="15" did="12" type="ImageView">
+<ppt>width=-1
+height=320dp
+src=@IMG_20210520_000039.png
+scaleType=centercrop</ppt>
+<event></event>
+</View>
+<View id="73" did="12" type="LinearLayout">
+<ppt>width=-1
+height=320dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="67" did="73" type="ImageView">
+<ppt>width=-1
+height=320dp
+src=@IMG_20210520_000039.png
+scaleType=centercrop
+visibility=gone
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="16" did="12" type="LinearLayout">
+<ppt>width=-1
+height=320dp
+orientation=vertical
+BackgroundColor=#33ffffff</ppt>
+<event></event>
+</View>
+<View id="5" did="12" type="LinearLayout">
+<ppt>width=-1
+height=320dp
+orientation=vertical
+gravity=top|left</ppt>
+<event></event>
+</View>
+<View id="4" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="28" did="5" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="8" did="28" type="CardView">
+<ppt>width=30dp
+height=30dp
+app_CardElevation=0dp
+app_CardcornerRadius=25dp
+layout_marginLeft=25dp
+app_CardBackgroundColor=#59d9d9d9</ppt>
+<event></event>
+</View>
+<View id="10" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="6" did="10" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@back.png
+</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="46" did="29" type="CardView">
+<ppt>width=40dp
+height=23dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+layout_marginRight=18dp
+app_CardBackgroundColor=#66ffffff</ppt>
+<event></event>
+</View>
+<View id="47" did="46" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+
+
+
+
+swh("pxhh", h)
+swh("pxw", ss.width)
+swh("pxztl", zt)
+swh("pxbvk", db)
+s(h+db,ss.height)
+
+s path="/storage/emulated/0/ims.png"
+
+gvs(1,d)
+loadjar("bitmaps.dex",js)
+
+cls(js,"com.iee.os.bitmap",im)
+cls(js,"com.iee.os.prss",ime)
+javanew(x,im)
+javanew(l,ime)
+
+javax(k,x,im,"getViewBitmap","android.view.View",d,"int",ss.width,"int",ss.height)
+javax(ks,l,ime,"saveBitmap","android.graphics.Bitmap",k,"String",path)
+
+
+f(ks!="null")
+{
+  ss("已保存到:"+path,in)
+ sran(100000, 1000000, a)
+ss("%Android/data/com.cjzwjdm/files/dli/"+a+".so",详细模糊)
+  ft("%/storage/emulated/0/ims.png",详细模糊, c)
+   
+
+s 路径=详细模糊
+s 半径="10"
+s 模糊度 ="10"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(53,"src",img)
+
+us(55,"visibility",0)
+us(52,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 400)
+us(55, "dh", dh)
+
+dhas(dh, 55, "scaleY", 0.7,1.0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+
+dhas(dh, 55, "scaleX", 0.9,1.0)
+dh(dh, "duration", 660)
+dh(dh, "start")
+
+
+
+us(53,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 400)
+us(53, "dh", dh)
+
+us(58,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(58, "dh", dh)
+
+dhas(dh, 58, "scaleY", 0.7,1.0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+
+dhas(dh, 58, "scaleX", 0.9,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+
+
+
+
+t()
+{
+stop("130")
+ufnsui()
+{
+
+us(65,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(65, "dh", dh)
+
+dhas(dh, 65, "scaleY", 0.7,1.0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+
+dhas(dh, 65, "scaleX", 0.9,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+}
+}
+
+
+
+
+}
+else
+{
+//  tw("保存失败")
+}
+</eventItme></event>
+</View>
+<View id="49" did="47" type="ImageView">
+<ppt>width=13dp
+height=13dp
+src=@xiangxi.png
+layout_marginLeft=5dp</ppt>
+<event></event>
+</View>
+<View id="48" did="47" type="TextView">
+<ppt>width=-1
+height=-1
+text=详细
+textColor=#ff010101
+textSize=8sp
+gravity=center
+layout_marginRight=3dp</ppt>
+<event></event>
+</View>
+<View id="30" did="29" type="CardView">
+<ppt>width=40dp
+height=23dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+layout_marginRight=18dp
+app_CardBackgroundColor=#66ffffff</ppt>
+<event></event>
+</View>
+<View id="31" did="30" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="32" did="31" type="TextView">
+<ppt>width=-1
+height=-1
+text=追番
+textColor=#ffff0056
+textSize=10sp
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+ss("【"+sss.影视名+"】"+"《图片》"+sss.图片地址+"《图片》"+"《网址》"+sss.选集连接+"《网址》"+"《视频介绍》"+sss.输出文本+"《视频介绍》"+"\n追番离线"+sss.d+"追番离线",输出追番文件)
+ss("%Android/data/com.cjzwjdm/cpk/"+sss.影视名+".so",追番)
+fw(追番,输出追番文件)
+us(33,"visibility",0)
+us(32,"visibility",8)
+us(45,"visibility",0)
+us(50,"visibility",8)  
+us(42,"app_cardbackgroundcolor","#ffc95cff")  </eventItme></event>
+</View>
+<View id="33" did="31" type="TextView">
+<ppt>width=-1
+height=-1
+text=以追番
+textColor=#ff060606
+textSize=10sp
+visibility=gone
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event></event>
+</View>
+<View id="26" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="27" did="26" type="LinearLayout">
+<ppt>width=-1
+height=75dp
+orientation=vertical
+gravity=bottom
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="69" did="27" type="RelativeLayout">
+<ppt>width=-1
+height=70dp
+gravity=bottom
+</ppt>
+<event></event>
+</View>
+<View id="70" did="69" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="71" did="70" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="68" did="69" type="LinearLayout">
+<ppt>width=-1
+height=70dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="11" did="12" type="LinearLayout">
+<ppt>width=-1
+height=320dp
+orientation=vertical
+gravity=bottom|left</ppt>
+<event></event>
+</View>
+<View id="13" did="11" type="CardView">
+<ppt>width=-2
+height=-2
+app_CardcornerRadius=6dp
+app_CardBackgroundColor=#0d030303
+app_CardElevation=0dp
+layout_marginBottom=15dp
+layout_marginRight=5dp
+layout_marginLeft=35dp</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="14" type="TextView">
+<ppt>width=-2
+height=-2
+text=                       
+textSize=18sp
+textColor=#ff020202
+singleLine=true
+ellipsize=end
+layout_margin=8dp</ppt>
+<event></event>
+</View>
+<View id="34" did="12" type="LinearLayout">
+<ppt>width=-1
+height=320dp
+orientation=vertical
+gravity=bottom|center
+</ppt>
+<event></event>
+</View>
+<View id="35" did="34" type="LinearLayout">
+<ppt>width=-1
+height=125dp
+orientation=horizontal
+gravity=left|top
+</ppt>
+<event></event>
+</View>
+<View id="36" did="35" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="38" did="36" type="CardView">
+<ppt>width=80dp
+height=35dp
+app_CardElevation=5dp
+app_CardcornerRadius=6dp
+layout_marginLeft=38dp
+app_CardBackgroundColor=#ffe5e5e5</ppt>
+<event></event>
+</View>
+<View id="39" did="38" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+background=selectableitem
+clickable=true</ppt>
+<event></event>
+</View>
+<View id="40" did="39" type="ImageView">
+<ppt>width=15dp
+height=15dp
+src=@icon_play.png
+layout_marginLeft=5dp</ppt>
+<event></event>
+</View>
+<View id="41" did="39" type="TextView">
+<ppt>width=-1
+height=-1
+text=继续观看
+textSize=12sp
+gravity=center
+textColor=#ffa1a1a1
+background=selectableitemborderless
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+t()
+{
+stop("500")
+ufnsui()
+{
+
+
+t()
+{
+ss("Android/data/com.cjzwjdm/ls/"+sss.影视名+".sod",历史文件)
+fe(历史文件,b)
+fr(历史文件,jb)
+sj(jb,"影视名","影视名",sss.视频标题)
+sj(jb,"视频链接","视频链接",sss.video)
+f(b == true)
+{
+  ufnsui()
+  {
+    us(41,"visibility",0)
+    us(51,"visibility",8)
+    us(38,"app_cardbackgroundcolor","#ff517aff")  
+    gvs(40,view)
+    java(c,null,"android.graphics.Color.parseColor","String","#ffffffff")
+    javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+    java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)
+    
+    
+   strim(sss.video,sss.video)
+   f(sss.video ?* "$" || sss.video ?* "%")
+   {
+   fdir(sss.video,sss.video)
+   }
+   f(sss.video ?* "@") 
+   {
+   tw("错误：")
+   endcode
+   }
+   uigo("play.iyu")
+   
+      
+  }
+}
+else
+{
+  ufnsui()
+  {
+
+    us(51,"visibility",0)
+    us(41,"visibility",8)
+    us(38,"app_cardbackgroundcolor","#fff7f7f7")
+    gvs(40,view)
+    java(c,null,"android.graphics.Color.parseColor","String","#ff757575")
+    javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+    java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)
+    
+  }
+}
+}
+
+
+}
+}
+
+
+
+
+/.
+t()
+{
+ss("%Android/data/com.cjzwjdm/ls/"+sss.影视名+".sod",ls)
+fr(ls,jb)
+sj(jb,"影视名","影视名",sss.视频标题)
+sj(jb,"视频链接","视频链接",sss.video)
+fe(ls,b)
+f(b == "true")
+{
+  ufnsui()
+  {
+    tw(b)
+    us(41,"visibility",0)
+    us(51,"visibility",8)
+    us(38,"app_cardbackgroundcolor","#ff517aff")  
+    gvs(40,view)
+    java(c,null,"android.graphics.Color.parseColor","String","#ffffffff")
+    javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+    java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)
+    
+    
+   strim(sss.video,sss.video)
+   f(sss.video ?* "$" || sss.video ?* "%")
+   {
+   fdir(sss.video,sss.video)
+   }
+   f(sss.video ?* "@") 
+   {
+   tw("错误：")
+   endcode
+   }
+   uigo("play.iyu")
+   
+        
+      
+  }
+}
+else
+{
+ufnsui()
+{
+    tw(b)
+    us(51,"visibility",0)
+    us(41,"visibility",8)
+    us(38,"app_cardbackgroundcolor","#fff7f7f7")
+    gvs(40,view)
+    java(c,null,"android.graphics.Color.parseColor","String","#ff757575")
+    javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+    java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)    
+}
+}
+}</eventItme></event>
+</View>
+<View id="51" did="39" type="TextView">
+<ppt>width=-1
+height=-1
+text=继续观看
+textSize=12sp
+gravity=center
+textColor=#ffaaaaaa
+background=selectableitemborderless
+clickable=true
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="42" did="36" type="CardView">
+<ppt>width=85dp
+height=35dp
+app_CardElevation=5dp
+app_CardcornerRadius=6dp
+layout_marginLeft=17dp
+app_CardBackgroundColor=#ffe5e5e5</ppt>
+<event></event>
+</View>
+<View id="43" did="42" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+</ppt>
+<event></event>
+</View>
+<View id="44" did="43" type="ImageView">
+<ppt>width=15dp
+height=15dp
+src=@gengxin-1.png
+layout_marginLeft=8dp</ppt>
+<event></event>
+</View>
+<View id="45" did="43" type="TextView">
+<ppt>width=-1
+height=-1
+text=更新数据
+textSize=12sp
+gravity=center
+textColor=#ff8a8a8a
+layout_marginRight=5dp
+layout_marginLeft=5dp
+background=selectableitemborderless
+clickable=true</ppt>
+<event><eventItme type="clicki">tw("功能未完善")</eventItme></event>
+</View>
+<View id="50" did="43" type="TextView">
+<ppt>width=-1
+height=-1
+text=更新数据
+textSize=12sp
+gravity=center
+textColor=#ffaaaaaa
+layout_marginRight=5dp
+layout_marginLeft=5dp
+background=selectableitemborderless
+clickable=true
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="17" did="2" type="LinearLayout">
+<ppt>width=-1
+height=80dp
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="CardView">
+<ppt>width=-2
+height=-1
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=12dp
+layout_marginBottom=12dp
+app_CardElevation=0.4dp
+app_CardcornerRadius=15dp
+app_CardBackgroundColor=#fff3f3f3</ppt>
+<event></event>
+</View>
+<View id="20" did="18" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@1c7adcab15e.png
+scaleType=centercrop
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="19" did="18" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="82" did="19" type="CardView">
+<ppt>width=-1
+height=-1
+layout_margin=3dp
+app_CardElevation=0.1dp
+app_CardcornerRadius=13dp
+app_CardBackgroundColor=#fff8f8f8</ppt>
+<event></event>
+</View>
+<View id="83" did="82" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="21" did="83" type="TabLayout">
+<ppt>width=-1
+height=-1
+app_tabTextColor=#ffd2d2d2|#ff050505
+app_tabIndicatorWidth=26dp
+app_tabIndicatorHeight=4dp
+app_tabGravity=0
+app_tabMode=0
+layout_marginBottom=6dp
+background=through
+layout_marginLeft=3dp
+layout_marginRight=3dp
+app_tabIndicatorColor=#ff090909</ppt>
+<event></event>
+</View>
+<View id="22" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="23" did="22" type="CardView">
+<ppt>width=-1
+height=-1
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=10dp
+layout_marginBottom=55dp
+app_CardcornerRadius=20dp
+app_CardElevation=0.1dp</ppt>
+<event></event>
+</View>
+<View id="84" did="23" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@787878.png
+scaleType=centercrop
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="85" did="23" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#e3ffffff
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="24" did="23" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="25" did="24" type="ViewPager">
+<ppt>width=-1
+height=-1
+overScrollMode=never
+scrollbars=none</ppt>
+<event><eventItme type="onpageselected">f(st_pN=="0")
+{
+us(21,"app_tabIndicatorWidth","26dp")
+us(21,"app_tabIndicatorHeight","4dp")
+
+
+f(sss.a == "1")
+{
+dhas(dh, 67, "translationX", 60,0)
+dh(dh, "duration", 950)
+dh(dh, "start")
+dhas(dh, 67, "scaleY", 1.5,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhas(dh, 67, "scaleX", 1.5,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+}
+else f(sss.a == "2")
+{
+dhas(dh, 67, "translationX", 150,0)
+dh(dh, "duration", 650)
+dh(dh, "start")
+dhas(dh, 67, "scaleY", 1.5,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhas(dh, 67, "scaleX", 1.5,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+}
+sss a = "0"
+
+
+
+
+}
+else f(st_pN=="1")
+{ 
+us(21,"app_tabIndicatorHeight","4.5dp")
+us(21,"app_tabIndicatorWidth","43dp")
+
+f(sss.a == "0")
+{
+dhas(dh, 67, "scaleY", 1.0,1.5)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhas(dh, 67, "scaleX", 1.0,1.5)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhas(dh, 67, "translationX", 0,60)
+dh(dh, "duration", 950)
+dh(dh, "start")
+}
+f(sss.a == "2")
+{
+dhas(dh, 67, "translationX", 150,60)
+dh(dh, "duration", 700)
+dh(dh, "start")
+}
+
+sss a="1"
+
+
+
+
+
+f(sss.资源检测 == "开始")
+{
+
+}
+else
+{
+
+
+
+//第二资源
+  t()
+  {
+  s a = "%Android/data/com.cjzwjdm/files/第二资源.html"
+  fr(a, bh)
+  sj(bh,"],['","',['",废物)
+  ss(废物+"',[",傻逼)
+  sr(bh,"qiyi&","flv&",ddd)
+  sr(ddd,"youku&","flv&",op)
+  sr(op,"sohu&","flv&",opp)
+  sr(opp,"m3u8&","flv&",ap)  
+  sr(ap,"vip&","flv&",app)
+  sr(app,"zw&","flv&",dc)  
+  sj(dc,傻逼,"&lt;from&gt;-&lt;pos&gt;",zl)
+  sj(zl,",","']]],urlinfo=",cc)
+  sl(cc,",",zxf)
+  for(zxdm;zxf)
+  {
+   sj(zxdm,null,"$",un)
+   sr(un,"'","",bm)
+   sj(zxdm,"$",null,sp)
+   sr(sp,"flv&'","",splj)
+   ula(list,4=bm,5=splj) 
+  } 
+  ufnsui()
+  {
+    uls(资源4.2,list,"资源4列表.iyu",-1,-2) 
+    gvs(资源4.2,对象)
+    cls("android.support.v7.widget.RecyclerView",列表类)
+    cls("android.support.v7.widget.StaggeredGridLayoutManager",布局管理类)
+    javanew(布局,布局管理类,"int",3,"int",1)
+    javax(null,对象,列表类,"setLayoutManager","android.support.v7.widget.RecyclerView$LayoutManager",布局) 
+    sss 资源检测="开始"    
+   f(splj ? "http")
+   {
+    us(资源1.4,"visibility",8)
+    us(资源1.2,"visibility",0)             
+  }
+  else
+  { 
+
+   us(资源4.6,"text","无资源")
+   dhas(dh, 资源4.3, "scaleX", 1.0,0.3)
+   dh(dh, "duration", 600)
+   dh(dh, "start")
+
+   dhas(dh, 资源4.3, "scaleY", 1.0,0.2)
+   dh(dh, "duration", 600)
+   dh(dh, "start")
+
+
+   dhas(dh, 资源4.3, "translationY", 0,-60)
+   dh(dh, "duration", 720)
+   dh(dh, "start")
+
+   dha(dh, true, false)
+   dh(dh, "duration", 600)
+   us(资源4.3, "dh", dh)
+   dhon(dh)
+   {
+   us(资源4.3,"visibility","invisible")
+   }
+
+   dhas(dh, 资源4.6, "scaleX", 1.0,1.5)
+   dh(dh, "duration", 1000)
+   dh(dh, "start")
+
+   dhas(dh, 资源4.6, "scaleY", 1.0,1.5)
+   dh(dh, "duration", 800)
+   dh(dh, "start")
+
+
+   dhas(dh, 资源4.6, "translationY", 0,-65)
+   dh(dh, "duration", 600)
+   dh(dh, "start")
+
+      
+}
+}
+}
+//第二资源
+}
+
+
+
+
+
+
+
+
+
+
+}
+else f(st_pN=="2")
+{
+us(21,"app_tabIndicatorWidth","45dp")
+us(21,"app_tabIndicatorHeight","5.5dp")
+
+f(sss.a== "0")
+{
+dhas(dh, 67, "scaleY", 1.0,1.5)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhas(dh, 67, "scaleX", 1.0,1.5)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhas(dh, 67, "translationX", 0,150)
+dh(dh, "duration", 700)
+dh(dh, "start")
+}
+f(sss.a== "1")
+{
+dhas(dh, 67, "translationX", 60,150)
+dh(dh, "duration", 700)
+dh(dh, "start")
+}
+
+
+sss a="2"
+}</eventItme></event>
+</View>
+<View id="78" did="23" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="79" did="78" type="LinearLayout">
+<ppt>width=-1
+height=20dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="80" did="23" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=top</ppt>
+<event></event>
+</View>
+<View id="81" did="80" type="LinearLayout">
+<ppt>width=-1
+height=20dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="52" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+visibility=gone
+</ppt>
+<event></event>
+</View>
+<View id="53" did="52" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@com.miui.home.png
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="54" did="52" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="55" did="54" type="CardView">
+<ppt>width=-1
+height=-2
+layout_marginLeft=30dp
+layout_marginRight=30dp
+app_CardcornerRadius=16dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#33101010
+visibility=gone
+app_ContentPadding=5dp 5dp 5dp 5dp</ppt>
+<event></event>
+</View>
+<View id="56" did="55" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="57" did="56" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="58" did="57" type="CardView">
+<ppt>width=110dp
+height=160dp
+app_CardcornerRadius=10dp
+app_CardElevation=4dp
+layout_margin=4dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="59" did="58" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+
+f(ss.详细图片点击 == "0")
+{
+ufnsui()
+{
+//tw("开启动画放大")
+ss 详细图片点击="1"
+
+dhas(dh, 58, "scaleY", 1.0,1.3)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 58, "scaleX", 1.0,1.3)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh,58, "translationY", 0, -35)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+t()
+{
+stop("950")
+ufnsui()
+{
+dhas(dh,58, "translationY", -35,5)
+dh(dh, "duration", 900)
+dh(dh, "start")
+}
+}
+
+
+dhas(dh, 65, "scaleY", 1.0,0.8)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 65, "scaleX", 1.0,0.8)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh,65, "translationY", 0, -25)
+dh(dh, "duration", 900)
+dh(dh, "start")
+
+
+//动画放大
+}
+}
+else f(ss.详细图片点击 == "1")
+{
+ufnsui()
+{
+//tw("开启动画缩小")
+ss 详细图片点击="0"
+
+dhas(dh, 58, "scaleY", 1.3,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 58, "scaleX", 1.3,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh,58, "translationY", 5,0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+
+
+
+dhas(dh, 65, "scaleY", 0.8,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 65, "scaleX", 0.8,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh,65, "translationY", -25,0)
+dh(dh, "duration", 900)
+dh(dh, "start")
+
+
+//动画缩小
+
+
+
+}
+}
+
+
+</eventItme></event>
+</View>
+<View id="60" did="59" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@IMG_20210125_225655.png
+scaleType=centercrop</ppt>
+<event></event>
+</View>
+<View id="61" did="56" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_weight=1
+layout_marginLeft=-10dp</ppt>
+<event></event>
+</View>
+<View id="65" did="61" type="CardView">
+<ppt>width=-1
+height=200dp
+layout_marginLeft=16dp
+layout_marginRight=16dp
+layout_marginTop=16dp
+layout_marginBottom=16dp
+app_CardElevation=0dp
+app_CardcornerRadius=10dp
+app_CardBackgroundColor=#263f3f3f
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="66" did="65" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="62" did="66" type="ScrollView">
+<ppt>width=-2
+height=-2</ppt>
+<event></event>
+</View>
+<View id="63" did="62" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="64" did="63" type="TextView">
+<ppt>width=-1
+height=-1
+text=文本64
+textColor=#ffffffff
+textSize=13sp
+layout_margin=5dp</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+sss 详细界面="关"
+
+
+s a = 0
+s b = 15
+s c = "#ffffffff|#b3ffffff|#00ffffff"
+s d = "#333333"
+s e = "topbottom"
+ngde(a, b, c, d, e, f)
+us(81,"background",f)
+
+
+s a = 0
+s b = 15
+s c = "#00ffffff|#b3ffffff|#ffffffff"
+s d = "#333333"
+s e = "topbottom"
+ngde(a, b, c, d, e, f)
+us(79,"background",f)
+
+
+
+
+
+t()
+{
+stop("430")
+ufnsui()
+{
+
+
+
+sss a = "0"
+ss 详细图片点击="0"
+sss 资源检测="开"   
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+ss(c+"dp",dp)
+us(4,"height",dp)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+//设置状态栏透明(沉浸式)
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+//仅支持Android6.0以上，其他无效果。
+
+uht(25, "bd", 21, true)
+s a = 0
+s b = 0
+s c = "#ffffffff|#00ffffff"
+s d = "#333333"
+s e = "bottomtop"
+ngde(a, b, c, d, e, f)
+us(68,"background",f)
+us(71,"background",f)
+//增加 滑动页面 并设置标题 这个标题因为绑定的关系 会自动添加成 标签选择卡 子项
+
+uht(25, "add", -1, "默认资源", "资源1.iyu")
+uht(25, "add", -1, "默认备用资源", "资源4.iyu")
+uht(25, "add", -1, "搜索额外资源", "资源2.iyu")
+
+gvs(40,view)
+java(c,null,"android.graphics.Color.parseColor","String","#ffb7b7b7")
+javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)
+
+gvs(44,view)
+java(c,null,"android.graphics.Color.parseColor","String","#fff7f7f7")
+javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)
+
+us(7,"text",sss.影视名)
+us(64,"text",sss.输出文本)
+us(60,"src",sss.图片地址)
+
+
+
+addv(1,"资源弹窗.iyu")
+addv(1,"资源弹窗1.iyu")
+addv(1,"资源弹窗江苏.iyu")
+
+
+
+
+t()
+{
+  hs(sss.选集连接,null,"gb2312",b)
+  fr("@jm.js",js)
+  sj(b,"&lt;div class=\"player\"&gt;","&lt;div id=\"adl\"&gt;",取播放地址)
+  sj(取播放地址,js,"?",地址)
+  ss(sss.网址+地址,解码地址)
+  hs(解码地址,null,"gb2312",b)
+  call(解析完成,"mjava","unicode.decode",b)
+  sr(解析完成,"\n","", dd)
+  sr(dd,"qiyi&","flv&",ddd)
+  sr(ddd,"youku&","flv&",op)
+  sr(op,"sohu&","flv&",opp)
+  sr(opp,"m3u8&","flv&",ap)  
+  sr(ap,"vip&","flv&",app)
+  sr(app,"$bdhd","flv&",bpp)  
+  sr(bpp,"zw&","flv&",sss.d)
+  sj(sss.d,"var VideoListJson=[['","',['",播放源文字)
+  ss("var VideoListJson=[['"+播放源文字+"',['",源输出)
+  sj(sss.d,"$flv']",null,第二资源)
+  s a = "%Android/data/com.cjzwjdm/files/第二资源.html"
+  fw(a, 第二资源)  
+   sj(sss.d,源输出,"']]],",c)
+   sl(c,",",zxf)
+   for(zxdm;zxf)
+   {
+   sj(zxdm,null,"$",un)
+   sr(un,"'","",sss.bm)
+   sj(zxdm,"$",null,sp)
+   sr(sp,"flv&'","",spl)
+   sr(sp,"flv&","",splj)   
+  ula(list_zxgx,4=sss.bm,5=splj) 
+  } 
+  ufnsui()
+  {
+    uls(资源1.2,list_zxgx,"资源1列表.iyu",-1,-2)  
+    gvs(资源1.2,对象)
+    cls("android.support.v7.widget.RecyclerView",列表类)
+    cls("android.support.v7.widget.StaggeredGridLayoutManager",布局管理类)
+    javanew(布局,布局管理类,"int",3,"int",1)
+    javax(null,对象,列表类,"setLayoutManager","android.support.v7.widget.RecyclerView$LayoutManager",布局) 
+    ss("%Android/data/com.cjzwjdm/files/"+sss.图片地址,ss.位置)
+
+//开始判断追番    
+f(sss.bm ? "null")
+{
+ufnsui()
+{
+  ss("%Android/data/com.cjzwjdm/cpk/"+sss.影视名+".so",追番)
+  fr(追番,zf)
+  sj(zf,"var VideoListJson=[['","',['",播放源文字)
+  ss("var VideoListJson=[['"+播放源文字+"',['",源输出)
+  sj(zf,"$flv']",null,第二资源)
+  s a = "%Android/data/com.cjzwjdm/files/第二资源.html"
+  fw(a, 第二资源) 
+   sj(zf,源输出,"']]],",c)
+   sl(c,",",zxf)
+   for(zxdm;zxf)
+   {
+   sj(zxdm,null,"$",un)
+   sr(un,"'","",sss.bm)
+   sj(zxdm,"$",null,sp)
+   sr(sp,"flv&'","",splj)
+  ula(list_zxgx,4=sss.bm,5=splj) 
+  } 
+  ufnsui()
+  {
+    uls(资源1.2,list_zxgx,"资源1列表.iyu",-1,-2)  
+    gvs(资源1.2,对象)
+    cls("android.support.v7.widget.RecyclerView",列表类)
+    cls("android.support.v7.widget.StaggeredGridLayoutManager",布局管理类)
+    javanew(布局,布局管理类,"int",3,"int",1)
+    javax(null,对象,列表类,"setLayoutManager","android.support.v7.widget.RecyclerView$LayoutManager",布局) 
+}
+}
+}
+//开始判断追番    
+            
+    t()
+    {
+    hd(sss.图片地址,sss.位置,true,ok)
+    f(ok == "-1")
+    {
+//      us(80,"visibility",8)
+    }
+    else
+    {
+      ufnsui()
+      {
+s 路径=sss.位置
+s 半径="2"
+s 模糊度 ="3"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+us(67,"src",img)
+us(67,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 630)
+us(67, "dh", dh)
+//最后输出img，可以设置src或者bg                                                  
+    }
+    }
+    } 
+
+f(bm == "null")
+{
+ufnsui()
+{
+
+
+
+us(资源1.6,"text","无资源")
+dhas(dh, 资源1.3, "scaleX", 1.0,0.3)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 资源1.3, "scaleY", 1.0,0.2)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+dhas(dh, 资源1.3, "translationY", 0,-60)
+dh(dh, "duration", 720)
+dh(dh, "start")
+
+dha(dh, true, false)
+dh(dh, "duration", 600)
+us(资源1.3, "dh", dh)
+dhon(dh)
+{
+us(资源1.3,"visibility","invisible")
+}
+
+dhas(dh, 资源1.6, "scaleX", 1.0,1.5)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh, 资源1.6, "scaleY", 1.0,1.5)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+
+dhas(dh, 资源1.6, "translationY", 0,-65)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+}
+}
+else
+{
+ufnsui()
+{
+
+us(资源1.4,"visibility",8)
+us(资源1.2,"visibility",0)
+
+}
+}
+
+
+
+}
+}
+
+
+
+
+//判断是否追番
+t()
+{
+ss("%Android/data/com.cjzwjdm/cpk/"+sss.影视名+".so",追番)
+fe(追番,b)
+f(b == "true")
+{
+  ufnsui()
+  {
+    fr(追番,追番信息)
+    sj(追番信息,"【","】",sss.影视名)
+    sj(追番信息,"《图片》","《图片》",sss.图片地址)
+//    sj(追番信息,"《网址》","《网址》",sss.选集链接)
+    sj(追番信息,"《视频介绍》","《视频介绍》",sss.输出文本)    
+    us(33,"visibility",0)
+    us(32,"visibility",8)
+    us(45,"visibility",0)
+    us(50,"visibility",8)  
+    gvs(44,view)
+    us(42,"app_cardbackgroundcolor","#ffffff")       
+    java(c,null,"android.graphics.Color.parseColor","String","#ff050505")
+    javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+    java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)    
+
+  }
+}
+else
+{
+  ufnsui()
+  {
+    us(33,"visibility",8)
+    us(32,"visibility",0)
+    us(45,"visibility",8)
+    us(50,"visibility",0)      
+
+    gvs(44,view)
+    java(c,null,"android.graphics.Color.parseColor","String","#ff757575")
+    javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+    java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)
+    us(42,"app_cardbackgroundcolor","#ffe5e5e5")           
+  }
+}
+}
+//判断是否追番
+
+
+
+
+
+//判断历史
+
+t()
+{
+ss("Android/data/com.cjzwjdm/ls/"+sss.影视名+".sod",历史文件)
+fe(历史文件,b)
+syso(b)
+f(b == "true")
+{
+  ufnsui()
+  {
+    us(41,"visibility",0)
+    us(51,"visibility",8)
+    us(38,"app_cardbackgroundcolor","#ffffffff")  
+    gvs(40,view)
+    java(c,null,"android.graphics.Color.parseColor","String","#ff171717")
+    javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+    java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)
+      
+  }
+}
+else
+{
+  ufnsui()
+  {
+
+    us(51,"visibility",0)
+    us(41,"visibility",8)
+    us(38,"app_cardbackgroundcolor","#ffe5e5e5")
+    gvs(40,view)
+    java(c,null,"android.graphics.Color.parseColor","String","#ff757575")
+    javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+    java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)
+    
+  }
+}
+}
+//判断历史
+
+
+
+
+//判断动画
+fr("%Android/data/com.cjzwjdm/files/dh.html",动画)
+sj(动画,"ok","ok",输出)
+f(输出 == "关")
+{
+  ufnsui()
+  {
+    
+us(75,"visibility",0)
+us(22,"visibility",0)
+us(17,"visibility",0)
+us(3,"visibility",0)
+    
+   }
+  }
+else
+{
+  ufnsui()
+  {
+    
+
+dhas(dh, 3, "translationY", -500,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+us(3,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(3, "dh", dh) 
+
+dhas(dh, 3, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 3, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+
+t()
+{
+stop("50")
+ufnsui()
+{
+
+dhas(dh, 17, "translationY", -500,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+us(17,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(17, "dh", dh) 
+
+dhas(dh, 17, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 17, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+}
+}
+
+t()
+{
+stop("50")
+ufnsui()
+{
+dhas(dh, 22, "translationY", -500,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+us(22,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(22, "dh", dh) 
+
+dhas(dh, 22, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 22, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+}
+}
+
+
+t()
+{
+stop("80")
+ufnsui()
+{
+dhas(dh, 75, "translationY", -500,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+us(75,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(75, "dh", dh) 
+
+dhas(dh, 75, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 75, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+}
+}
+
+    
+
+  }
+}
+}
+//判断动画
+
+
+
+
+
+
+
+
+}
+}
+
+
+
+
+
+
+
+
+</eventItme><eventItme type="downkey">
+
+ug(52,"visibility",k)
+s a=st_kC
+f(a==25)
+{
+}
+else f(a==24)
+{
+}
+else f(a==4)
+{
+
+f(k == "8")
+{
+
+end()
+
+}
+else
+{
+
+us(资源弹窗江苏.1,"visibility",8)
+us(资源弹窗.1,"visibility",8)
+us(资源弹窗1.1,"visibility",8)
+dhas(dh, 58, "scaleY", 1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 58, "scaleX", 1.0,0.9)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+t()
+{
+stop("300")
+ufnsui()
+{
+dha(dh, true,false)
+dh(dh, "duration", 300)
+us(58, "dh", dh)
+dhon(dh)
+{
+us(58,"visibility",8)
+}
+}
+}
+
+
+
+dhas(dh, 65, "scaleY", 1.0,0.7)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 65, "scaleX", 1.0,0.9)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+t()
+{
+stop("100")
+ufnsui()
+{
+dha(dh, true,false)
+dh(dh, "duration", 300)
+us(65, "dh", dh)
+dhon(dh)
+{
+us(65,"visibility",8)
+}
+}
+}
+
+
+
+
+dha(dh, true,false)
+dh(dh, "duration", 300)
+us(53, "dh", dh)
+dhon(dh)
+{
+us(53,"visibility",8)
+}
+
+
+
+
+dhas(dh, 55, "scaleY", 1.0,0.7)
+dh(dh, "duration", 200)
+dh(dh, "start")
+
+dhas(dh, 55, "scaleX", 1.0,0.9)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dha(dh, true,false)
+dh(dh, "duration", 400)
+us(55, "dh", dh)
+dhon(dh)
+{
+us(55,"visibility",8)
+}
+
+
+
+dha(dh, true,false)
+dh(dh, "duration", 450)
+us(52, "dh", dh)
+dhon(dh)
+{
+us(52,"visibility",8)
+}
+
+
+}
+
+}
+
+
+
+
+</eventItme><eventItme type="loadingComplete">
+t()
+{
+stop("1000")
+ufnsui()
+{
+
+
+
+
+
+t()
+{
+stop("500")
+ufnsui()
+{
+
+
+
+//第二资源
+  t()
+  {
+  s a = "%Android/data/com.cjzwjdm/files/kd.dll"
+  fr(a, 密文)
+   java(字节数组,null,"android.util.Base64.decode","String",密文,"int",8)
+   javanew(解码,"java.lang.String","byte[]",字节数组)
+   sj(解码,"&lt;div class=\"thumb\"&gt;",null,huv)
+   sl(huv,"&lt;div class=\"thumb\"&gt;",zxf)
+   for(kd;zxf)
+   {
+   sj(kd,"title=\"","\"",title)
+   sj(kd,"data-original=\"","\"&gt;",img)  
+   sj(kd,"href=\"","\"",urk)    
+   sj(kd,"&lt;span class=\"pic-text text-right\"&gt;","&lt;/span&gt;",zt)
+   ss(sss.kd动漫+urk,url)
+  ula(ss.list_zxgx,19=img,22=url,12=img,14=title,27=zt) 
+  } 
+  ufnsui()
+  {
+    uls(资源2.2,ss.list_zxgx,"资源2k.iyu",-1,-2) 
+    f(url == "null")
+    {
+      ufnsui()
+      {
+    us(资源2.2,"visibility",8)
+    us(资源2.4,"visibility",0)            
+      }
+    }
+    else
+    {
+      ufnsui()
+      {
+    us(资源2.2,"visibility",0)
+    us(资源2.4,"visibility",8)     
+      }
+    }
+    
+        
+  }
+  }
+
+}
+}
+
+
+f(sss.请选择第二资源 == "null")
+{
+ufnsui()
+{
+us(25,"currentitem",0)
+}
+}
+else
+{
+ufnsui()
+{
+us(25,"currentitem",sss.请选择第二资源)
+}
+}
+
+
+
+
+}
+}
+
+
+
+
+
+t()
+{
+  stop("1500")
+  ufnsui()
+  {
+
+    
+    
+    
+
+
+swh("pxhh", h)
+swh("pxw", ss.width)
+swh("pxztl", zt)
+swh("pxbvk", db)
+s(h+db,ss.height)
+
+s path="/storage/emulated/0/ims.png"
+
+gvs(1,d)
+loadjar("bitmaps.dex",js)
+
+cls(js,"com.iee.os.bitmap",im)
+cls(js,"com.iee.os.prss",ime)
+javanew(x,im)
+javanew(l,ime)
+
+javax(k,x,im,"getViewBitmap","android.view.View",d,"int",ss.width,"int",ss.height)
+javax(ks,l,ime,"saveBitmap","android.graphics.Bitmap",k,"String",path)
+
+
+f(ks!="null")
+{
+  ss("已保存到:"+path,in)
+ sran(100000, 1000000, a)
+ss("%Android/data/com.cjzwjdm/files/dli/"+a+".so",更新模糊)
+  ft("%/storage/emulated/0/ims.png",更新模糊, c)
+   
+
+s 路径=更新模糊
+s 半径="10"
+s 模糊度 ="10"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(资源弹窗江苏.3,"src",img)
+us(资源弹窗江苏.1,"visibility",0)
+
+}    
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</eventItme></UIEventset>

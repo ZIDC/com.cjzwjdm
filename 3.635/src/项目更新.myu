@@ -1,0 +1,116 @@
+
+fn 更新()
+
+
+
+
+
+//返回事件，就是点击手机返回键的事件。
+cls("android.content.DialogInterface$OnCancelListener", sss.返回类)
+javacb(sss.返回事件, sss.返回类)
+{
+// tw("关闭")
+}
+//创建一个ProgressDialog
+javanew(sss.对象,"android.app.ProgressDialog", "Context", activity)
+//取得类
+cls("android.app.ProgressDialog", sss.类)
+//显示，参数：当前的上下文环境，标题，内容，是否不明确(true和false都行)，点击外面是否关闭弹窗,，返回事件
+//标题和返回事件可写null。倒数第二个参数如果写false则点击外部关不掉弹窗，只能使用下面的关闭方法，并且返回事件将无效
+javax(sss.对象, sss.对象, sss.类, "show", "Context", activity, "CharSequence", "提示", "CharSequence", "检查更新中..", "boolean", false, "boolean", false, "android.content.DialogInterface$OnCancelListener", sss.返回事件)
+
+
+          
+ t()
+ {
+ hs("https://zidc.github.io/bjdm/dm.so",jcgx)
+ fr("@dm.so",jh)  
+ sj(jh,"【","】",bb)
+ sj(jcgx,"【","】",bbk)
+ sj(jcgx,"《","》",nr)
+ sj(jcgx,"^O^",null,ls)
+ ss(nr+"\n"+ls,nnr)
+ f(bbk &gt; bb)
+ {
+ufnsui()
+{
+ 
+fn 更新弹窗动画.开()
+us(更新弹窗.12,"text",nnr)
+//关闭弹窗
+java(null, sss.对象, "android.app.Dialog.cancel")
+
+
+}
+}
+else
+{
+  ufnsui()
+  {
+  tw("无更新")
+     fn 首页加载.远程代码() 
+
+
+    
+  }
+}
+}
+          
+
+    
+          
+
+  
+//项目更新
+end fn
+
+
+
+
+
+
+fn 更新1()
+
+
+fn 新加载.开始("检查更新..")
+ t()
+ {
+ hs("https://zidc.github.io/bjdm/dm.so",jcgx)
+ fr("@dm.so",jh)  
+ sj(jh,"【","】",bb)
+ sj(jcgx,"【","】",bbk)
+ sj(jcgx,"《","》",nr)
+ sj(jcgx,"^O^",null,ls)
+ ss(nr+"\n"+ls,nnr)
+ f(bbk &gt; bb)
+ {
+ufnsui()
+{
+
+fn 更新弹窗动画.开()
+us(更新弹窗.12,"text",nnr)
+fn 新加载.结束("有更新")  
+
+}
+}
+else
+{
+  ufnsui()
+  {
+
+   utw(null,"来嘛","白洁动漫官网","GO", false, v)
+   {
+  endutw()
+  hws("https://zidc.github.io/bjdm/")
+  }   
+  }
+  fn 新加载.结束("无更新") 
+}
+}
+              
+
+  
+//项目更新
+end fn
+
+ 

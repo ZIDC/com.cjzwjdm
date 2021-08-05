@@ -1,0 +1,71 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=top|center</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="RecyclerView">
+<ppt>width=-1
+height=-1
+visibility=gone
+overScrollMode=never
+scrollbars=none</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=120dp
+orientation=vertical
+gravity=center
+layout_marginTop=30dp</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="CardView">
+<ppt>width=83dp
+height=100dp
+app_CardcornerRadius=12dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff7f7f7</ppt>
+<event></event>
+</View>
+<View id="7" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="3" did="7" type="ProgressBar">
+<ppt>width=38dp
+height=38dp
+style=16842874
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="6" did="7" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中
+gravity=center
+textColor=#ff080808
+textSize=13sp
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+
+
+
+
+
+
+
+/.
+
+t()
+{
+  call(b,"mjava","http.getHtml","http://www.imomoe.la/search.asp?searchword=%EE%F8%BC%D7%D3%C2%CA%BF","gb2312")
+syso(b)
+  }</eventItme></UIEventset>

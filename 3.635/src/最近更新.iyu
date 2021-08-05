@@ -1,0 +1,176 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="8" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center|top</ppt>
+<event></event>
+</View>
+<View id="2" did="8" type="RecyclerView">
+<ppt>width=-1
+height=-1
+overScrollMode=never
+scrollbars=none
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="5" did="8" type="CardView">
+<ppt>width=-2
+height=-2
+app_CardcornerRadius=10dp
+app_CardElevation=5dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=25dp
+visibility=</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+BackgroundRipple=#ff7d7d7d
+BackgroundColor=#ffffffff
+</ppt>
+<event><eventItme type="clicki">/.
+
+ug(最近更新.4,"text",kss.搜索不到)
+f(ss.搜索不到 == "努力加载中")
+{
+}
+else
+{
+
+
+
+us(最近更新.5,"visibility",0)
+us(最近更新.2,"visibility",8)
+us(最近更新.3,"visibility",0)
+us(最近更新.4,"visibility",0)
+us(最近更新.4,"text","努力加载中")
+
+
+//最新更新
+t()
+{
+  hs(sss.网址,null,"gb2312",b)  
+   f(b == null)
+  {
+//us(最近更新.5,"visibility",0)
+  }
+  else
+  { 
+
+  sj(b,"&lt;h2&gt;最新更新&lt;/h2&gt;"," &lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx," &lt;li&gt;",null,zxd)
+  sl(zxd," &lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(最近更新.2,list_zxgx,"最近更新列表.iyu",-1,-2)
+
+
+// fn 首页加载.日本动漫()  
+us(最近更新.2,"visibility",0)
+us(最近更新.3,"visibility",8)
+us(最近更新.4,"visibility",8)
+us(最近更新.5,"visibility",8)
+us(最近更新.4,"text","")
+
+/.dha(dh, false,true)
+dh(dh, "duration", 600)
+us(最近更新.2, "dh", dh)
+
+dhas(dh, 最近更新.2, "scaleX",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "scaleY",0.1,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 最近更新.2, "translationY",-200,0)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+./
+}
+}
+}
+}</eventItme></event>
+</View>
+<View id="9" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=top</ppt>
+<event></event>
+</View>
+<View id="57" did="9" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="58" did="57" type="ProgressBar">
+<ppt>width=25dp
+height=25dp
+style=16842874</ppt>
+<event></event>
+</View>
+<View id="59" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+gravity=center
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="60" did="59" type="CardView">
+<ppt>width=-2
+height=-2
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff2f2f2</ppt>
+<event></event>
+</View>
+<View id="61" did="60" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="62" did="61" type="TextView">
+<ppt>width=-1
+height=-2
+text=加载失败...
+textSize=10sp
+textColor=#ff161616
+layout_marginLeft=10dp
+layout_marginRight=10dp
+layout_marginTop=6dp
+layout_marginBottom=6dp
+</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

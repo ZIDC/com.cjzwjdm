@@ -1,0 +1,323 @@
+<View id="1" did="0" type="CoordinatorLayout">
+<ppt>width=-1
+height=-2
+</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="2" did="4" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=10dp
+app_CardElevation=5dp
+layout_marginBottom=15dp
+layout_marginTop=10dp
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=horizontal
+gravity=right|center
+layout_marginTop=5dp</ppt>
+<event><eventItme type="clicki">.</eventItme></event>
+</View>
+<View id="18" did="5" type="SwitchCompat">
+<ppt>width=45dp
+height=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="oncheckedchanged">
+
+
+t()
+{
+
+
+ug(ss.id13,"checked,",ss.选中)
+f(ss.选中 == "false")
+{
+  ufnsui()
+  {
+    us(ss.id18,"checked","false")
+    us(ss.id6,"visibility",8) 
+    us(ss.id18,"visibility",0) 
+    us(ss.id10,"visibility",8) 
+  fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+  sj(补偿,"参数","参数",参数输出)
+  ss("补偿关补偿"+"参数"+参数输出+"参数",关输出)  
+  fw("%Android/data/com.cjzwjdm/files/模糊补偿.html", 关输出)
+  
+   }
+  }
+else
+{
+  ufnsui()
+  {
+    
+    
+    us(ss.id18,"checked","true")
+    us(ss.id6,"visibility",0) 
+    us(ss.id18,"visibility",8)
+    us(ss.id10,"visibility",0)  
+  fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+  sj(补偿,"参数","参数",参数输出)
+  ss("补偿开补偿"+"参数"+参数输出+"参数",关输出)  
+  fw("%Android/data/com.cjzwjdm/files/模糊补偿.html", 关输出)
+  ss("当前参数:"+参数输出,零时参数)
+  us(ss.id13,"hint",零时参数)
+  
+
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(ss.id10, "dh", dh)
+
+dhas(dh, ss.id10, "scaleX", 0.0,1.0)
+dh(dh, "duration", 680)
+dh(dh, "start")
+
+dhas(dh, ss.id10, "scaleY", 0.0,1.0)
+dh(dh, "duration", 680)
+dh(dh, "start")
+
+dhas(dh, ss.id10, "translationY", 200,0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+
+    
+  }
+}
+}
+
+
+
+
+</eventItme></event>
+</View>
+<View id="6" did="5" type="CardView">
+<ppt>width=45dp
+height=25dp
+app_CardcornerRadius=3dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#FFF6F6F6
+layout_marginRight=25dp</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+ug(ss.id13,"text",bjk)
+f(bjk == "")
+{
+  ufnsui()
+  {
+    tw("请输入数值")
+  }
+}
+else
+{
+
+f(bjk == "0")
+{
+  fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+  sj(补偿,"参数","参数",参数输出)
+  ss("补偿关补偿"+"参数"+参数输出+"参数",关输出)  
+  fw("%Android/data/com.cjzwjdm/files/模糊补偿.html", 关输出)
+  
+  java(null,ss.载体,"android.app.Dialog.dismiss")
+//关闭弹窗
+}
+else
+{
+    
+  ss("补偿开补偿"+"参数"+bjk+"参数",参数输出完)
+  fw("%Android/data/com.cjzwjdm/files/模糊补偿.html", 参数输出完)
+  ss("当前数值(默认100): "+参数输出完,叔叔)
+
+  fr("%Android/data/com.cjzwjdm/files/模糊补偿.html",补偿)
+  sj(补偿,"参数","参数",参数输出)
+  us(ss.id13,"text",参数输出)
+  tw("设置完成")
+java(null,ss.载体,"android.app.Dialog.dismiss")
+//关闭弹窗
+  
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+</eventItme></event>
+</View>
+<View id="8" did="7" type="TextView">
+<ppt>width=-2
+height=-2
+text=更改
+textSize=13sp
+textColor=#ff000000</ppt>
+<event></event>
+</View>
+<View id="26" did="3" type="NestedScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="25" did="26" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="10" did="25" type="RelativeLayout">
+<ppt>width=-1
+height=120dp
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="9" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="11" did="9" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ff009ce9
+layout_marginLeft=25dp
+layout_marginRight=25dp
+layout_marginTop=32dp
+layout_marginBottom=32dp</ppt>
+<event></event>
+</View>
+<View id="15" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="14" did="15" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=8dp
+app_CardElevation=0dp
+layout_marginLeft=28dp
+layout_marginRight=28dp
+layout_marginTop=35dp
+layout_marginBottom=35dp</ppt>
+<event></event>
+</View>
+<View id="12" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="21" did="12" type="NestedScrollView">
+<ppt>width=-1
+height=-2
+layout_marginLeft=10dp
+layout_marginRight=10dp
+layout_marginBottom=5dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=建议100以上
+background=@
+textSize=12sp
+textColor=#ff0f0f0f
+textColorHint=#ff929292
+singleLine=true
+cursorVisible=false
+layout_marginLeft=10dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="16" did="10" type="LinearLayout">
+<ppt>width=-1
+height=67dp
+orientation=vertical
+gravity=left|center
+paddingLeft=55dp</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="TextView">
+<ppt>width=-2
+height=-2
+text=模糊补偿数值
+textSize=12sp
+layout_marginRight=5dp
+background=white
+padding=5dp
+textColor=#ff00acdc</ppt>
+<event></event>
+</View>
+<View id="22" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=top|center</ppt>
+<event></event>
+</View>
+<View id="23" did="22" type="TextView">
+<ppt>width=-2
+height=-2
+text=建议100起步(根据自己的效果调整)，我的是230
+textSize=10sp
+textColor=#ffda0014
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="19" did="2" type="LinearLayout">
+<ppt>width=-1
+height=25dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="20" did="19" type="CardView">
+<ppt>width=45dp
+height=5dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffededed</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

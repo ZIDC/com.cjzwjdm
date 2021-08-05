@@ -1,0 +1,218 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="6" did="1" type="CardView">
+<ppt>width=77dp
+height=36dp
+app_CardcornerRadius=6dp
+app_CardElevation=0dp
+app_CardmaxElevation=5dp
+//app_CardBackgroundColor=#fff7f7f7</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#00fafafa</ppt>
+<event></event>
+</View>
+<View id="2" did="7" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=5dp
+app_CardElevation=0.1dp
+app_CardmaxElevation=5dp
+app_CardBackgroundColor=#fff7f7f7
+</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundRipple=#ff9d9d9d</ppt>
+<event><eventItme type="clicki">ulag(st_vW,4,sss.标题)
+ulag(st_vW,5,sss.video)
+
+
+ug(7,"text",视频名)
+ss(视频名+" "+sss.标题,sss.视频标题)
+
+
+t()
+{
+
+
+fr("%Android/data/com.cjzwjdm/files/bf.html",动画)
+sj(动画,"ok","ok",输出)
+f(输出 == "关")
+{
+  ufnsui()
+  {
+    
+    hws(sss.video)
+    
+   }
+  }
+else
+{
+  ufnsui()
+  {
+   //系统    
+
+f(sss.video ? "http")
+{
+ufnsui()
+{
+
+
+
+
+strim(sss.video,sss.video)
+f(sss.video ?* "$" || sss.video ?* "%") {
+  fdir(sss.video,sss.video)
+  }
+f(sss.video ?* "@") {
+  tw("错误：不支持播放@位置的视频，请使用 fc 复制视频到sd卡或私有目录再播放！")
+  endcode
+  }
+uigo("play.iyu")
+}
+}
+else
+{
+ufnsui()
+{
+//  tw("视频不可用则无响应")
+swh("pxhh", h)
+swh("pxw", ss.width)
+swh("pxztl", zt)
+swh("pxbvk", db)
+s(h+db,ss.height)
+
+s path="/storage/emulated/0/ims.png"
+
+gvs(1,d)
+loadjar("bitmaps.dex",js)
+
+cls(js,"com.iee.os.bitmap",im)
+cls(js,"com.iee.os.prss",ime)
+javanew(x,im)
+javanew(l,ime)
+
+javax(k,x,im,"getViewBitmap","android.view.View",d,"int",ss.width,"int",ss.height)
+javax(ks,l,ime,"saveBitmap","android.graphics.Bitmap",k,"String",path)
+
+
+f(ks!="null")
+{
+  ss("已保存到:"+path,in)
+ sran(100000, 1000000, a)
+ss("%Android/data/com.cjzwjdm/files/dli/"+a+".so",更新模糊)
+  ft("%/storage/emulated/0/ims.png",更新模糊, c)
+   
+
+s 路径=更新模糊
+s 半径="10"
+s 模糊度 ="10"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(资源弹窗.3,"src",img)
+us(资源弹窗.1,"visibility",0)
+}
+
+
+//
+}
+}
+
+    
+   //系统
+  }
+}
+}
+
+
+
+
+
+
+
+/.
+
+
+
+strim(sss.video,sss.video)
+f(sss.video ?* "$" || sss.video ?* "%") {
+  fdir(sss.video,sss.video)
+  }
+f(sss.video ?* "@") {
+  tw("错误：不支持播放@位置的视频，请使用 fc 复制视频到sd卡或私有目录再播放！")
+  endcode
+  }
+uigo("play.iyu")</eventItme></event>
+</View>
+<View id="4" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=第34818集
+textColor=#ff050505
+ellipsize=end
+singleLine=true
+textSize=8sp
+layout_marginLeft=3dp
+layout_marginRight=3dp</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本5
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">/.strim(sss.video,sss.video)
+f(sss.video ?* "$" || sss.video ?* "%") {
+  fdir(sss.video,sss.video)
+  }
+f(sss.video ?* "@") {
+  tw("错误：不支持播放@位置的视频，请使用 fc 复制视频到sd卡或私有目录再播放！")
+  endcode
+  }
+uigo("play.iyu")</eventItme></UIEventset>

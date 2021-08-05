@@ -1,0 +1,33 @@
+//毫秒转时间格式
+fn time()
+s/(sss.mCurrentPosition,60000,i)
+s*(i,60000,ia)
+s-(sss.mCurrentPosition,ia,ia)
+s/(ia,1000,ia)
+f(i&lt;=9)
+{
+  ss(0+i,i)
+}
+f(ia&lt;=9)
+{
+  ss(0+ia,ia)
+}
+ss(i+":"+ia,sss.mCurrentPosition)
+end fn
+
+//毫秒转时间格式
+fn dn()
+s/(sss.dn,60000,i)
+s*(i,60000,ia)
+s-(sss.dn,ia,ia)
+s/(ia,1000,ia)
+f(i&lt;=9)
+{
+  ss(0+i,i)
+}
+f(ia&lt;=9)
+{
+  ss(0+ia,ia)
+}
+ss(i+":"+ia,sss.dn)
+end fn

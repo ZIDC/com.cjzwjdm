@@ -1,0 +1,147 @@
+/.
+  Util.myu 辅助库模块
+  遵守Apache License 2.0协议 http://www.apache.org/licenses/LICENSE-2.0
+  作者残页QQ1582270018
+  
+  请勿擅自删除此版权声明，否则将被视为违反著作权法 可追究刑事责任
+./
+
+fn isSupportedX86()
+  sss isSupportedX86 = false
+  javags(SDK_INT,null,"android.os.Build$VERSION","SDK_INT")
+  f(SDK_INT &gt;= 21) {
+    //系统版本 &gt;= 5.0
+    javags(SUPPORTED_ABIS,null,"android.os.Build","SUPPORTED_ABIS")
+    f(SUPPORTED_ABIS != null) {
+      for(abi ; SUPPORTED_ABIS) {
+        f(abi == "x86") {
+          //设备支持x86
+          sss isSupportedX86 = true
+          break
+          }
+        }
+      } else {
+      //不应该发生，除非运行在某魅族手机上（build.prop写错了，系统版本4.2.2，SDK级别写成了27……）
+      java(null,null,"android.util.Log.w","String","DexLoaderHelper","String","[WARNING] SUPPOETED_ABIS == null")
+      //打出警告
+      fn Util.isSupportedX86LowLevel() 
+      }
+    } else {
+    fn Util.isSupportedX86LowLevel() 
+    }
+  end fn
+
+fn isSupportedX86LowLevel() 
+  javags(CPU_ABI,null,"android.os.Build","CPU_ABI")
+  javags(CPU_ABI2,null,"android.os.Build","CPU_ABI2")
+  f(CPU_ABI == "x86" || CPU_ABI2 == "x86") {
+    //设备支持x86
+    sss isSupportedX86 = true
+    } else {
+    //设备不支持x86
+    sss isSupportedX86 = false
+    }
+  end fn
+
+fn loadDex(dexPath)  
+  java(data,activity,"android.content.Context.getFilesDir")
+  java(dataPath,data,"java.io.File.getAbsolutePath")
+  
+  fn Util.getFileName(dexPath)
+  javanew(cacheDexFile,"java.io.File","String",dataPath,"String",sss.fileName)
+  java(cacheDexPath,cacheDexFile,"java.io.File.getAbsolutePath")
+  //只有File对象是没法加载的，我们要获取路径
+  java(exists,cacheDexFile,"java.io.File.exists")
+  f(!exists) {
+    //复制dex过去
+    fc(dexPath,cacheDexPath,ok)
+    f(!ok) {
+      tw("错误：复制Dex文件失败")
+      end()
+      endcode
+      }
+    }
+  
+  javanew(cacheLibraryFile,"java.io.File","String",dataPath,"String","library")
+  java(cacheLibraryPath,cacheLibraryFile,"java.io.File.getAbsolutePath")
+  java(exists,cacheLibraryFile,"java.io.File.exists")
+  f(!exists) {
+    //动态链接库不存在
+    java(null,cacheLibraryFile,"java.io.File.mkdirs")
+    s libPath
+    fn Util.isSupportedX86()
+    f(sss.isSupportedX86) {
+      s libPath = "@x86.zip"
+      } else {
+      s libPath = "@armeabi-v7a.zip"
+      }
+    //我们只需要一个架构的动态链接库 解压一个就足够
+    fuzs(libPath,cacheLibraryPath,ok)
+    f(!ok) {
+      tw("错误：加载动态链接库失败")
+      end()
+      endcode
+      }
+    }
+  
+  java(cache,activity,"android.content.Context.getCacheDir")
+  java(cachePath,cache,"java.io.File.getAbsolutePath")
+  //这是odex的输出目录，我们并不需要，存在缓存文件夹下，清理缓存的时候可以一键清理掉
+  
+  java(parent,activity,"android.content.Context.getClassLoader")
+  //取父类加载器
+  javanew(sss.loader,"dalvik.system.DexClassLoader","String",cacheDexPath,"String",cachePath,"String",cacheLibraryPath,"java.lang.ClassLoader",parent)
+  //加载dex和动态链接库
+  end fn
+
+fn getFileName(filePath) 
+  sr(filePath,".\*/","",true,sss.fileName)
+  end fn
+
+fn deleteDir(path) 
+  fdir(path,path)
+  fe(path,exists)
+  f(exists) {
+    //存在才继续
+    fi(path,isDir)
+    f(isDir) {
+      //是文件夹
+      fl(path,list)
+      for(fileName ; list) {
+        javanew(file,"java.io.File","String",path,"String",fileName)
+        java(subPath,file,"java.io.File.getAbsolutePath")
+        //获得路径
+        fn Util.deleteDir(subPath)
+        //递归删除每个文件/文件夹
+        }
+      }
+    fd(path,isOk)
+    //最后删除自己
+    f(!isOk) {
+      ss("delete failed: path=" + path,errmsg)
+      syso(errmsg)
+      java(null,null,"android.util.Log.e","String","FileUtil","String",errmsg)
+      //删除失败 打出消息（一般情况下不会失败）
+      fn Util.deleteDir(path)
+      //再次重试 直到成功
+      }
+    }
+  end fn
+
+fn clearCache(dexName) 
+  java(data,activity,"android.content.Context.getDataDir")
+  java(dataPath,data,"java.io.File.getAbsolutePath")
+  
+  javanew(cacheDexFile,"java.io.File","String",dataPath,"String",dexName)
+  java(cacheDexPath,cacheDexFile,"java.io.File.getAbsolutePath")
+  fd(cacheDexPath,isOk)
+  f(!isOk) {
+    tw("错误：删除Dex文件缓存失败")
+    end()
+    endcode
+    }
+  javanew(cacheLibraryFile,"java.io.File","String",dataPath,"String","library")
+  java(cacheLibraryPath,cacheDexFile,"java.io.File.getAbsolutePath")
+  fn Util.deleteDir(cacheLibraryPath)
+  //删除动态链接库缓存
+  end fn

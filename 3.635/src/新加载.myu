@@ -1,0 +1,115 @@
+
+
+fn 开始(内容)
+
+
+
+
+
+us(加载新.1,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 200)
+us(加载新.1, "dh", dh)
+us(加载新.5,"text",内容)
+
+us(加载新.2,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 360)
+us(加载新.2, "dh", dh)
+dhon(dh)
+{
+us(加载新.2,"app_CardElevation","5dp")
+}
+
+dhas(dh,加载新.2, "scaleY", 1.5,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,加载新.2, "scaleX", 1.5,1.0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+dhas(dh, 加载新.2, "translationY", -135,0)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+
+
+
+
+end fn
+
+
+
+
+
+
+
+fn 结束(内容)
+
+
+t()
+{
+stop("300")
+ufnsui()
+{
+
+
+dhas(dh,加载新.2, "scaleY", 1.0,1.2)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh,加载新.2, "scaleX", 1.0,1.2)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+
+dhas(dh, 加载新.2, "translationY", 0,-135)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+us(加载新.5,"text",内容)
+
+t()
+{
+stop("390")
+ufnsui()
+{
+us(加载新.2,"app_CardElevation","0dp")
+
+dha(dh, true,false)
+dh(dh, "duration", 360)
+us(加载新.2, "dh", dh)
+dhon(dh)
+{
+
+us(加载新.2,"visibility",8)
+}
+
+}
+}
+
+
+t()
+{
+stop("600")
+ufnsui()
+{
+dha(dh, true,false)
+dh(dh, "duration", 360)
+us(加载新.1, "dh", dh)
+dhon(dh)
+{
+us(加载新.1,"visibility",8)
+}
+}
+}
+
+
+
+
+}
+}
+
+end fn

@@ -1,0 +1,1667 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+elevation=0.6dp
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="LinearLayout">
+<ppt>width=-1
+height=70dp
+orientation=horizontal
+</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+layout_weight=1
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="19" did="6" type="CardView">
+<ppt>width=40dp
+height=40dp
+app_CardcornerRadius=25dp
+app_CardElevation=0dp
+layout_marginLeft=15dp
+layout_marginRight=25dp</ppt>
+<event></event>
+</View>
+<View id="20" did="19" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+
+
+utw(null,"提示","你确定要退出吗？","退出","取消",true, v)
+{
+
+end()
+}
+else
+{
+endutw()
+}
+
+
+</eventItme></event>
+</View>
+<View id="8" did="20" type="ImageView">
+<ppt>width=35dp
+height=35dp
+src=@27fba0feeae.png</ppt>
+<event></event>
+</View>
+<View id="9" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=白洁动漫
+textColor=#ff080808
+textSize=18sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="7" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+layout_weight=1
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="14" did="7" type="CardView">
+<ppt>width=40dp
+height=40dp
+app_CardcornerRadius=25dp
+app_CardElevation=0dp
+layout_marginRight=5dp</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+//#ffe3e3e3
+
+s a = 0
+s b = 0
+s c = "#ffffffff|#ffffffff"
+s d = "#333333"
+s e = "topbottom"
+ngde(a, b, c, d, e, f)
+us(搜索界面.45,"background",f)
+
+s a = 0
+s b = 0
+s c = "#ffffffff|#00ffffff"
+s d = "#333333"
+s e = "topbottom"
+ngde(a, b, c, d, e, f)
+us(搜索界面.46,"background",f)
+
+s a = 0
+s b = 0
+s c = "#d9ffffff|#00ffffff"
+s d = "#333333"
+s e = "topbottom"
+ngde(a, b, c, d, e, f)
+us(搜索界面.47,"background",f)
+
+
+
+us(16,"text","关闭")
+us(17,"text","可执行")
+
+
+
+dhas(dh, 2, "translationY", 0, 30)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+dhas(dh, 2, "scaleY", 1.0,0.6)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh, 2, "scaleX", 1.0,0.6)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+
+swh("pxhh", h)
+swh("pxw", ss.width)
+swh("pxztl", zt)
+swh("pxbvk", db)
+s(h+db,ss.height)
+
+
+
+s path="/storage/emulated/0/ims.png"
+
+gvs(1,d)
+loadjar("bitmaps.dex",js)
+
+cls(js,"com.iee.os.bitmap",im)
+cls(js,"com.iee.os.prss",ime)
+javanew(x,im)
+javanew(l,ime)
+
+javax(k,x,im,"getViewBitmap","android.view.View",d,"int",ss.width,"int",ss.height)
+javax(ks,l,ime,"saveBitmap","android.graphics.Bitmap",k,"String",path)
+
+
+f(ks!="null")
+{
+  ss("已保存到:"+path,in)
+ sran(100000, 1000000, a)
+ss("%Android/data/com.cjzwjdm/files/dli/"+a+".so",列表点击背景模糊)
+  ft("%/storage/emulated/0/ims.png",列表点击背景模糊, c)
+   
+
+s 路径=列表点击背景模糊
+s 半径="6"
+s 模糊度 ="7"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(搜索界面.2,"src",img)
+
+}
+else
+{
+//  tw("保存失败")
+}
+            
+
+us(搜索界面.1,"visibility",0)             
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(搜索界面.1, "dh", dh)
+t()
+{
+stop("600")
+ufnsui()
+{
+
+dhas(dh, 搜索界面.5, "translationY", -100,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+dhas(dh,搜索界面.5, "scaleY", 1.5,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh,搜索界面.5, "scaleX", 1.5,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+  
+}
+}
+
+
+
+t()
+{
+stop("830")
+ufnsui()
+{
+
+
+us(搜索界面.19,"visibility",0)
+dhas(dh, 搜索界面.19, "scaleX",0.1,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.19, "scaleY",0.1,1.0)
+dh(dh, "duration", 1200)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.19, "translationX",-80,0)     
+dh(dh, "duration", 900)
+dh(dh, "start")
+
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(搜索界面.19, "dh", dh)
+
+}
+}
+
+us(搜索界面.2,"visibility",0)
+//us(搜索界面.57,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 1300)
+us(搜索界面.2, "dh", dh)
+//us(搜索界面.57, "dh", dh)
+
+            
+us(搜索界面.34,"visibility",0)
+dhas(dh, 搜索界面.34, "scaleX",0.8,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.34, "scaleY",0.8,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.34, "translationY",110,0)     
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(搜索界面.34, "dh", dh)
+
+
+
+t()
+{
+  stop("700")
+  ufnsui()
+  {
+
+
+
+
+us(搜索界面.6,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(搜索界面.6, "dh", dh)
+
+
+dhas(dh, 搜索界面.6, "scaleX",0.7,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.6, "scaleY",0.7,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.6, "translationY", -55,0)     
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+
+us(搜索界面.7,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(搜索界面.7, "dh", dh)
+
+dhas(dh, 搜索界面.7, "scaleX",0.7,1.1)
+dh(dh, "duration", 750)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.7, "scaleY",0.7,1.1)
+dh(dh, "duration", 750)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.7, "translationY", -55,0)     
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+t()
+{
+  stop("610")
+ufnsui()
+{
+
+dhas(dh, 搜索界面.7, "scaleX",1.1,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.7, "scaleY",1.1,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+us(搜索界面.41,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 620)
+us(搜索界面.41, "dh", dh)
+
+
+}
+}
+
+
+
+
+us(搜索界面.38,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 450)
+us(搜索界面.38, "dh", dh)
+
+dhas(dh, 搜索界面.38, "scaleX",0.7,1.1)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.38, "scaleY",0.7,1.1)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+t()
+{
+  stop("610")
+ufnsui()
+{
+
+dhas(dh, 搜索界面.38, "scaleX",1.1,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.38, "scaleY",1.1,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+}
+}
+
+
+
+
+}
+}
+
+
+
+
+/.
+
+
+us(搜索界面.57,"visibility",0)
+dhas(dh,搜索界面.57, "translationY", 40,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.57, "scaleY", 0.6,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.57, "scaleX", 0.6,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+
+
+t()
+{
+stop("300")
+ufnsui()
+{
+us(搜索界面.58,"visibility",0)
+dhas(dh, 搜索界面.58, "translationY", 40,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.58, "scaleY", 0.6,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.58, "scaleX", 0.6,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+}
+}
+
+t()
+{
+stop("380")
+ufnsui()
+{
+us(搜索界面.61,"visibility",0)
+dhas(dh, 搜索界面.61, "translationY", 40,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.61, "scaleY", 0.6,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.61, "scaleX", 0.6,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+}
+}
+
+
+
+t()
+{
+stop("460")
+ufnsui()
+{
+us(搜索界面.64,"visibility",0)
+dhas(dh, 搜索界面.64, "translationY", 40,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.64, "scaleY", 0.6,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.64, "scaleX", 0.6,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+}
+}
+
+
+</eventItme></event>
+</View>
+<View id="11" did="15" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@b9e32118d00.png</ppt>
+<event></event>
+</View>
+<View id="23" did="7" type="CardView">
+<ppt>width=40dp
+height=40dp
+app_CardcornerRadius=25dp
+app_CardElevation=0dp
+layout_marginRight=17dp</ppt>
+<event></event>
+</View>
+<View id="24" did="23" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+uigo("设置.iyu")
+/.
+
+s a = 0
+s b = 0
+s c = "#ffffffff|#ffffffff"
+s d = "#333333"
+s e = "topbottom"
+ngde(a, b, c, d, e, f)
+us(搜索界面.45,"background",f)
+
+s a = 0
+s b = 0
+s c = "#ffffffff|#00ffffff"
+s d = "#333333"
+s e = "topbottom"
+ngde(a, b, c, d, e, f)
+us(搜索界面.46,"background",f)
+
+s a = 0
+s b = 0
+s c = "#d9ffffff|#00ffffff"
+s d = "#333333"
+s e = "topbottom"
+ngde(a, b, c, d, e, f)
+us(搜索界面.47,"background",f)
+
+
+
+us(16,"text","关闭")
+us(17,"text","可执行")
+
+
+
+dhas(dh, 2, "translationY", 0, 30)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+dhas(dh, 2, "scaleY", 1.0,0.6)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh, 2, "scaleX", 1.0,0.6)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+
+swh("pxhh", h)
+swh("pxw", ss.width)
+swh("pxztl", zt)
+swh("pxbvk", db)
+s(h+db,ss.height)
+
+
+
+s path="/storage/emulated/0/ims.png"
+
+gvs(1,d)
+loadjar("bitmaps.dex",js)
+
+cls(js,"com.iee.os.bitmap",im)
+cls(js,"com.iee.os.prss",ime)
+javanew(x,im)
+javanew(l,ime)
+
+javax(k,x,im,"getViewBitmap","android.view.View",d,"int",ss.width,"int",ss.height)
+javax(ks,l,ime,"saveBitmap","android.graphics.Bitmap",k,"String",path)
+
+
+f(ks!="null")
+{
+  ss("已保存到:"+path,in)
+ sran(100000, 1000000, a)
+ss("%Android/data/com.cjzwjdm/files/dli/"+a+".so",列表点击背景模糊)
+  ft("%/storage/emulated/0/ims.png",列表点击背景模糊, c)
+   
+
+s 路径=列表点击背景模糊
+s 半径="6"
+s 模糊度 ="7"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+
+//最后输出img，可以设置src或者bg
+us(搜索界面.2,"src",img)
+
+}
+else
+{
+//  tw("保存失败")
+}
+            
+
+us(搜索界面.1,"visibility",0)             
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(搜索界面.1, "dh", dh)
+t()
+{
+stop("600")
+ufnsui()
+{
+
+dhas(dh, 搜索界面.5, "translationY", -100,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+dhas(dh,搜索界面.5, "scaleY", 1.5,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh,搜索界面.5, "scaleX", 1.5,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+  
+}
+}
+
+
+
+t()
+{
+stop("830")
+ufnsui()
+{
+
+
+us(搜索界面.19,"visibility",0)
+dhas(dh, 搜索界面.19, "scaleX",0.1,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.19, "scaleY",0.1,1.0)
+dh(dh, "duration", 1200)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.19, "translationX",-80,0)     
+dh(dh, "duration", 900)
+dh(dh, "start")
+
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(搜索界面.19, "dh", dh)
+
+}
+}
+
+us(搜索界面.2,"visibility",0)
+//us(搜索界面.57,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 1300)
+us(搜索界面.2, "dh", dh)
+//us(搜索界面.57, "dh", dh)
+
+            
+us(搜索界面.34,"visibility",0)
+dhas(dh, 搜索界面.34, "scaleX",0.8,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.34, "scaleY",0.8,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.34, "translationY",110,0)     
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dha(dh, false,true)
+dh(dh, "duration", 600)
+us(搜索界面.34, "dh", dh)
+
+
+
+t()
+{
+  stop("700")
+  ufnsui()
+  {
+
+
+
+
+us(搜索界面.6,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(搜索界面.6, "dh", dh)
+
+
+dhas(dh, 搜索界面.6, "scaleX",0.7,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.6, "scaleY",0.7,1.0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.6, "translationY", -55,0)     
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+
+us(搜索界面.7,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(搜索界面.7, "dh", dh)
+
+dhas(dh, 搜索界面.7, "scaleX",0.7,1.1)
+dh(dh, "duration", 750)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.7, "scaleY",0.7,1.1)
+dh(dh, "duration", 750)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.7, "translationY", -55,0)     
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+t()
+{
+  stop("610")
+ufnsui()
+{
+
+dhas(dh, 搜索界面.7, "scaleX",1.1,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.7, "scaleY",1.1,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+us(搜索界面.41,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 620)
+us(搜索界面.41, "dh", dh)
+
+
+}
+}
+
+
+
+
+us(搜索界面.38,"visibility",0)               
+dha(dh, false,true)
+dh(dh, "duration", 450)
+us(搜索界面.38, "dh", dh)
+
+dhas(dh, 搜索界面.38, "scaleX",0.7,1.1)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.38, "scaleY",0.7,1.1)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+t()
+{
+  stop("610")
+ufnsui()
+{
+
+dhas(dh, 搜索界面.38, "scaleX",1.1,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.38, "scaleY",1.1,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+}
+}
+
+
+
+
+}
+}
+
+
+
+
+/.
+
+
+us(搜索界面.57,"visibility",0)
+dhas(dh,搜索界面.57, "translationY", 40,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.57, "scaleY", 0.6,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.57, "scaleX", 0.6,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+
+
+t()
+{
+stop("300")
+ufnsui()
+{
+us(搜索界面.58,"visibility",0)
+dhas(dh, 搜索界面.58, "translationY", 40,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.58, "scaleY", 0.6,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.58, "scaleX", 0.6,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+}
+}
+
+t()
+{
+stop("380")
+ufnsui()
+{
+us(搜索界面.61,"visibility",0)
+dhas(dh, 搜索界面.61, "translationY", 40,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.61, "scaleY", 0.6,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.61, "scaleX", 0.6,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+}
+}
+
+
+
+t()
+{
+stop("460")
+ufnsui()
+{
+us(搜索界面.64,"visibility",0)
+dhas(dh, 搜索界面.64, "translationY", 40,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.64, "scaleY", 0.6,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.64, "scaleX", 0.6,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+}
+}
+
+
+</eventItme></event>
+</View>
+<View id="25" did="24" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@79192a11c7f.png</ppt>
+<event></event>
+</View>
+<View id="12" did="3" type="TabLayout">
+<ppt>width=-1
+height=-2
+app_tabTextColor=#ff060606|#ff898989
+app_tabIndicatorWidth=20dp
+app_tabIndicatorHeight=2dp
+app_tabGravity=0
+app_tabMode=0
+layout_marginBottom=3dp
+background=through
+layout_marginLeft=3dp
+layout_marginRight=3dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="13" did="2" type="ViewPager">
+<ppt>width=-1
+height=-1</ppt>
+<event><eventItme type="onpageselected">
+
+
+
+
+
+
+
+
+
+
+f(st_pN=="0")
+{
+
+
+
+
+
+
+gvs(st_vW,追番.1,ss.id1)
+gvs(st_vW,追番.10,ss.id10)
+gvs(st_vW,追番.11,ss.id11)
+gvs(st_vW,追番.14,ss.id14)
+gvs(st_vW,追番.17,ss.id17)
+gvs(st_vW,追番.20,ss.id20)
+gvs(st_vW,追番.7,ss.id7)
+/.gvs(ss.弹窗,追番.1,ss.id1)
+gvs(ss.弹窗,追番.10,ss.id10)
+gvs(ss.弹窗,追番.11,ss.id11)
+gvs(ss.弹窗,追番.14,ss.id14)
+gvs(ss.弹窗,追番.17,ss.id17)
+gvs(ss.弹窗,追番.20,ss.id20)
+gvs(ss.弹窗,追番.7,ss.id7)
+./
+
+//ula(sss.v)
+
+//清空列表对象
+//ula(sss.v, null)
+
+
+
+//  10 文字   20,11加载布局  17登录   14列表
+
+
+
+
+
+s a = "hh"
+//获取屏幕真实高度的dp
+swh(a, hh)
+ss(hh+"dp",jh)
+//us(ss.id1,"height",jh)
+
+us(ss.id11,"visibility",0)
+us(ss.id20,"visibility",0)
+us(ss.id10,"text","加载中...")
+us(ss.id14,"visibility",8)
+us(ss.id17,"visibility",8)
+  us(ss.id7,"text","追番...")
+fe("%Android/data/com.cjzwjdm/cpk/用户账号.cpk",uy)
+f(uy == true)
+{
+ufnsui()
+{
+//账号存在    
+    
+ 
+fr("%Android/data/com.cjzwjdm/cpk/用户账号.cpk",yhm)
+sj(yhm,"[","]",用户名)
+sj(yhm,"(",")",密码)
+
+
+t()
+{
+
+ss(sss.追番+"/api.php?act=fklist&user="+用户名,post)
+hs(post,k)
+//hs("http://www.cjzwjys.top/app/api.php?act=fklist&user=zwj",k)
+sr(k,"/","",hk)
+f(k == "null")
+{
+ufnsui()
+{
+//
+us(ss.id11,"visibility",0)
+us(ss.id20,"visibility",0)
+us(ss.id10,"text","获取错误")
+us(ss.id14,"visibility",8)
+us(ss.id17,"visibility",8)
+
+//
+}
+}
+else
+{
+ufnsui()
+{
+//
+sj(hk,"【",null,kk)
+sl(kk,"【",list)
+for(nr;list)
+{
+sj(nr,null,"】",bt)
+sj(nr,"《图片》","《图片》",jpg)
+sj(nr,"《网址》","《网址》",urll)
+ula(v,12=jpg,14=bt,21=urll)
+}
+ufnsui()
+{
+uls(ss.id14,v,"追番列表.iyu",-1,"-2")
+//判断
+ug(ss.id14,"count",jk)
+f(bt ? "null")
+{
+ufnsui()
+{
+  ss("你的追番"+"("+jk+")",zf)
+  us(ss.id7,"text",zf)
+//us(ss.id11,"visibility",0)
+///us(ss.id20,"visibility",0)
+us(ss.id10,"text","还没追番呢！")
+us(ss.id14,"visibility",8)
+us(ss.id17,"visibility",8)
+
+}
+}
+else
+{
+ufnsui()
+{
+  ss("你的追番"+"("+jk+")",zf)
+  us(ss.id7,"text",zf)
+us(ss.id11,"visibility",8)
+us(ss.id20,"visibility",8)
+//us(ss.id10,"text","还没追番呢！")
+us(ss.id14,"visibility",0)
+us(ss.id17,"visibility",8)
+
+}
+}
+//判断
+
+
+}
+
+}
+}
+}
+
+
+   }
+   }
+   else
+   {
+     ufnsui()
+     {
+       us(ss.id11,"visibility",0)
+       us(ss.id20,"visibility",0)
+       us(ss.id14,"visibility",8)
+       us(ss.id17,"visibility",0)
+       us(ss.id20,"visibility",8)
+     }
+   }
+
+
+
+
+
+
+
+
+
+
+}</eventItme></event>
+</View>
+<View id="16" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本16
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="17" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本17
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="18" did="1" type="Button">
+<ppt>width=-2
+height=-2
+text=按钮18
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="21" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|right
+</ppt>
+<event></event>
+</View>
+<View id="22" did="21" type="FloatingActionButton">
+<ppt>width=50dp
+height=50dp
+src=@question.png
+layout_marginRight=30dp
+layout_marginBottom=30dp
+BackgroundColor=#ffffaa21</ppt>
+<event><eventItme type="clicki">
+uigo("反馈.iyu")</eventItme></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+ss(c+"dp",dp)
+us(4,"height",dp)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+//设置状态栏透明(沉浸式)
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+//仅支持Android6.0以上，其他无效果。
+
+dhas(dh, 2, "translationY", 30,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dhas(dh, 2, "scaleY", 0.6,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 2, "scaleX", 0.6,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+sss 网址="http://www.imomoe.la"
+sss 追番="http://js.cjzwjys.top"
+sss kd动漫="http://www.kdysu.com"
+
+
+uht(13, "bd", 12, true)
+
+//增加 滑动页面 并设置标题 这个标题因为绑定的关系 会自动添加成 标签选择卡 子项
+uht(13, "add", -1, "追番", "追番.iyu")
+uht(13, "add", -1, "更新", "最近更新.iyu")
+uht(13, "add", -1, "日本", "日本动漫.iyu")
+uht(13, "add", -1, "国产", "国产动漫.iyu")
+uht(13, "add", -1, "电影", "动漫电影.iyu")
+us(13,"currentitem",1)
+
+
+addv(1,"列表点击.iyu")
+addv(1,"背景模糊.iyu")
+addv(1,"搜索界面.iyu")
+addv(1,"弹窗.iyu")
+addv(1,"更新弹窗.iyu")
+addv(1,"加载新.iyu")
+gvs(搜索界面.37,view)
+java(c,null,"android.graphics.Color.parseColor","String","#ff2589ff")
+javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)
+
+
+
+gvs(搜索界面.47,控件)
+//控件id
+java(null,控件,"android.view.View.setAlpha","float",0.8)
+//透明度在0-1之间
+</eventItme><eventItme type="loadingComplete">
+
+
+
+t()
+{
+stop("1000")
+ufnsui()
+{
+
+
+  fn 新加载.开始("开始加载..")
+//最新更新
+t()
+{
+  call(ss.b,"mjava","http.getHtml",sss.网址,"gb2312")   
+  f(ss.b == null)
+  {
+    ufnsui()
+    {
+    
+    us(最近更新.5,"visibility",0)
+    us(最近更新.2,"visibility",8) 
+    fn 新加载.结束("加载失败..")   
+
+    }
+  }
+  else
+  { 
+ufnsui()
+{
+  sj(ss.b,"&lt;h2&gt;最新更新&lt;/h2&gt;","&lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx,"&lt;li&gt;",null,zxd)
+  sl(zxd,"&lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)   
+    f(img ? "http")
+    {
+     s im=img
+    }
+    else
+    {
+     ss(sss.网址+img,im)
+    }
+   
+    ula(list_zxgx,7=title,8=级数,15=dmurl,5=im,16=im) 
+  } 
+  ufnsui()
+  {
+    uls(最近更新.2,list_zxgx,"最近更新列表.iyu",-1,-2)
+    f(dmurl == "null")
+    {
+
+    us(最近更新.16,"visibility",0)
+    us(最近更新.2,"visibility",8)   
+        fn 新加载.结束("加载失败..")
+    }
+    else
+    {
+      ufnsui()
+      {
+fn 首页加载.日本动漫()  
+us(搜索界面.60,"src","http://pic.xiaomingming.org/pic/uploadimg/2021-4/202141714101433526.jpg")
+us(搜索界面.63,"src","http://pic.xiaomingming.org/pic/uploadimg/2021-4/202141612402329418.jpg")
+us(搜索界面.66,"src","http://p.xiaomingming.org/FileUpload/202101081610112407.jpg")
+
+
+t()
+{
+  stop("1300")
+ufnsui()
+{    
+
+
+us(最近更新.2,"visibility",0)   
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(最近更新.2, "dh", dh)
+
+dha(dh,true,false)
+dh(dh, "duration", 500)
+us(最近更新.16, "dh", dh)
+dhon(dh)
+{
+us(最近更新.16,"visibility",8)
+}
+
+
+}
+}
+
+
+}
+      
+}
+
+
+}
+}
+
+}
+
+}
+
+
+
+
+
+
+}
+}
+
+
+fn BDPlayer.init()</eventItme><eventItme type="downkey">
+
+
+ug(搜索界面.1,"visibility",jj)
+
+
+
+ug(16,"text",kj)
+ug(17,"text",kjh)
+s a=st_kC
+f(a==25)
+{
+}
+else f(a==24)
+{
+}
+else f(a==4)
+{
+//返回按钮事件
+
+f(kj == "关闭")
+{
+
+f(kjh == "可执行")
+{
+
+
+us(17,"text","不可执行")
+
+
+
+dhas(dh, 2, "translationY", 30,0)
+dh(dh, "duration", 700)
+dh(dh, "start")
+
+dhas(dh, 2, "scaleY", 0.6,1.0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 2, "scaleX", 0.6,1.0)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+
+dhas(dh, 搜索界面.6, "translationX", 0,-20)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh,搜索界面.6, "scaleY", 1.0,0.5)
+dh(dh, "duration", 450)
+dh(dh, "start")
+
+dhas(dh,搜索界面.6, "scaleX", 1.0,0.5)
+dh(dh, "duration", 450)
+dh(dh, "start")
+   
+t()
+{
+  stop("550")
+  ufnsui()
+  {
+dha(dh, true,false)
+dh(dh, "duration", 500)
+us(搜索界面.6, "dh", dh)
+dhon(dh)
+{
+us(搜索界面.6,"visibility","invisible")
+}
+
+  
+  }
+}
+
+
+
+dhas(dh, 搜索界面.7, "scaleX",1.0,0.7)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.7, "scaleY",1.0,0.7)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.7, "translationY", -35,0)     
+dh(dh, "duration", 550)
+dh(dh, "start")
+
+t()
+{
+stop("500")
+ufnsui()
+{
+dha(dh, true,false)
+dh(dh, "duration", 500)
+us(搜索界面.7, "dh", dh)
+dhon(dh)
+{
+us(搜索界面.7,"visibility","invisible")
+}
+}
+}
+
+
+
+t()
+{
+  stop("100")
+  ufnsui()
+  {
+
+dhas(dh, 搜索界面.19, "translationX", 0,80)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+ 
+dhas(dh,搜索界面.19, "scaleY", 1.0,1.8)
+dh(dh, "duration", 450)
+dh(dh, "start")
+
+dhas(dh,搜索界面.19, "scaleX", 1.0,1.8)
+dh(dh, "duration", 450)
+dh(dh, "start")
+ 
+
+
+t()
+{
+  stop("600")
+  ufnsui()
+  {
+dha(dh, true,false)
+dh(dh, "duration", 500)
+us(搜索界面.19, "dh", dh)
+dhon(dh)
+{
+us(搜索界面.19,"visibility","invisible")
+}
+
+  
+  }
+}
+   
+  }
+}
+
+
+t()
+{
+stop("300")
+ufnsui()
+{
+
+dhas(dh, 搜索界面.5, "translationY", 0,-100)
+dh(dh, "duration", 600)
+dh(dh, "start")
+dhas(dh,搜索界面.5, "scaleY", 1.0,0.9)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+dhas(dh,搜索界面.5, "scaleX", 1.0,0.9)
+dh(dh, "duration", 800)
+dh(dh, "start")
+  
+}
+}
+
+
+dha(dh, true,false)
+dh(dh, "duration", 1200)
+us(搜索界面.2, "dh", dh)
+//us(搜索界面.57, "dh", dh)
+  
+dhon(dh)
+{
+us(搜索界面.34,"visibility",8)
+us(搜索界面.12,"visibility",8)
+us(搜索界面.54,"visibility",8)
+us(搜索界面.2,"visibility",8)
+//us(搜索界面.57,"visibility",8)
+us(搜索界面.1,"visibility",8)
+us(搜索界面.38,"visibility","invisible")  
+ula(ss.list, null)
+ula(ss.list)
+us(搜索界面.9,"text","")
+}
+
+
+
+
+
+
+
+dha(dh, true,false)
+dh(dh, "duration", 330)
+us(搜索界面.41, "dh", dh)
+dhon(dh)
+{
+us(搜索界面.41,"visibility",8)
+ula(ss.list, null)
+}
+
+dhas(dh, 搜索界面.34, "scaleX",1.0,0.8)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.34, "scaleY",1.0,0.8)
+dh(dh, "duration", 500)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.34, "translationY",0,350)     
+dh(dh, "duration", 650)
+dh(dh, "start")
+
+dhas(dh, 搜索界面.12, "scaleX",1.0,0.6)
+dh(dh, "duration", 400)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.12, "scaleY",1.0,0.6)
+dh(dh, "duration", 400)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.12, "translationY",0,350)     
+dh(dh, "duration", 550)
+dh(dh, "start")
+dhon(dh)
+{
+us(16,"text","开启")
+}
+
+t()
+{
+stop("400")
+ufnsui()
+{
+dhas(dh, 搜索界面.12, "scaleX",0.6,0.9)
+dh(dh, "duration", 600)
+dh(dh, "start")
+        
+dhas(dh, 搜索界面.12, "scaleY",0.6,0.9)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+t()
+{
+stop("300")
+ufnsui()
+{
+
+dha(dh, true,false)
+dh(dh, "duration", 600)
+us(搜索界面.12, "dh", dh)
+ 
+dhon(dh)
+{
+us(搜索界面.12,"visibility",8)
+
+}
+}
+}
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+}
+else
+{
+f(jj == 8)
+{
+utw(null,"提示","你确定要退出吗？","退出","取消",true, v)
+{
+end()
+}
+else
+{
+endutw()
+}
+}
+else
+{
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+}
+
+</eventItme></UIEventset>

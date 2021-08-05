@@ -1,0 +1,234 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event><eventItme type="clicki">us(资源弹窗1.1,"visibility",8)</eventItme></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=11dp
+app_CardElevation=6dp
+layout_marginLeft=50dp
+layout_marginRight=50dp</ppt>
+<event><eventItme type="clicki">.</eventItme></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=-1
+height=-1
+src=1730156
+scaleType=centercrop
+</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#59ffffff</ppt>
+<event></event>
+</View>
+<View id="5" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+gravity=center
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=播放选择
+textSize=14sp
+textColor=#ff101010
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="8" did="5" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="10" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=点击会继续判断播放播放节点是否正确\n节点无效则没反应
+textSize=14sp
+textColor=#ff5b5b5b</ppt>
+<event></event>
+</View>
+<View id="9" did="5" type="LinearLayout">
+<ppt>width=-1
+height=46dp
+orientation=horizontal
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="11" did="9" type="CardView">
+<ppt>width=70dp
+height=30dp
+app_CardBackgroundColor=#fffbfbfb
+app_CardElevation=0dp
+layout_marginRight=8dp
+app_CardcornerRadius=5dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+t()
+{
+
+sss video=sss.播放器b
+fr("%Android/data/com.cjzwjdm/files/bf.html",动画)
+sj(动画,"ok","ok",输出)
+f(输出 == "关")
+{
+  ufnsui()
+  {
+    
+hws(sss.video)
+    
+   }
+  }
+else
+{
+  ufnsui()
+  {
+//系统    
+
+
+//播放b
+
+f(sss.video ? "m3u8")
+{
+ufnsui()
+{
+
+strim(sss.video,sss.video)
+f(sss.video ?* "$" || sss.video ?* "%") {
+  fdir(sss.video,sss.video)
+  }
+f(sss.video ?* "@") {
+  tw("错误：不支持播放@位置的视频，请使用 fc 复制视频到sd卡或私有目录再播放！")
+  endcode
+  }
+uigo("play.iyu")
+us(资源弹窗1.1,"visibility",8)
+}
+}
+
+//播放b
+    
+//系统
+  }
+}
+}
+
+
+</eventItme></event>
+</View>
+<View id="13" did="12" type="TextView">
+<ppt>width=-1
+height=-1
+text=资源B
+textColor=#ff000000
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="14" did="9" type="CardView">
+<ppt>width=70dp
+height=30dp
+app_CardBackgroundColor=#fffcfcfc
+app_CardElevation=0dp
+layout_marginRight=8dp
+app_CardcornerRadius=5dp</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+
+t()
+{
+
+sss video=sss.播放器a
+fr("%Android/data/com.cjzwjdm/files/bf.html",动画)
+sj(动画,"ok","ok",输出)
+f(输出 == "关")
+{
+  ufnsui()
+  {
+    
+    hws(sss.video)
+    
+   }
+  }
+else
+{
+  ufnsui()
+  {
+//系统    
+    
+//播放a
+
+f(sss.video ? "m3u8")
+{
+ufnsui()
+{
+
+strim(sss.video,sss.video)
+f(sss.video ?* "$" || sss.video ?* "%") {
+  fdir(sss.video,sss.video)
+  }
+f(sss.video ?* "@") {
+  tw("错误：不支持播放@位置的视频，请使用 fc 复制视频到sd卡或私有目录再播放！")
+  endcode
+  }
+uigo("play.iyu")
+us(资源弹窗1.1,"visibility",8)
+}
+}
+
+//播放a
+    
+    
+//系统    
+  }
+}
+}
+
+
+</eventItme></event>
+</View>
+<View id="16" did="15" type="TextView">
+<ppt>width=-1
+height=-1
+text=资源A
+textColor=#ff000000
+gravity=center</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

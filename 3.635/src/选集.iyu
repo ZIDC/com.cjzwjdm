@@ -1,0 +1,145 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event><eventItme type="clicki">
+ug(详细.15,"text",sss.视频标题)
+ulag(st_vW,5,sss.视频)
+uigo("playvideo.iyu")
+ulag(st_vW,3,nr)
+//sss videourl</eventItme><eventItme type="touchmonitor">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gvs(st_vW,选集.2,ss.按钮)
+
+
+
+
+s a=st_eA
+
+f(a == "0")
+{
+
+
+
+
+dhas(dh, ss.按钮, "scaleX", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, ss.按钮, "scaleY", 1.0,0.9)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(ss.按钮,"app_CardElevation","3dp")
+
+
+}
+else f(a == "1")
+{
+
+
+
+dhas(dh, ss.按钮, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, ss.按钮, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(ss.按钮,"app_CardElevation","0dp")
+
+}
+else f(a == "2")
+{
+
+
+}
+else f(a == "3")
+{
+
+
+dhas(dh, ss.按钮, "scaleX", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+
+dhas(dh, ss.按钮, "scaleY", 0.9,1.0)
+dh(dh, "duration", 150)
+dh(dh, "start")
+us(ss.按钮,"app_CardElevation","0dp")
+
+}
+
+</eventItme><eventItme type="press">//sss st=st_vW</eventItme></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=50dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff9f9f9</ppt>
+<event></event>
+</View>
+<View id="6" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=right|top</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="ImageView">
+<ppt>width=15dp
+height=15dp
+src=@7ee17a29241.png
+layout_marginRight=5dp
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=选集
+gravity=center
+textColor=#ff0c0c0c
+textStyle=bold
+textSize=14sp
+layout_marginRight=5dp
+
+</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本5
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

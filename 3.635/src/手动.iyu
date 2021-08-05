@@ -1,0 +1,84 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="RecyclerView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="CardView">
+<ppt>width=-2
+height=-2
+app_CardcornerRadius=15dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff5f5f5</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-1
+height=-1
+text=加载中..
+layout_marginTop=5dp
+layout_marginBottom=5dp
+layout_marginRight=10dp
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="8" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=bottom|center
+layout_marginBottom=15dp</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=资源求助:
+textSize=10sp
+textColor=#ff090909
+layout_marginRight=3dp</ppt>
+<event><eventItme type="clicki">
+
+hws("https://zidc.github.io/video/")</eventItme></event>
+</View>
+<View id="10" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=https://zidc.github.io/video/
+textColor=#ff00a7ff
+textSize=10sp</ppt>
+<event><eventItme type="clicki">hws("https://zidc.github.io/video/")</eventItme></event>
+</View>
+<View id="11" did="8" type="ImageView">
+<ppt>width=13dp
+height=13dp
+src=@github.png
+layout_marginLeft=5dp</ppt>
+<event><eventItme type="clicki">hws("https://zidc.github.io/video/")</eventItme></event>
+</View>
+<UIEventset></UIEventset>

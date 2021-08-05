@@ -1,0 +1,45 @@
+
+
+
+fn dirfilesize(path)
+fl(path,files)
+for(dir;files)
+{
+  ss(path+"/"+dir,newpath)
+  fi(newpath,e)
+  f(e)
+  {
+    fn lly.dirfilesize(newpath)
+    s(ss.ndir+1,ss.ndir)
+  }else{
+    fs(newpath,size)
+    s(ss.size+size,ss.size)
+    s(ss.nfile+1,ss.nfile)
+  }
+}
+end fn
+
+
+
+
+fn delfiles(path)
+fi(path,e)
+f(!e)
+{
+  fd(path,b)
+}else{
+  fl(path,files)
+  for(dir;files)
+  {
+    ss(path+"/"+dir,newpath)
+    fn 获取大小.delfiles(newpath)
+    fi(newpath,dire)
+    f(dire)
+    {
+      fd(newpath,b)
+    }
+  }
+}
+end fn
+
+

@@ -1,0 +1,6 @@
+function log(path) 
+  i:t(function()
+      Thread:currentThread():setName("LogThread")
+      os.execute("logcat > " .. i:fdir(path))
+    end)
+  end

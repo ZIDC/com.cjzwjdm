@@ -1,0 +1,371 @@
+
+
+
+
+
+
+fn 日本动漫()
+
+
+us(日本动漫.2,"visibility",8)
+us(日本动漫.16,"visibility",0)
+   
+//us(加载新.5,"text","动漫加载中..")
+//日本动漫
+
+t()
+{
+  call(ss.c,"mjava","http.getHtml",sss.网址,"gb2312")   
+  f(ss.c == null)
+  {
+    ufnsui()
+    {
+    
+    us(日本动漫.16,"visibility",0)
+    us(日本动漫.2,"visibility",8) 
+//    fn 新加载.结束("加载失败..")   
+
+    }
+  }
+  else
+  { 
+ufnsui()
+{
+  sj(ss.c,"&lt;h2&gt;&lt;a href=\"/list/2.html\"&gt;日本动漫&lt;/a&gt;&lt;/h2&gt;","&lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx,"&lt;li&gt;",null,zxd)
+  sl(zxd,"&lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)   
+    f(img ? "http")
+    {
+     s im=img
+    }
+    else
+    {
+     ss(sss.网址+img,im)
+    }
+   
+    ula(rbdm,7=title,8=级数,15=dmurl,5=im,16=im) 
+  } 
+  ufnsui()
+  {
+    uls(日本动漫.2,rbdm,"日本动漫列表.iyu",-1,-2) 
+    f(dmurl == "null")
+    {
+
+     us(日本动漫.2,"visibility",8)
+     us(日本动漫.16,"visibility",0) 
+//        fn 新加载.结束("加载失败..")
+    }
+    else
+    {
+      ufnsui()
+      {
+      us(日本动漫.2,"visibility",0)
+      us(日本动漫.16,"visibility",8)  
+       t()
+       {
+        stop("500")
+        ufnsui()
+         {
+      fn 首页加载.国产动漫()
+         }
+       }
+      }
+    }
+  }
+}
+}
+}  
+
+
+
+//日本动漫
+
+end fn
+
+
+
+
+fn 国产动漫()
+
+us(国产动漫.2,"visibility",8)
+us(国产动漫.16,"visibility",0)
+//us(加载新.5,"text","国产动漫加载中..")
+
+
+
+//国产动漫
+
+t()
+{
+  call(ss.d,"mjava","http.getHtml",sss.网址,"gb2312")   
+  f(ss.d == null)
+  {
+    ufnsui()
+    {
+    
+    us(国产动漫.16,"visibility",0)
+    us(国产动漫.2,"visibility",8) 
+//    fn 新加载.结束("加载失败..")   
+
+    }
+  }
+  else
+  { 
+ufnsui()
+{
+  sj(ss.d,"&lt;h2&gt;&lt;a href=\"/list/3.html\"&gt;国产动漫&lt;/a&gt;&lt;/h2&gt;","&lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx,"&lt;li&gt;",null,zxd)
+  sl(zxd,"&lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)   
+    f(img ? "http")
+    {
+     s im=img
+    }
+    else
+    {
+     ss(sss.网址+img,im)
+    }
+   
+    ula(gcdm,7=title,8=级数,15=dmurl,5=im,16=im) 
+  } 
+  ufnsui()
+  {
+    uls(国产动漫.2,gcdm,"国产动漫列表.iyu",-1,-2) 
+    f(dmurl == "null")
+    {
+
+     us(国产动漫.2,"visibility",8)
+     us(国产动漫.16,"visibility",0) 
+//        fn 新加载.结束("加载失败..")
+    }
+    else
+    {
+      ufnsui()
+      {
+      us(国产动漫.2,"visibility",0)
+      us(国产动漫.16,"visibility",8)         
+       t()
+       {
+        stop("500")
+        ufnsui()
+         {
+      fn 首页加载.动漫电影()
+         }
+       }
+      }
+    }
+  }
+}
+}
+}  
+//国产动漫
+
+
+end fn
+
+
+
+fn 美国动漫()
+
+
+//us(68,"text","美国加载中...")
+us(美国动漫.2,"visibility",8)
+us(美国动漫.16,"visibility",0)
+
+
+
+//美国动漫
+t()
+{
+  call(b,"mjava","http.getHtml",sss.网址,"gb2312")
+//  fr("%动漫缓存.html", b)
+  sj(b,"&lt;h2&gt;&lt;a href=\"/list/4.html\"&gt;美国动漫&lt;/a&gt;&lt;/h2&gt;"," &lt;div class=\"blank\"&gt;&lt;/div&gt;",zx)
+  sj(zx,"&lt;li&gt;",null,zxd)
+  sl(zxd,"&lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)         
+//    ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+//    hd(img,图片下载位置,true,ok)
+//   syso(图片下载位置)   
+  ula(list_zxgx,7=title,5=img,8=级数,15=dmurl,16=img) 
+  } 
+  ufnsui()
+  {
+    uls(美国动漫.2,list_zxgx,"美国动漫列表.iyu",-1,-2) 
+        fn 首页加载.动漫电影() 
+
+us(美国动漫.2,"visibility",0)
+us(美国动漫.16,"visibility",8)
+
+
+
+
+}
+}
+//美国动漫
+
+
+
+end fn
+
+
+
+
+
+fn 动漫电影()
+
+
+
+us(动漫电影.2,"visibility",8)
+us(动漫电影.16,"visibility",0)
+//us(加载新.5,"text","动漫电影加载中..")
+
+
+//动漫电影
+
+t()
+{
+  call(ss.e,"mjava","http.getHtml",sss.网址,"gb2312")   
+  f(ss.e == null)
+  {
+    ufnsui()
+    {
+    
+    us(动漫电影.16,"visibility",0)
+    us(动漫电影.2,"visibility",8) 
+//    fn 新加载.结束("加载失败..")   
+
+    }
+  }
+  else
+  { 
+ufnsui()
+{
+  sj(ss.e,"&lt;h2&gt;&lt;a href=\"/list/1.html\"&gt;动漫电影&lt;/a&gt;&lt;/h2&gt;","&lt;div class=\"side r\"&gt;",zx)
+  sj(zx,"&lt;li&gt;",null,zxd)
+  sl(zxd,"&lt;li&gt;",zxf)
+  for(zxdm;zxf)
+  {
+    sj(zxdm,"&lt;a href=\"","\"&gt;",url)
+    sj(zxdm,"&lt;img src=\"","\"",img)
+    sj(zxdm,"title=\"","\"",title)  
+    sj(zxdm,"&lt;/a&gt;&lt;/p&gt;","&lt;/p&gt;",js)
+    sr(js,"&lt;p&gt;","", 去除字符)
+    sr(去除字符," ","", 字符)
+    sr(字符,"\n","", 级数)
+    ss(sss.网址+url,dmurl)   
+    f(img ? "http")
+    {
+     s im=img
+    }
+    else
+    {
+     ss(sss.网址+img,im)
+    }
+   
+    ula(dmdy,7=title,8=级数,15=dmurl,5=im,16=im) 
+  } 
+  ufnsui()
+  {
+    uls(动漫电影.2,dmdy,"动漫电影列表.iyu",-1,-2) 
+    f(dmurl == "null")
+    {
+     us(动漫电影.2,"visibility",8)
+     us(动漫电影.16,"visibility",0) 
+//     fn 新加载.结束("加载完成..")
+//     fn 项目更新.更新()    
+    }
+    else
+    {
+      ufnsui()
+      {
+      us(动漫电影.2,"visibility",0)
+      us(动漫电影.16,"visibility",8)   
+       t()
+       {
+        stop("500")
+        ufnsui()
+         {
+//           fn 新加载.结束("加载完成..")
+         }
+       }            
+      }
+    }
+  }
+}
+}
+}  
+//动漫电影
+
+
+
+
+end fn
+
+
+
+fn 远程代码()
+
+
+
+//远程代码
+t()
+{
+s url="https://zidc.github.io/bjdm/yc.txt"
+call(ss.远程代码执行,"mjava","http.getHtml",url)
+//hs("http://dm.cjzwjys.top/yc.txt",sz)
+sj(ss.远程代码执行,"远程执行黑","远程执行黑",kj)
+f(kj == null)
+{
+ufnsui()
+{
+//fn 新加载.结束("加载失败")
+java(null, sss.对象, "android.app.Dialog.cancel")
+
+}
+}
+else
+{
+ufnsui()
+{
+  java(null, sss.对象, "android.app.Dialog.cancel")
+
+s a = kj
+s b = "&lt;br&gt;"
+s c = "\n"
+sr(a, b, c, d)
+//fn 新加载.结束("收工")
+fn 运行器.设置代码(18,"clicki",d)
+fn 运行器.点击控件(18)
+}
+}
+}
+//远程代码
+end fn

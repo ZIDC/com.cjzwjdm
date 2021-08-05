@@ -1,0 +1,297 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event><eventItme type="clicki">.</eventItme></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=14dp
+app_CardElevation=6dp
+layout_marginLeft=50dp
+layout_marginRight=50dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=-1
+height=-1
+src=1730156
+scaleType=centercrop
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="25" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#d6ffffff</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="TextView">
+<ppt>width=-2
+height=-2
+text=免责申明提示
+textStyle=bold
+textSize=15sp
+textColor=#ff090909</ppt>
+<event></event>
+</View>
+<View id="7" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+layout_marginLeft=16dp
+layout_marginRight=16dp
+layout_marginTop=8dp</ppt>
+<event></event>
+</View>
+<View id="9" did="7" type="ScrollView">
+<ppt>width=-1
+height=130dp</ppt>
+<event></event>
+</View>
+<View id="8" did="9" type="TextView">
+<ppt>width=-1
+height=-1
+text=感谢你的信任和使用本软件《白简动漫》。\n在你使用白简动漫的时候，我们会收集你的播放几率以及追番，当然，这个收集是本地收集，不会上传至云端。\n\n说到云端用户系统你们可能会担心，不用担心，本应用已经去除云端服务!\n每次打开APP都会显示本界面。\n
+gravity=left|top
+textSize=12sp
+textColorHighlight=#ff5c5c5c
+layout_marginBottom=3dp
+</ppt>
+<event></event>
+</View>
+<View id="10" did="7" type="LinearLayout">
+<ppt>width=-1
+height=15dp
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="TextView">
+<ppt>width=-2
+height=-2
+text=本软件已经开源
+textSize=10sp
+textColor=#ff020202</ppt>
+<event></event>
+</View>
+<View id="12" did="10" type="ImageView">
+<ppt>width=12dp
+height=12dp
+src=@github.png
+layout_marginLeft=10dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="13" did="10" type="ImageView">
+<ppt>width=10dp
+height=10dp
+src=@gitee-fill-round.png</ppt>
+<event></event>
+</View>
+<View id="14" did="7" type="TextView">
+<ppt>width=-1
+height=-2
+text=本软件仅供学习交流，请在24小时内删除，谢谢合作!
+gravity=center
+textSize=8sp
+textColor=#FF2284B3</ppt>
+<event></event>
+</View>
+<View id="16" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="TextView">
+<ppt>width=-2
+height=-2
+text=具体相关免责声明请阅读
+textSize=10sp
+textColor=#ffa2a2a2</ppt>
+<event></event>
+</View>
+<View id="15" did="16" type="TextView">
+<ppt>width=-2
+height=-2
+text=  《免责声明》
+textColor=#FF2284B3
+textSize=10sp</ppt>
+<event><eventItme type="clicki">
+
+
+
+utw(null,"免责声明","感谢你的信任和使用本软件《白简动漫》。\n\n\n在你使用白简洁动漫的时候，我们会收集你的播放几率以及追番，当然，这个收集是本地收集，不会上传至云端。\n\n说到云端用户系统你们可能会担心，不用担心，本应用已经去除云端服务!本App提供的资源均系收集于各大视频网站，本App是采集了《樱花动漫-专注动漫的门户网址》\n《风车动漫-专注动漫的门户网址》详细网址,请点击前往按钮。\n本App并不提供影片资源存储，也不参与录制、上传\n若本站收录的节目无意侵犯了贵司版权，请给网页底部邮箱地址来信，我们会及时处理和回复，谢谢!\n\n资源全部来源于风车动漫和樱花动漫，请自行进入这些网站联系该网站的运营删除侵犯了贵公司版权的相关节目\n请在24小时内删除本软件，本软件仅供学习交流！", "前往", "同意", true, v)
+{
+ufnsui()
+{
+
+    
+  
+    hws("http://www.imomoe.jp")
+    
+    endutw()
+}
+}
+else
+{
+
+    endutw()
+    
+}</eventItme></event>
+</View>
+<View id="18" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="19" did="18" type="CardView">
+<ppt>width=-1
+height=40dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#80ffffff
+app_CardcornerRadius=5dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=8dp
+layout_marginBottom=8dp</ppt>
+<event></event>
+</View>
+<View id="20" did="19" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="21" did="20" type="TextView">
+<ppt>width=-2
+height=-2
+text=不同意
+textColor=#ff9d9d9d</ppt>
+<event></event>
+</View>
+<View id="22" did="18" type="CardView">
+<ppt>width=-1
+height=40dp
+app_CardElevation=0dp
+app_CardcornerRadius=5dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginBottom=13dp
+app_CardBackgroundColor=#FFFA7298</ppt>
+<event></event>
+</View>
+<View id="23" did="22" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+
+
+
+
+
+//动画检测
+fr("%Android/data/com.cjzwjdm/files/dh.html",动画)
+sj(动画,"ok","ok",输出)
+f(输出 == "关")
+{
+  ufnsui()
+  {
+//动画关    
+us(用户协议.1,"visibility",8)
+fn 项目更新.更新()
+//动画关    
+   }
+  }
+else
+{
+  ufnsui()
+  {
+//动画开    
+
+
+
+dhas(dh, 用户协议.2, "scaleY", 1.0,0.0)
+dh(dh, "duration", 480)
+dh(dh, "start")
+
+dhas(dh, 用户协议.2, "scaleX", 1.0,0.0)
+dh(dh, "duration", 480)
+dh(dh, "start")
+
+dhas(dh, 用户协议.5, "translationY", 0,-50)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh, 用户协议.7, "translationY", 0,-70)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh, 用户协议.18, "translationY", 0,-80)
+dh(dh, "duration", 500)
+dh(dh, "start")
+t()
+{
+stop("500")
+ufnsui()
+{
+
+dha(dh, true,false)
+dh(dh, "duration", 400)
+us(用户协议.2, "dh", dh)
+dhon(dh)
+{
+us(用户协议.1,"visibility",8)
+fn 项目更新.更新()
+}
+}
+}
+
+
+//动画开    
+  }
+}
+}
+//动画检测
+</eventItme></event>
+</View>
+<View id="24" did="23" type="TextView">
+<ppt>width=-2
+height=-2
+text=同意
+textColor=#ffffffff</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

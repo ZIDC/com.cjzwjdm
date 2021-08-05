@@ -1,0 +1,17 @@
+import android.graphics.Color;
+import android.content.res.ColorStateList;
+import android.app.Activity;
+import android.widget.CheckBox;
+
+public static void checkbox(Activity activity,int id, String color)
+{
+  CheckBox cb = activity.findViewById(id);
+  cb.setButtonTintList(ColorStateList.valueOf(Color.parseColor(color)));
+}
+
+
+//iyu调用:
+
+//s id=多选控件ID
+//s color="十六进制颜色"
+//call(null,"mjava","util.checkbox",activity,id,color)

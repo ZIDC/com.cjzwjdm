@@ -1,0 +1,746 @@
+<View id="2" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+background=black</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="1" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="37" did="2" type="ImageView">
+<ppt>width=-1
+height=-1
+src=17676
+scaleType=centercrop
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="21" did="2" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="4" did="21" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="17" did="4" type="CardView">
+<ppt>width=-1
+height=70dp
+app_CardBackgroundColor=#00ffffff
+app_CardElevation=0dp
+app_CardcornerRadius=0dp</ppt>
+<event></event>
+</View>
+<View id="19" did="17" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|bottom</ppt>
+<event></event>
+</View>
+<View id="20" did="19" type="TextView">
+<ppt>width=-2
+height=-2
+text=
+textColor=#ffffffff
+layout_marginLeft=20dp
+layout_marginBottom=4dp
+textSize=9sp</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="6" did="18" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=horizontal
+background=#00000000
+gravity=center_vertical
+layout_marginRight=13dp
+layout_marginLeft=13dp</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="15" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="31" did="15" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=10dp
+app_CardElevation=5dp
+layout_marginLeft=10dp
+layout_marginRight=10dp
+</ppt>
+<event></event>
+</View>
+<View id="32" did="31" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="16" did="32" type="SeekBar">
+<ppt>width=-1
+height=20dp
+overScrollMode=never
+scrollbars=none
+BackgroundColor=#00ffffff
+layout_marginLeft=-5dp
+layout_marginRight=-5dp
+</ppt>
+<event><eventItme type="onstoptrackingtouch">ug(16,"progress",iug)
+fn BDPlayer.seekTo(iug)
+//返回值sss.isPlaying
+fn BDPlayer.isPlaying()
+f(sss.isPlaying==false)
+{
+  fn BDPlayer.start() 
+}</eventItme></event>
+</View>
+<View id="12" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=00:00:00
+textColor=#ffffffff
+textSize=8dp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="13" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=/
+textColor=#fff2f2f2
+textSize=8dp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="14" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=00:00:00
+textColor=#ffffffff
+textSize=8dp
+textStyle=bold
+layout_marginRight=20dp</ppt>
+<event></event>
+</View>
+<View id="22" did="21" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=top|center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="27" did="22" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=0dp
+app_CardBackgroundColor=#00ffffff
+app_CardElevation=0dp</ppt>
+<event><eventItme type="clicki">uycl("#ff030303",true)</eventItme></event>
+</View>
+<View id="23" did="27" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="28" did="23" type="CardView">
+<ppt>width=40dp
+height=40dp
+app_CardElevation=0dp
+app_CardcornerRadius=20dp
+layout_marginLeft=16dp
+layout_marginRight=15dp
+app_CardBackgroundColor=#00ffffff</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+ss("图片"+sss.图片地址+"图片"+"影视名"+sss.影视名+"影视名"+"级数"+sss.标题+"级数"+"视频链接"+sss.video+"视频链接",历史记录)
+ss("%Android/data/com.cjzwjdm/ls/"+sss.影视名+".sod",历史文件)
+fw(历史文件,历史记录)
+fn BDPlayer.pause()
+fn BDPlayer.release()
+ushsp(false)
+end()</eventItme></event>
+</View>
+<View id="24" did="29" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@f422aeebd27.png
+</ppt>
+<event></event>
+</View>
+<View id="25" did="23" type="TextView">
+<ppt>width=-2
+height=-2
+text=视频
+textColor=#ffffffff
+ellipsize=end</ppt>
+<event></event>
+</View>
+<View id="33" did="21" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="35" did="33" type="CardView">
+<ppt>width=55dp
+height=55dp
+app_CardcornerRadius=30dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#0d030303</ppt>
+<event></event>
+</View>
+<View id="36" did="35" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="34" did="36" type="ImageView">
+<ppt>width=23dp
+height=23dp
+src=@bofang.png
+layout_marginLeft=3dp</ppt>
+<event></event>
+</View>
+<View id="26" did="21" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event><eventItme type="touchmonitor">
+
+
+
+
+
+
+
+
+//双击与单击↓
+s+(1,sss.dck)
+f(sss.dck==1)
+{
+t()
+{
+stop(250)
+s-(1,sss.dck)
+f(sss.dck&lt;1)
+{
+//-1
+ufnsui()
+{
+f(ss.jdbar!=true)
+{
+//单机可见
+//us(33,"visibility",8)
+us(4,"visibility",0)
+us(22,"visibility",0)
+dhas(dh, 27, "translationY",-150,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 17, "translationY",150,0)
+dh(dh, "duration", 450)
+dh(dh, "start")
+//单机可见
+
+ss jdbar=true
+}
+else
+{
+//单机不可见
+
+//us(33,"visibility",8)
+dhas(dh, 27, "translationY",0,-150)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 17, "translationY",0,150)
+dh(dh, "duration", 450)
+dh(dh, "start")
+dhon(dh)
+{
+us(4,"visibility",8)
+us(22,"visibility",8)
+}
+//单机不可见
+ss jdbar=null
+}
+}
+//-1
+}
+else
+{
+sss dck=0
+ufnsui()
+{
+fn BDPlayer.isPlaying()   
+f(sss.isPlaying==false)
+{
+//双击播放
+fn BDPlayer.start()
+
+dha(dh, true, false)
+dh(dh, "duration", 300)
+us(37, "dh", dh)
+dhon(dh)
+{
+us(37,"visibility",8)
+}
+
+
+dhas(dh, 27, "translationY",0,-150)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 17, "translationY",0,150)
+dh(dh, "duration", 450)
+dh(dh, "start")
+dhon(dh)
+{
+us(4,"visibility",8)
+us(22,"visibility",8)
+}
+
+us(33,"visibility",8)
+us(34,"src","@zantingtingzhicopy.png")
+//双击播放
+}
+else
+{
+//双击暂停
+fn BDPlayer.pause()
+us(4,"visibility",0)
+us(22,"visibility",0)
+us(33,"visibility",0)
+us(34,"src","@bofang.png")
+
+us(37,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 300)
+us(37, "dh", dh)
+
+dhas(dh, 27, "translationY",-150,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 17, "translationY",150,0)
+dh(dh, "duration", 450)
+dh(dh, "start")
+
+
+}
+}
+}
+}
+}
+}
+//双击与单机↑
+
+
+
+
+
+</eventItme></event>
+</View>
+<UIEventset><eventItme type="loading">
+ushsp(true)
+uycl(true)
+
+
+fn BDPlayer.newPlayer()
+fn BDPlayer.setVideoSource(sss.video)
+nvw(sss.player,1)
+
+us(sss.player,"width",-1)
+us(sss.player,"height",-1)
+
+
+t()
+{
+stop("5000")
+ufnsui()
+{
+
+fn BDPlayer.getCurrentPosition()
+fn BDPlayer.getDuration()
+s/(sss.mDuration,60000,i)
+s*(i,60000,ia)
+s-(sss.mDuration,ia,ia)
+s/(ia,1000,ia)
+f(i&lt;=9)
+{
+  ss(0+i,i)
+}
+f(ia&lt;=9)
+{
+  ss(0+ia,ia)
+}
+ss(i+":"+ia,sss.dn)
+us(14,"text",sss.dn)
+
+t()
+{
+  w(true)
+  {
+    f(sss.mCurrentPosition &lt; sss.mDuration)
+    {
+
+
+      ufnsui()
+      {
+
+       fn BDPlayer.getCurrentPosition()
+s/(sss.mCurrentPosition,60000,i)
+s*(i,60000,ia)
+s-(sss.mCurrentPosition,ia,ia)
+s/(ia,1000,ia)
+f(i&lt;=9)
+{
+  ss(0+i,i)
+}
+f(ia&lt;=9)
+{
+  ss(0+ia,ia)
+}
+ss(i+":"+ia,sss.dn1)     
+us(12,"text",sss.dn1)
+       }
+       stop("1000")
+    }
+  }
+}
+
+}
+}
+
+
+
+
+t()
+{
+stop("1300")
+ufnsui()
+{
+
+
+//设置拖动条最大范围值 视频总长
+t()
+{
+  w(true)
+  {
+//返回值sss.isPlaying
+    fn BDPlayer.isPlaying()    
+    f(sss.isPlaying==true)
+    {
+      //返回值存在sss.mDuration里
+      fn BDPlayer.getDuration()
+      ufnsui()
+      {
+        us(16,"max",sss.mDuration)
+      }
+    stop(1000)
+    endcode
+    }
+  }
+}
+//设置拖动条值 当前播放时间
+t()
+{
+  w(true)
+  {
+    fn BDPlayer.isPlaying()    
+    f(sss.isPlaying==true)
+    {
+      //返回值存在sss.mCurrentPosition里
+      fn BDPlayer.getCurrentPosition()
+      ufnsui()
+      {
+        us(16,"progress",sss.mCurrentPosition)
+      }
+    stop(1000)
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+//
+
+
+
+
+
+
+
+
+}
+}
+
+us(25,"text",sss.视频标题)
+
+gvs(24,view)
+java(c,null,"android.graphics.Color.parseColor","String","#ffffffff")
+javags(mode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+java(null,view,"android.widget.ImageView.setColorFilter","int",c,"android.graphics.PorterDuff$Mode",mode)
+
+
+
+
+
+
+
+s 路径=sss.位置
+s 半径="2"
+s 模糊度 ="3"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+us(37,"src",img)
+
+
+
+/.
+//获取当前播放进度 单位毫秒
+//返回值存在sss.mCurrentPosition里
+fn BDPlayer.getCurrentPosition()
+  javax(sss.mCurrentPosition,sss.player,sss.player_class,"getCurrentPosition")
+  end fn
+
+//获得视频总时长 单位毫秒
+//返回值存在sss.mDuration里
+fn BDPlayer.getDuration()
+  javax(sss.mDuration,sss.player,sss.player_class,"getDuration")
+  end fn
+
+//指定播放器当前播放位置 单位毫秒
+fn BDPlayer.seekTo(msec)
+  javax(null,sss.player,sss.player_class,"seekTo","int",msec)
+  end fn
+
+//获得当前是否在播放视频
+//返回值sss.isPlaying
+fn BDPlayer.isPlaying()
+  javax(sss.isPlaying,sss.player,sss.player_class,"isPlaying")
+  end fn
+
+./
+
+
+tw("视频中的任何广告请勿相信")</eventItme><eventItme type="destroy">//syso("onDestroy")
+fn BDPlayer.release()
+
+</eventItme><eventItme type="loadingComplete">
+
+
+
+
+sss dck="0"
+
+
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+ss(c+"dp",dp)
+us(23,"layout_margintop",dp)
+
+
+//syso("start play")
+
+//javax(null,sss.player,sss.player_class,"start")
+//javax(null,sss.player,sss.player_class,"enterForeground")
+
+fn BDPlayer.start()
+
+
+s a = 0
+s b = 15
+s c = "#00000000|#00000000|#ff000000"
+s d = "#333333"
+s e = "topbottom"
+ngde(a, b, c, d, e, f)
+us(18,"background",f)
+
+s a = 0
+s b = 15
+s c = "#ff000000|#4d000000|#00000000"
+s d = "#333333"
+s e = "topbottom"
+ngde(a, b, c, d, e, f)
+us(27,"background",f)</eventItme><eventItme type="stop">//syso("onStop")
+
+
+fn BDPlayer.pause()
+dhas(dh, 27, "translationY",0,-150)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 17, "translationY",0,150)
+dh(dh, "duration", 450)
+dh(dh, "start")
+dhon(dh)
+{
+us(4,"visibility",8)
+us(22,"visibility",8)
+}
+
+
+
+</eventItme><eventItme type="restart">//syso("onRestart")
+fn BDPlayer.start()
+//单机可见
+//us(33,"visibility",8)
+us(4,"visibility",0)
+us(22,"visibility",0)
+dhas(dh, 27, "translationY",-150,0)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dhas(dh, 17, "translationY",150,0)
+dh(dh, "duration", 450)
+dh(dh, "start")
+//单机可见</eventItme><eventItme type="sensor">/.
+
+
+
+//竖屏
+f(st_x ? "-0.")
+{
+ushsp(false)
+}
+
+
+
+
+//横屏
+// x 8 9 7 6 -7 -8 -6
+
+
+f(st_x ? "6.")
+{
+ushsp(true)
+}
+else f(st_x ? "7..")
+{
+ushsp(true)
+}
+else f(st_x ? "8.")
+{
+ushsp(true)
+}
+else f(st_x ? "9.")
+{
+ushsp(true)
+}
+else f(st_x ? "-7.")
+{
+ushsp(true)
+}
+else f(st_x ? "-8.")
+{
+ushsp(true)
+}
+else f(st_x ? "-6.")
+{
+ushsp(true)
+}</eventItme><eventItme type="downkey">
+
+
+
+s a=st_kC
+f(a==25)
+{
+}
+else f(a==24)
+{
+}
+else f(a==4)
+{
+ss("图片"+sss.图片地址+"图片"+"影视名"+sss.影视名+"影视名"+"级数"+sss.标题+"级数"+"视频链接"+sss.video+"视频链接",历史记录)
+ss("%Android/data/com.cjzwjdm/ls/"+sss.影视名+".sod",历史文件)
+fw(历史文件,历史记录)
+fn BDPlayer.pause()
+fn BDPlayer.release()
+ushsp(false)
+end()
+
+}</eventItme></UIEventset>

@@ -1,0 +1,144 @@
+
+
+
+fn 追番判断()
+
+
+
+ss("%Android/data/com.cjzwjdm/ls/"+sss.影视名+".so",追番)
+t()
+{
+  fr(追番,js)
+  sj(js,"var VideoListJson=[['","',['",播放源文字)
+  ss("var VideoListJson=[['"+播放源文字+"',['",源输出)  
+   sj(js,源输出,"$flv']",c)
+   sl(c,",",zxf)
+   for(zxdm;zxf)
+   {
+   sj(zxdm,null,"$",un)
+   sr(un,"'","",bm)
+   sj(zxdm,"$",null,sp)
+   sr(sp,"$flv'","",splj)
+  ula(list_zxgx,4=bm,5=splj) 
+  } 
+  ufnsui()
+  {
+    uls(资源1.2,list_zxgx,"资源1列表.iyu",-1,-2)  
+    gvs(资源1.2,对象)
+    cls("android.support.v7.widget.RecyclerView",列表类)
+    cls("android.support.v7.widget.StaggeredGridLayoutManager",布局管理类)
+    javanew(布局,布局管理类,"int",3,"int",1)
+    javax(null,对象,列表类,"setLayoutManager","android.support.v7.widget.RecyclerView$LayoutManager",布局) 
+    ss("%Android/data/com.cjzwjdm/files/"+sss.图片地址,ss.位置)
+    t()
+    {
+    hd(sss.图片地址,ss.位置,true,ok)
+    f(ok == "-1")
+    {
+//      us(80,"visibility",8)
+    }
+    else
+    {
+      ufnsui()
+      {
+s 路径=ss.位置
+s 半径="2"
+s 模糊度 ="3"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+us(67,"src",img)
+us(67,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 630)
+us(67, "dh", dh)
+//最后输出img，可以设置src或者bg                                                  
+    }
+    }
+    } 
+
+f(bm == "null")
+{
+ufnsui()
+{
+
+
+
+us(资源1.6,"text","无资源")
+dhas(dh, 资源1.3, "scaleX", 1.0,0.3)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+dhas(dh, 资源1.3, "scaleY", 1.0,0.2)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+dhas(dh, 资源1.3, "translationY", 0,-60)
+dh(dh, "duration", 720)
+dh(dh, "start")
+
+dha(dh, true, false)
+dh(dh, "duration", 600)
+us(资源1.3, "dh", dh)
+dhon(dh)
+{
+us(资源1.3,"visibility","invisible")
+}
+
+dhas(dh, 资源1.6, "scaleX", 1.0,1.5)
+dh(dh, "duration", 1000)
+dh(dh, "start")
+
+dhas(dh, 资源1.6, "scaleY", 1.0,1.5)
+dh(dh, "duration", 800)
+dh(dh, "start")
+
+
+dhas(dh, 资源1.6, "translationY", 0,-65)
+dh(dh, "duration", 600)
+dh(dh, "start")
+
+
+}
+}
+else
+{
+ufnsui()
+{
+
+us(资源1.4,"visibility",8)
+us(资源1.2,"visibility",0)
+
+}
+}
+
+
+
+}

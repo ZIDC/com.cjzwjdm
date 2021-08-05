@@ -1,0 +1,148 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+visibility=gone</ppt>
+<event><eventItme type="clicki">
+
+
+
+fn 更新弹窗动画.关()</eventItme></event>
+</View>
+<View id="3" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="CardView">
+<ppt>width=-1
+height=-2
+layout_marginTop=200dp
+layout_marginBottom=200dp
+layout_marginLeft=36dp
+layout_marginRight=36dp
+app_CardcornerRadius=13dp
+app_CardBackgroundColor=#ffffffff
+app_CardElevation=5dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="2" did="4" type="ImageView">
+<ppt>width=-1
+height=-1
+src=1730156
+visibility=gone
+scaleType=centercrop</ppt>
+<event></event>
+</View>
+<View id="17" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#dbffffff</ppt>
+<event></event>
+</View>
+<View id="13" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|right
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="CardView">
+<ppt>width=47dp
+height=28dp
+app_CardcornerRadius=3dp
+app_CardBackgroundColor=#fff6f6f6
+layout_marginRight=16dp
+app_CardElevation=0dp
+layout_marginBottom=10dp
+layout_marginTop=10dp</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitemborderless
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+hws("https://zidc.github.io/bjdm/")</eventItme></event>
+</View>
+<View id="16" did="15" type="TextView">
+<ppt>width=-2
+height=-2
+text=更新
+textColor=#ff060606</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=left|center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=项目有
+textSize=15sp
+layout_marginLeft=15dp
+textColor=#ff0e0e0e</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=更新
+textSize=15.5sp
+layout_marginLeft=5dp
+textColor=#ff080808</ppt>
+<event></event>
+</View>
+<View id="9" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_marginBottom=45dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="ScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载
+layout_marginTop=15dp
+layout_marginRight=20dp
+layout_marginLeft=20dp
+layout_marginBottom=5dp
+textSize=13.5sp
+overScrollMode=never
+scrollbars=none
+textColor=#ff5a5a5a</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

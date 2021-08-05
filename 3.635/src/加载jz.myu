@@ -1,0 +1,19 @@
+
+
+
+//返回事件，就是点击手机返回键的事件。
+cls("android.content.DialogInterface$OnCancelListener", 返回类)
+javacb(返回事件, 返回类)
+{
+ tw("关闭")
+}
+//创建一个ProgressDialog
+javanew(对象,"android.app.ProgressDialog", "Context", activity)
+//取得类
+cls("android.app.ProgressDialog", 类)
+//显示，参数：当前的上下文环境，标题，内容，是否不明确(true和false都行)，点击外面是否关闭弹窗,，返回事件
+//标题和返回事件可写null。倒数第二个参数如果写false则点击外部关不掉弹窗，只能使用下面的关闭方法，并且返回事件将无效
+javax(对象, 对象, 类, "show", "Context", activity, "CharSequence", "提示", "CharSequence", "加载中", "boolean", false, "boolean", true, "android.content.DialogInterface$OnCancelListener", 返回事件)
+
+//关闭弹窗
+java(null, 对象, "android.app.Dialog.cancel")

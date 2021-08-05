@@ -1,0 +1,315 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+gravity=center
+BackgroundColor=#0dffffff
+visibility=gone</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+dhas(dh, 手动详细.23, "scaleY", 1.0,0.5)
+dh(dh, "duration", 300)
+dh(dh, "start") 
+                
+dhas(dh, 手动详细.23, "scaleX", 1.0,0.5)
+dh(dh, "duration", 310)
+dh(dh, "start") 
+
+
+dha(dh, true,false)
+dh(dh, "duration", 300)
+us(手动详细.23, "dh", dh) 
+dhon(dh)
+{
+us(手动详细.1,"visibility",8)
+us(手动详细.23,"visibility","invisible")
+us(手动详细.3,"visibility","invisible")
+us(手动详细.7,"visibility","invisible")
+us(手动详细.17,"visibility","invisible")
+
+}
+
+
+</eventItme></event>
+</View>
+<View id="23" did="1" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=16dp
+app_CardElevation=5dp
+layout_marginLeft=35dp
+layout_marginRight=35dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="21" did="23" type="ImageView">
+<ppt>width=-1
+height=510dp
+src=@108980.pn
+scaleType=centercrop</ppt>
+<event></event>
+</View>
+<View id="22" did="23" type="LinearLayout">
+<ppt>width=-1
+height=510dp
+orientation=vertical
+BackgroundColor=#ccffffff</ppt>
+<event></event>
+</View>
+<View id="2" did="23" type="LinearLayout">
+<ppt>width=-1
+height=510dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=center
+layout_marginTop=15dp
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="CardView">
+<ppt>width=-2
+height=-2
+app_CardElevation=0dp
+app_CardBackgroundColor=#33101010
+app_CardcornerRadius=6dp</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=      才能想你想你想你等你        
+textColor=#ffffffff
+textSize=14sp
+gravity=center
+layout_marginLeft=10dp
+layout_marginTop=6dp
+layout_marginRight=10dp
+layout_marginBottom=6dp</ppt>
+<event></event>
+</View>
+<View id="7" did="2" type="LinearLayout">
+<ppt>width=-1
+height=180dp
+orientation=horizontal
+</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="10" did="8" type="CardView">
+<ppt>width=90dp
+height=130dp
+layout_marginRight=30dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#00ffffff
+app_CardcornerRadius=15dp</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@icon11.pn
+scaleType=centercrop</ppt>
+<event></event>
+</View>
+<View id="9" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=left|center
+layout_marginTop=15dp
+layout_marginBottom=15dp
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="16" did="9" type="CardView">
+<ppt>width=120dp
+height=-1
+layout_marginLeft=15dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardElevation=0dp
+app_CardcornerRadius=10dp
+app_CardBackgroundColor=#33101010</ppt>
+<event></event>
+</View>
+<View id="13" did="16" type="ScrollView">
+<ppt>width=-1
+height=-1
+</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="TextView">
+<ppt>width=-2
+height=-2
+text=
+textSize=13sp
+textColor=#ffffffff
+layout_margin=5dp</ppt>
+<event></event>
+</View>
+<View id="17" did="2" type="LinearLayout">
+<ppt>width=-1
+height=280dp
+orientation=vertical
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="19" did="17" type="CardView">
+<ppt>width=-1
+height=-1
+layout_marginLeft=25dp
+layout_marginRight=25dp
+layout_marginBottom=28dp
+layout_marginTop=10dp
+app_CardElevation=0dp
+app_CardcornerRadius=15dp
+app_CardBackgroundColor=#33dcdcdc</ppt>
+<event></event>
+</View>
+<View id="18" did="19" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="20" did="18" type="RecyclerView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+/.
+us(手动详细.1,"visibility",8)
+us(手动详细.23,"visibility","invisible")
+us(手动详细.3,"visibility","invisible")
+us(手动详细.7,"visibility","invisible")
+us(手动详细.17,"visibility","invisible")
+
+
+
+us(手动详细.1,"visibility",0)
+dhas(dh, 手动详细.23, "translationY", -100,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+us(手动详细.23,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(手动详细.23, "dh", dh) 
+
+dhas(dh, 手动详细.23, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 手动详细.23, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+
+
+t()
+{
+stop("80")
+ufnsui()
+{
+
+dhas(dh, 手动详细.3, "translationY", -100,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+us(手动详细.3,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(手动详细.3, "dh", dh) 
+
+dhas(dh, 手动详细.3, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 手动详细.3, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+
+
+}
+}
+
+t()
+{
+stop("150")
+ufnsui()
+{
+dhas(dh, 手动详细.7, "translationY", -100,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+us(手动详细.7,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(手动详细.7, "dh", dh) 
+
+dhas(dh,手动详细.7, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 手动详细.7, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+
+}
+}
+
+
+t()
+{
+stop("230")
+ufnsui()
+{
+
+dhas(dh, 手动详细.17, "translationY", -100,0)
+dh(dh, "duration", 600)
+dh(dh, "start")
+us(手动详细.17,"visibility",0)
+dha(dh, false,true)
+dh(dh, "duration", 500)
+us(手动详细.17, "dh", dh) 
+
+dhas(dh, 手动详细.17, "scaleY", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+                
+dhas(dh, 手动详细.17, "scaleX", 1.2,1.0)
+dh(dh, "duration", 700)
+dh(dh, "start") 
+}
+}</eventItme></UIEventset>

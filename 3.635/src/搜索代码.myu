@@ -1,0 +1,412 @@
+//54
+
+
+fn 樱花动漫()
+
+
+ula(ss.list, null)
+ula(ss.list)
+
+fn 新加载.开始("飞船以就绪..")
+us(搜索界面.12,"visibility",8)
+ug(搜索界面.9,"text",b)
+stobm(b,"gb2312",ss.seach)
+ss(sss.网址+"/search.asp?searchword="+ss.seach,ss.搜索内容)
+us(搜索界面.53,"visibility",0)
+
+slg(ssc, b)
+f(b &lt; 2)
+{
+  ufnsui()
+  {
+    tw("最少两个字符")
+    us(搜索界面.12,"visibility",8)
+    //us(搜索界面.54,"visibility",8)
+    us(搜索界面.53,"visibility",8)
+    
+    fn 新加载.结束("准备什么？..")
+    
+    
+  }
+}
+else
+{
+  ufnsui()
+  {
+    us(加载新.5,"text","引擎启动中..")
+    t()
+    {
+      call(ss.搜索post数据,"mjava","http.getHtml",ss.搜索内容,"gb2312")
+      us(搜索界面.12,"visibility",8)
+      us(搜索界面.53,"visibility",0)       
+      f(ss.搜索post数据 == null)
+      {
+        ufnsui()
+        {
+          
+          tw("第一次解析失联")
+          fn 搜索代码.kd动漫1()
+          
+          
+        }
+      }
+      //反值为空-否则
+      else
+      {
+       
+        sj(ss.搜索post数据,"&lt;div class=\"pics\"&gt;","&lt;div class=\"sido r\"&gt;",截取)
+        sj(截取,"&lt;li&gt;",null,zxd)
+        sl(zxd,"&lt;li&gt;",zxf)
+        for(zxdm;zxf)
+        {
+          sj(zxdm,"&lt;a href=\"","\"",ss.kurl)
+          sj(zxdm,"&lt;img src=\"","\"",img)
+          sj(zxdm,"title=\"","\"",title)
+          sj(zxdm,"&lt;span&gt;","&lt;/span&gt;",bt)
+          sj(zxdm,"&lt;/p&gt;","&lt;/p&gt;",js)
+          ss("(html)"+bt+"\n"+js,内容)
+          ss(sss.网址+ss.kurl,dmurl)
+          ss("%Android/data/com.cjzwjdm/files/"+img,图片下载位置)
+          hd(img,图片下载位置,true,ok)
+          //   syso(图片下载位置)
+          ula(ss.list,7=title,5=img,8=内容,15=dmurl,16=img,21=图片下载位置)
+        }
+        ufnsui()
+        {
+          uls(搜索界面.12,ss.list,"搜索列表.iyu",-1,-2)
+          
+          
+          //us(Id6, "text"," 编码恢复中... ")
+          //us(搜索界面.56,"text","编码恢复中....")
+          us(加载新.5,"text","搜索银河系..")
+          f(ss.搜索post数据 ? "没有找到")
+          {
+            ufnsui()
+            {
+              fn 搜索代码.kd动漫1()
+            }
+          }
+          else
+          {
+            ufnsui()
+            {
+              fn 搜索代码.最大()
+            }
+          }
+          //
+          
+          
+          
+        }
+        
+        //反值正常
+      }
+    }
+   } 
+    
+    
+    
+    
+  }
+}
+end fn
+
+
+
+
+
+
+
+
+
+fn 最大()
+
+fn 搜索代码.kd动漫()
+
+
+
+end fn
+
+
+
+
+
+
+
+
+fn kd动漫()
+
+
+us(加载新.5,"text","第七宇宙？..")
+//us(搜索界面.56,"text","第二资源搜索中...")
+ug(搜索界面.9,"text",b)
+stobm(b, "utf-8", ssc)
+ss(sss.kd动漫+"/index.php/vod/search.html?wd="+ssc,搜索url)
+
+
+t()
+{
+  hs(搜索url,搜索post数据)
+  f(搜索post数据 == null)
+  {
+    ufnsui()
+    {
+      
+      //返回值为空
+      f(ss.kurl == "null")
+      {
+        ufnsui()
+        {
+          
+          us(搜索界面.12,"visibility",8)
+          //       us(搜索界面.54,"visibility",8)
+          us(搜索界面.53,"visibility",8)
+          
+          //       tw("基础资源失联")
+          fn 新加载.开始("飞船差点没了..")
+        }
+      }
+      else
+      {
+        ufnsui()
+        {
+          //           tw("第二资源失联")
+          fn 搜索代码.搜索结束动画()
+          us(加载新.5,"text","破坏神 *&#$")
+          fn 新加载.结束("破坏，:)完..")
+        }
+      }
+      
+
+    }
+  }	  
+  //反值为空-否则
+  else
+  {
+    ufnsui()
+    {
+      
+      sj(搜索post数据,"&lt;div class=\"stui-pannel_bd\"&gt;","&lt;div class=\"col-lg-wide-25 stui-pannel-side hidden-md hidden-sm hidden-xs\"&gt;",kd动漫内容截取) 
+      java(字节数组,kd动漫内容截取,"java.lang.String.getBytes")
+      java(输出,null,"android.util.Base64.encodeToString","byte[]",字节数组,"int",8)
+      s a = "%Android/data/com.cjzwjdm/files/kd.dll"
+      s b = 输出
+      fw(a, b)
+      fn 搜索代码.搜索结束动画()
+      fn 新加载.结束("看到希望了..")
+    }
+    
+  }
+}
+
+
+
+
+end fn
+
+
+
+
+fn kd动漫1()
+
+
+us(加载新.5,"text","第七宇宙？..")
+ug(搜索界面.9,"text",b)
+stobm(b, "utf-8", ssc)
+ss(sss.kd动漫+"/index.php/vod/search.html?wd="+ssc,搜索url)
+t()
+{
+//  hs(搜索url,搜索post数据a)
+  hs(搜索url,搜索post数据a)
+  f(搜索post数据a == null)
+  {
+    ufnsui()
+    {
+      
+      
+      //           tw("第二资源失联")
+      us(加载新.5,"text","破坏神 *&#$")
+      us(搜索界面.12,"visibility",8)
+      //       us(搜索界面.54,"visibility",8)
+      us(搜索界面.53,"visibility",8)
+      
+      fn 新加载.结束("破坏，:)完..")
+      
+    }
+  }
+  //反值为空-否则
+  else
+  {
+    ufnsui()
+    {
+      
+      sj(搜索post数据a,"&lt;div class=\"stui-pannel_bd\"&gt;","&lt;div class=\"col-lg-wide-25 stui-pannel-side hidden-md hidden-sm hidden-xs\"&gt;",kd动漫内容截取) 
+      java(字节数组,kd动漫内容截取,"java.lang.String.getBytes")
+      java(输出,null,"android.util.Base64.encodeToString","byte[]",字节数组,"int",8)
+      s a = "%Android/data/com.cjzwjdm/files/kd.dll"
+      s b = 输出
+      fw(a, b)
+      
+      us(搜索界面.12,"visibility",8)
+      //       us(搜索界面.54,"visibility",8)
+      us(搜索界面.53,"visibility",8)
+
+      fn 新加载.结束("希望....")
+      t()
+      {
+        stop("720")
+        ufnsui()
+        {
+          uigo("playBf.iyu")
+          tw("请选择第二资源")
+          sss 请选择第二资源="2"
+        }
+      }
+    }
+    
+  }
+}
+
+
+
+
+end fn
+
+
+fn 搜索结束动画()
+
+
+
+us(搜索界面.12,"visibility",0)
+//   us(搜索界面.54,"visibility",8)
+ug(搜索界面.12,"count",ss.jk)
+us(搜索界面.53,"visibility",8)
+
+
+dhas(dh, 搜索界面.12, "translationY",800,0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dha(dh, false, true)
+dh(dh, "duration", 500)
+us(搜索界面.12, "dh", dh)
+
+
+dhas(dh,搜索界面.12, "scaleY", 0.6,1.3)
+dh(dh, "duration", 450)
+dh(dh, "start")
+
+dhas(dh,搜索界面.12, "scaleX", 0.6,1.1)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+t()
+{
+  stop("450")
+  ufnsui()
+  {
+    dhas(dh,搜索界面.12, "scaleY", 1.3,1.0)
+    dh(dh, "duration", 700)
+    dh(dh, "start")
+    
+  }
+}
+
+t()
+{
+  stop("400")
+  ufnsui()
+  {
+    
+    dhas(dh,搜索界面.12, "scaleX", 1.1,1.0)
+    dh(dh, "duration", 650)
+    dh(dh, "start")
+  }
+}
+
+end fn
+
+
+
+
+fn 追番搜索()
+
+
+
+fn 新加载.开始("出装啊倒是～..")
+s a = sss.影视名
+ssg(a,0, 4, ssc)
+ss("wd="+ssc,ss.seach)
+ss(sss.kd动漫+"/index.php/vod/search.html?",搜索url)
+t()
+{
+  hs(搜索url,ss.seach,"utf-8",搜索post数据)
+  f(搜索post数据 == null)
+  {
+    ufnsui()
+    {
+      
+      fn 新加载.结束("我黑切呢？..")
+      t()
+      {
+        stop("350")
+        ufnsui()
+        {
+          uigo("playBf.iyu")
+        }
+      }
+      
+    }
+  }
+  //反值为空-否则
+  else
+  {
+    ufnsui()
+    {
+      
+      sj(搜索post数据,"&lt;div class=\"stui-pannel_bd\"&gt;","&lt;div class=\"col-lg-wide-25 stui-pannel-side hidden-md hidden-sm hidden-xs\"&gt;",kd动漫内容截取) 
+      java(字节数组,kd动漫内容截取,"java.lang.String.getBytes")
+      java(输出,null,"android.util.Base64.encodeToString","byte[]",字节数组,"int",8)
+      s a = "%Android/data/com.cjzwjdm/files/kd.dll"
+      s b = 输出
+      fw(a, b)
+      
+      fn 新加载.结束("冲冲冲..")
+       t()
+       {
+       stop("560")
+       ufnsui()
+       {
+
+        dhas(dh, 2, "translationY", 0, 30)
+        dh(dh, "duration", 400)
+        dh(dh, "start")
+
+        dhas(dh, 2, "scaleY", 1.0,0.6)
+        dh(dh, "duration", 500)
+        dh(dh, "start")
+
+        dhas(dh, 2, "scaleX", 1.0,0.6)
+        dh(dh, "duration", 600)
+        dh(dh, "start")
+        dha(dh, true, false)
+        dh(dh, "duration", 600)
+        us(2, "dh", dh) 
+        dhon(dh)  
+        {
+        us(2,"visibility",8)   
+        }   
+        uigo("playBf.iyu")
+        lan(0)
+       }
+       }
+      
+    }
+    
+  }
+}
+
+
+
+
+end fn
