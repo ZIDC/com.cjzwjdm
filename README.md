@@ -17,15 +17,6 @@
 
 **本软件仅供学习交流使用  请勿用于其他用途**
 
-## 截图
-
-| ![Test](https://zidc.github.io/bjdm/Preview/100.png) |  ![Test](https://zidc.github.io/bjdm/Preview/zf.png)  | 
-| ---------- | :-----------:  | 
-| ![Test](https://zidc.github.io/bjdm/Preview/zjgx.png) | ![Test](https://zidc.github.io/bjdm/Preview/rb.png)  
-| ![Test](https://zidc.github.io/bjdm/Preview/ss.png)     | ![Test](https://zidc.github.io/bjdm/Preview/spxx.png)     | 
-| ---------- | :-----------:  | 
-| ![Test](https://zidc.github.io/bjdm/Preview/spxxnr.png)      | ![Test](https://zidc.github.io/bjdm/Preview/sz.png)    
-
 
 ## 下载
 
@@ -41,7 +32,16 @@
 [Project compilation tools](https://wwa.lanzoui.com/b04nhpxud)
 ## 界面预览
 
-> 请注意: 请自行在线项目/编译版本浏览
+
+
+| ![Test](https://zidc.github.io/bjdm/Preview/100.png) |  ![Test](https://zidc.github.io/bjdm/Preview/zf.png)  | 
+| ---------- | :-----------:  | 
+| ![Test](https://zidc.github.io/bjdm/Preview/zjgx.png) | ![Test](https://zidc.github.io/bjdm/Preview/rb.png)  
+| ![Test](https://zidc.github.io/bjdm/Preview/ss.png)     | ![Test](https://zidc.github.io/bjdm/Preview/spxx.png)     | 
+| ---------- | :-----------:  | 
+| ![Test](https://zidc.github.io/bjdm/Preview/spxxnr.png)      | ![Test](https://zidc.github.io/bjdm/Preview/sz.png)    
+
+
 > 
 ## 目录介绍
 > res -资源库
