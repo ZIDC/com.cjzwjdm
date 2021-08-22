@@ -31,7 +31,7 @@
 
 > 软件已经开源，开源项目请自行在本界面下下载 - 编译版本下载在下方
 
-[com.cjzwjdm](https://zidc.github.io/bjdm/releases)
+[com.cjzwjdm](https://#/releases)
 
 ## 编译工具
 
