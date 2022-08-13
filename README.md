@@ -24,6 +24,8 @@
 
 [com.cjzwjdm](https://github.com/ZIDC/com.cjzwjdm/releases)
 
+[抗揍云密 密码6666](https://wwi.lanzoup.com/b04n5j3yj)
+
 ## 编译工具
 
 > 请自行下载编译工具 密码:6666
