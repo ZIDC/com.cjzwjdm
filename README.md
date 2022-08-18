@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img src="https://zidc.github.io/bjdm/png/icondm.png" width="150"/>
+    <img src="https://zidc.github.io/bjdm/png/icondm1.png" width="150"/>
   <br>
 白洁动漫
   <br>
