@@ -11,7 +11,10 @@
 
 
 BT资源
-(1.0)
+(1.2)
 {更新内容:
-首个正式版本，无更新内容}
+
+-详细弹窗ui优化
+-新增弹窗动画
+-修复插件无法启动问题}
 【https://github.com/ZIDC/com.cjzwjdm/releases/download/4.904/bt_1.0.apk】
